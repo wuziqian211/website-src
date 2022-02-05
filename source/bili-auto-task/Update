@@ -1,0 +1,1 @@
+{"code":0,"message":"ok","data":{"release":{"version":"v1.0.0","release":5,"update_content":"1. 支持了密码登录（暂时不支持带有登录设备验证的账号）；\n2. 修复了头像有时不显示的问题；\n3. 修复了焦点问题；\n4. 优化了程序在不同系统上的兼容性；\n5. 当本程序有新版本时，如果用户选择更新，那么会弹出一个带有更新进度的窗口；\n6. 将注册表中的 Cookie 加密。","info":"https://wuziqian211.gitee.io/biliautotask/v1.0.0/info","file_length":1548107},"beta":null}}

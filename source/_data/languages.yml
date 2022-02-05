@@ -1,0 +1,18 @@
+zh-CN:
+  title:
+    archive: 文章
+  menu:
+    archives: 文章
+  sidebar:
+    overview: 作者信息
+  post:
+    comments:
+      waline: 评论数
+  counter:
+    archive_posts:
+      zero: "暂无文章(´；ω；`)"
+      one: 目前共计 1 篇文章awa
+      other: "目前共计 %d 篇文章awa"
+  state:
+    posts: 文章
+  keep_on: 继续努力(^・ω・^ )
