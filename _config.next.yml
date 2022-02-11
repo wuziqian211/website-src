@@ -915,6 +915,6 @@ waline:
     link: 'B 站 UID'
     placeholder: '发条评论吧 (=・ω・=)' # Comment box placeholder
     submit: 发布
-    admin: 管理员
+    admin: 可爱的管理员
   comment_count: true # If false, comment count will only be displayed in post page, not in home page
   libUrl: # Set custom library cdn url
