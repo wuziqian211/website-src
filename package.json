@@ -12,7 +12,6 @@
     "version": "6.0.0"
   },
   "dependencies": {
-    "@next-theme/plugins": "^8.8.2",
     "@waline/hexo-next": "^2.0.6",
     "hexo": "^6.0.0",
     "hexo-filter-nofollow": "^2.0.2",

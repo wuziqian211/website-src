@@ -8,7 +8,6 @@ tags:
 categories:
   - 生活
   - 日常
-permalink: /wiki/
 sticky: 99
 ---
 欢迎您来到wuziqian211的Wiki！(=・ω・=)
@@ -17,7 +16,7 @@ wuziqian211是一个可爱、活泼的科技区、知识区、生草区UP主(=�
 wuziqian211非常喜欢和粉丝们互动的，最喜欢给粉丝们点赞啦(=・ω・=)但是TA可能会经常水、咕咕咕(´；ω；\`)也不要欺负wuziqian211，不然TA会伤心的(´；ω；\`)
 {% note info %}
 “生草”源于日语“草生える”，意思是“爆笑，令人发笑的”qwq
-“水”指发布的作品质量不怎么样，“咕咕咕”指长期不更新awa
+“水”指发布质量不怎么样的作品，“咕咕咕”指长期不更新awa
 {% endnote %}
 {% note info %}
 本Wiki会根据实际情况经常更新，部分内容可能没有完善qwq
@@ -29,7 +28,7 @@ wuziqian211非常喜欢和粉丝们互动的，最喜欢给粉丝们点赞啦(=�
 
 ## 基本信息
 ### 头像与昵称
-wuziqian211在多个平台用过一些不同的头像(=・ω・=)下面是wuziqian211在B站用过的头像哟：
+wuziqian211曾经用过一些不同的头像(=・ω・=)下面是wuziqian211用过的头像哟：
 
 | 头像 | 开始使用时间 | 来源 | 对应人物 | 备注 |
 | :--: | :----------: | :--: | :------: | ---- |
@@ -261,15 +260,13 @@ wuziqian211会永远陪伴你们的，永远不会注销的qwq（虽然以前提
 wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦awa
 
 ## 回顾美好时光
-想要看看wuziqian211所做过的一些有影响的事，或者TA的粉丝对wuziqian211有很大影响的事吗？点击下面就可以查看哟awa
-<details>
-<summary>查看美好时光！</summary>
-
+想要看看wuziqian211所做过的一些有影响的事，或者TA的粉丝对wuziqian211有很大影响的事吗？点击下面的年份就可以查看对应年份的事情哟awa
 {% note info %}
 以下大部分内容根据wuziqian211发布的动态来写，有一些内容也改编自原网站[《关于 wuziqian211》](https://wuziqian211.icoc.vc/nd.jsp?id=26)哟QAQ
 {% endnote %}
+<details>
+<summary>2019年</summary>
 
-### 2019年
 2019年，wuziqian211只是发布视频，并没有和粉丝互动。
 
 | 时间 | 事件 |
@@ -285,8 +282,10 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 | 8月20日 | 发布了视频[《【伴奏】Bad Apple!!》](https://www.bilibili.com/video/BV1P4411Z7Vq) |
 | 8月22日 | 发布了视频[《把WinXP和Vista的启动管理器名称相互替换会怎么样？》](https://www.bilibili.com/video/BV1b441197gH) |
 | 11月3日 | 比较某下载软件（~~[迅雷](https://www.xunlei.com/)~~）的非会员与超级会员下载速度的区别 |
+</details>
+<details>
+<summary>2020年</summary>
 
-### 2020年
 2020年，wuziqian211开始频繁发布动态，与粉丝频繁互动，并开始互粉。
 
 | 时间 | 事件 | 备注 |
@@ -361,8 +360,10 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 | 8月30日 | 发布了第1000条动态 | 第1000条动态内容只是“\[tv_微笑\]” |
 | 10月1日 | 互动活跃度变成0 | 21天没发动态了 |
 | 10月6日 | **手动移除大约38个粉丝** | |
+</details>
+<details>
+<summary>2021年</summary>
 
-### 2021年
 2021年，wuziqian211不频繁发动态了，但仍然保持着与粉丝互动。
 
 | 时间 | 事件 | 备注 |
@@ -383,8 +384,10 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 | 11月15日 | 将“入站必刷”的所有视频看完了 | ~~被迫~~ |
 | 12月25日 | 发布了视频[《我把我的2021做成了影片！再见，2021正式上映！》](https://www.bilibili.com/video/BV1k3411x7Wv) | |
 | 12月29日 | 发布了视频[《wuziqian211的2021 UP主荣誉年报》](https://www.bilibili.com/video/BV1jr4y1S7a9) | 这个视频与上个视频**使wuziqian211掉了几个粉丝**，因为太“水”了 |
+</details>
+<details>
+<summary>2022年</summary>
 
-### 2022年
 2022年，wuziqian211可能一整年才只发几条动态，因为TA没有时间了。
 
 | 时间 | 事件 | 备注 |
@@ -400,10 +403,6 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 
 ## 结束语
 感谢你们一直对wuziqian211的支持！因为有你们，wuziqian211才会做得越来越好！(=・ω・=)
-其中，下列平台与用户帮助了wuziqian211许多（名次不分先后）：
-<div class="link-grid" id="thanks"></div>
-
-其实还有很多人在背后默默地支持着wuziqian211呢(=・ω・=)但是上面没有列出，实在是非常抱歉！(´；ω；\`)
 如果您对本Wiki或wuziqian211有更多问题，您可以在本Blog的评论区中评论，或者在B站发私信给wuziqian211(=・ω・=)wuziqian211会认真回复您的！awa
 
 <script data-pjax>
@@ -414,9 +413,8 @@ details.addEventListener("toggle", () => {
     let t = new Date();
     let d = new Date(t.getTime() + (t.getTimezoneOffset() + 480) * 60000);
     document.querySelector('#fans-time').innerText = `${d.getFullYear()} 年 ${d.getMonth() + 1} 月 ${d.getDate()} 日 ${d.getHours()}:${d.getMinutes().toString().padStart(2, '0')}`;
-    fetch('https://api.wuziqian211.top/getbili.js?mid=425503913&type=follow').then(resp => resp.json()).then(json => document.querySelector('#fans-number').innerText = json.data.follower.toString());
+    fetch('https://api.wuziqian211.top/api/getbili?mid=425503913&type=follow').then(resp => resp.json()).then(json => document.querySelector('#fans-number').innerText = json.data.follower.toString());
     changed = true;
   }
 });
-fetch('https://api.wuziqian211.top/modules.js?id=thanks').then(resp => resp.json()).then(json => document.querySelector('#thanks').innerHTML = json.data);
 </script>
