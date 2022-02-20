@@ -9,6 +9,7 @@ categories:
   - 生活
   - 日常
 sticky: 99
+permalink: /wiki/
 ---
 欢迎您来到wuziqian211的Wiki！(=・ω・=)
 
@@ -24,7 +25,6 @@ wuziqian211非常喜欢和粉丝们互动的，最喜欢给粉丝们点赞啦(=�
 这个Wiki的内容您并不需要全部看完，只需要看一些您认为的重点就行(｀・ω・´)
 {% endnote %}
 <!-- more -->
-![](/images/face.png)
 
 ## 基本信息
 ### 头像与昵称
@@ -277,7 +277,7 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 | 5月25日 | 把自己电脑的屏幕分辨率调到了3840×2160（屏幕本身的分辨率是1920×1080） |
 | 7月4日 | 1. TA的[DiskGenius软件](https://www.diskgenius.cn/)不显示磁盘；<br />2. 发布了自己投稿了999＋个作品的图片，实际上刚加载个人空间可以卡出。 |
 | 7月7日 | 发布了视频[《在U盘里安装Windows 3.1会怎么样？》](https://www.bilibili.com/video/BV12x411f75Y) |
-| 7月8日 | 发布了视频[《【真】30秒开机，3秒死机》](https://www.bilibili.com/video/BV1M4411F7ma) |
+| 7月8日 | 发布了视频[《3 0 秒 开 机 ， 3 秒 死 机》](https://www.bilibili.com/video/BV1M4411F7ma) |
 | 7月19日 | 发布B站“干杯十周年”的图片 |
 | 8月20日 | 发布了视频[《【伴奏】Bad Apple!!》](https://www.bilibili.com/video/BV1P4411Z7Vq) |
 | 8月22日 | 发布了视频[《把WinXP和Vista的启动管理器名称相互替换会怎么样？》](https://www.bilibili.com/video/BV1b441197gH) |
@@ -304,10 +304,10 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 | 3月2日 | 发布了关于自己的介绍的动态 | 提到了自己是个“AI/人类混合体” |
 | 3月8日 | 再次发布关于自己的介绍的动态 | 这条动态被很多人点赞 |
 | 3月9日 | 发布了视频[《网络天才能不能猜到wuziqian211？》](https://www.bilibili.com/video/BV1AE411u7yx) | 由于TA当时粉丝较多，所以3天内播放量就超过了300 |
-| 3月11日 | 1. [GoForce_X](https://space.bilibili.com/96240239)用Python脚本给wuziqian211的所有动态点了赞，并发布了动态`如何轰炸一个up？很简单，给他动态全点赞`，向wuziqian211公开了这个脚本的源代码；<br />2. 在爱发电注册了账号，并在3月12日认证了。 | |
+| 3月11日 | 1. [GoForceX](https://space.bilibili.com/96240239)用Python脚本给wuziqian211的所有动态点了赞，并发布了动态`如何轰炸一个up？很简单，给他动态全点赞`，向wuziqian211公开了这个脚本的源代码；<br />2. 在爱发电注册了账号，并在3月12日认证了。 | |
 | 3月15日 | 发布了专栏[《关注 wuziqian211 前必读》](https://www.bilibili.com/read/cv5112673) | |
-| 3月16日 | 与[GoForce_X](https://space.bilibili.com/96240239)一起“迫害”wuziqian211 | ~~自己“迫害”自己~~，在这里“迫害”一词是对wuziqian211的玩梗，类似于“调戏” |
-| 3月18日 | [GoForce_X](https://space.bilibili.com/96240239)发布了“迫害wuziqian211”的安卓APP | |
+| 3月16日 | 与[GoForceX](https://space.bilibili.com/96240239)一起“迫害”wuziqian211 | ~~自己“迫害”自己~~，在这里“迫害”一词是对wuziqian211的玩梗，类似于“调戏” |
+| 3月18日 | [GoForceX](https://space.bilibili.com/96240239)发布了“迫害wuziqian211”的安卓APP | |
 | 3月19日 | 1. 发布了视频[《如果迫害wuziqian211会怎样？》](https://www.bilibili.com/video/BV1T7411R7pZ)；<br />2. 自己做了个电脑版程序“迫害wuziqian211”。 | |
 | 3月23日 | 发布了程序“哔哩哔哩AV号与BV号互转程序” | 由于这个程序在哔哩哔哩BV号刚启用后几小时内就发布了，所以有很多人下载程序，从而**使wuziqian211快速涨粉** |
 | 3月24日 | **粉丝数超过了1000**，并且设置了私信自动回复，拥有了粉丝勋章 | |
