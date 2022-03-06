@@ -53,7 +53,7 @@ wuziqian211的真实生日是不公开的qwq
 
 ## 创作与收益
 wuziqian211最近可能会经常水、咕咕咕(´；ω；\`)
-wuziqian211在发动态、作品之前会仔细检查TA所发的内容的，绝不会发不实信息等的qwq
+wuziqian211在发动态、作品之前会仔细检查TA所发的内容的，绝不会发广告、说脏话、发不实信息等的qwq
 
 ### 创作内容
 #### 动态
@@ -347,8 +347,7 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 | 6月7日 | 发布了关于介绍自己的动态 | |
 | 6月8日 | 一些人伤害了wuziqian211，以至于**wuziqian211变得有点不好了起来，真的提交注销申请了** | **结果撤销了注销**，又获得了一些粉丝 |
 | 6月10日 | 发布了关于自己不拉黑任何人的动态 | |
-| 6月11日 | 1. 开始使用`qwq`之类的颜文字；<br />2. 发了一个透明、没有任何内容的图片；<br />3. 发布了一个退出登录的“活动”。 | 3. “活动”是TA通过特殊手段发出的。 |
-| 6月16日 | 开始使用“\[tv_微笑\]”表情 | |
+| 6月11日 | 1. 发了一个透明、没有任何内容的图片；<br />2. 发布了一个退出登录的“活动”。 | 2. “活动”是TA通过特殊手段发出的。 |
 | 6月23日 | 移除了账号已经注销的粉丝 | |
 | 7月3日 | 自己的动态上话题“BML云live”热门了 | |
 | 7月13日 | “[Social-deathの粼光](https://space.bilibili.com/346030399)”发布了`抱走wuziqian211`的图片 | 这个图片实际上是wuziqian211提供的 |
@@ -413,7 +412,7 @@ details.addEventListener("toggle", () => {
     let t = new Date();
     let d = new Date(t.getTime() + (t.getTimezoneOffset() + 480) * 60000);
     document.querySelector('#fans-time').innerText = `${d.getFullYear()} 年 ${d.getMonth() + 1} 月 ${d.getDate()} 日 ${d.getHours()}:${d.getMinutes().toString().padStart(2, '0')}`;
-    fetch('https://api.wuziqian211.top/api/getbili?mid=425503913&type=follow').then(resp => resp.json()).then(json => document.querySelector('#fans-number').innerText = json.data.follower.toString());
+    fetch('https://api.wuziqian211.top/api/getuser?mid=425503913&type=follow').then(resp => resp.json()).then(json => document.querySelector('#fans-number').innerText = json.data.follower.toString());
     changed = true;
   }
 });
