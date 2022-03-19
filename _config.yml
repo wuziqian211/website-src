@@ -54,6 +54,7 @@ highlight:
   auto_detect: false
   tab_replace: ''
   wrap: true
+  exclude_languages:
   hljs: false
 prismjs:
   enable: false

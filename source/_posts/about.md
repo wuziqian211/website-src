@@ -32,7 +32,7 @@ wuziqian211在B站很活跃哦(^・ω・^ )如果您有B站账号的话，可以
 - <span style="color: #F25D8E;">哔哩哔哩：<https://space.bilibili.com/425503913>（wuziqian211最活跃的地方，您可以在这里与wuziqian211互动）</span>
 - <span style="color: #9F7BE1;">GitHub：<https://github.com/wuziqian211>（wuziqian211的Blog及API的源代码都在这里）</span>
 - <span style="color: #C71D23;">Gitee：<https://gitee.com/wuziqian211>（wuziqian211的一些程序的源代码都在这里）</span>
-- <span style="color: #1D9BF0;">Twitter：<https://twitter.com/wuziqian211>（**在中国大陆无法访问**）</span>
+- <span style="color: #1D9BF0;">Twitter：<https://twitter.com/wuziqian211>（**在中国除港澳台外的地区无法访问**）</span>
 - <span style="color: #12B7F5;">QQ：2300393122（很少在线）</span>
 - E-Mail：[wuziqian211@126.com](mailto:wuziqian211@126.com)
 
@@ -84,7 +84,7 @@ Gitee | https://gitee.com/ | 为本Blog提供服务器、存储源码文件。Gi
 {% endlg %}
 
 <script data-pjax>
-fetch('https://api.wuziqian211.top/api/modules?id=friends').then(resp => resp.json()).then(json => document.querySelector('#friends').innerHTML = json.data + `<div class="link-grid-container">
+fetch('https://api.wuziqian211.top/api/modules?id=friends').then(resp => resp.json()).then(json => document.querySelector('div#friends').innerHTML = json.data + `<div class="link-grid-container">
 <object class="link-grid-image" data="/images/you.png"></object>
 <p>您</p><p>是的，就是您 (=・ω・=) 您一直在支持着 wuziqian211，当然也是 wuziqian211 的朋友哟 awa</p>
 <a target="_blank" rel="noopener external nofollow noreferrer" href="https://space.bilibili.com/"></a>
