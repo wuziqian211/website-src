@@ -25,7 +25,7 @@ custom_file_path:
   #postMeta: source/_data/post-meta.njk
   #postBodyEnd: source/_data/post-body-end.njk
   #footer: source/_data/footer.njk
-  #bodyEnd: source/_data/body-end.njk
+  bodyEnd: source/_data/body-end.njk
   variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
   style: source/_data/styles.styl
@@ -902,25 +902,104 @@ css: css
 js: js
 images: images
 
-# Waline
-# For more information: https://waline.js.org, https://github.com/walinejs/waline
+# Waline Config File
+# For more information:
+# - https://waline.js.org
+# - https://waline.js.org/reference/component.html
 waline:
+  # New! Whether enable this plugin
   enable: true
-  serverURL: https://waline.wuziqian211.top # Waline server address url
-  lang: zh-CN # Language, available values: en, zh-cn
-  # Warning: Do not enable both `waline.visitor` and `leancloud_visitors`.
-  visitor: true # Article reading statistic
-  emoji: [/emote/1, /emote/2, /emote/3, /emote/4, /emote/5, /emote/6, /emote/7, /emote/8, /emote/9, /emote/10, /emote/11, /emote/12, /emote/13, /emote/14, /emote/15, /emote/16, /emote/17, /emote/18, /emote/19, /emote/20, /emote/21, /emote/22, /emote/23, /emote/24, /emote/25, /emote/26, /emote/27, /emote/28, /emote/29, /emote/30, /emote/31, /emote/32, /emote/33, /emote/34, /emote/35, /emote/36, /emote/37, /emote/38, /emote/39, /emote/40, /emote/41]
-  dark: auto
-  meta: [nick, link] # Custom comment header
-  requiredMeta: [] # Set required fields: [nick] | [nick, mail]
-  login: enable
-  wordLimit: [1, 16384]
-  pageSize: 20 # Pagination size
+
+  # Waline server address url, you should set this to your own link
+  serverURL: https://waline.wuziqian211.top
+
+  # Waline library CDN url, you can set this to your preferred CDN
+  libUrl: //unpkg.com/@waline/client@v2/dist/waline.js
+
+  # Waline CSS styles CDN url, you can set this to your preferred CDN
+  cssUrl: //unpkg.com/@waline/client@v2/dist/waline.css
+
+  # Custom locales
   locale:
     link: 'B 站 UID'
     placeholder: '发条评论吧 (=・ω・=)' # Comment box placeholder
     submit: 发布
     admin: 可爱的管理员
-  comment_count: true # If false, comment count will only be displayed in post page, not in home page
-  libUrl: # Set custom library cdn url
+
+  # Custom emoji
+  emoji:
+    - /emote/1
+    - /emote/2
+    - /emote/3
+    - /emote/4
+    - /emote/5
+    - /emote/6
+    - /emote/7
+    - /emote/8
+    - /emote/9
+    - /emote/10
+    - /emote/11
+    - /emote/12
+    - /emote/13
+    - /emote/14
+    - /emote/15
+    - /emote/16
+    - /emote/17
+    - /emote/18
+    - /emote/19
+    - /emote/20
+    - /emote/21
+    - /emote/22
+    - /emote/23
+    - /emote/24
+    - /emote/25
+    - /emote/26
+    - /emote/27
+    - /emote/28
+    - /emote/29
+    - /emote/30
+    - /emote/31
+    - /emote/32
+    - /emote/33
+    - /emote/34
+    - /emote/35
+    - /emote/36
+    - /emote/37
+    - /emote/38
+    - /emote/39
+    - /emote/40
+    - /emote/41
+    # - //unpkg.com/@waline/emojis@1.0.1/weibo
+    # - //unpkg.com/@waline/emojis@1.0.1/alus
+    # - //unpkg.com/@waline/emojis@1.0.1/bilibili
+    # - //unpkg.com/@waline/emojis@1.0.1/qq
+    # - //unpkg.com/@waline/emojis@1.0.1/tieba
+    # - //unpkg.com/@waline/emojis@1.0.1/tw-emoji
+
+  # If false, comment count will only be displayed in post page, not in home page
+  commentCount: true
+
+  # Pageviews count, Note: You should not enable both `waline.pageview` and `leancloud_visitors`.
+  pageview: true
+
+  # Comment infomation, valid meta are nick, mail and link
+  meta:
+    - nick
+    - link
+  #   - mail
+
+  # Set required meta field, e.g.: [nick] | [nick, mail]
+  # requiredMeta:
+  #   - nick
+
+  # Language, available values: en-US, zh-CN, zh-TW, pt-BR, ru-RU, jp-JP
+  lang: zh-CN
+
+  # Word limit, no limit when setting to 0
+  wordLimit: [1, 16384]
+
+  # Whether enable login, can choose from 'enable', 'disable' and 'force'
+  login: enable
+
+  # comment per page
+  pageSize: 20

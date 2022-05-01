@@ -84,9 +84,5 @@ Gitee | https://gitee.com/ | 为本Blog提供服务器、存储源码文件。Gi
 {% endlg %}
 
 <script data-pjax>
-fetch('https://api.wuziqian211.top/api/modules?id=friends').then(resp => resp.json()).then(json => document.querySelector('div#friends').innerHTML = json.data + `<div class="link-grid-container">
-<object class="link-grid-image" data="/images/you.png"></object>
-<p>您</p><p>是的，就是您 (=・ω・=) 您一直在支持着 wuziqian211，当然也是 wuziqian211 的朋友哟 awa</p>
-<a target="_blank" rel="noopener external nofollow noreferrer" href="https://space.bilibili.com/"></a>
-</div>`);
+fetch('https://api.wuziqian211.top/api/modules?id=friends').then(resp => resp.json()).then(json => document.querySelector('div#friends').innerHTML = json.data + '<div class="link-grid-container"><object class="link-grid-image" data="/images/you.png"></object><p>您</p><p>是的，就是您 (=・ω・=) 您一直在支持着 wuziqian211，当然也是 wuziqian211 的朋友哟 awa</p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://space.bilibili.com/"></a></div>');
 </script>

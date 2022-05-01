@@ -1,0 +1,16 @@
+<script data-pjax>
+(async () => {
+  const json = await (await fetch('https://api.wuziqian211.top/api/modules?id=blocked')).json();
+  const regexp = new RegExp(json.data.blocked);
+  document.querySelectorAll('a').forEach(e => {
+    if (regexp.test(e.hostname)) {
+      let span = document.createElement('span');
+      span.classList.add('inaccessible');
+      span.innerText = '您所在的国家/地区可能无法访问该链接。';
+      e.before(span);
+      e.onmouseenter = () => span.style.display = 'initial';
+      e.onmouseleave = () => span.style.display = 'none';
+    }
+  });
+})();
+</script>

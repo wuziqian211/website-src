@@ -1,14 +1,14 @@
 .comments {
   overflow: visible;
 }
-.v[data-class=v] .vemoji-popup .vtabs {
+.wl-emoji-popup .wl-tabs {
   height: auto !important;
 }
-.v[data-class=v] .vcontent .vemoji {
+.wl-content .wl-emoji {
   width: 2.5em !important;
   vertical-align: bottom !important;
 }
-.v[data-class=v] .vcontent .vemoji[src^="/emote/1/"], .v[data-class=v] .vcontent .vemoji[src^="/emote/3/"] {
+.wl-content .wl-emoji[src^="/emote/1/"], .wl-content .wl-emoji[src^="/emote/3/"] {
   width: 1.25em !important;
 }
 th {
@@ -21,7 +21,7 @@ th {
 .back-to-top {
   border-radius: 10px;
 }
-.vavatar img, .site-author-image, .vuser {
+.wl-avatar img, .site-author-image, .wl-user img {
   min-width: 0 !important;
   border-radius: 50% !important;
 }
@@ -29,7 +29,7 @@ th {
   min-width: 0 !important;
   border-radius: 0 !important;
 }
-img:not(.vemoji):not(.fancybox-image) {
+img:not(.wl-emoji):not(.fancybox-image) {
   min-width: 50px;
   border-radius: 20px;
 }
@@ -45,6 +45,16 @@ img:not(.vemoji):not(.fancybox-image) {
 }
 .fancybox-image {
   opacity: 1 !important;
+}
+.inaccessible {
+  color: #EEE;
+  background: #222;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 5px;
+  margin-top: 40px;
+  position: absolute;
+  display: none;
 }
 
 @font-face {
