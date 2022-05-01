@@ -1,6 +1,7 @@
 <script data-pjax>
 (async () => {
   const json = await (await fetch('https://api.wuziqian211.top/api/modules?id=blocked')).json();
+  if (!json.data.blocked) return;
   const regexp = new RegExp(json.data.blocked);
   document.querySelectorAll('a').forEach(e => {
     if (regexp.test(e.hostname)) {
