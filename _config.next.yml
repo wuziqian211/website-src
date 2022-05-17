@@ -888,12 +888,12 @@ vendors:
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
-  plugins: jsdelivr
+  plugins: custom
   # Custom CDN URL
   # For example:
   # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
   # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
-  custom_cdn_url:
+  custom_cdn_url: https://fastly.jsdelivr.net/npm/${npm_name}@${version}/${minified}
 
 # Assets
 # Accelerate delivery of static files using a CDN
@@ -985,8 +985,8 @@ waline:
   # Comment infomation, valid meta are nick, mail and link
   meta:
     - nick
-    - link
   #   - mail
+    - link
 
   # Set required meta field, e.g.: [nick] | [nick, mail]
   # requiredMeta:
@@ -1003,3 +1003,5 @@ waline:
 
   # comment per page
   pageSize: 20
+
+  dark: auto
