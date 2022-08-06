@@ -1,7 +1,7 @@
 ---
 title: 如何开启并使用B站的自动回复功能
 date: 2022-01-13 20:47:39
-description: 让每一位B站用户都能开启自动回复功能
+description: 其实每一位B站用户都可以开启自动回复功能
 tags:
   - 自动回复
   - 技术
@@ -39,13 +39,12 @@ $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0
 {% endnote %}
 {% note info %}
 如果您无法看懂上面的内容，您可以向wuziqian211单独发私信，让wuziqian211来指导您一步步操作，或者让wuziqian211替您操作。
-如果您是程序员或专业技术人员，上面的操作也可以这样表述：
-带Cookie用POST方式提交数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，如果服务器返回的JSON中“code”的值为0，那么就说明自动回复功能开启成功。
+如果您对HTTP有深入的了解，上面的操作相当于带Cookie用POST方式提交数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，如果服务器返回的JSON中“code”的值为0，那么就说明自动回复功能开启成功。
 {% endnote %}
 进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了个按钮“自动回复”，就说明自动回复功能开启成功。
 ![“自动回复”按钮](/images/auto-reply-button.png)
 {% note warning %}
-1000粉丝以下的用户关闭了自动回复的所有功能后，刷新“消息中心”页面，“自动回复”按钮就会消失。
+1000粉丝以下的用户关闭了自动回复的所有功能后，刷新“消息中心”页面，“自动回复”按钮就会**消失**。
 如果您不小心关闭了自动回复的所有功能，导致“自动回复”按钮消失，那么您可以再次执行上面的操作以重新开启自动回复功能。
 {% endnote %}
 
