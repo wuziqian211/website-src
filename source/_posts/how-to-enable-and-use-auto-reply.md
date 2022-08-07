@@ -21,7 +21,7 @@ categories:
 由于B站的一些“漏洞”，您可以通过一些技术手段（就比如API）来开启B站的自动回复，并能正常使用自动回复功能。
 在登录了B站账号的浏览器中，打开B站任意页面，按下F12键，在新打开的窗口上方选择“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来。
 ![获取Cookie](/images/get-cookie.png)
-打开命令行窗口（在Windows中按下Win＋R后输入`cmd`后回车，在Linux中按下Ctrl＋Alt＋T即可；在Mac中按下⌘＋空格键即可），输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`;" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`。
+打开命令行窗口（在Windows中按下Win＋R，输入`cmd`后回车；在Linux中按下Ctrl＋Alt＋T即可；在Mac中按下⌘＋空格键即可），输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`;" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`。
 例：假如{% label info@SESSDATA的值 %}为`abcdef12%2C1678901234%2C56789*bc`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：
 ```bash
 $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0123456789abcdef;" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"
@@ -32,16 +32,16 @@ $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0
 ```
 如果您看到的“代码”与上面一行的“代码”不同，那么自动回复功能可能开启失败，您可以私信wuziqian211来获取帮助。
 {% note danger %}
-**特别注意：请不要把您刚刚复制的“SESSDATA”与“bili_jct”的值告诉任何人！否则别人可能会利用这些来登录您的账号。**
+**特别注意：请不要把您刚刚复制的“SESSDATA”与“bili_jct”的值告诉任何人！它们的值是您的账号的登录信息，与账号、密码的作用相似，别人可能会利用这些值来登录您的账号。**
 {% endnote %}
 {% note warning %}
 您刚刚输入的命令里面的链接不能通过浏览器直接访问！直接访问是没有任何效果的。
 {% endnote %}
 {% note info %}
-如果您无法看懂上面的内容，您可以向wuziqian211单独发私信，让wuziqian211来指导您一步步操作，或者让wuziqian211替您操作。
-如果您对HTTP有深入的了解，上面的操作相当于带Cookie用POST方式提交数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，如果服务器返回的JSON中“code”的值为0，那么就说明自动回复功能开启成功。
+如果您无法看懂上面的内容，您可以向wuziqian211单独发私信，让wuziqian211来指导您一步步操作，或者让wuziqian211替您操作（wuziqian211不会保存、泄露您的任何隐私）。
+如果您对HTTP有深入的了解，上面的操作相当于用POST方式提交数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，并带上Cookie“SESSDATA”与“bili_jct”。如果服务器返回的JSON中“code”的值为0，那么就说明自动回复功能开启成功。
 {% endnote %}
-进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了个按钮“自动回复”，就说明自动回复功能开启成功。
+进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了一个按钮“自动回复”，就说明自动回复功能开启成功。
 ![“自动回复”按钮](/images/auto-reply-button.png)
 {% note warning %}
 1000粉丝以下的用户关闭了自动回复的所有功能后，刷新“消息中心”页面，“自动回复”按钮就会**消失**。
@@ -59,7 +59,7 @@ $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0
 | 功能 | 作用 |
 | :--: | ---- |
 | 被关注回复 | 当某用户**在当天首次**关注您时，会自动将您设置的私信内容回复给TA。 |
-| 关键词回复 | 当用户给您发送私信时，如果该私信的内容命中您提前设定好的规则（**最多20个**）时，会自动将**首个**命中规则的对应内容回复给TA。<br />1. 规则名称：当前规则的名称，是为了让您区分不同的规则，最多30字。<br />2. 关键词：“精确匹配”和“模糊匹配”必须至少填写其中一项，每一项最多支持填写**20个**关键词，每个关键词用“，”隔开。<br />&emsp;①精确匹配：当用户的私信内容与“精确匹配”中某个关键词**完全相同**时，会自动回复。<br />&emsp;②模糊匹配：当用户的私信内容包含“模糊匹配”中某个关键词时，会自动回复。<br />3. 回复内容：回复用户的私信内容。 |
+| 关键词回复 | 当用户给您发送私信时，如果该私信的内容命中您提前设定好的规则（**最多20个**）时，会自动将**首个**命中规则的对应内容回复给TA。<br />1. 规则名称：当前规则的名称，是为了让您区分不同的规则，最多30字。<br />2. 关键词：“精确匹配”和“模糊匹配”必须至少填写其中一项，每一项最多支持填写**20个**关键词，每个关键词用“，”隔开，不区分大小写。<br />&emsp;①精确匹配：当用户的私信内容与“精确匹配”中某个关键词**完全相同**时，会自动回复。<br />&emsp;②模糊匹配：当用户的私信内容**包含**“模糊匹配”中某个关键词时，会自动回复。<br />3. 回复内容：回复用户的私信内容。 |
 | 收到消息回复 | 当某用户**在当天首次**给您发送在“关键词回复”中未命中关键词的私信时（如果没有开启“关键词回复”，直接视为未命中关键词），会自动将您设置的私信内容回复给TA。 |
 | 大航海上船回复（**仅部分用户**） | 当用户**首次**开通大航海时，会自动将您设置的私信内容回复给TA。 |
 
@@ -72,7 +72,7 @@ $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0
 | 规则1 | 哭 | | 我是不会哭的(=・ω・=) |
 | 规则2 | | 哭 | 别哭了[tv_微笑]摸摸您(^・ω・^) |
 
-那么当用户给您发“我哭了”时，会自动回复“别哭了[tv_微笑]摸摸您(^・ω・^)”，而不会回复“我是不会哭的(=・ω・=)”；给您发“哭”时，会自动回复“我是不会哭的(=・ω・=)”。因为规则1只有当用户的私信内容与精确匹配关键词“哭”完全相同时才会回复。
+那么当用户给您发“我哭了”时，会自动回复“别哭了[tv_微笑]摸摸您(^・ω・^)”，而不会回复“我是不会哭的(=・ω・=)”；给您发“哭”时，会自动回复“我是不会哭的(=・ω・=)”。因为只有当用户的私信内容与精确匹配关键词“哭”完全相同时，才会自动回复规则1的回复内容。
 
 #### 例2
 假如您设置了规则：
@@ -81,7 +81,7 @@ $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0
 | :--: | :------------: | :------------: | -------- |
 | 规则3 | 谢谢，Thank you | 感谢 | 我也谢谢您对我的支持(=・ω・=) |
 
-那么当用户给您发“谢谢”或“Thank you”时，会自动回复；给您发“谢谢您”时，不会回复任何内容；给您发“感谢您”时，会自动回复。
+那么当用户给您发“谢谢”或“Thank you”时，会触发自动回复；给您发“谢谢您”时，不会触发自动回复；给您发“感谢您”时，会触发自动回复。
 
 #### 例3
 假如您设置了2个规则：
