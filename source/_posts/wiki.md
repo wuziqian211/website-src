@@ -33,7 +33,7 @@ wuziqian211曾经用过一些不同的头像(=・ω・=)下面是wuziqian211用�
 | 头像 | 开始使用时间 | 来源 | 对应人物 | 备注 |
 | :--: | :----------: | :--: | :------: | ---- |
 | <img src="/images/face1.jpg" alt="" style="border-radius: 50%;" /> | 2019-05-03 | 网络 | 《我的世界》人物 | 使用模板 |
-| <img src="/images/face2.jpg" alt="" style="border-radius: 50%;" /> | 2020-03-27 | 哔哩哔哩 | 33娘 | B站客户端中的随机头像，也是<https://www.bilibili.com/blackboard/old-lantern.html>的头图 |
+| <img src="/images/face2.jpg" alt="" style="border-radius: 50%;" /> | 2020-03-27 | 哔哩哔哩 | 33娘 | B站APP中的随机头像，也是<https://www.bilibili.com/blackboard/old-lantern.html>的头图 |
 | <img src="/images/face.jpg" alt="" style="border-radius: 50%;" /> | 2021-07-25 20:50 | 『ご注文はうさぎですか?』（《请问您今天要来点兔子吗？》） | かふう ちの（香风智乃） | 略有修改 |
 
 昵称中的“wuziqian”是TA的名字，“211”是随便取的代号呢(｡･ω･｡)
