@@ -14,14 +14,14 @@ categories:
 <!-- more -->
 
 ## 开启自动回复功能
-如果您的粉丝数在1000以上，请您直接查看“[通过网页开启自动回复功能](#%E9%80%9A%E8%BF%87%E7%BD%91%E9%A1%B5%E5%BC%80%E5%90%AF%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D%E5%8A%9F%E8%83%BD)”部分。
+如果您的粉丝数在1000及以上，请您直接查看“[通过网页开启自动回复功能](#%E9%80%9A%E8%BF%87%E7%BD%91%E9%A1%B5%E5%BC%80%E5%90%AF%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D%E5%8A%9F%E8%83%BD)”部分。
 如果您的粉丝数在1000以下，请先按照“[通过API开启自动回复功能](#%E9%80%9A%E8%BF%87api%E5%BC%80%E5%90%AF%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D%E5%8A%9F%E8%83%BD)”部分操作，以在消息中心显示“自动回复”按钮。
 
 ### 通过API开启自动回复功能
 由于B站的一些“漏洞”，您可以通过一些技术手段（就比如API）来开启B站的自动回复，并能正常使用自动回复功能。
 在登录了B站账号的浏览器中，打开B站任意页面，按下F12键，在新打开的窗口上方选择“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来。
 ![获取Cookie](/images/get-cookie.png)
-打开命令行窗口（在Windows中按下Win＋R，输入`cmd`后回车；在Linux中按下Ctrl＋Alt＋T即可；在Mac中按下⌘＋空格键即可），输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`;" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`。
+打开命令行窗口（在Windows中按下Win＋R，输入`cmd`后回车；在Linux中按下Ctrl＋Alt＋T即可；在Mac中按下⌘＋空格键即可），输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`;" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
 例：假如{% label info@SESSDATA的值 %}为`abcdef12%2C1678901234%2C56789*bc`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：
 ```bash
 $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0123456789abcdef;" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"
@@ -41,7 +41,7 @@ $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0
 如果您无法看懂上面的内容，您可以向wuziqian211单独发私信，让wuziqian211来指导您一步步操作，或者让wuziqian211替您操作（wuziqian211不会保存、泄露您的任何隐私）。
 如果您对HTTP有深入的了解，上面的操作相当于用POST方式提交数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，并带上Cookie“SESSDATA”与“bili_jct”。如果服务器返回的JSON中“code”的值为0，那么就说明自动回复功能开启成功。
 {% endnote %}
-进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了一个按钮“自动回复”，就说明自动回复功能开启成功。
+进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了一个按钮“自动回复”，就说明自动回复功能开启成功，而且您会发现，“关键词回复”功能是开启的。
 ![“自动回复”按钮](/images/auto-reply-button.png)
 {% note warning %}
 1000粉丝以下的用户关闭了自动回复的所有功能后，刷新“消息中心”页面，“自动回复”按钮就会**消失**。
@@ -54,12 +54,12 @@ $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0
 ![“自动回复”页面](/images/auto-reply-page.png)
 
 ## 使用自动回复功能
-目前B站**只支持纯文字的自动回复（可以包含表情），不支持图片的自动回复**。其中，对每一个功能的介绍如下表：
+目前B站**只支持对纯文字自动回复，自动回复的内容也只能为纯文字（可以包含表情），不能对图片自动回复，也不能自动回复图片，回复内容不超过500字**。其中，对每一个功能的介绍如下表：
 
 | 功能 | 作用 |
 | :--: | ---- |
 | 被关注回复 | 当某用户**在当天首次**关注您时，会自动将您设置的私信内容回复给TA。 |
-| 关键词回复 | 当用户给您发送私信时，如果该私信的内容命中您提前设定好的规则（**最多20个**）时，会自动将**首个**命中规则的对应内容回复给TA。<br />1. 规则名称：当前规则的名称，是为了让您区分不同的规则，最多30字。<br />2. 关键词：“精确匹配”和“模糊匹配”必须至少填写其中一项，每一项最多支持填写**20个**关键词，每个关键词用“，”隔开，不区分大小写。<br />&emsp;①精确匹配：当用户的私信内容与“精确匹配”中某个关键词**完全相同**时，会自动回复。<br />&emsp;②模糊匹配：当用户的私信内容**包含**“模糊匹配”中某个关键词时，会自动回复。<br />3. 回复内容：回复用户的私信内容。 |
+| 关键词回复 | 当用户给您发送私信时，如果该私信的内容命中您提前设定好的规则（**不超过20个**）时，会自动将**首个**命中规则的对应内容回复给TA。<br />1. 规则名称：当前规则的名称，便于让您区分不同的规则，不超过30字。<br />2. 关键词：“精确匹配”和“模糊匹配”必须至少填写其中一项，每一项**最多支持填写20个关键词**，每个关键词用“，”隔开，不区分大小写。<br />&emsp;①精确匹配：当用户的私信内容与“精确匹配”中某个关键词**完全相同**时，会自动回复。<br />&emsp;②模糊匹配：当用户的私信内容**包含**“模糊匹配”中某个关键词时，会自动回复。<br />3. 回复内容：回复用户的私信内容。 |
 | 收到消息回复 | 当某用户**在当天首次**给您发送在“关键词回复”中未命中关键词的私信时（如果没有开启“关键词回复”，直接视为未命中关键词），会自动将您设置的私信内容回复给TA。 |
 | 大航海上船回复（**仅部分用户**） | 当用户**首次**开通大航海时，会自动将您设置的私信内容回复给TA。 |
 
