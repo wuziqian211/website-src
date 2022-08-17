@@ -1,7 +1,7 @@
 ---
-title: 关于wuziqian211及Blog
+title: 关于wuziqian211及Blog、程序
 date: 2021-09-16 23:30:17
-description: 一篇关于wuziqian211及TA的Blog的介绍
+description: wuziqian211及TA的Blog、程序的介绍
 tags:
   - 网站
   - Blog
@@ -20,9 +20,9 @@ wuziqian211很高兴能够在这个Blog与您相遇(^・ω・^ )
 ![](/images/face.png)
 
 ## 关于wuziqian211
-wuziqian211是一个可爱、活泼的人，比较喜欢科技区、知识区、搞笑与其他TA能接受的任何东西(=・ω・=)性别不告诉您(｀・ω・´)脾气很好，不会说脏话，~~也是一个AI（划掉~~
-但是TA很容易会因为受到别人的欺负而难过(´；ω；\`)所以请不要随便欺负wuziqian211啦(｡･ω･｡)
-“wuziqian211”这个昵称中的“wuziqian”是TA的名字，“211”是随便取的代号呢(｡･ω･｡)
+wuziqian211是一个可爱、活泼的人，比较喜欢知识区、科技区、搞笑与其他TA能接受的任何东西(=・ω・=)性别不告诉您(｀・ω・´)脾气很好，不会说脏话，~~也是一个AI（划掉~~
+但是TA很容易会被别人的欺负而难过(´；ω；\`)所以请不要随便欺负wuziqian211啦(｡･ω･｡)
+“wuziqian211”这个昵称中的“wuziqian”是TA的名字的拼音，“211”是随便取的代号呢(｡･ω･｡)
 您可以叫TA“wuziqian”“ziqian”“211”“ziqian酱”“211娘”等等，只要是您喜欢的称呼都可以(｀・ω・´)
 wuziqian211在B站很活跃哦(^・ω・^ )如果您有B站账号的话，可以尝试跟wuziqian211互动哟awa
 您可以看一下[《wuziqian211的Wiki》](/wiki/)这篇文章来了解wuziqian211在B站的更多信息哟qwq
@@ -60,8 +60,10 @@ wuziqian211在很久以前，拥有一个用[凡科建站](https://jz.fkw.com/)�
 | [www.wuziqian211.top](https://www.wuziqian211.top/) | [Vercel](https://vercel.com/) | 访问本域名会自动重定向到[wuziqian211.top](https://wuziqian211.top/) |
 | [blog.wuziqian211.top](https://blog.wuziqian211.top/) | [Vercel](https://vercel.com/) | 访问本域名会自动重定向到[wuziqian211.top](https://wuziqian211.top/) |
 | [m.wuziqian211.top](https://m.wuziqian211.top/) | [Vercel](https://vercel.com/) | 访问本域名会自动重定向到[wuziqian211.top](https://wuziqian211.top/) |
-| [wuziqian211.gitee.io](https://wuziqian211.gitee.io/) | [Gitee](https://gitee.com/) | 在中国访问得快一些哟qwq |
+| [wuziqian211.gitee.io](https://wuziqian211.gitee.io/) | [Gitee](https://gitee.com/) | 在中国访问得快一些哟qwq<br />**由于一些原因，通过这个域名访问到的网站内容将不再更新** |
 | [w211.top](https://w211.top/) | [Vercel](https://vercel.com/) | 访问本域名会自动重定向到[wuziqian211.top](https://wuziqian211.top/) |
+
+**这个Blog的所有文章除特别声明外，均采用[<i class="fab fa-fw fa-creative-commons"></i>BY-NC](https://creativecommons.org/licenses/by-nc/4.0/deed.zh)许可协议，如果您要转载，需要注明出处哟qwq**
 
 ### 支持本Blog的主题、平台与服务商
 下列主题、平台与服务商等为这个Blog（的功能）提供了大量支持，在此特别感谢！（不排名）
@@ -87,8 +89,16 @@ jsDelivr | https://www.jsdelivr.com/ | 加速本Blog的静态资源。jsDelivr�
 LeanCloud | https://leancloud.app/ | 存储本Blog的评论数据。LeanCloud是一款领先的无服务器云服务，为产品开发提供强有力的后端支持。 | /images/leancloud.svg
 GitHub | https://github.com/ | 存储本Blog的源码文件。GitHub是一个用于构建、扩展和交付安全软件的完整开发人员平台。 | /images/github.svg
 Gitee | https://gitee.com/ | 为本Blog提供服务器、存储源码文件。Gitee是一个代码托管与协作的开发平台，汇聚几乎所有本土原创开源项目。 | /images/gitee.svg
-遇见图床 | https://www.hualigs.cn/ | 为本Blog的评论系统提供图片上传服务。 | /images/hualigs.png
+遇见图床 | https://www.hualigs.cn/ | 为本Blog的评论区提供图片上传服务。 | /images/hualigs.png
 {% endlg %}
+
+## 关于wuziqian211的程序
+wuziqian211编写的所有程序都是免费的，绝对不存在收费项目与广告哟(=・ω・=)
+如果您发现wuziqian211的程序收费了，或者含有广告，请立即删除那个程序，并向wuziqian211反馈，因为那个程序可能被别人修改过了，TA会尽快处理的qwq
+{% note warning %}
+wuziqian211以前的很多程序都是用易语言编写的，所以可能会被一些安全软件报木马病毒。
+wuziqian211保证TA编写的所有程序**没有任何木马病毒**！如果您运行TA的程序被安全软件报木马病毒，请将那个程序加入白名单。
+{% endnote %}
 
 <script data-pjax>
 fetch('https://api.wuziqian211.top/api/modules?id=friends').then(resp => resp.json()).then(json => document.querySelector('div#friends').innerHTML = json.data + '<div class="link-grid-container"><object class="link-grid-image" data="/images/you.png"></object><p>您</p><p>是的，就是您 (=・ω・=) 您一直在支持着 wuziqian211，当然也是 wuziqian211 的朋友哟 awa</p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://space.bilibili.com/"></a></div>');
