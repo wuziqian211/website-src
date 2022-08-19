@@ -14,23 +14,23 @@ th {
   text-align: center !important;
 }
 .post-footer {
-  text-align: justify;
   overflow-wrap: break-word;
+  text-align: justify;
 }
 .back-to-top {
   border-radius: 10px;
 }
 .wl-avatar img, .site-author-image, .wl-user img {
-  min-width: 0 !important;
   border-radius: 50% !important;
+  min-width: 0 !important;
 }
 .cc-license img {
-  min-width: 0 !important;
   border-radius: 0 !important;
+  min-width: 0 !important;
 }
 img:not(.wl-emoji):not(.fancybox-image) {
-  min-width: 50px;
   border-radius: 20px;
+  min-width: 50px;
 }
 .link-grid-container, blockquote, .post-copyright ul {
   border-radius: 20px !important;
@@ -39,31 +39,34 @@ img:not(.wl-emoji):not(.fancybox-image) {
   border-radius: 0 0 20px 20px !important;
 }
 .main-inner > .sub-menu, .main-inner > .post-block, .main-inner > .tabs-comment, .main-inner > .comments, .main-inner > .pagination, .sidebar-inner {
-  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 .fancybox-image {
   opacity: 1 !important;
 }
-.inaccessible {
-  color: #eee;
+a.inaccessible {
+  position: relative;
+}
+a.inaccessible:hover::before {
   background: #222;
-  font-size: 16px;
   border-radius: 5px;
+  color: #eee;
+  content: "您所在的国家/地区可能无法访问该链接。";
+  font-size: 16px;
   padding: 5px;
-  margin-top: 40px;
   position: absolute;
-  display: none;
+  top: 24px;
 }
 
 @font-face {
   font-family: "iconfont";
-  src: url('/css/iconfont.ttf') format('truetype');
+  src: url(/css/iconfont.ttf) format("truetype");
 }
 .custom {
   font-family: "iconfont" !important;
-  margin-right: 2px;
   font-style: normal;
+  margin-right: 2px;
 }
 .bilibili:before {
   content: "\e75c";
