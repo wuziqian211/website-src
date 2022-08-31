@@ -1,6 +1,6 @@
 // 注意：live2d_path 参数应使用绝对路径
 const live2d_path = 'https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/';
-//const live2d_path = '/live2d-widget/';
+// const live2d_path = '/live2d-widget/';
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -31,8 +31,8 @@ if (screen.width >= 768) {
   ]).then(() => {
     initWidget({
       waifuPath: live2d_path + 'waifu-tips.json',
-      //apiPath: 'https://live2d.fghrsh.net/api/'
-      cdnPath: 'https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/'
+      apiPath: 'https://live2d.fghrsh.net/api/'
+      // cdnPath: 'https://cdn.jsdelivr.net/gh/fghrsh/live2d_api/'
     });
   });
 }

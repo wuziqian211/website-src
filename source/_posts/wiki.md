@@ -425,12 +425,12 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 <script data-pjax>
 let changed;
 const details = document.querySelector('details#fans-changes');
-details.addEventListener("toggle", () => {
+details.addEventListener("toggle", async () => {
   if (details.open && !changed) {
     const t = new Date();
     const d = new Date(t.getTime() + (t.getTimezoneOffset() + 480) * 60000);
     document.querySelector('span#fans-time').innerText = `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')} ${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')}`;
-    fetch('https://api.wuziqian211.top/api/getuser?mid=425503913&type=follow').then(resp => resp.json()).then(json => document.querySelector('span#fans-number').innerText = json.data.follower.toString());
+    document.querySelector('span#fans-number').innerText = (await (await fetch('https://api.wuziqian211.top/api/getuser?mid=425503913&type=follow')).json()).data.follower;
     changed = true;
   }
 });
