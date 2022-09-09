@@ -1,7 +1,7 @@
 ---
 title: 关于wuziqian211及Blog、程序
 date: 2021-09-16 23:30:17
-updated: 2022-08-31 23:13:59
+updated: 2022-09-09 19:05:52
 description: wuziqian211及TA的Blog、程序的介绍
 tags:
   - 网站
@@ -91,6 +91,11 @@ LeanCloud | https://leancloud.app/ | 存储本Blog的评论数据。LeanCloud是
 GitHub | https://github.com/ | 存储本Blog的源码文件。GitHub是一个用于构建、扩展和交付安全软件的完整开发人员平台。 | /images/github.svg
 Gitee | https://gitee.com/ | 为本Blog提供服务器、存储源码文件。Gitee是一个代码托管与协作的开发平台，汇聚几乎所有本土原创开源项目。 | /images/gitee.svg
 遇见图床 | https://www.hualigs.cn/ | 为本Blog的评论区提供图片上传服务。 | /images/hualigs.png
+{% endlg %}
+
+### 友情链接
+{% lg %}
+朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | | /images/aperturelaboratories-icoc-vc.png
 {% endlg %}
 
 ## 关于wuziqian211的程序
