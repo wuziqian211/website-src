@@ -1,7 +1,7 @@
 ---
 title: wuziqian211的Wiki
 date: 2021-10-10 14:11:28
-updated: 2022-09-09 23:17:36
+updated: 2022-09-09 23:35:27
 description: 比较全面的一篇关于wuziqian211的介绍
 tags:
   - Wiki
@@ -256,6 +256,7 @@ wuziqian211的粉丝数在2020年的春、夏季涨得最快，TA的有记录的
 | 2022-08-05 | 1954 | |
 | 2022-08-12 17:00 | 1961 | |
 | 2022-09-09 23:00 | 1976 | 新的视频有很多人看，吸引了一些观众关注wuziqian211 |
+| 2022-09-09 23:35 | 1972 | 手动移除了4位粉丝 |
 | <span id="fans-time"></span> | <span id="fans-number"></span> | |
 </details>
 
