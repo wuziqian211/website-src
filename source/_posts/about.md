@@ -1,7 +1,7 @@
 ---
 title: 关于wuziqian211及Blog、程序
 date: 2021-09-16 23:30:17
-updated: 2022-09-09 19:05:52
+updated: 2022-09-09 23:29:54
 description: wuziqian211及TA的Blog、程序的介绍
 tags:
   - 网站
@@ -66,6 +66,14 @@ wuziqian211在很久以前，拥有一个用[凡科建站](https://jz.fkw.com/)�
 
 **这个Blog的所有文章除特别声明外，均采用[<i class="fab fa-fw fa-creative-commons"></i>BY-NC](https://creativecommons.org/licenses/by-nc/4.0/deed.zh)许可协议，如果您要转载，需要注明出处哟qwq**
 
+### 友情链接
+{% lg %}
+wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧网站，已不再更新 | /images/wuziqian211-icoc-vc.png
+朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/aperturelaboratories-icoc-vc.png
+开心的肥宅快乐水的个人网站 | https://et19798147-2.icoc.vc/ | | /images/et19798147-2-icoc-vc.png
+{% endlg %}
+如果您也想申请友情链接的话，请在这个Blog的评论区评论哦~
+
 ### 支持本Blog的主题、平台与服务商
 下列主题、平台与服务商等为这个Blog（的功能）提供了大量支持，在此特别感谢！（不排名）
 
@@ -91,11 +99,6 @@ LeanCloud | https://leancloud.app/ | 存储本Blog的评论数据。LeanCloud是
 GitHub | https://github.com/ | 存储本Blog的源码文件。GitHub是一个用于构建、扩展和交付安全软件的完整开发人员平台。 | /images/github.svg
 Gitee | https://gitee.com/ | 为本Blog提供服务器、存储源码文件。Gitee是一个代码托管与协作的开发平台，汇聚几乎所有本土原创开源项目。 | /images/gitee.svg
 遇见图床 | https://www.hualigs.cn/ | 为本Blog的评论区提供图片上传服务。 | /images/hualigs.png
-{% endlg %}
-
-### 友情链接
-{% lg %}
-朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | | /images/aperturelaboratories-icoc-vc.png
 {% endlg %}
 
 ## 关于wuziqian211的程序
