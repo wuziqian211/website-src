@@ -1,7 +1,7 @@
 ---
 title: 关于wuziqian211及Blog、程序
 date: 2021-09-16 23:30:17
-updated: 2022-09-09 23:29:54
+updated: 2022-09-12 12:48:34
 description: wuziqian211及TA的Blog、程序的介绍
 tags:
   - 网站
@@ -23,13 +23,15 @@ wuziqian211很高兴能够在这个Blog与您相遇(^・ω・^ )
 ## 关于wuziqian211
 wuziqian211是一个可爱、活泼的人，比较喜欢知识区、科技区、搞笑与其他TA能接受的任何东西(=・ω・=)性别不告诉您(｀・ω・´)脾气很好，不会说脏话，~~也是一个AI（划掉~~
 但是TA很容易会被别人欺负而难过(´；ω；\`)所以请不要随便欺负wuziqian211啦(｡･ω･｡)
+
 “wuziqian211”这个昵称中的“wuziqian”是TA的名字的拼音，“211”是随便取的代号呢(｡･ω･｡)
 您可以叫TA“wuziqian”“ziqian”“211”“ziqian酱”“211娘”等等，只要是您喜欢的称呼都可以(｀・ω・´)
+
 wuziqian211在B站很活跃哦(^・ω・^ )如果您有B站账号的话，可以尝试跟wuziqian211互动哟awa
 您可以看一下[《wuziqian211的Wiki》](/wiki/)这篇文章来了解wuziqian211在B站的更多信息哟qwq
 <!-- more -->
 
-### 社交平台
+### 社交平台与联系方式
 - <span style="color: #f25d8e;">哔哩哔哩：<https://space.bilibili.com/425503913>（wuziqian211最活跃的地方，建议您在这里与wuziqian211互动）</span>
 - <span style="color: #9f7be1;">GitHub：<https://github.com/wuziqian211>（wuziqian211的Blog及API的源代码都在这里）</span>
 - <span style="color: #c71d23;">Gitee：<https://gitee.com/wuziqian211>（wuziqian211的一些程序的源代码在这里）</span>
@@ -72,7 +74,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧
 朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/aperturelaboratories-icoc-vc.png
 开心的肥宅快乐水的个人网站 | https://et19798147-2.icoc.vc/ | | /images/et19798147-2-icoc-vc.png
 {% endlg %}
-如果您也想申请友情链接的话，请在这个Blog的评论区评论哦~
+如果您也想申请友情链接的话，请在这个Blog的评论区评论哟awa
 
 ### 支持本Blog的主题、平台与服务商
 下列主题、平台与服务商等为这个Blog（的功能）提供了大量支持，在此特别感谢！（不排名）
@@ -106,7 +108,7 @@ wuziqian211编写的所有程序都是免费的，绝对不存在收费项目与
 如果您发现wuziqian211的程序收费了，或者含有广告，请立即删除那个程序，并向wuziqian211反馈，因为那个程序可能被别人修改过了，TA会尽快处理的qwq
 {% note warning %}
 wuziqian211以前的很多程序都是用易语言编写的，所以可能会被一些安全软件报木马病毒。
-wuziqian211保证TA编写的所有程序**没有任何木马病毒**！如果您运行TA的程序被安全软件报木马病毒，请将那个程序加入白名单。
+wuziqian211保证TA编写的所有程序**没有任何木马病毒**！如果您运行TA的程序时被安全软件报木马病毒，请将那个程序加入白名单。
 {% endnote %}
 
 <script data-pjax>
