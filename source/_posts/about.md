@@ -1,7 +1,7 @@
 ---
 title: 关于wuziqian211及Blog、程序
 date: 2021-09-16 23:30:17
-updated: 2022-09-12 12:48:34
+updated: 2022-10-29 22:19:40
 description: wuziqian211及TA的Blog、程序的介绍
 tags:
   - 网站
@@ -11,7 +11,6 @@ categories:
   - 生活
   - 日常
 sticky: 100
-
 permalink: /about/
 ---
 {% cq %}
@@ -21,8 +20,10 @@ wuziqian211很高兴能够在这个Blog与您相遇(^・ω・^ )
 ![](/images/face.png)
 
 ## 关于wuziqian211
-wuziqian211是一个可爱、活泼的人，比较喜欢知识区、科技区、搞笑与其他TA能接受的任何东西(=・ω・=)性别不告诉您(｀・ω・´)脾气很好，不会说脏话，~~也是一个AI（划掉~~
+wuziqian211是一个可爱、活泼的人，来自湖北武汉，比较喜欢知识区、科技区、搞笑与其他TA能接受的任何东西(=・ω・=)
+性别不告诉您(｀・ω・´)脾气很好，不会说脏话，~~也是一个AI（划掉~~
 但是TA很容易会被别人欺负而难过(´；ω；\`)所以请不要随便欺负wuziqian211啦(｡･ω･｡)
+wuziqian211愿意和绝大多数人交朋友，喜欢闲聊(^・ω・^ )您可以点击[这里](/friends/)看到与wuziqian211关系好的朋友们哟awa
 
 “wuziqian211”这个昵称中的“wuziqian”是TA的名字的拼音，“211”是随便取的代号呢(｡･ω･｡)
 您可以叫TA“wuziqian”“ziqian”“211”“ziqian酱”“211娘”等等，只要是您喜欢的称呼都可以(｀・ω・´)
@@ -32,30 +33,25 @@ wuziqian211在B站很活跃哦(^・ω・^ )如果您有B站账号的话，可以
 <!-- more -->
 
 ### 社交平台与联系方式
-- <span style="color: #f25d8e;">哔哩哔哩：<https://space.bilibili.com/425503913>（wuziqian211最活跃的地方，建议您在这里与wuziqian211互动）</span>
-- <span style="color: #9f7be1;">GitHub：<https://github.com/wuziqian211>（wuziqian211的Blog及API的源代码都在这里）</span>
-- <span style="color: #c71d23;">Gitee：<https://gitee.com/wuziqian211>（wuziqian211的一些程序的源代码在这里）</span>
-- <span style="color: #1d9bf0;">Twitter：<https://twitter.com/wuziqian211>（很少在线，**在中国除港澳台外的地区无法访问**）</span>
-- <span style="color: #12b7f5;">QQ：2300393122（很少在线）</span>
+- <span style="color: #f25d8e;">哔哩哔哩：[wuziqian211](https://space.bilibili.com/425503913)（UID：425503913；wuziqian211最活跃的地方，建议您在这里与wuziqian211互动）</span>
+- <span style="color: #9f7be1;">GitHub：[wuziqian211](https://github.com/wuziqian211)（wuziqian211的Blog及API的源代码都在这里）</span>
+- <span style="color: #c71d23;">Gitee：[wuziqian211](https://gitee.com/wuziqian211)（wuziqian211的一些程序的源代码在这里）</span>
+- <span style="color: #12b7f5;">QQ：2300393122（ID：ziqian211）</span>
+- <span style="color: #1d9bf0;">Twitter：[wuziqian211](https://twitter.com/wuziqian211)（很少在线，**在中国除港澳台外的地区无法访问**）</span>
+- <span style="color: #0097fa;">Pixiv：[wuziqian211](https://www.pixiv.net/users/77695887)（ID：77695887；很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - E-Mail：[wuziqian211@126.com](mailto:wuziqian211@126.com)
 
 ……等等，您在大多数平台上见到的昵称为“wuziqian211”的用户应该就是wuziqian211本人，但不一定都是的哦qwq建议您给wuziqian211发B站私信来询问一下TA哦awa
 
-### 朋友们
-下面是与wuziqian211关系好的朋友们哟（不排名）：
-<div class="link-grid" id="friends"></div>
-
-其实不止上面这些用户，还有很多人在背后默默地支持着wuziqian211呢(=・ω・=)如果您与wuziqian211的关系很好，但是上面并没有列出您，请在评论区评论或者在B站私信wuziqian211，wuziqian211在这里表示十分抱歉！(´；ω；\`)
-
 ## 关于本Blog
-wuziqian211在很久以前，拥有一个用[凡科建站](https://jz.fkw.com/)搭建的[网站](https://wuziqian211.icoc.vc/)，但是免费版的功能太少，而且不支持自定义域名、自定义文件等，只能使用他们的模板，升级又太贵了！最重要的是，那个网站每个月只能访问300次，超过这个限制，这个月就不能再访问了！(´；ω；\`)
+wuziqian211在2020年创建了一个用[凡科建站](https://jz.fkw.com/)搭建的[网站](https://wuziqian211.icoc.vc/)，但是免费版的功能太少，而且不支持自定义域名、自定义文件等，只能使用他们的模板，升级又太贵了！最重要的是，那个网站每个月只能访问300次，超过这个限制，这个月就不能再访问了！(´；ω；\`)
 
-为了解决上面的问题，就出现了这个Blog awa
+为了解决上面的问题，wuziqian211在2021年9月16日建立了这个Blog awa
 如果那个网站没有这些限制，wuziqian211或许现在还在管理着那个网站，这个Blog可能就不会出现了QAQ
 
-这个Blog的页面是用[Hexo](https://hexo.io/)生成的，用的主题是[NexT](https://theme-next.js.org/)(^・ω・^ )
-本Blog除了域名“wuziqian211.top”与“w211.top”花了一点钱购买，其他的功能都是免费的，而且可以自定义非常多的功能(=・ω・=)
-下面的域名都可以访问这个Blog：
+这个Blog的页面是用[Hexo](https://hexo.io/)生成的，用的主题是[NexT](https://theme-next.js.org/)(^・ω・^ )这个主题可以自定义许多功能哟(=・ω・=)
+wuziqian211在2021年9月28日购买了域名“wuziqian211.top”，在2022年6月4日购买了域名“w211.top”，这样wuziqian211就不用担心临时域名被屏蔽、“wuziqian211”这个昵称不好记等问题了(｡･ω･｡)
+下面的域名都可以访问到这个Blog：
 
 | 域名 | 服务器提供者 | 备注 |
 | :--: | :----------: | :--: |
@@ -66,19 +62,18 @@ wuziqian211在很久以前，拥有一个用[凡科建站](https://jz.fkw.com/)�
 | [wuziqian211.gitee.io](https://wuziqian211.gitee.io/) | [Gitee](https://gitee.com/) | 在中国访问得快一些哟qwq<br />**由于一些原因，通过这个域名访问到的网站内容将不再更新** |
 | [w211.top](https://w211.top/) | [Vercel](https://vercel.com/) | 访问本域名会自动重定向到[wuziqian211.top](https://wuziqian211.top/) |
 
-**这个Blog的所有文章除特别声明外，均采用[<i class="fab fa-fw fa-creative-commons"></i>BY-NC](https://creativecommons.org/licenses/by-nc/4.0/deed.zh)许可协议，如果您要转载，需要注明出处哟qwq**
+**这个Blog的所有文章除特别声明外，均遵循[<i class="fab fa-fw fa-creative-commons"></i>BY-NC 4.0（知识共享署名-非商业性使用 4.0）](https://creativecommons.org/licenses/by-nc/4.0/deed.zh)许可协议，如果您要转载这个Blog上的文章，需要注明出处哟qwq**
 
 ### 友情链接
 {% lg %}
+朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室（B站用户“朋友圈APERTURE”的个人网站） | /images/aperturelaboratories-icoc-vc.png
+易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/shakaianee-top.jpeg
+开心的肥宅快乐水的个人网站 | https://et19798147-2.icoc.vc/ | B站用户“肥宅水水呀”的个人网站 | /images/et19798147-2-icoc-vc.png
 wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧网站，已不再更新 | /images/wuziqian211-icoc-vc.png
-朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/aperturelaboratories-icoc-vc.png
-开心的肥宅快乐水的个人网站 | https://et19798147-2.icoc.vc/ | | /images/et19798147-2-icoc-vc.png
 {% endlg %}
 如果您也想申请友情链接的话，请在这个Blog的评论区评论哟awa
 
-### 支持本Blog的主题、平台与服务商
-下列主题、平台与服务商等为这个Blog（的功能）提供了大量支持，在此特别感谢！（不排名）
-
+### 本Blog使用的界面、功能与服务（不排名）
 #### 界面
 {% lg %}
 Theme NexT | https://theme-next.js.org/ | 提供本Blog的界面。NexT是一款风格优雅的高质量Hexo主题，自点点滴滴中用爱雕琢而成。 | /images/theme-next.svg
@@ -110,7 +105,3 @@ wuziqian211编写的所有程序都是免费的，绝对不存在收费项目与
 wuziqian211以前的很多程序都是用易语言编写的，所以可能会被一些安全软件报木马病毒。
 wuziqian211保证TA编写的所有程序**没有任何木马病毒**！如果您运行TA的程序时被安全软件报木马病毒，请将那个程序加入白名单。
 {% endnote %}
-
-<script data-pjax>
-fetch('https://api.wuziqian211.top/api/modules?id=friends').then(resp => resp.json()).then(json => document.querySelector('div#friends').innerHTML = json.data + '<div class="link-grid-container"><object class="link-grid-image" data="/images/you.png"></object><p>您</p><p>是的，就是您 (=・ω・=) 您一直在支持着 wuziqian211，当然也是 wuziqian211 的朋友哟 awa</p><a target="_blank" rel="noopener external nofollow noreferrer" href="https://space.bilibili.com/"></a></div>');
-</script>

@@ -96,8 +96,9 @@ open_graph:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  about: /about/ || fa fa-user
   archives: /archives/ || fa fa-archive
+  about: /about/ || fa fa-user
+  friends: /friends/ || fa fa-user-group
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   #schedule: /schedule/ || fa fa-calendar
@@ -159,7 +160,7 @@ social:
   Gitee: https://gitee.com/wuziqian211 || custom gitee
   Twitter: https://twitter.com/wuziqian211 || fab fa-twitter
   E-Mail: mailto:wuziqian211@126.com || fa fa-envelope
-  主站: https://wuziqian211.icoc.vc/ || fa fa-globe
+  旧网站: https://wuziqian211.icoc.vc/ || fa fa-globe
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook

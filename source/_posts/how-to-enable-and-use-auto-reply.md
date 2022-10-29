@@ -1,7 +1,7 @@
 ---
 title: 如何开启并使用B站的自动回复功能
 date: 2022-01-13 20:47:39
-updated: 2022-09-08 21:01:37
+updated: 2022-10-29 19:48:18
 description: 其实每一位B站用户都可以开启自动回复功能
 tags:
   - 自动回复
@@ -16,31 +16,36 @@ categories:
 
 ## 开启自动回复功能
 如果您的粉丝数在1000及以上，请您直接查看“[通过网页开启自动回复功能](#%E9%80%9A%E8%BF%87%E7%BD%91%E9%A1%B5%E5%BC%80%E5%90%AF%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D%E5%8A%9F%E8%83%BD)”部分。
-如果您的粉丝数在1000以下，请先按照“[通过API开启自动回复功能](#%E9%80%9A%E8%BF%87api%E5%BC%80%E5%90%AF%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D%E5%8A%9F%E8%83%BD)”部分操作，以在消息中心显示“自动回复”按钮。
+如果您的粉丝数在1000以下，请您先查看“[通过API开启自动回复功能](#%E9%80%9A%E8%BF%87api%E5%BC%80%E5%90%AF%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D%E5%8A%9F%E8%83%BD)”部分，以显示“自动回复”按钮，然后就可以直接在B站网页或APP上设置自动回复了。
 
 ### 通过API开启自动回复功能
 由于B站的一些“漏洞”，您可以通过一些技术手段（就比如API）来开启B站的自动回复，并能正常使用自动回复功能。
-在登录了B站账号的浏览器中，打开B站任意页面，按下F12键，在新打开的窗口上方选择“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来。
+{% note warning %}
+强烈建议您使用电脑操作！在手机上操作会非常麻烦。
+{% endnote %}
+在**登录了B站账号**的浏览器中，打开B站任意页面，按下F12键，在新打开的窗口上方选择“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来。
 ![获取Cookie](/images/get-cookie.png)
-打开命令行窗口（在Windows中按下Win＋R，输入`cmd`后回车；在Linux中按下Ctrl＋Alt＋T即可；在Mac中按下⌘＋空格键即可），输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`;" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
+打开命令行窗口（在Windows中按下Win＋R，输入`cmd`后回车；在Linux中按下Ctrl＋Alt＋T即可；在Mac中按下⌘＋空格键即可），输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
 例：假如{% label info@SESSDATA的值 %}为`abcdef12%2C1678901234%2C56789*bc`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：
 ```bash
-$ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0123456789abcdef;" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"
+$ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0123456789abcdef" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"
 ```
-您可能会看到下面的“代码”：
+您可能会看到类似于下面的“代码”：
 ```json
 {"code":0,"msg":"0","message":"0","ttl":1,"data":{}}
 ```
-如果您看到的“代码”与上面一行的“代码”不同，那么自动回复功能可能开启失败，您可以私信wuziqian211来获取帮助。
+只要您看到了`"code":0`，就说明自动回复功能开启成功。如果出现问题，您可以私信wuziqian211来请求帮助。
 {% note danger %}
-**特别注意：请不要把您刚刚复制的“SESSDATA”与“bili_jct”的值告诉任何人！它们的值是您的账号的登录信息，与账号、密码的作用相似，别人可能会利用这些值来登录您的账号。**
+**特别注意：请不要把您刚刚复制的“SESSDATA”“bili_jct”中的任何一个值告诉任何人！它们的值是您的账号的登录信息，与账号、密码的作用相似，别人可能会利用这些值来登录您的账号。**
 {% endnote %}
 {% note warning %}
 您刚刚输入的命令里面的链接不能通过浏览器直接访问！直接访问是没有任何效果的。
 {% endnote %}
 {% note info %}
-如果您无法看懂上面的内容，您可以向wuziqian211单独发私信，让wuziqian211来指导您一步步操作，或者让wuziqian211替您操作（wuziqian211不会保存、泄露您的任何隐私）。
-如果您对HTTP有深入的了解，上面的操作相当于用POST方式提交数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，并带上Cookie“SESSDATA”与“bili_jct”。如果服务器返回的JSON中“code”的值为0，那么就说明自动回复功能开启成功。
+上面的操作可能需要您有一点技术含量，如果您无法看懂上面的内容，您可以向wuziqian211请求帮助。
+
+如果您非常了解HTTP，上面的操作也可以像这样表述：
+用POST方式提交查询字符串数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，并带上Cookie“SESSDATA”与“bili_jct”，如果服务器返回的JSON中“code”的值为0，就说明自动回复功能开启成功。
 {% endnote %}
 进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了一个按钮“自动回复”，就说明自动回复功能开启成功，而且您会发现，“关键词回复”功能是开启的。
 ![“自动回复”按钮](/images/auto-reply-button.png)
