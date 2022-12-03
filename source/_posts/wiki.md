@@ -160,7 +160,7 @@ wuziqian211最初来B站的目的，只是去发视频qwq
 然后，TA真的像动态所说的那样做，疯狂地互粉、给别人点赞，并开始频繁发布动态(^・ω・^ )这让大多数人认为wuziqian211是一个很活跃的用户，所以就关注TA了(｀・ω・´)同时也被别人称为“自动点赞机”awa
 2020年3月23日，wuziqian211发布了一个程序“哔哩哔哩AV号与BV号互转程序”，由于这个程序在哔哩哔哩BV号刚开始使用后几小时内就发布了，所以有很多人下载程序，从而使TA一天就涨了大概100名粉丝(=・ω・=)这样wuziqian211就有了1000多名粉丝，并开启了自动回复、拥有了粉丝勋章(^・ω・^ )
 wuziqian211的粉丝数在2020年的春、夏季涨得最快，但wuziqian211因为没空，在2020年10月~2022年6月没有发什么动态，所以TA的粉丝数在2021年夏季时就降到了2000以下(´；ω；\`)
-2022年下半年，wuziqian211发布了4个知识区视频，其中[《一张13.1GB的GIF？？？》](https://www.bilibili.com/video/BV12Y4y1P7e9)目前已经是wuziqian211播放量最高的视频，因此TA的粉丝数回升到2000(｡･ω･｡)
+2022年下半年，wuziqian211发布了4个知识区视频，其中[《一张13.1GB的GIF？？？》](https://www.bilibili.com/video/BV12Y4y1P7e9/)目前已经是wuziqian211播放量最高的视频，因此TA的粉丝数回升到2000(｡･ω･｡)
 2022年10月16日，wuziqian211在动态里说，任何用户只要对TA私信“#注册时间”，就可以查询到该用户的注册时间，于是有很多用户私信wuziqian211，结果TA给每个用户都回复了正确的注册时间，这让TA又涨了约50名粉丝(=・ω・=)
 ![wuziqian211的粉丝数变化情况](/images/fans-changes.png)
 <details id="fans-changes">
@@ -321,14 +321,14 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 | :--: | ---- |
 | 5月2日 18:28:06 | **注册了哔哩哔哩账号** |
 | 5月3日 | 通过了答题测试，得到了71分，并转为正式会员 |
-| 5月5日 | 发布了**第一个**视频[《我只是更新一下Windows 10而已，结果我播放了Bad Apple!!》](https://www.bilibili.com/video/BV1M4411i71w) |
+| 5月5日 | 发布了**第一个**视频[《我只是更新一下Windows 10而已，结果我播放了Bad Apple!!》](https://www.bilibili.com/video/BV1M4411i71w/) |
 | 5月25日 | 把自己电脑的屏幕分辨率修改成3840×2160（屏幕本身的分辨率是1920×1080） |
 | 7月4日 | 1. TA的[DiskGenius软件](https://www.diskgenius.cn/)不显示磁盘；<br />2. 发布了自己投稿了999＋个作品的图片，实际上刚加载个人空间可以卡出。 |
-| 7月7日 | 发布了视频[《在U盘里安装Windows 3.1会怎么样？》](https://www.bilibili.com/video/BV12x411f75Y) |
-| 7月8日 | 发布了视频[《3 0 秒 开 机 ， 3 秒 死 机》](https://www.bilibili.com/video/BV1M4411F7ma) |
+| 7月7日 | 发布了视频[《在U盘里安装Windows 3.1会怎么样？》](https://www.bilibili.com/video/BV12x411f75Y/) |
+| 7月8日 | 发布了视频[《3 0 秒 开 机 ， 3 秒 死 机》](https://www.bilibili.com/video/BV1M4411F7ma/) |
 | 7月19日 | 发布B站“干杯十周年”的图片 |
-| 8月20日 | 发布了视频[《【伴奏】Bad Apple!!》](https://www.bilibili.com/video/BV1P4411Z7Vq) |
-| 8月22日 | 发布了视频[《把WinXP和Vista的启动管理器名称相互替换会怎么样？》](https://www.bilibili.com/video/BV1b441197gH) |
+| 8月20日 | 发布了视频[《【伴奏】Bad Apple!!》](https://www.bilibili.com/video/BV1P4411Z7Vq/) |
+| 8月22日 | 发布了视频[《把WinXP和Vista的启动管理器名称相互替换会怎么样？》](https://www.bilibili.com/video/BV1b441197gH/) |
 | 11月3日 | 比较某下载软件（~~[迅雷](https://www.xunlei.com/)~~）的非会员与超级会员下载速度的区别 |
 
 ### 2020年
@@ -344,23 +344,23 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 | 2月19日 | 发布了“在B站的同一个页面里，有时是新版顶部，有时是旧版顶部”的图片 | |
 | 2月20日 | 公开了自己的《我的世界》账号 | 对应动态已删除 |
 | 2月26日 | 发布了三个投票 | 这几个投票随后被TA的粉丝转发，**wuziqian211逐渐地被一些人认识**，可惜这几个投票现在都已经被删除了 |
-| 2月28日 | 发布了几条像“对我执行一个cmd命令吧”这样的动态与评论，被[健康黑色上网](https://space.bilibili.com/501767206)盯上了，并做成了视频[《建议改为：捣 乱 指 令》](https://www.bilibili.com/video/BV1BE411n7wG) | 视频UP主是[AloneMEMZ](https://space.bilibili.com/185273255)的小号 |
+| 2月28日 | 发布了几条像“对我执行一个cmd命令吧”这样的动态与评论，被[健康黑色上网](https://space.bilibili.com/501767206)盯上了，并做成了视频[《建议改为：捣 乱 指 令》](https://www.bilibili.com/video/BV1BE411n7wG/) | 视频UP主是[AloneMEMZ](https://space.bilibili.com/185273255)的小号 |
 | 2月29日 | [AloneMEMZ](https://space.bilibili.com/185273255)在TA的一些视频发了几条高级弹幕 | 弹幕的内容为“这个UP是个AI/人类混合体”等等 |
 | 3月1日 | 发布了两个小视频 | |
 | 3月2日 | 发布了关于自己的介绍的动态 | 提到了自己是个“AI/人类混合体” |
 | 3月8日 | 再次发布关于自己的介绍的动态 | 这条动态被很多人点赞 |
-| 3月9日 | 发布了视频[《网络天才能不能猜到wuziqian211？》](https://www.bilibili.com/video/BV1AE411u7yx) | 由于TA当时粉丝较多，所以3天内播放量就超过了300 |
+| 3月9日 | 发布了视频[《网络天才能不能猜到wuziqian211？》](https://www.bilibili.com/video/BV1AE411u7yx/) | 由于TA当时粉丝较多，所以3天内播放量就超过了300 |
 | 3月11日 | 1. 发布动态“我好像被迫害或者恶搞或者调戏啊！！！”；<br />2. [GoForceX](https://space.bilibili.com/96240239)用Python脚本给wuziqian211的所有动态点了赞，并发布了动态“如何轰炸一个up？很简单，给他动态全点赞”，向wuziqian211公开了这个脚本的源代码；<br />3. 在爱发电注册了账号，并在3月12日认证了。 | 1. 动态现在已经被删除了。 |
 | 3月15日 | 发布了专栏[《（请看置顶动态，本专栏已无效）关注 wuziqian211 前必读》](https://www.bilibili.com/read/cv5112673) | |
 | 3月16日 | 与[GoForceX](https://space.bilibili.com/96240239)一起“迫害”wuziqian211 | ~~自己“迫害”自己~~，在这里“迫害”一词是对wuziqian211的玩梗，类似于“调戏” |
 | 3月18日 | [GoForceX](https://space.bilibili.com/96240239)发布了“迫害wuziqian211”的安卓APP | |
-| 3月19日 | 1. 发布了视频[《如果迫害wuziqian211会怎样？》](https://www.bilibili.com/video/BV1T7411R7pZ)；<br />2. 自己做了个电脑版程序“迫害wuziqian211”。 | |
+| 3月19日 | 1. 发布了视频[《如果迫害wuziqian211会怎样？》](https://www.bilibili.com/video/BV1T7411R7pZ/)；<br />2. 自己做了个电脑版程序“迫害wuziqian211”。 | |
 | 3月23日 | 发布了程序“哔哩哔哩AV号与BV号互转程序” | 由于这个程序在哔哩哔哩BV号刚启用后几小时内就发布了，所以有很多人下载程序，从而**使wuziqian211快速涨粉**（~~不过这个程序就是调用B站的API来获取BV号的，程序内部并没有AV号与BV号互转的算法~~） |
 | 3月24日 | **粉丝数超过了1000**，并且设置了私信自动回复，拥有了粉丝勋章 | |
 | 3月26日 | 1. 提交了关于自己的百度百科词条；<br />2. wuziqian211的某条投票动态被bilibili UP主认证用户[刃下狼血](https://space.bilibili.com/193006350)评论了。 | 2. wuziqian211应该是第一次被已通过bilibili认证的用户评论。 |
 | 3月27日 | 更换头像 | |
 | 3月28日 | 1. wuziqian211的百度百科词条没有通过审核；<br />2. 发布了包含自己使用过的头像的动态，并想让别人发自己“上新闻”的图片。 | |
-| 4月5日 | 发布了视频[《wuziqian211 的片头》](https://www.bilibili.com/video/BV1664y1M7Fz) | 这个视频比较“水” |
+| 4月5日 | 发布了视频[《wuziqian211 的片头》](https://www.bilibili.com/video/BV1664y1M7Fz/) | 这个视频比较“水” |
 | 4月6日 | 发布了一个[让B站账号退出登录的链接](https://passport.bilibili.com/login?act=exit) | 链接现在已经失效了 |
 | 4月8日 | 发布了专栏《wuziqian211的出现》 | [cv5520841](https://www.bilibili.com/read/cv5520841)，使用“狗屁不通文章生成器”生成的，**已删除**，补档在[这里](https://wuziqian211-3.icoc.vc/nd.jsp?id=29) |
 | 4月10日 | 开始继续更新程序“迫害wuziqian211” | |
@@ -398,7 +398,7 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 | 7月3日 | 自己的动态上话题“BML云live”热门了 | |
 | 7月13日 | [Plight络反Hanpaper](https://space.bilibili.com/346030399)发布了“抱走wuziqian211”的图片 | 这个图片实际上是wuziqian211提供的 |
 | 7月20日 | 发布了“2013年7月3日的哔哩哔哩”的图片 | 用的网站“[Wayback Machine](https://web.archive.org/)”（**在中国除港澳台外的地区无法访问**）|
-| 7月23日 | 与[肥宅水水呀](https://space.bilibili.com/324042405)联合投稿了视频[《[整人必备]冻结Windows里面的进程！》](https://www.bilibili.com/video/BV13h411Z7MC) | 视频UP主是[肥宅水水呀](https://space.bilibili.com/324042405)，不是wuziqian211 |
+| 7月23日 | 与[肥宅水水呀](https://space.bilibili.com/324042405)联合投稿了视频[《[整人必备]冻结Windows里面的进程！》](https://www.bilibili.com/video/BV13h411Z7MC/) | 视频UP主是[肥宅水水呀](https://space.bilibili.com/324042405)，不是wuziqian211 |
 | 8月23日 | **粉丝数超过了2000** | |
 | 8月24日 | 再次发布介绍自己的动态 | 这条动态置顶了很长时间 |
 | 8月29日 | 1. 发布了关于“自己以后没时间发动态”的动态；<br />2. 让粉丝说说自己的优缺点。 | 2. 自己也说了自己的缺点。 |
@@ -411,22 +411,22 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 
 | 时间 | 事件 | 备注 |
 | :--: | ---- | ---- |
-| 1月1日 | 发布了视频[《【年度报告】wuziqian211的2020时光机》](https://www.bilibili.com/video/BV1Qo4y1Z7jV) | |
+| 1月1日 | 发布了视频[《【年度报告】wuziqian211的2020时光机》](https://www.bilibili.com/video/BV1Qo4y1Z7jV/) | |
 | 1月10日 | **终于升级到了5级** | |
 | 1月21日 | 使TA的收藏夹第1页只显示1个视频 | 通过特殊手段收藏重复的视频，B站在显示的时候会排除这些重复的视频 |
 | 2月11日 | 给TA的所有粉丝发了庆祝春节的私信 | 通过脚本给每个粉丝发了不同的私信（其实内容中只有粉丝顺序先后不同） |
 | 2月25日 | 给TA的所有粉丝发了庆祝元宵节的私信 | 同上 |
-| 4月1日 | 发布了视频[《看看是哪个小机灵鬼解答了@wuziqian211 的人生问题？！》](https://www.bilibili.com/video/BV1ZZ4y1F7wH) | |
+| 4月1日 | 发布了视频[《看看是哪个小机灵鬼解答了@wuziqian211 的人生问题？！》](https://www.bilibili.com/video/BV1ZZ4y1F7wH/) | |
 | 5月2日 | **入站两周年** | TA现在将入站的日期设置成了自己的“生日”，真实生日不公开 |
-| 5月3日 | 发布了视频[《【wuziqian211的许愿之旅】来把好运打在公屏上！》](https://www.bilibili.com/video/BV1e64y127Hf) | |
-| 7月7日 | 发布了视频[《把桌面的位置更改为一个无法访问的文件夹会怎样？》](https://www.bilibili.com/video/BV1Yy4y1K7da) | |
+| 5月3日 | 发布了视频[《【wuziqian211的许愿之旅】来把好运打在公屏上！》](https://www.bilibili.com/video/BV1e64y127Hf/) | |
+| 7月7日 | 发布了视频[《把桌面的位置更改为一个无法访问的文件夹会怎样？》](https://www.bilibili.com/video/BV1Yy4y1K7da/) | |
 | 7月25日 | 更换头像 | |
 | 8月21日 | 发布了动态，再次说明自己可能不更新了 | |
 | 8月22日 | 发布了“211欺负ziqian”的动态 | “211”与“ziqian”都是wuziqian211的一些“外号” |
 | 8月24日 | 购买了装扮“2233电子喵” | TA是装扮的018631号真爱粉 |
 | 11月15日 | 将“入站必刷”的所有视频看完了 | ~~被迫~~ |
-| 12月25日 | 发布了视频[《我把我的2021做成了影片！再见，2021正式上映！》](https://www.bilibili.com/video/BV1k3411x7Wv) | |
-| 12月29日 | 发布了视频[《wuziqian211的2021 UP主荣誉年报》](https://www.bilibili.com/video/BV1jr4y1S7a9) | 这个视频与上个视频**使wuziqian211掉了几个粉丝**，因为太“水”了 |
+| 12月25日 | 发布了视频[《我把我的2021做成了影片！再见，2021正式上映！》](https://www.bilibili.com/video/BV1k3411x7Wv/) | |
+| 12月29日 | 发布了视频[《wuziqian211的2021 UP主荣誉年报》](https://www.bilibili.com/video/BV1jr4y1S7a9/) | 这个视频与上个视频**使wuziqian211掉了几个粉丝**，因为太“水”了 |
 
 ### 2022年
 2022年，wuziqian211像2021年那样，没发什么动态，但是到目前为止已经发了5个视频（不含被锁定的与自动生成的）。
@@ -438,7 +438,7 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 | 1月23日 | “自己”的笔记本电脑用2小时充满电后，拔掉电源，显示只能用4分钟 | 实际上也只能用7分钟 |
 | 1月27日 | 购买了装扮“2022拜年纪” | TA是装扮的007981号真爱粉 |
 | 1月28日 | 发布自己2021年的评论＋弹幕＋动态3906次获赞的动态 | ~~还是有点太少了~~ |
-| 1月30日 | 1. 发布了视频[《360加速球：诶，你就是点不着我！》](https://www.bilibili.com/video/BV1CS4y1y7vk)；<br />2. 发布“当天的B站表情与几天前的表情的差异”的图片，让大家看到B站增加、更改了哪些表情。 | 1. 视频长度连20秒都不到，~~看来又水了一条视频~~；<br />2. 其实表情用的是本Blog的评论区的表情，wuziqian211有时会更新评论区的表情列表，而Git帮助了TA比较更新前后的文件的差异。 |
+| 1月30日 | 1. 发布了视频[《360加速球：诶，你就是点不着我！》](https://www.bilibili.com/video/BV1CS4y1y7vk/)；<br />2. 发布“当天的B站表情与几天前的表情的差异”的图片，让大家看到B站增加、更改了哪些表情。 | 1. 视频长度连20秒都不到，~~看来又水了一条视频~~；<br />2. 其实表情用的是本Blog的评论区的表情，wuziqian211有时会更新评论区的表情列表，而Git帮助了TA比较更新前后的文件的差异。 |
 | 1月31日 | 1. 发布“当天的B站表情与前一天的表情的差异”的图片，让大家看到B站增加、更改了哪些表情；<br />2. 给TA的每个粉丝发了庆祝春节的私信。 | 1. 同上一行第2条备注；<br />2. 通过脚本给每个粉丝发了不同的私信（其实内容中只有粉丝顺序先后不同）。 |
 | 2月11日 | 1. 2月11日似乎与“wuziqian211”这个昵称有点关系；<br />2. 自己水的一条视频上首页了。 | |
 | 2月20日 22:02 | 发布了前十个最小的纯数字BV号的动态 | 然而似乎没有人能理解 |
@@ -446,15 +446,15 @@ wuziqian211已通过实名认证，TA对自己发布的内容要承担责任哦a
 | 3月6日 | 发布关于**自己不再可爱**的动态 | 发布动态后wuziqian211没有来B站12天，但是wuziqian211仍然很可爱(=・ω・=) |
 | 6月4日 | 发布自己在“风叶穿行”挑战中得分为40的动态 | 超过了90%的玩家；wuziqian211有近3个月没有发动态了，这是TA没发动态的时间最长的一次 |
 | 7月22日 | **自己已经达到了20000经验值** | 还差8800经验值就可以升到6级了 |
-| 7月31日 | 发布了视频[《一张13.1GB的GIF？？？》](https://www.bilibili.com/video/BV12Y4y1P7e9) | GIF的**分卷文件**可以在[这里](https://pan.baidu.com/s/1YODOWOIGCg1vH0G3hClh8g)下载，提取码是“Rick” |
-| 8月12日 | 投稿了视频《B站程序员你给我过来，你把1秒当成2秒是吧？？？》，但**由于涉及不适宜内容而被锁定** | [BV1uT411A7MV](https://www.bilibili.com/video/BV1uT411A7MV)，视频长度约为24秒，补档在[这里](https://pan.baidu.com/s/1No6yZ823AnGYirFfgcq6ew)，提取码是“BBug” |
-| 8月13日 | 发布了视频[《在Ubuntu运行时拔掉硬盘会怎样？》](https://www.bilibili.com/video/BV11B4y167qA) | |
+| 7月31日 | 发布了视频[《一张13.1GB的GIF？？？》](https://www.bilibili.com/video/BV12Y4y1P7e9/) | GIF的**分卷文件**可以在[这里](https://pan.baidu.com/s/1YODOWOIGCg1vH0G3hClh8g)下载，提取码是“Rick” |
+| 8月12日 | 投稿了视频《B站程序员你给我过来，你把1秒当成2秒是吧？？？》，但**由于涉及不适宜内容而被锁定** | [BV1uT411A7MV](https://www.bilibili.com/video/BV1uT411A7MV/)，视频长度约为24秒，补档在[这里](https://pan.baidu.com/s/1No6yZ823AnGYirFfgcq6ew)，提取码是“BBug” |
+| 8月13日 | 发布了视频[《在Ubuntu运行时拔掉硬盘会怎样？》](https://www.bilibili.com/video/BV11B4y167qA/) | |
 | 8月22日 | 发布自己在“风叶穿行”挑战中得分为114514的动态 | 超过了99%的玩家；其实用了浏览器开发工具修改脚本 |
-| 9月6日 | 发布了视频[《这就是wuziqian211的2022夏日总结~》](https://www.bilibili.com/video/BV1nY4y1M7MB)，当天这个视频被bilibili知名UP主[夜雨浅秋](https://space.bilibili.com/513778858)评论了 | （[夜雨浅秋](https://space.bilibili.com/513778858)是wuziqian211的朋友之一，~~TA当天才通过认证~~） |
+| 9月6日 | 发布了视频[《这就是wuziqian211的2022夏日总结~》](https://www.bilibili.com/video/BV1nY4y1M7MB/)，当天这个视频被bilibili知名UP主[夜雨浅秋](https://space.bilibili.com/513778858)评论了 | （[夜雨浅秋](https://space.bilibili.com/513778858)是wuziqian211的朋友之一，~~TA当天才通过认证~~） |
 | 9月8日 | **视频总播放量超过了5万** | |
 | 9月12日 | 再次购买装扮“2022拜年纪” | 这次购买的编号是043336号，已在2天后赠送给其他人 |
 | 9月24日 | 领到了实物“哔哩哔哩 幻星集II 亚克力御守 机遇” | ~~用小号中到的~~ |
-| 10月2日 | 发布了视频[《如果把虚拟内存转移到U盘会发生什么？》](https://www.bilibili.com/video/BV128411s7P2) | |
+| 10月2日 | 发布了视频[《如果把虚拟内存转移到U盘会发生什么？》](https://www.bilibili.com/video/BV128411s7P2/) | |
 
 ……未完待续
 </details>
