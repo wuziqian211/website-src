@@ -1,8 +1,8 @@
 ---
 title: 如何开启并使用B站的自动回复功能
 date: 2022-01-13 20:47:39
-updated: 2022-10-29 19:48:18
-description: 其实每一位B站用户都可以开启自动回复功能
+updated: 2022-12-10 22:19:42
+description: 不管你有没有达到1000粉丝，都可以开启B站的自动回复功能
 tags:
   - 自动回复
   - 技术
@@ -42,7 +42,7 @@ $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0
 您刚刚输入的命令里面的链接不能通过浏览器直接访问！直接访问是没有任何效果的。
 {% endnote %}
 {% note info %}
-上面的操作可能需要您有一点技术含量，如果您无法看懂上面的内容，您可以向wuziqian211请求帮助。
+上面的操作有一定的技术含量，如果您无法看懂上面的内容，您可以向wuziqian211请求帮助。
 
 如果您非常了解HTTP，上面的操作也可以像这样表述：
 用POST方式提交查询字符串数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，并带上Cookie“SESSDATA”与“bili_jct”，如果服务器返回的JSON中“code”的值为0，就说明自动回复功能开启成功。
