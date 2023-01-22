@@ -190,3 +190,13 @@ markdown:
     permalinkSymbol: ''
     case: 1
     separator: '-'
+
+sitemap:
+  path: 
+    - sitemap.xml
+    - sitemap.txt
+  template:
+  template_txt:
+  rel: false
+  tags: true
+  categories: true
