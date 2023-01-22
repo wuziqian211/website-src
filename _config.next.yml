@@ -586,7 +586,7 @@ mediumzoom: false
 
 # Vanilla JavaScript plugin for lazyloading images.
 # For more information: https://apoorv.pro/lozad.js/demo/
-lazyload: false
+lazyload: true
 
 # Automatically insert whitespace between CJK and half-width characters.
 # For more information: https://github.com/vinta/pangu.js
@@ -950,16 +950,17 @@ waline:
     - /emote/小黄脸
     - /emote/热词系列一
     - /emote/tv_小电视
+    - /emote/喵
+    - /emote/2023拜年纪
+    - /emote/蛆音娘
+    - /emote/2233娘
+    - /emote/拜年纪2022
+    - /emote/2233电子喵
+    - /emote/2022拜年纪
+    - /emote/EveOneCat2
     - /emote/猫咪公寓
     - /emote/重返未来
-    - /emote/2022拜年纪
-    - /emote/蛆音娘
-    - /emote/拜年纪2022
-    - /emote/2233娘
     - /emote/小电视
-    - /emote/喵
-    - /emote/2233电子喵
-    - /emote/EveOneCat2
     - /emote/洛天依
     - /emote/芮小凸小凹
     - /emote/罗小黑
@@ -992,6 +993,9 @@ waline:
     - /emote/FPX凤仔
     - /emote/来古弥新
     - /emote/我的音乐你听吗
+    - /emote/面具古墓
+    - /emote/哈利波特：魔法觉醒
+    - /emote/鹿鸣
     # - //unpkg.com/@waline/emojis@1.0.1/weibo
     # - //unpkg.com/@waline/emojis@1.0.1/alus
     # - //unpkg.com/@waline/emojis@1.0.1/bilibili

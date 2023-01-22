@@ -1,7 +1,7 @@
 ---
 title: 关于wuziqian211及Blog、程序
 date: 2021-09-16 23:30:17
-updated: 2022-12-11 14:45:04
+updated: 2023-01-22 18:06:18
 description: 这里是一篇关于wuziqian211及TA的Blog、程序的介绍哟~
 tags:
   - 网站
@@ -62,15 +62,6 @@ wuziqian211在2021年9月28日购买了域名“wuziqian211.top”，在2022年6
 | [w211.top](https://w211.top/) | [Vercel](https://vercel.com/) | 访问本域名会自动重定向到[wuziqian211.top](https://wuziqian211.top/) |
 
 **这个Blog的所有文章除特别声明外，均遵循[<i class="fab fa-fw fa-creative-commons"></i>BY-NC 4.0（知识共享署名-非商业性使用 4.0）](https://creativecommons.org/licenses/by-nc/4.0/deed.zh)许可协议，如果您要转载这个Blog上的文章，需要注明出处哟qwq**
-
-### 友情链接
-{% lg %}
-朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室（B站用户“朋友圈APERTURE”的个人网站） | /images/aperturelaboratories-icoc-vc.png
-易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/shakaianee-top.jpeg
-开心的肥宅快乐水的个人网站 | https://et19798147-2.icoc.vc/ | B站用户“肥宅水水呀”的个人网站 | /images/et19798147-2-icoc-vc.png
-wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧网站，已不再更新 | /images/wuziqian211-icoc-vc.png
-{% endlg %}
-如果您也想申请友情链接的话，可以在这个Blog的评论区评论哟awa
 
 ### 本Blog使用的界面、功能与服务
 #### 界面

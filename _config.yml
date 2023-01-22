@@ -90,6 +90,7 @@ tag_map:
   评论: comments
   自动回复: auto-reply
   技术: technology
+  用户列表: users-list
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
