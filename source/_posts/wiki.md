@@ -1,7 +1,7 @@
 ---
 title: wuziqian211的Wiki
 date: 2021-10-10 14:11:28
-updated: 2023-01-22 17:56:31
+updated: 2023-01-25 16:29:01
 description: 这是一篇比较全面的关于wuziqian211的介绍，可能有点长~
 tags:
   - Wiki
@@ -316,13 +316,13 @@ wuziqian211像2021年那样，没发什么动态，但是发了8个视频（不�
 | 10月2日 | 发布了视频[《如果把虚拟内存转移到U盘会发生什么？》](https://www.bilibili.com/video/BV128411s7P2/) | |
 | 10月7日 | 发布了动态，说明自己近9个月可能会很少在线 | |
 | 10月14日 | 发布了视频[《在U盘中安装并运行Win98/Win2000会怎样？》](https://www.bilibili.com/video/BV1ke4y1E7BD/) | |
-| 10月15日 | **粉丝数回升到2000**，同时发布了自己“工作环境”与所有粉丝的图片 | 所有粉丝可以在[这里](https://function-test.w211.top/followers.html)查看 |
+| 10月15日 | **粉丝数回升到2000**，同时发布了自己“工作环境”与所有粉丝的图片 | 所有粉丝可以在[这里](https://dl.yumeharu.top/followers.html)查看 |
 | 10月16日 | 发布了动态，里面说任何用户对wuziqian211私信“#注册时间”，TA就会回复该用户的注册时间 | 这条动态**使TA涨了约50名粉丝**，其中有一些粉丝是比较知名的UP主 |
 | 11月27日 | 发布了视频[《如果禁用电脑的显示适配器会怎样？》](https://www.bilibili.com/video/BV1SG4y1d7SR/) | |
 | 12月18日 | 对自己进行了一次抗原检测，呈阳性 | |
 | 12月19日 | 更换了头像 | |
 | 12月30日 | 与bilibili知名（动漫区）UP主[夜雨浅秋](https://space.bilibili.com/513778858)联合投稿了视频[《用B站用户名演绎“告白气球”》](https://www.bilibili.com/video/BV1w24y1U77D/) | 视频UP主是[夜雨浅秋](https://space.bilibili.com/513778858)，但视频制作者是wuziqian211；这个视频虽然播放量不高，但是有部分[夜雨浅秋](https://space.bilibili.com/513778858)的粉丝关注了wuziqian211 |
-| 12月31日 | 发布了视频[《摇动 Windows 的任务栏图标！》](https://www.bilibili.com/video/BV1T44y1d7wB/) | 摇动任务栏图标程序可以在[这里](https://dl.w211.top/%E6%91%87%E5%8A%A8%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%9B%BE%E6%A0%87.exe)下载 |
+| 12月31日 | 发布了视频[《摇动 Windows 的任务栏图标！》](https://www.bilibili.com/video/BV1T44y1d7wB/) | 摇动任务栏图标程序可以在[这里](https://dl.yumeharu.top/%E6%91%87%E5%8A%A8%E4%BB%BB%E5%8A%A1%E6%A0%8F%E5%9B%BE%E6%A0%87.exe)下载 |
 
 ### 2023年
 上半年可能会长期不更新，因为自己实在是没有时间了。
@@ -332,7 +332,7 @@ wuziqian211像2021年那样，没发什么动态，但是发了8个视频（不�
 | 1月6日 | 通过特殊方法让自己的头像旁边显示“小钻石”（数字藏品头像图标） | |
 | 1月8日 | 分享了一个供B站内部测试的小程序 | |
 | 1月13日 | 发布了动态，里面说自己做“练习册”的一篇英语阅读时，发现了自己名字的拼音 | ~~虽然这篇阅读写的不是wuziqian211~~ |
-| 1月18日 | 发布了自己的创作者年度报告，并且把与自己“近地环绕”的100名粉丝做在了一张图里 | 与wuziqian211“近地环绕”的100名粉丝可以在[这里](https://function-test.w211.top/2022-loyal-followers.html)查看 |
+| 1月18日 | 发布了自己的创作者年度报告，并且把与自己“近地环绕”的100名粉丝做在了一张图里 | 与wuziqian211“近地环绕”的100名粉丝可以在[这里](https://dl.yumeharu.top/2022-loyal-followers.html)查看 |
 
 ……未完待续
 </details>

@@ -930,7 +930,7 @@ waline:
   enable: true
 
   # Waline server address url, you should set this to your own link
-  serverURL: https://waline.wuziqian211.top
+  serverURL: https://waline.yumeharu.top
 
   # Waline library CDN url, you can set this to your preferred CDN
   libUrl: //unpkg.com/@waline/client@v2/dist/waline.js
@@ -950,6 +950,7 @@ waline:
     - /emote/小黄脸
     - /emote/热词系列一
     - /emote/tv_小电视
+    - /emote/三团幼稚园
     - /emote/喵
     - /emote/2023拜年纪
     - /emote/蛆音娘

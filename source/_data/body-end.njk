@@ -1,6 +1,6 @@
 <script data-pjax>
 CONFIG.waline.imageUploader = async file => {
-  const { token } = (await (await fetch('https://api.wuziqian211.top/api/modules?id=token')).json()).data;
+  const { token } = (await (await fetch('https://api.yumeharu.top/api/modules?id=token')).json()).data;
   let formData = new FormData();
   formData.append('image', file);
   formData.append('apiType', 'majorhua,ai58');
@@ -8,7 +8,7 @@ CONFIG.waline.imageUploader = async file => {
   return (await (await fetch('https://www.hualigs.cn/api/upload', { method: 'POST', body: formData })).json()).data.url.majorhua;
 };
 (async () => {
-  const { blocked } = (await (await fetch('https://api.wuziqian211.top/api/modules?id=blocked')).json()).data;
+  const { blocked } = (await (await fetch('https://api.yumeharu.top/api/modules?id=blocked')).json()).data;
   if (blocked) {
     const regExp = new RegExp(blocked);
     document.querySelectorAll('a').forEach(e => regExp.test(e.hostname) && e.classList.add('inaccessible'));

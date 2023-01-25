@@ -41,7 +41,7 @@ external_link:
   field: site # Apply to the whole site
   exclude:
     - wuziqian211.top
-    - blog.wuziqian211.top
+    - yumeharu.top
     - wuziqian211.gitee.io
 filename_case: 1
 render_drafts: false
@@ -163,7 +163,7 @@ nofollow:
   field: site
   exclude:
     - wuziqian211.top
-    - blog.wuziqian211.top
+    - yumeharu.top
     - wuziqian211.gitee.io
 
 markdown:
