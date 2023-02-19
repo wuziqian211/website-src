@@ -1,7 +1,7 @@
 <script data-pjax>
 CONFIG.waline.imageUploader = async file => {
   const { token } = (await (await fetch('https://api.yumeharu.top/api/modules?id=token')).json()).data;
-  let formData = new FormData();
+  const formData = new FormData();
   formData.append('image', file);
   formData.append('apiType', 'majorhua,ai58');
   formData.append('token', atob(token));

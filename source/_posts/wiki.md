@@ -1,7 +1,7 @@
 ---
 title: wuziqian211的Wiki
 date: 2021-10-10 14:11:28
-updated: 2023-01-25 16:29:01
+updated: 2023-02-19 19:35:06
 description: 这是一篇比较全面的关于wuziqian211的介绍，可能有点长~
 tags:
   - Wiki
@@ -31,12 +31,12 @@ wuziqian211永不点踩，永不拉黑任何人，也绝对不会注销的(^・�
 ### 头像与昵称
 wuziqian211用过一些不同的头像(=・ω・=)下面是wuziqian211用过的头像哟awa
 
-| 头像 | 开始使用时间 | 来源 | 对应人物 | 备注 |
-| :--: | :----------: | :--: | :------: | ---- |
-| <img class="avatar" alt src="/images/face1.jpg" /> | 2019-05-03 | 网络 | 《我的世界》人物 | 使用模板 |
-| <img class="avatar" alt src="/images/face2.jpg" /> | 2020-03-27 | 哔哩哔哩 | 33娘 | B站APP中的随机头像，也是<https://www.bilibili.com/blackboard/old-lantern.html>的头图 |
-| <img class="avatar" alt src="/images/face.jpg" /> | 2021-07-25 20:50 | 『ご注文はうさぎですか?』（《请问您今天要来点兔子吗？》） | 原图为かふう ちの（香风智乃），修改后为こんぱく ようむ（魂魄妖梦） | 略有修改 |
-| <img class="avatar" alt src="/images/face4.jpg" /> | 2022-12-19 12:05 | 网络 | | 略有修改 |
+| 头像 | 开始使用时间 | 来源＆对应人物 | 备注 |
+| :--: | :----------: | :------------: | ---- |
+| <img class="avatar" alt src="/images/face1.jpg" /> | 2019-05-03 | 《我的世界》里面的人物 | 使用模板 |
+| <img class="avatar" alt src="/images/face2.jpg" /> | 2020-03-27 | 哔哩哔哩33娘 | B站APP中的随机头像，也是<https://www.bilibili.com/blackboard/old-lantern.html>的头图 |
+| <img class="avatar" alt src="/images/face3.jpg" /> | 2021-07-25 20:50 | 『ご注文はうさぎですか?』（《请问您今天要来点兔子吗？》），原图为かふう ちの（香风智乃），修改后为こんぱく ようむ（魂魄妖梦） | 略有修改 |
+| <img class="avatar" alt src="/images/face.png" /> | 2022-12-19 12:05 | [WERI在pixiv创作的《夜明けの海》](https://www.pixiv.net/artworks/90624041) | 略有修改 |
 
 昵称中的“wuziqian”是TA的名字的拼音，“211”是随便取的代号呢(｡･ω･｡)
 您可以叫TA“wuziqian”“ziqian”“211”“ziqian酱”“211娘”等等，只要是您喜欢的称呼都可以(｀・ω・´)

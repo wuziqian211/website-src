@@ -1,7 +1,7 @@
 ---
 title: 关于wuziqian211及Blog、程序
 date: 2021-09-16 23:30:17
-updated: 2023-01-22 18:47:43
+updated: 2023-02-19 19:30:18
 description: 这里是一篇关于wuziqian211及TA的Blog、程序的介绍哟~
 tags:
   - 网站
@@ -17,7 +17,7 @@ permalink: /about/
 不求最好，只求更好。Not for the best, just for the better.
 {% endcq %}
 wuziqian211很高兴能够在这个Blog与您相遇(^・ω・^ )
-![](/images/face.png)
+![](/images/full-face.png)
 
 ## 关于wuziqian211
 wuziqian211是一个可爱、活泼的人，来自湖北武汉，比较喜欢创作知识区、科技区的作品，喜欢很多类型的东西(=・ω・=)

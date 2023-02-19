@@ -141,7 +141,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /images/face.jpg
+  url: /images/face.png
   # If true, the avatar will be displayed in circle.
   rounded: true
   # If true, the avatar will be rotated with the cursor.
@@ -160,7 +160,6 @@ social:
   Gitee: https://gitee.com/wuziqian211 || custom gitee
   Twitter: https://twitter.com/wuziqian211 || fab fa-twitter
   E-Mail: mailto:wuziqian211@126.com || fa fa-envelope
-  旧网站: https://wuziqian211.icoc.vc/ || fa fa-globe
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
