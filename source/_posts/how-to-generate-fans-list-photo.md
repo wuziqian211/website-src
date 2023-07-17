@@ -32,7 +32,7 @@ const headers = { Cookie: 'SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0
 
 ## 第一步 获取所有粉丝的列表
 {% note info %}
-在这个部分中，有一些内容来自<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/user/relation.md>。
+在这个部分中，有一些内容来自<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/user/relation.md>。
 {% endnote %}
 B站官方给我们提供的获取指定用户的粉丝列表的API是<https://api.bilibili.com/x/relation/followers>，请求方式是GET。
 这个API需要您提供有效的Cookie，**最多只能获取最近关注您的1000名粉丝的列表**。
@@ -115,7 +115,7 @@ for (let i = 0; i < followers.length; i++) { // 获取所有在粉丝列表里�
 
 ## 第二步 获取所有粉丝的详细信息、粉丝数（可选）
 {% note info %}
-在这个部分中，有一些内容来自<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/user/info.md>与<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/user/status_number.md>。
+在这个部分中，有一些内容来自<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/user/info.md>与<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/user/status_number.md>。
 {% endnote %}
 目前“realFollowers”变量虽然存储了所有粉丝的信息，但是这个信息不够详细。
 获取多个用户的详细信息的API是<https://api.vc.bilibili.com/account/v1/user/cards>，请求方式是GET，这个API执行一次可以获取最多50个用户的信息。
