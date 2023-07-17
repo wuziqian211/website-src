@@ -61,7 +61,7 @@ wuziqian211在2021年9月28日购买了域名“wuziqian211.top”，在2022年6
 | [wuziqian211.gitee.io](https://wuziqian211.gitee.io/) | [Gitee](https://gitee.com/) | **由于一些原因，通过这个域名访问到的网站内容将不再更新** |
 | [w211.top](https://w211.top/) | [Vercel](https://vercel.com/) | 访问本域名会自动重定向到[wuziqian211.top](https://wuziqian211.top/) |
 
-**这个Blog的所有文章除特别声明外，均遵循[<i class="fab fa-fw fa-creative-commons"></i>BY-NC 4.0（知识共享署名-非商业性使用 4.0）](https://creativecommons.org/licenses/by-nc/4.0/deed.zh)许可协议，如果您要转载这个Blog上的文章，需要注明出处哟qwq**
+**这个Blog的所有文章除特别声明外，均遵循[<i class="fab fa-fw fa-creative-commons"></i>BY 4.0（知识共享署名 4.0）](https://creativecommons.org/licenses/by/4.0/deed.zh)许可协议，如果您要转载这个Blog上的文章，需要注明出处哟qwq**
 
 ### 本Blog使用的界面、功能与服务
 #### 界面
