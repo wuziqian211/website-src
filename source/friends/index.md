@@ -22,19 +22,22 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧
 <script data-pjax>
 (async () => {
   const friends = document.querySelector('div#friends');
+  if (!friends) return;
   const json = await (await fetch('https://api.yumeharu.top/api/modules?id=friends&version=2')).json();
   if (json.code === 0) {
     for (const u of json.data.sort(() => 0.5 - Math.random())) {
       const userDiv = document.createElement('div');
       userDiv.className = 'link-grid-container';
       const avatar = document.createElement('img');
-      avatar.className = 'link-grid-image';
+      avatar.className = 'link-grid-image nofancybox';
+      avatar.title = u.title;
       avatar.src = u.image;
       avatar.referrerPolicy = 'no-referrer';
       userDiv.appendChild(avatar);
       if (u.icon) {
         const faceIcon = document.createElement('img');
-        faceIcon.className = 'face-icon';
+        faceIcon.className = 'face-icon nofancybox';
+        faceIcon.alt = '';
         switch (u.icon) {
           case 'personal':
             faceIcon.title = 'UP 主认证';
