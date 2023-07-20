@@ -79,6 +79,7 @@ Live2D | https://github.com/stevenjoezhang/live2d-widget | 提供本Blog可爱�
 #### 服务
 {% lg %}
 Vercel | https://vercel.com/ | 提供本Blog的服务器、API。Vercel是一个用于前端框架和静态站点的平台。 | /images/vercel.png
+萌国ICP备案 | https://icp.gov.moe/ | 为本Blog提供“ICP备案”服务。萌ICP备纯属萌友网站联萌，是一种次元中的爱好，文化的展现✧(≖ ◡ ≖✿) | /images/moe-icon.png
 cdnjs | https://cdnjs.com/ | 加速本Blog的静态资源。cdnjs是一项免费的开源CDN（内容分发网络）服务。 | /images/cdnjs.svg
 UNPKG | https://unpkg.com/ | 加速本Blog的静态资源。UNPKG是一个快速的全球内容分发网络。 | /images/unpkg.png
 jsDelivr | https://www.jsdelivr.com/ | 加速本Blog的静态资源。jsDelivr是一个免费且快速、可靠和自动化的开源CDN（内容分发网络）。 | /images/jsdelivr.png

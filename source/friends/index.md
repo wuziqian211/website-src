@@ -14,7 +14,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧
 如果您也想申请友情链接的话，可以在这个Blog的评论区评论哟awa
 
 ## 朋友们
-<div class="link-grid" id="friends"></div>
+<div class="link-grid" id="friends">正在加载中……需要大约5秒钟的时间哟qwq</div>
 
 其实不止上面这些用户，还有很多人在背后默默地支持着wuziqian211呢(=・ω・=)
 如果您与wuziqian211的关系很好，但是上面并没有列出您，请在评论区评论或者在B站私信wuziqian211，wuziqian211在这里表示十分抱歉！(´；ω；\`)
@@ -25,6 +25,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧
   if (!friends) return;
   const json = await (await fetch('https://api.yumeharu.top/api/modules?id=friends&version=2')).json();
   if (json.code === 0) {
+    friends.innerText = '';
     for (const u of json.data.sort(() => 0.5 - Math.random())) {
       const userDiv = document.createElement('div');
       userDiv.className = 'link-grid-container';
