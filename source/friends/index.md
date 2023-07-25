@@ -7,6 +7,7 @@ updated: 2022-10-29 20:11:15
 {% lg %}
 朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/aperturelaboratories-icoc-vc.png
 Winner365のBlog | https://blog.hicosor.top/ | 所谓浮躁，也就是时时刻刻，希望以最短的时间，博取最多的存在感优越感和自我认同。 | /images/blog-hicosor-top.png
+知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/shuxincm-jzfkw-net.jpg
 易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/shakaianee-top.jpeg
 开心的肥宅快乐水的个人网站 | https://et19798147-2.icoc.vc/ | B站用户“肥宅水水呀”的个人网站 | /images/et19798147-2-icoc-vc.png
 wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧网站，已不再更新 | /images/wuziqian211-icoc-vc.png
