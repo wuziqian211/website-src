@@ -1,7 +1,7 @@
 ---
 title: 如何开启并使用B站的自动回复功能
 date: 2022-01-13 20:47:39
-updated: 2022-12-10 22:19:42
+updated: 2024-02-05 17:40:23
 description: 不管你有没有达到1000粉丝，都可以开启B站的自动回复功能
 tags:
   - 自动回复
@@ -10,6 +10,7 @@ categories:
   - 知识
   - 野生技能协会
 ---
+
 本文章使用网页版B站，为您介绍开启与使用B站的自动回复功能的方法。
 ![自动回复](/images/auto-reply.png)
 <!-- more -->
@@ -23,12 +24,23 @@ categories:
 {% note warning %}
 强烈建议您使用电脑操作！在手机上操作会非常麻烦。
 {% endnote %}
-在**登录了B站账号**的浏览器中，打开B站任意页面，按下F12键，在新打开的窗口上方选择“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来。
+{% note info %}
+下面的操作**需要在您的操作系统上安装`curl`命令行程序**，一般来说现在的操作系统里都有这个程序。如果没有，可以在<https://curl.se/download/>下载。
+{% endnote %}
+以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来。
 ![获取Cookie](/images/get-cookie.png)
-打开命令行窗口（在Windows中按下Win＋R，输入`cmd`后回车；在Linux中按下Ctrl＋Alt＋T即可；在Mac中按下⌘＋空格键即可），输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
-例：假如{% label info@SESSDATA的值 %}为`abcdef12%2C1678901234%2C56789*bc`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：
+打开命令行窗口，输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
+{% note default %}
+#### 如何打开命令行窗口
+- **Windows**：按下Win＋R，输入`cmd`后回车即可
+- **大多数有图形化界面的GNU/Linux操作系统**：在桌面上按下Ctrl＋Alt＋T即可
+- **对于仅有命令行界面的GNU/Linux操作系统**：不需要“打开命令行窗口”，直接在界面输入命令即可
+- **macOS**：按下⌘＋空格键即可
+
+{% endnote %}
+例：假如您获取到的{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：
 ```bash
-$ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0123456789abcdef" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"
+$ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" -b "SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef&csrf_token=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"
 ```
 您可能会看到类似于下面的“代码”：
 ```json
@@ -45,7 +57,7 @@ $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0
 上面的操作有一定的技术含量，如果您无法看懂上面的内容，您可以向wuziqian211请求帮助。
 
 如果您非常了解HTTP，上面的操作也可以像这样表述：
-用POST方式提交查询字符串数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，并带上Cookie“SESSDATA”与“bili_jct”，如果服务器返回的JSON中“code”的值为0，就说明自动回复功能开启成功。
+用POST方式提交查询字符串数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，并带上Cookie“SESSDATA”与“bili_jct”，如果服务器返回的JSON中“code”的值为0，就说明自动回复功能开启成功。
 {% endnote %}
 进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了一个按钮“自动回复”，就说明自动回复功能开启成功，而且您会发现，“关键词回复”功能是开启的。
 ![“自动回复”按钮](/images/auto-reply-button.png)
@@ -55,19 +67,19 @@ $ curl -b "SESSDATA=abcdef12%2C1678901234%2C56789*bc; bili_jct=0123456789abcdef0
 {% endnote %}
 
 ### 通过网页开启自动回复功能
-在登录了B站账号的浏览器中进入[消息中心](https://message.bilibili.com/)后，您可以看到，在页面的左侧有“自动回复”按钮。点击“自动回复”按钮，就可以进入“自动回复”页面。
+在登录了B站账号的浏览器中进入[消息中心](https://message.bilibili.com/)后，您可以看到，在页面的左侧有“自动回复”按钮。点击“自动回复”按钮，就可以进入[“自动回复”页面](https://message.bilibili.com/#/autoreply)。
 在页面顶部，有“被关注回复”、“关键词回复”、“收到消息回复”选择夹，部分用户可能也有“大航海上船回复”选择夹。点击每个选择夹中功能的开关按钮，就可以开启对应的功能，并显示更多的信息。
 ![“自动回复”页面](/images/auto-reply-page.png)
 
 ## 使用自动回复功能
-目前B站**只支持对纯文字自动回复，自动回复的内容也只能为纯文字（可以包含表情），不能对图片自动回复，也不能自动回复图片，回复内容不超过500字**。其中，对每一个功能的介绍如下表：
+目前B站**只支持对纯文字自动回复，自动回复的内容也只能为纯文字（可以包含表情），回复内容不超过500字；如果对方也是通过B站的自动回复或自动推送功能发送私信的，那么也不会自动回复**。其中，对每一个功能的介绍如下表：
 
 | 功能 | 作用 |
 | :--: | ---- |
 | 被关注回复 | 当某用户**在当天首次**关注您时，会自动将您设置的私信内容回复给TA。 |
 | 关键词回复 | 当用户给您发送私信时，如果该私信的内容命中您提前设定好的规则（**不超过20个**）时，会自动将**首个**命中规则的对应内容回复给TA。<br />1. 规则名称：当前规则的名称，便于让您区分不同的规则，不超过30字。<br />2. 关键词：“精确匹配”和“模糊匹配”必须至少填写其中一项，每一项**最多支持填写20个关键词**，每个关键词用“，”隔开。<br />&emsp;①精确匹配：当用户的私信内容与“精确匹配”中某个关键词**完全相同**时，会自动回复，**区分大小写**。<br />&emsp;②模糊匹配：当用户的私信内容**包含**“模糊匹配”中某个关键词时，会自动回复，**不区分大小写**。<br />3. 回复内容：回复用户的私信内容。 |
 | 收到消息回复 | 当某用户**在当天首次**给您发送在“关键词回复”中未命中关键词的私信时（如果没有开启“关键词回复”，直接视为未命中关键词），会自动将您设置的私信内容回复给TA。 |
-| 大航海上船回复（**仅部分用户**） | 当用户**首次**开通大航海时，会自动将您设置的私信内容回复给TA。 |
+| 大航海上船回复（**仅部分用户有这个功能**） | 当用户**首次**开通大航海时，会自动将您设置的私信内容回复给TA。 |
 
 ### 关键词回复例子
 #### 例1

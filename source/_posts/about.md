@@ -1,7 +1,7 @@
 ---
 title: 关于wuziqian211及Blog、程序
 date: 2021-09-16 23:30:17
-updated: 2023-07-20 20:05:53
+updated: 2024-02-05 17:39:21
 description: 这里是一篇关于wuziqian211及TA的Blog、程序的介绍哟~
 tags:
   - 网站
@@ -13,6 +13,7 @@ categories:
 sticky: 100
 permalink: /about/
 ---
+
 {% cq %}
 不求最好，只求更好。Not for the best, just for the better.
 {% endcq %}
@@ -35,7 +36,7 @@ wuziqian211在B站很活跃哦(^・ω・^ )如果您有B站账号，可以尝试
 - <span style="color: #f25d8e;">哔哩哔哩：[wuziqian211](https://space.bilibili.com/425503913)（UID：425503913；wuziqian211最活跃的地方，建议您在这里与wuziqian211互动）</span>
 - <span style="color: #9f7be1;">GitHub：[wuziqian211](https://github.com/wuziqian211)（wuziqian211的Blog及API的源代码都在这里）</span>
 - <span style="color: #c71d23;">Gitee：[wuziqian211](https://gitee.com/wuziqian211)（wuziqian211的一些程序的源代码在这里）</span>
-- <span style="color: #12b7f5;">QQ：2300393122（ID：ziqian211）</span>
+- <span style="color: #12b7f5;">QQ：[2300393122](https://qm.qq.com/q/gQWXeud8EU)（ID：ziqian211） 粉丝群：[527957451](https://qm.qq.com/q/qstfdE1CiQ)</span>
 - <span style="color: #1d9bf0;">Twitter：[wuziqian211](https://twitter.com/wuziqian211)（很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - <span style="color: #0097fa;">Pixiv：[wuziqian211](https://www.pixiv.net/users/77695887)（ID：77695887；很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - E-Mail：[wuziqian211@126.com](mailto:wuziqian211@126.com)
