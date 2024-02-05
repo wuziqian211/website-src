@@ -5,10 +5,11 @@
   width: 100%;
 }
 .wl-content .wl-emoji {
-  height: 2.5em !important;
+  height: 3em !important;
+  vertical-align: sub !important;
 }
 .wl-content .wl-emoji[src^='/emote/小黄脸/'], .wl-content .wl-emoji[src^='/emote/tv_小电视/'], .wl-content .wl-emoji[src^='/emote/喵/'] {
-  height: 1.25em !important;
+  height: 1.5em !important;
 }
 .hljs-subst {
   color: var(--highlight-foreground);
@@ -40,7 +41,7 @@ img.face-icon {
   position: absolute;
   top: 4rem;
 }
-img:not(.wl-emoji):not(.fancybox-image):not(.face-icon) {
+img:not(.wl-emoji):not(.fancybox-image):not(f-thumbs_slide__img):not(.face-icon) {
   border-radius: 20px;
   min-width: 50px;
 }

@@ -289,9 +289,10 @@ fs.writeFileSync('followers.html', content); // 注意：请将“followers.html
 ![生成图片](/images/take-full-size-screenshot.png)
 
 ## 总结
-生成自己的所有粉丝列表的图片看似很难，实际上只需要三个步骤，每个步骤不需要您进行太多操作。如果您展开下面的代码，并直接复制，再进行一些适当的修改，也可以生成您自己的粉丝列表的图片。
+生成自己的所有粉丝列表的图片看似很难，实际上只有三个步骤，每个步骤不需要您进行太多操作。
+下面被折叠的代码就是实现上述功能的完整代码，您可以直接复制代码，再适当修改一下代码，就可以生成您自己的粉丝列表的图片了。
 <details>
-<summary>点击查看代码</summary>
+<summary>点击查看完整代码</summary>
 ```js
 // 初始化
 const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' }; // 注意：此Cookie仅作为示例，请修改成自己的Cookie
@@ -394,5 +395,5 @@ fs.writeFileSync('followers.html', content); // 注意：请将“followers.html
 ```
 </details>
 
-下面的图片，就包含wuziqian211生成的粉丝列表。
+下面的图片就是wuziqian211在2022年10月15日生成的粉丝列表图片。
 ![wuziqian211在2022年10月15日生成的所有粉丝列表的图片](/images/fans-list.png)

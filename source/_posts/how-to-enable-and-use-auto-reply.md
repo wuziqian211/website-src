@@ -29,13 +29,13 @@ categories:
 {% endnote %}
 以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来。
 ![获取Cookie](/images/get-cookie.png)
-打开命令行窗口，输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
+打开控制台，输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
 {% note default %}
-#### 如何打开命令行窗口
-- **Windows**：按下Win＋R，输入`cmd`后回车即可
-- **大多数有图形化界面的GNU/Linux操作系统**：在桌面上按下Ctrl＋Alt＋T即可
-- **对于仅有命令行界面的GNU/Linux操作系统**：不需要“打开命令行窗口”，直接在界面输入命令即可
-- **macOS**：按下⌘＋空格键即可
+#### 如何打开控制台
+- **Windows**：按下Win＋R，输入`cmd`后回车，即可打开控制台窗口
+- **大多数有图形化界面的GNU/Linux操作系统**：在桌面上按下Ctrl＋Alt＋T，即可打开控制台窗口
+- **仅有控制台界面的GNU/Linux操作系统**：直接在界面输入命令即可
+- **macOS**：按下⌘＋空格键，即可打开控制台窗口
 
 {% endnote %}
 例：假如您获取到的{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：

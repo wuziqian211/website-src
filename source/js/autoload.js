@@ -1,6 +1,6 @@
 // 注意：live2d_path 参数应使用绝对路径
-const live2d_path = 'https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/';
-// const live2d_path = '/live2d-widget/';
+// const live2d_path = 'https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/';
+const live2d_path = document.location.origin + '/live2d-widget/';
 
 // 封装异步加载资源的方法
 function loadExternalResource(url, type) {
@@ -8,8 +8,7 @@ function loadExternalResource(url, type) {
     let tag;
     if (type === 'css') {
       tag = document.createElement('link');
-      tag.rel = 'stylesheet';
-      tag.href = url;
+      tag.rel = 'stylesheet', tag.href = url;
     } else if (type === 'js') {
       tag = document.createElement('script');
       tag.src = url;
