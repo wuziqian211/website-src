@@ -32,6 +32,9 @@ const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0
 {% note danger %}
 **特别注意：请不要把您刚刚复制的“SESSDATA”“bili_jct”中任何一个Cookie的值告诉任何人！它们的值是您的账号的登录信息，与账号、密码的作用相似，别人可能会利用这些值来登录您的账号。**
 {% endnote %}
+{% note warning %}
+目前，B站的Cookie是定期更新的，所以建议您获取完Cookie后暂时不要访问B站的网页，防止原来的Cookie因更新而失效。待您完成所有步骤后，就可以访问B站的网页了。
+{% endnote %}
 
 ## 第一步 获取所有粉丝的列表
 {% note info %}
