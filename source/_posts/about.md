@@ -36,7 +36,8 @@ wuziqian211在B站很活跃哦(^・ω・^ )如果您有B站账号，可以尝试
 - <span style="color: #f25d8e;">哔哩哔哩：[wuziqian211](https://space.bilibili.com/425503913)（UID：425503913；wuziqian211最活跃的地方，建议您在这里与wuziqian211互动）</span>
 - <span style="color: #9f7be1;">GitHub：[wuziqian211](https://github.com/wuziqian211)（wuziqian211的Blog及API的源代码都在这里）</span>
 - <span style="color: #c71d23;">Gitee：[wuziqian211](https://gitee.com/wuziqian211)（wuziqian211的一些程序的源代码在这里）</span>
-- <span style="color: #12b7f5;">QQ：[2300393122](https://qm.qq.com/q/gQWXeud8EU)（ID：ziqian211） 粉丝群：[527957451](https://qm.qq.com/q/qstfdE1CiQ)</span>
+- <span style="color: #12b7f5;">QQ：[2300393122](https://qm.qq.com/q/gQWXeud8EU)（ID：ziqian211）
+  粉丝群：[527957451](https://qm.qq.com/q/qstfdE1CiQ)</span>
 - <span style="color: #1d9bf0;">Twitter：[wuziqian211](https://twitter.com/wuziqian211)（很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - <span style="color: #0097fa;">Pixiv：[wuziqian211](https://www.pixiv.net/users/77695887)（ID：77695887；很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - E-Mail：[wuziqian211@126.com](mailto:wuziqian211@126.com)
@@ -64,30 +65,38 @@ wuziqian211在2021年9月28日购买了域名“wuziqian211.top”，在2022年6
 
 **这个Blog的所有文章除特别声明外，均遵循[<i class="fab fa-fw fa-creative-commons"></i>BY 4.0（知识共享署名 4.0）](https://creativecommons.org/licenses/by/4.0/deed.zh)许可协议，如果您要转载这个Blog上的文章，需要注明出处哟qwq**
 
-### 本Blog使用的界面、功能与服务
+### 本Blog使用的界面、互动功能、CDN、存储与后端服务等
 #### 界面
 {% lg %}
-Theme NexT | https://theme-next.js.org/ | 提供本Blog的界面。NexT是一款风格优雅的高质量Hexo主题，自点点滴滴中用爱雕琢而成。 | /images/theme-next.svg
-Hexo | https://hexo.io/ | 生成本Blog的页面。Hexo是一个快速、简洁且高效的Blog框架。 | /images/hexo.svg
+Theme NexT | https://theme-next.js.org/ | 提供本Blog的界面。NexT是一款风格优雅的高质量Hexo主题，自点点滴滴中用爱雕琢而成。 | /images/thanks/theme-next.svg
+Hexo | https://hexo.io/ | 生成本Blog的页面。Hexo是一个快速、简洁且高效的Blog框架。 | /images/thanks/hexo.svg
 {% endlg %}
 
 #### 互动
 {% lg %}
-Waline | https://waline.js.org/ | 提供本Blog的评论服务。Waline是一款基于Valine衍生的简洁、安全的评论系统。 | /images/waline.png
-Live2D | https://github.com/stevenjoezhang/live2d-widget | 提供本Blog可爱又会动的看板娘。看板娘真的好萌呀⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ | /images/potion-maker_fixed.png
+Waline | https://waline.js.org/ | 提供本Blog的评论服务。Waline是一款基于Valine衍生的简洁、安全的评论系统。 | /images/thanks/waline.png
+Live2D | https://github.com/stevenjoezhang/live2d-widget | 提供本Blog可爱又会动的看板娘。看板娘真的好萌呀⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ | /images/thanks/potion-maker_fixed.png
 {% endlg %}
 
-#### 服务
+#### CDN（内容分发网络）
 {% lg %}
-Vercel | https://vercel.com/ | 提供本Blog的服务器、API。Vercel是一个用于前端框架和静态站点的平台。 | /images/vercel.png
-萌国ICP备案 | https://icp.gov.moe/ | 为本Blog提供“ICP备案”服务。萌ICP备纯属萌友网站联萌，是一种次元中的爱好，文化的展现✧(≖ ◡ ≖✿) | /images/moe-icon.png
-cdnjs | https://cdnjs.com/ | 加速本Blog的静态资源。cdnjs是一项免费的开源CDN（内容分发网络）服务。 | /images/cdnjs.svg
-UNPKG | https://unpkg.com/ | 加速本Blog的静态资源。UNPKG是一个快速的全球内容分发网络。 | /images/unpkg.png
-jsDelivr | https://www.jsdelivr.com/ | 加速本Blog的静态资源。jsDelivr是一个免费且快速、可靠和自动化的开源CDN（内容分发网络）。 | /images/jsdelivr.png
-LeanCloud | https://leancloud.app/ | 存储本Blog的评论数据。LeanCloud是一款领先的无服务器云服务，为产品开发提供强有力的后端支持。 | /images/leancloud.svg
-GitHub | https://github.com/ | 存储本Blog的源码文件。GitHub是一个用于构建、扩展和交付安全软件的完整开发人员平台。 | /images/github.svg
-Gitee | https://gitee.com/ | 为本Blog提供服务器、存储源码文件。Gitee是一个代码托管与协作的开发平台，汇聚几乎所有本土原创开源项目。 | /images/gitee.svg
-遇见图床 | https://www.hualigs.cn/ | 为本Blog的评论区提供图片上传服务。 | /images/hualigs.png
+cdnjs | https://cdnjs.com/ | 加速本Blog的静态资源。cdnjs是一项免费的开源CDN服务。 | /images/thanks/cdnjs.svg
+UNPKG | https://unpkg.com/ | 加速本Blog的静态资源。UNPKG是一个快速的全球内容分发网络。 | /images/thanks/unpkg.png
+jsDelivr | https://www.jsdelivr.com/ | 加速本Blog的静态资源。jsDelivr是一个免费且快速、可靠和自动化的开源CDN。 | /images/thanks/jsdelivr.png
+{% endlg %}
+
+#### 存储＆后端服务
+{% lg %}
+Vercel | https://vercel.com/ | 提供本Blog的服务器、API。Vercel是一个用于前端框架和静态站点的平台。 | /images/thanks/vercel.png
+LeanCloud | https://leancloud.app/ | 存储本Blog的评论数据。LeanCloud是一款领先的无服务器云服务，为产品开发提供强有力的后端支持。 | /images/thanks/leancloud.svg
+GitHub | https://github.com/ | 存储本Blog的源码文件。GitHub是一个用于构建、扩展和交付安全软件的完整开发人员平台。 | /images/thanks/github.svg
+Gitee | https://gitee.com/ | 为本Blog提供服务器、存储源码文件。Gitee是一个代码托管与协作的开发平台，汇聚几乎所有本土原创开源项目。 | /images/thanks/gitee.svg
+{% endlg %}
+
+#### 其他
+{% lg %}
+萌国ICP备案 | https://icp.gov.moe/ | 为本Blog提供“ICP备案”服务。萌ICP备纯属萌友网站联萌，是一种次元中的爱好，文化的展现✧(≖ ◡ ≖✿) | /images/thanks/moe-icon.png
+遇见图床 | https://www.hualigs.cn/ | 为本Blog的评论区提供图片上传服务。 | /images/thanks/hualigs.png
 {% endlg %}
 
 ## 关于wuziqian211的程序

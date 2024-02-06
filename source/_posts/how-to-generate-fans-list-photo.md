@@ -243,7 +243,7 @@ for (let i = 0; i < info.length; i++) { // 获取所有粉丝的粉丝数
 我们可以根据自己的喜好，选择生成什么类型的文件。下面的代码可以生成HTML文件，界面类似于wuziqian211的动态里的图片。
 ```js
 const encodeHTML = str => typeof str === 'string' ? str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/ (?= )|(?<= ) |^ | $/gm, '&nbsp;').replace(/\n/g, '<br />') : '';
-const html = info.map(u => `<span class="face-wrap${u.pendant?.image ? ' has-frame' : ''}"><img class="face" src="${u.face}" referrerpolicy="no-referrer" />${u.pendant?.pid ? `<img class="face-frame" src="${u.pendant.image_enhance || u.pendant.image}" referrerpolicy="no-referrer" />` : ''}${u.official.type === 0 ? '<img class="face-icon" src="https://wuziqian211.top/images/personal.svg" />' : u.official.type === 1 ? '<img class="face-icon" src="https://wuziqian211.top/images/business.svg" />' : u.vip.status ? '<img class="face-icon" src="https://wuziqian211.top/images/big-vip.svg" />' : ''}</span> ${encodeHTML(u.name)}`).join('<br />\n');
+const html = info.map(u => `<span class="face-wrap${u.pendant?.image ? ' has-frame' : ''}"><img class="face" src="${u.face}" referrerpolicy="no-referrer" />${u.pendant?.pid ? `<img class="face-frame" src="${u.pendant.image_enhance || u.pendant.image}" referrerpolicy="no-referrer" />` : ''}${u.official.type === 0 ? '<img class="face-icon" src="https://wuziqian211.top/images/default-faces%26face-icons/personal.svg" />' : u.official.type === 1 ? '<img class="face-icon" src="https://wuziqian211.top/images/default-faces%26face-icons/business.svg" />' : u.vip.status ? '<img class="face-icon" src="https://wuziqian211.top/images/default-faces%26face-icons/big-vip.svg" />' : ''}</span> ${encodeHTML(u.name)}`).join('<br />\n');
 const content = `<style>
 * {
   font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
@@ -352,7 +352,7 @@ for (let i = 0; i < info.length; i++) {
 }
 
 // 生成文件
-const html = info.map(u => `<span class="face-wrap${u.pendant?.image ? ' has-frame' : ''}"><img class="face" src="${u.face}" referrerpolicy="no-referrer" />${u.pendant?.pid ? `<img class="face-frame" src="${u.pendant.image_enhance || u.pendant.image}" referrerpolicy="no-referrer" />` : ''}${u.official.type === 0 ? '<img class="face-icon" src="https://wuziqian211.top/images/personal.svg" />' : u.official.type === 1 ? '<img class="face-icon" src="https://wuziqian211.top/images/business.svg" />' : u.vip.status ? '<img class="face-icon" src="https://wuziqian211.top/images/big-vip.svg" />' : ''}</span> ${encodeHTML(u.name)}`).join('<br />\n');
+const html = info.map(u => `<span class="face-wrap${u.pendant?.image ? ' has-frame' : ''}"><img class="face" src="${u.face}" referrerpolicy="no-referrer" />${u.pendant?.pid ? `<img class="face-frame" src="${u.pendant.image_enhance || u.pendant.image}" referrerpolicy="no-referrer" />` : ''}${u.official.type === 0 ? '<img class="face-icon" src="https://wuziqian211.top/images/default-faces%26face-icons/personal.svg" />' : u.official.type === 1 ? '<img class="face-icon" src="https://wuziqian211.top/images/default-faces%26face-icons/business.svg" />' : u.vip.status ? '<img class="face-icon" src="https://wuziqian211.top/images/default-faces%26face-icons/big-vip.svg" />' : ''}</span> ${encodeHTML(u.name)}`).join('<br />\n');
 const content = `<style>
 * {
   font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
