@@ -37,7 +37,7 @@ wuziqian211在B站很活跃哦(^・ω・^ )如果您有B站账号，可以尝试
 - <span style="color: #9f7be1;">GitHub：[wuziqian211](https://github.com/wuziqian211)（wuziqian211的Blog及API的源代码都在这里）</span>
 - <span style="color: #c71d23;">Gitee：[wuziqian211](https://gitee.com/wuziqian211)（wuziqian211的一些程序的源代码在这里）</span>
 - <span style="color: #12b7f5;">QQ：[2300393122](https://qm.qq.com/q/gQWXeud8EU)（ID：ziqian211）
-  粉丝群：[527957451](https://qm.qq.com/q/qstfdE1CiQ)</span>
+  粉丝群：[527957451](https://qm.qq.com/q/qstfdE1CiQ)（wuziqian211与B站用户“肥宅水水呀”共用的群聊，因此群主是两个人中的任何一个，可能会随时变化）</span>
 - <span style="color: #1d9bf0;">Twitter：[wuziqian211](https://twitter.com/wuziqian211)（很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - <span style="color: #0097fa;">Pixiv：[wuziqian211](https://www.pixiv.net/users/77695887)（ID：77695887；很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - E-Mail：[wuziqian211@126.com](mailto:wuziqian211@126.com)

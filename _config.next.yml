@@ -939,7 +939,7 @@ waline:
 
   # Custom locales
   locale:
-    link: 'B 站 UID'
+    link: '网站 / B 站 UID'
     placeholder: '发条评论吧 (=・ω・=)' # Comment box placeholder
     submit: 发布
     admin: 可爱的管理员
@@ -1018,7 +1018,7 @@ waline:
   # Comment infomation, valid meta are nick, mail and link
   meta:
     - nick
-  #   - mail
+    - mail
     - link
 
   # Set required meta field, e.g.: [nick] | [nick, mail]
