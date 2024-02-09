@@ -32,12 +32,21 @@ th {
   border-radius: 0 !important;
   min-width: 0 !important;
 }
-img:not(.wl-emoji):not(.fancybox-image):not(.f-thumbs__slide__img):not(.link-grid-image):not(.face-icon) {
+img:not(.wl-emoji):not(.fancybox-image):not(.f-thumbs__slide__img):not(.link-grid-image):not(.emote):not(.face-icon) {
   border-radius: 20px;
   min-width: 50px;
 }
 img.avatar {
   border-radius: 50% !important;
+}
+img.emote {
+  display: inline;
+  height: 2.5em;
+  margin: 0;
+  vertical-align: sub;
+}
+img.emote[src^='/emote/小黄脸/'], img.emote[src^='/emote/tv_小电视/'], img.emote[src^='/emote/喵/'] {
+  height: 1.25em;
 }
 img.face-icon {
   height: 1.5rem;

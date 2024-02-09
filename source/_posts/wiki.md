@@ -1,7 +1,7 @@
 ---
 title: wuziqian211的Wiki
 date: 2021-10-10 14:11:28
-updated: 2024-01-15 02:16:38
+updated: 2024-02-09 17:12:12
 description: 这是一篇比较全面的关于wuziqian211的介绍，可能有点长~
 tags:
   - Wiki
@@ -42,7 +42,7 @@ wuziqian211用过一些不同的头像(=・ω・=)下面是wuziqian211用过的�
 昵称中的“wuziqian”是TA的名字的拼音，“211”是随便取的代号呢(｡･ω･｡)
 您可以叫TA“wuziqian”“ziqian”“211”“ziqian酱”“211娘”等等，只要是您喜欢的称呼都可以(｀・ω・´)
 {% note info %}
-wuziqian211使用这个昵称已经有5年多了（首次使用是TA在2017年12月17日注册《我的世界》中国版账号的时候）(=・ω・=)
+wuziqian211使用这个昵称已经有6年多了（首次使用是TA在2017年12月17日注册《我的世界》中国版账号的时候）(=・ω・=)
 因为TA觉得这个昵称取得有点太简单了，所以TA很想改个昵称qwq
 {% endnote %}
 
@@ -54,7 +54,7 @@ wuziqian211的脾气非常好，不会说脏话，也不会乱发言的(｀・ω
 {% note info %}
 “多重人格”指一个人身上显示出两个及以上不同“角色”的人格特点(=・ω・=)
 
-- 当wuziqian211幽默时，TA会说像“说！你是不是考古学家！[tv_doge]”这样的话
+- 当wuziqian211幽默时，TA会说像“211是笨蛋！<img class="emote no-fancybox" alt="[tv_doge]" src="/emote/tv_小电视/tv_doge.png" />”这样的话
 - 当wuziqian211可爱时，TA会说像“(=・ω・=)感谢您对我的帮助与支持呀awa”这样的话
 
 ~~提示：wuziqian211的真实性别是男，装的“可爱”~~
@@ -230,7 +230,7 @@ wuziqian211开始频繁发布动态，与粉丝频繁互动。
 | 3月28日 | 发布了包含自己使用过的头像的动态，并想让别人发自己“上新闻”的图片 | |
 | 4月5日 | 发布了视频[《wuziqian211 的片头》](https://www.bilibili.com/video/BV1664y1M7Fz/) | 这个视频比较“水” |
 | 4月6日 | 发布了一个[让B站账号退出登录的链接](https://passport.bilibili.com/login?act=exit) | 这个链接现在已经失效了 |
-| 4月8日 | 发布了专栏《wuziqian211的出现》 | [cv5520841](https://www.bilibili.com/read/cv5520841)，使用“狗屁不通文章生成器”生成的，**已删除**，补档在[这里](https://wuziqian211-3.icoc.vc/nd.jsp?id=29) |
+| 4月8日 | 发布了专栏《wuziqian211的出现》 | [cv5520841](https://www.bilibili.com/read/cv5520841)，使用“狗屁不通文章生成器”生成的，**已删除**，[点击查看补档](https://wuziqian211-3.icoc.vc/nd.jsp?id=29) |
 | 4月16日 | 更新程序“迫害wuziqian211”并将其改名为“迫害某人” | 程序的功能也和其新名称一样，可以“迫害”任何人，而不仅仅是wuziqian211 |
 | 4月17日 | 1. 在B站的消息中心中“添加”了“收到的踩”左侧选择按钮，并发布了动态；<br />2. 发布了一个1TB空文件。 | 1. 其实是通过浏览器开发工具修改的。 |
 | 4月19日 | 发布了图片，让大家根据图片提供的数字，找到自己昵称中的数字 | |
@@ -263,7 +263,7 @@ wuziqian211开始频繁发布动态，与粉丝频繁互动。
 | 8月23日 | **粉丝数达到了2000** | |
 | 8月24日 | 再次发布介绍自己的动态 | 这条动态置顶了很长时间，有300多个赞 |
 | 8月29日 | 1. 发布了关于“自己以后没时间发动态”的动态；<br />2. 让粉丝说说自己的优缺点，自己也说了自己的缺点。 | |
-| 8月30日 | 发布了那时的第1000条动态，内容只是“\[tv_微笑\]” | |
+| 8月30日 | 发布了那时的第1000条动态，内容只是“<img class="emote no-fancybox" alt="[tv_微笑]" src="/emote/tv_小电视/tv_微笑.png" />” | |
 | 10月1日 | **互动活跃度变成0** | 21天没发动态了 |
 | 10月6日 | 手动移除大约38个粉丝 | |
 
@@ -306,8 +306,8 @@ wuziqian211像2021年那样，没发什么动态，但是发了8个视频（不�
 | 3月6日 | 发布关于**自己不再可爱**的动态 | 发布动态后wuziqian211没有来B站12天，但是wuziqian211仍然很可爱(=・ω・=) |
 | 6月4日 | 发布自己在“风叶穿行”挑战中得分为40的动态，超过了90%的玩家 | wuziqian211有近3个月没有发动态了，这是TA没发动态的时间最长的一次 |
 | 7月22日 | **自己已经达到了20000经验值** | 还差8800经验值就可以升到6级了 |
-| 7月31日 | 发布了视频[《一张13.1GB的GIF？？？》](https://www.bilibili.com/video/BV12Y4y1P7e9/) | GIF的**分卷文件**可以在[这里](https://pan.baidu.com/s/1YODOWOIGCg1vH0G3hClh8g)下载，提取码是“Rick” |
-| 8月12日 | 投稿了视频《B站程序员你给我过来，你把1秒当成2秒是吧？？？》，但**由于涉及不适宜内容而被锁定** | [BV1uT411A7MV](https://www.bilibili.com/video/BV1uT411A7MV/)，视频长度约为24秒，补档在[这里](https://pan.baidu.com/s/1No6yZ823AnGYirFfgcq6ew)，提取码是“BBug” |
+| 7月31日 | 发布了视频[《一张13.1GB的GIF？？？》](https://www.bilibili.com/video/BV12Y4y1P7e9/) | [点击下载GIF](https://pan.baidu.com/s/1xJPmAFrLfrWQoUDgpCleBA?pwd=Rick)（提取码：Rick） |
+| 8月12日 | 投稿了视频《B站程序员你给我过来，你把1秒当成2秒是吧？？？》，但**由于涉及不适宜内容而被锁定** | [BV1uT411A7MV](https://www.bilibili.com/video/BV1uT411A7MV/)，视频长度约为24秒，[点击查看补档](https://pan.baidu.com/s/1No6yZ823AnGYirFfgcq6ew?pwd=BBug)（提取码：BBug） |
 | 8月13日 | 发布了视频[《在Ubuntu运行时拔掉硬盘会怎样？》](https://www.bilibili.com/video/BV11B4y167qA/) | |
 | 8月22日 | 发布自己在“风叶穿行”挑战中得分为114514的动态 | 超过了99%的玩家；其实用了浏览器开发工具修改脚本 |
 | 9月6日 | 发布了视频[《这就是wuziqian211的2022夏日总结~》](https://www.bilibili.com/video/BV1nY4y1M7MB/) | |
