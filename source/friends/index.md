@@ -13,7 +13,7 @@ Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | /images/
 知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.jpg
 易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpeg
 开心的肥宅快乐水的个人网站 | https://et19798147-2.icoc.vc/ | B站用户“肥宅水水呀”的个人网站 | /images/friendship-links/et19798147-2-icoc-vc.png
-GoForceX's Blog | https://goforcex.top/ | A simple blog | /images/friendship-links/goforcex-top.jp
+GoForceX's Blog | https://goforcex.top/ | A simple blog | /images/friendship-links/goforcex-top.jpg
 wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧网站，已不再更新 | /images/friendship-links/wuziqian211-icoc-vc.png
 {% endlg %}
 如果您也想申请友情链接的话，可以在这个Blog的评论区评论哟awa
