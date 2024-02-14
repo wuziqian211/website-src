@@ -9,10 +9,11 @@ updated: 2022-10-29 20:11:15
 朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
 Winner365のBlog | https://blog.hicosor.top/ | 所谓浮躁，也就是时时刻刻，希望以最短的时间，博取最多的存在感优越感和自我认同。 | /images/friendship-links/blog-hicosor-top.png
 Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | /images/friendship-links/kegongteng-cn.jpg
+我汐了_233的小站 | https://woxile.rth1.link/ | B站用户“我汐了_233”的个人网站 | /images/friendship-links/woxile-rth1-link.jpg
 知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.jpg
 易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpeg
 开心的肥宅快乐水的个人网站 | https://et19798147-2.icoc.vc/ | B站用户“肥宅水水呀”的个人网站 | /images/friendship-links/et19798147-2-icoc-vc.png
-GoForceX's Blog | https://goforcex.top/ | A simple blog | /images/friendship-links/goforcex-top.jpg
+GoForceX's Blog | https://goforcex.top/ | A simple blog | /images/friendship-links/goforcex-top.jp
 wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧网站，已不再更新 | /images/friendship-links/wuziqian211-icoc-vc.png
 {% endlg %}
 如果您也想申请友情链接的话，可以在这个Blog的评论区评论哟awa
