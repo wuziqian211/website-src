@@ -1,7 +1,7 @@
 ---
 title: 如何开启并使用B站的自动回复功能
 date: 2022-01-13 20:47:39
-updated: 2024-02-09 17:13:01
+updated: 2024-02-20 14:34:35
 description: 不管你有没有达到1000粉丝，都可以开启B站的自动回复功能
 tags:
   - 自动回复
@@ -16,10 +16,11 @@ categories:
 <!-- more -->
 
 ## 开启自动回复功能
-如果您的粉丝数在1000及以上，请您直接查看“[通过网页开启自动回复功能](#%E9%80%9A%E8%BF%87%E7%BD%91%E9%A1%B5%E5%BC%80%E5%90%AF%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D%E5%8A%9F%E8%83%BD)”部分。
-如果您的粉丝数在1000以下，请您先查看“[通过API开启自动回复功能](#%E9%80%9A%E8%BF%87api%E5%BC%80%E5%90%AF%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D%E5%8A%9F%E8%83%BD)”部分，以显示“自动回复”按钮，然后就可以直接在B站网页或APP上设置自动回复了。
+如果您的粉丝数在1000及以上，请您直接选择“通过网页开启”部分。
+如果您的粉丝数在1000以下，请您先查看“通过API开启”部分，以显示“自动回复”按钮，然后就可以直接在B站网页或APP上设置自动回复了。
 
-### 通过API开启自动回复功能
+{% tabs 开启自动回复功能 %}
+<!-- tab 通过API开启 -->
 由于B站的一些“漏洞”，您可以通过一些技术手段（就比如API，即应用程序编程接口）来开启B站的自动回复，并能正常使用自动回复功能。
 {% note warning %}
 强烈建议您使用电脑操作！在手机上操作会非常麻烦。
@@ -27,17 +28,20 @@ categories:
 {% note info %}
 下面的操作**需要在您的操作系统上安装`curl`命令行程序**，一般来说现在的操作系统里都有这个程序。如果没有，可以在<https://curl.se/download/>下载。
 {% endnote %}
+
 以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来，这样您就获取到了Cookie。
 ![获取Cookie](/images/get-cookie.png)
+
 打开控制台，输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
 {% note default %}
-#### 如何打开控制台
+### 如何打开控制台
 - **Windows**：按下Win＋R，输入`cmd`后回车，即可打开控制台窗口
 - **大多数有图形化界面的GNU/Linux操作系统**：在桌面上按下Ctrl＋Alt＋T，即可打开控制台窗口
 - **仅有控制台界面的GNU/Linux操作系统**：直接在界面输入命令即可
 - **macOS**：按下⌘＋空格键，即可打开控制台窗口
 
 {% endnote %}
+
 例：假如您获取到的{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：
 ```bash
 $ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" -b "SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef&csrf_token=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"
@@ -60,6 +64,7 @@ $ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 如果您非常了解HTTP，上面的操作也可以像这样表述：
 用POST方式提交查询字符串数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，并带上Cookie“SESSDATA”与“bili_jct”，如果服务器返回的JSON中“code”的值为0，就说明自动回复功能开启成功。
 {% endnote %}
+
 进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了一个按钮“自动回复”，就说明自动回复功能开启成功，而且您会发现，“关键词回复”功能是开启的。
 ![“自动回复”按钮](/images/auto-reply-button.png)
 {% note warning %}
@@ -67,10 +72,15 @@ $ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 如果您不小心关闭了自动回复的所有功能，导致“自动回复”按钮消失，那么您可以再次执行上面的操作以重新开启自动回复功能。
 {% endnote %}
 
-### 通过网页开启自动回复功能
+<!-- endtab -->
+
+<!-- tab 通过网页开启 -->
 在登录了B站账号的浏览器中进入[消息中心](https://message.bilibili.com/)后，您可以看到，在页面的左侧有“自动回复”按钮。点击“自动回复”按钮，就可以进入[“自动回复”页面](https://message.bilibili.com/#/autoreply)。
 在页面顶部，有“被关注回复”、“关键词回复”、“收到消息回复”选择夹，部分用户可能也有“大航海上船回复”选择夹。点击每个选择夹中功能的开关按钮，就可以开启对应的功能，并显示更多的信息。
 ![“自动回复”页面](/images/auto-reply-page.png)
+<!-- endtab -->
+
+{% endtabs %}
 
 ## 使用自动回复功能
 目前B站**只支持对纯文字自动回复，自动回复的内容也只能为纯文字（可以包含表情），回复内容不超过500字；如果对方也是通过B站的自动回复或自动推送功能发送私信的，那么也不会自动回复**。

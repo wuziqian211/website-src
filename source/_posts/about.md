@@ -1,7 +1,7 @@
 ---
 title: 关于wuziqian211及Blog、程序
 date: 2021-09-16 23:30:17
-updated: 2024-02-09 17:13:49
+updated: 2024-02-20 17:38:24
 description: 这里是一篇关于wuziqian211及TA的Blog、程序的介绍哟~
 tags:
   - 网站
@@ -42,7 +42,7 @@ wuziqian211在B站很活跃哦(^・ω・^ )如果您有B站账号，可以尝试
 - <span style="color: #0097fa;">Pixiv：[wuziqian211](https://www.pixiv.net/users/77695887)（ID：77695887；很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - E-Mail：[wuziqian211@126.com](mailto:wuziqian211@126.com)
 
-当然不止这些，wuziqian211还在其他很多平台有自己的账号(=・ω・=)您在大多数平台上见到的昵称为“wuziqian211”的用户应该就是wuziqian211本人，但不一定都是的哦qwq
+当然不止这些，wuziqian211还在其他很多平台有自己的账号(=・ω・=)您在大多数平台上见到的昵称为“wuziqian211”或“梦春酱”的用户应该就是wuziqian211本人，但不一定都是的哦qwq
 
 ## 关于本Blog
 wuziqian211在2020年创建了一个用[凡科建站](https://jz.fkw.com/)搭建的[网站](https://wuziqian211.icoc.vc/)，但是这个平台的免费版的功能太少，比如不支持自定义域名、自定义文件等，而且只能使用他们的网页模板，升级又要花很多的钱(´；ω；\`)最重要的是，那个网站每个月只能访问300次，超过300次，这个月就不能再访问了！(´；ω；\`)

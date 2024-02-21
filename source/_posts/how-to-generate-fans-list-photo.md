@@ -1,7 +1,7 @@
 ---
 title: 如何生成B站粉丝列表图片
 date: 2022-12-10 20:42:22
-updated: 2024-02-06 22:11:04
+updated: 2024-02-21 11:56:39
 tags:
   - 用户列表
   - 技术
@@ -41,14 +41,14 @@ const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0
 在这个部分中，有一些内容来自<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/user/relation.md>。
 {% endnote %}
 B站官方给我们提供的获取指定用户的粉丝列表的API是<https://api.bilibili.com/x/relation/followers>，请求方式是GET。
-**这个API需要您提供有效的Cookie，最多只能获取最近关注您的1000名粉丝的列表**。
+**这个API需要您提供有效的Cookie**，返回的列表按照关注时间的先后顺序**逆向**排序（越晚关注，就在列表的越前面），**最多只能获取最近关注您的1000名粉丝的列表**。
 主要的URL参数包括：
 
 | 参数名 | 内容 | 必要性 | 备注 |
 | :----: | :--: | :----: | ---- |
 | vmid | 目标用户UID | 必要 | |
 | ps | 每页项数 | 非必要 | 默认为50，且最多为50 |
-| pn | 页码 | 非必要 | 默认为1，其他用户仅可查看前5页 |
+| pn | 页码 | 非必要 | 默认为1 |
 
 如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例，一些项已经省略）：
 ```json
@@ -91,20 +91,20 @@ B站官方给我们提供的获取指定用户的粉丝列表的API是<https://a
   }
 }
 ```
-我们就先来尝试获取一下自己粉丝列表的第1页吧。
-下面是wuziqian211写的代码，**记得要在顶层或者异步（async）函数中运行**，在非异步函数中运行会报错，后面wuziqian211写的所有代码也需要在顶层或异步函数运行。
+我们就先来尝试获取一下自己粉丝列表的第1页吧（每页50个粉丝）。
+下面是wuziqian211写的代码，**记得要在顶层（top level）或者异步（async）函数中运行**，在非异步函数中运行会报错，后面wuziqian211写的所有代码也需要在顶层或异步函数中运行。
 ```js
-(await (await fetch('https://api.bilibili.com/x/relation/followers?vmid=425503913&ps=50&pn=1', { headers })).json()).data.list; // 注意：请将“vmid=”后面的数字修改成自己的UID
+console.log((await (await fetch('https://api.bilibili.com/x/relation/followers?vmid=425503913&ps=50&pn=1', { headers })).json()).data.list); // 注意：请将“vmid=”后面的数字修改成自己的UID
 ```
-运行上面的代码后，正常情况下会显示一个含很多对象（object）的数组（array）。
-我们可以在上面的代码的基础上稍作修改，来获取前面几页的粉丝列表。页数一般为自己的粉丝数除以50，再向上取整（即如果您的粉丝数为100，就取页数为2；如果您的粉丝数为101，就取页数为3）；由于B站的限制，最多只能获取前面20页的粉丝列表，所以如果您的粉丝数超过了1000，建议只获取前20页粉丝列表，继续往后获取也获取不到信息。
+运行上面的代码后，正常情况下控制台会显示一个带有很多元素的数组（array），而且数组的每个元素都是对象（object）。
+我们可以在上面代码的基础上稍作修改，来获取多页粉丝列表。如果您设置的每页项数为50，那么您要获取的页数一般为自己的粉丝数除以50，再向上取整。即：如果您的粉丝数在1\~50之间（含1和50，下同），就取页数为1；粉丝数在51\~100之间，就取页数为2；粉丝数在101\~150之间，就取页数为3；以此类推。由于B站的限制，最多只能获取最后关注您的1000个粉丝的列表，所以如果您的粉丝数超过了1000，建议**只获取前20页粉丝列表**，继续往后获取也是获取不到信息的。
 ```js
-let followers = []; // 存储粉丝列表
+const followers = []; // 存储粉丝列表
 for (let i = 1; i <= 20; i++) { // 获取前20页粉丝的信息，每页50个；这里的页数是根据自己的粉丝数而定的
-  followers = followers.concat((await (await fetch(`https://api.bilibili.com/x/relation/followers?vmid=425503913&ps=50&pn=${i}`, { headers })).json()).data.list); // 注意：请将“vmid=”后面的数字修改成自己的UID
+  followers.push(...(await (await fetch(`https://api.bilibili.com/x/relation/followers?vmid=425503913&ps=50&pn=${i}`, { headers })).json()).data.list); // 注意：请将“vmid=”后面的数字修改成自己的UID
 }
 ```
-这样，“followers”变量就存储了最多1000名粉丝的列表。
+这样，“followers”变量就存储了最多1000个粉丝的列表。
 {% note info %}
 如果您的粉丝数超过了1000，目前出于安全目的，B站采取了一些措施，使用户无法通过常规手段获取所有粉丝的列表，所以不在刚刚得到的粉丝列表里的粉丝就没办法直接获取到了。
 当然，如果您在没有超过1000粉丝的时候就保存了自己所有粉丝的列表，那么您可以将之前的列表与现在的列表合并，记得去除重复项。
@@ -134,10 +134,10 @@ const encodeWbi = async originalQuery => { // 对请求参数进行 wbi 签名�
   return params;
 };
 
-let realFollowers = [];
-for (let i = 0; i < followers.length; i++) { // 获取所有在粉丝列表里的用户与自己的关系
-  const rjson = await (await fetch(`https://api.bilibili.com/x/space/wbi/acc/relation?mid=${await encodeWbi({ mid: followers[i].mid })}`, { headers })).json();
-  if ([1, 2, 6].includes(rjson.data.be_relation.attribute)) realFollowers.push(followers[i]); // 如果用户现在正在关注您，可以加入到“realFollowers”数组
+const realFollowers = [];
+for (const f of followers) { // 获取所有在粉丝列表里的用户与自己的关系
+  const rjson = await (await fetch(`https://api.bilibili.com/x/space/wbi/acc/relation?mid=${await encodeWbi({ mid: f.mid })}`, { headers })).json();
+  if ([1, 2, 6].includes(rjson.data.be_relation.attribute)) realFollowers.push(f); // 如果用户现在正在关注您，可以加入到“realFollowers”数组
 }
 ```
 {% endnote %}
@@ -227,14 +227,15 @@ for (let i = 0; i < followers.length; i++) { // 获取所有在粉丝列表里�
 ```
 于是我们就可以写出下面的代码：
 ```js
-let followersWithoutInfo = followers.map(f => f.mid); // 没有获取到信息的粉丝UID
-let info = [];
+const followersWithoutInfo = followers.map(f => f.mid), // 没有获取到信息的粉丝 UID
+  jsonList = []; // 获取到的 JSON
 while (followersWithoutInfo.length) { // 如果还有没有获取到信息的粉丝，就继续获取信息
-  info = info.concat((await (await fetch(`https://api.vc.bilibili.com/account/v1/user/cards?uids=${followersWithoutInfo.slice(0, 50).join(',')}`, { headers })).json()).data);
-  followersWithoutInfo = followersWithoutInfo.slice(50);
+  resps.push(fetch(`https://api.vc.bilibili.com/account/v1/user/cards?uids=${followersWithoutInfo.slice(0, 50).join(',')}`, { headers }).then(resp => resp.json())); // 每次获取 50 个
+  followersWithoutInfo.splice(0, 50);
 }
-for (let i = 0; i < info.length; i++) { // 获取所有粉丝的粉丝数
-  info[i].follower = (await (await fetch(`https://api.bilibili.com/x/relation/stat?vmid=${info[i].mid}`, { headers })).json()).data.follower;
+const info = (await Promise.all(jsonList)).filter(ujson => ujson.code === 0).map(ujson => ujson.data).flat();
+for (const i of info) { // 获取所有粉丝的粉丝数
+  i.follower = (await (await fetch(`https://api.bilibili.com/x/relation/stat?vmid=${i.mid}`, { headers })).json()).data.follower;
 }
 ```
 这样，“info”变量就存储了所有粉丝的信息与粉丝数。
@@ -320,9 +321,9 @@ const encodeWbi = async originalQuery => { // 对请求参数进行 wbi 签名�
 const encodeHTML = str => typeof str === 'string' ? str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/ (?= )|(?<= ) |^ | $/gm, '&nbsp;').replace(/\n/g, '<br />') : '';
 
 // 获取可以获取到的粉丝的信息
-let followers = []; // 存储粉丝列表
+const followers = []; // 存储粉丝列表
 for (let i = 1; i <= 20; i++) { // 获取前20页粉丝的信息，每页50个；这里的页数是根据自己的粉丝数而定的
-  followers = followers.concat((await (await fetch(`https://api.bilibili.com/x/relation/followers?vmid=425503913&ps=50&pn=${i}`, { headers })).json()).data.list); // 注意：请将“vmid=”后面的数字修改成自己的UID
+  followers.push(...(await (await fetch(`https://api.bilibili.com/x/relation/followers?vmid=425503913&ps=50&pn=${i}`, { headers })).json()).data.list); // 注意：请将“vmid=”后面的数字修改成自己的UID
 }
 
 /* 如果您之前保存过自己所有粉丝的列表，可以执行以下代码（假设“oldFollowers”变量为之前存储的所有粉丝信息的数组）
@@ -332,23 +333,24 @@ for (const f of oldFollowers) {
 */
 
 // 移除没有关注自己的用户
-let realFollowers = [];
-for (let i = 0; i < followers.length; i++) { // 获取所有在粉丝列表里的用户与自己的关系
-  const rjson = await (await fetch(`https://api.bilibili.com/x/space/wbi/acc/relation?mid=${await encodeWbi({ mid: followers[i].mid })}`, { headers })).json();
-  if ([1, 2, 6].includes(rjson.data.be_relation.attribute)) realFollowers.push(followers[i]); // 如果用户现在正在关注您，可以加入到“realFollowers”数组
+const realFollowers = [];
+for (const f of followers) { // 获取所有在粉丝列表里的用户与自己的关系
+  const rjson = await (await fetch(`https://api.bilibili.com/x/space/wbi/acc/relation?mid=${await encodeWbi({ mid: f.mid })}`, { headers })).json();
+  if ([1, 2, 6].includes(rjson.data.be_relation.attribute)) realFollowers.push(f); // 如果用户现在正在关注您，可以加入到“realFollowers”数组
 }
 
 // 获取所有粉丝的详细信息
-let followersWithoutInfo = followers.map(f => f.mid); // 没有获取到信息的粉丝UID
-let info = [];
+const followersWithoutInfo = followers.map(f => f.mid), // 没有获取到信息的粉丝 UID
+  jsonList = []; // 获取到的 JSON
 while (followersWithoutInfo.length) { // 如果还有没有获取到信息的粉丝，就继续获取信息
-  info = info.concat((await (await fetch(`https://api.vc.bilibili.com/account/v1/user/cards?uids=${followersWithoutInfo.slice(0, 50).join(',')}`, { headers })).json()).data);
-  followersWithoutInfo = followersWithoutInfo.slice(50);
+  resps.push(fetch(`https://api.vc.bilibili.com/account/v1/user/cards?uids=${followersWithoutInfo.slice(0, 50).join(',')}`, { headers }).then(resp => resp.json())); // 每次获取 50 个
+  followersWithoutInfo.splice(0, 50);
 }
+const info = (await Promise.all(jsonList)).filter(ujson => ujson.code === 0).map(ujson => ujson.data).flat();
 
 // 获取所有粉丝的粉丝数
-for (let i = 0; i < info.length; i++) {
-  info[i].follower = (await (await fetch(`https://api.bilibili.com/x/relation/stat?vmid=${info[i].mid}`, { headers })).json()).data.follower;
+for (const i of info) {
+  i.follower = (await (await fetch(`https://api.bilibili.com/x/relation/stat?vmid=${i.mid}`, { headers })).json()).data.follower;
 }
 
 // 生成文件

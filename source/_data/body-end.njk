@@ -1,19 +1,21 @@
 <script>
-CONFIG.waline.imageUploader = async file => {
-  const { token } = (await (await fetch('https://api.yumeharu.top/api/modules?id=token')).json()).data,
-    formData = new FormData();
-  formData.set('image', file);
-  formData.set('apiType', 'majorhua,ai58');
-  formData.set('token', atob(token));
-  return (await (await fetch('https://www.hualigs.cn/api/upload', { method: 'POST', body: formData })).json()).data.url.majorhua;
-};
+document.addEventListener('page:loaded', () => {
+  CONFIG.waline.imageUploader = async file => {
+    const { token } = (await (await fetch('https://api.yumeharu.top/api/modules?id=token')).json()).data,
+      formData = new FormData();
+    formData.set('image', file);
+    formData.set('apiType', 'majorhua,ai58');
+    formData.set('token', atob(token));
+    return (await (await fetch('https://www.hualigs.cn/api/upload', { method: 'POST', body: formData })).json()).data.url.majorhua;
+  };
+});
 </script>
 <script data-pjax>
 (async () => {
   const { blocked } = (await (await fetch('https://api.yumeharu.top/api/modules?id=blocked')).json()).data;
   if (blocked) {
     const blockedRegExp = new RegExp(blocked);
-    document.querySelectorAll('a').filter(e => blockedRegExp.test(e.hostname)).forEach(e => e.classList.add('inaccessible'));
+    document.querySelectorAll('a').forEach(e => blockedRegExp.test(e.hostname) && e.classList.add('inaccessible'));
   }
 })();
 </script>

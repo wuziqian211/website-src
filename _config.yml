@@ -6,7 +6,7 @@
 title: wuziqian211's Blog
 subtitle: 一个简单的Blog
 description: Not for the best, just for the better.
-keywords: wuziqian211
+keywords: wuziqian211 Yumeharu 梦春 梦春酱
 author: wuziqian211
 language: zh-CN
 timezone: Asia/Shanghai
@@ -14,6 +14,7 @@ timezone: Asia/Shanghai
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://wuziqian211.top
+root: /
 permalink: /archives/:year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -35,41 +36,34 @@ skip_render:
 # Writing
 new_post_name: :title.md # File name of new posts
 default_layout: post
+auto_spacing: false
 titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
   exclude:
     - wuziqian211.top
-    - yumeharu.top
+    - www.yumeharu.top
     - wuziqian211.gitee.io
 filename_case: 1
 render_drafts: false
 post_asset_folder: false
-relative_link: false
+relative_link: true
 future: true
+syntax_highlighter: highlight.js
 highlight:
-  enable: true
-  line_number: false
   auto_detect: false
-  tab_replace: ''
-  wrap: true
+  line_number: true
+  line_threshold: 2
+  tab_replace: '  '
   exclude_languages:
+  wrap: true
   hljs: false
 prismjs:
-  enable: false
   preprocess: true
   line_number: true
+  line_threshold: 0
   tab_replace: ''
-
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
-index_generator:
-  path: ''
-  per_page: 10
-  order_by: -date
 
 # Category & Tag
 default_category: uncategorized
@@ -91,10 +85,6 @@ tag_map:
   自动回复: auto-reply
   技术: technology
   用户列表: users-list
-
-# Metadata elements
-## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
-meta_generator: true
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -120,11 +110,25 @@ ignore:
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 theme: next
+theme_config:
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
 
 archive_generator:
   enabled: true
@@ -201,3 +205,34 @@ sitemap:
   rel: false
   tags: true
   categories: true
+
+all_minifier: true
+js_concator:
+  enable: true
+  bundle_path: '/js/bundle.js'
+  front: false
+  silent: false
+html_minifier:
+  enable: true
+  ignore_error: false
+  silent: false
+  exclude:
+css_minifier:
+  enable: true
+  silent: false
+  exclude: 
+    - '*.min.css'
+js_minifier:
+  enable: true
+  mangle: true
+  silent: false
+  exclude: 
+    - '*.min.js'
+image_minifier:
+  enable: false
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+  silent: false

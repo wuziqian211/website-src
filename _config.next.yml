@@ -346,7 +346,7 @@ text_align:
   mobile: justify
 
 # Reduce padding / margin indents on devices with narrow width.
-mobile_layout_economy: false
+mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
@@ -512,9 +512,9 @@ note:
 # Tabs tag
 tabs:
   # Make the nav bar of tabs with long content stick to the top.
-  sticky: false
+  sticky: true
   transition:
-    tabs: false
+    tabs: true
     labels: true
 
 # PDF tag
@@ -932,14 +932,14 @@ waline:
   serverURL: https://waline.yumeharu.top
 
   # Waline library CDN url, you can set this to your preferred CDN
-  libUrl: //unpkg.com/@waline/client@v2/dist/waline.js
+  libUrl: https://unpkg.com/@waline/client@v2/dist/waline.js
 
   # Waline CSS styles CDN url, you can set this to your preferred CDN
-  cssUrl: //unpkg.com/@waline/client@v2/dist/waline.css
+  cssUrl: https://unpkg.com/@waline/client@v2/dist/waline.css
 
   # Custom locales
   locale:
-    link: '网站 / B 站 UID'
+    link: '网址 / B 站 UID'
     placeholder: '发条评论吧 (=・ω・=)' # Comment box placeholder
     submit: 发布
     admin: 可爱的管理员
