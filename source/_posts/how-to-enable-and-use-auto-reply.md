@@ -1,7 +1,7 @@
 ---
 title: 如何开启并使用B站的自动回复功能
 date: 2022-01-13 20:47:39
-updated: 2024-02-20 14:34:35
+updated: 2024-02-21 17:03:53
 description: 不管你有没有达到1000粉丝，都可以开启B站的自动回复功能
 tags:
   - 自动回复
@@ -44,7 +44,7 @@ categories:
 
 例：假如您获取到的{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：
 ```bash
-$ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" -b "SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef&csrf_token=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"
+$ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" -b "SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef&csrf_token=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set" # 请将代码中的 Cookie 修改成自己的 Cookie
 ```
 您可能会看到类似于下面的“代码”：
 ```json
@@ -115,7 +115,7 @@ $ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 
 | 规则 | 精确匹配关键词 | 模糊匹配关键词 | 回复内容 |
 | :--: | :------------: | :------------: | -------- |
-| 规则3 | 谢谢，Thank you | 感谢 | 我也谢谢您对我的支持(=・ω・=) |
+| 规则3 | 谢谢，Thank you | 感谢 | 我也感谢您对我的支持(=・ω・=) |
 
 那么当用户给您发“谢谢”或“Thank you”时，会触发自动回复；给您发“谢谢您”时，不会触发自动回复；给您发“感谢您”时，会触发自动回复。
 

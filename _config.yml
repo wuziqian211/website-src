@@ -62,8 +62,8 @@ highlight:
 prismjs:
   preprocess: true
   line_number: true
-  line_threshold: 0
-  tab_replace: ''
+  line_threshold: 2
+  tab_replace: '  '
 
 # Category & Tag
 default_category: uncategorized

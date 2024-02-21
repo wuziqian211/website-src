@@ -1,6 +1,6 @@
 :root {
-  --waline-theme-color: #09f !important;
-  --waline-active-color: #3bf !important;
+  --waline-theme-color: #08e !important;
+  --waline-active-color: #3ae !important;
 }
 .comments {
   overflow: visible;
@@ -33,6 +33,11 @@
   background: #fff9;
   border-radius: 10px;
 }
+@media (prefers-color-scheme: dark) {
+  .post-body .tabs ul.nav-tabs, .tabs-comment ul.nav-tabs {
+    background: #2229;
+  }
+}
 th {
   text-align: center !important;
 }
@@ -42,6 +47,9 @@ th {
 }
 table {
   margin: 0;
+}
+th {
+  border-bottom-width: 2px;
 }
 table tr:first-child th {
   border-top: none;
@@ -81,7 +89,7 @@ img.avatar {
 img.emote {
   display: inline;
   height: 2.5em;
-  margin: 0;
+  margin: 0 !important;
   vertical-align: sub;
 }
 img.emote[src^='/emote/小黄脸/'], img.emote[src^='/emote/tv_小电视/'], img.emote[src^='/emote/喵/'] {
