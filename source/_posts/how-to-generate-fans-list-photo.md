@@ -338,7 +338,7 @@ fs.writeFileSync('followers.html', content); // 注意：请将 “followers.htm
 <summary>点击查看完整代码</summary>
 ```js
 // 初始化
-const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' }; // 注意：此 Cookie 仅作为示例，请修改成自己的 Cookie
+const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef', Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' }; // 注意：此 Cookie 仅作为示例，请修改成自己的 Cookie
 
 const crypto = require('node:crypto');
 const md5 = data => { // 对数据进行 MD5 加密

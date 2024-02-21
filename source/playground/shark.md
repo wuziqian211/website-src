@@ -2,6 +2,7 @@
 title: 我的小鲨鱼
 date: 2024-02-22 01:29:20
 updated: 2024-02-22 01:29:20
+permalink: /playground/shark/
 ---
 
 <style>
@@ -18,6 +19,10 @@ iframe#shark {
 {% note info %}
 本游戏由B站知名UP主[Warma](https://space.bilibili.com/53456)制作。
 {% endnote %}
+{% note warning %}
+## 温馨提示
+本游戏含有**黑暗与不适**的内容，心脏疾病患者与精神创伤者可能不适合游玩。
+{% endnote %}
 
 <iframe id="shark" allow="autoplay; fullscreen" src="https://games.construct.net/60078/latest" allowfullscreen="true" referrerpolicy="no-referrer" sandbox="allow-popups allow-same-origin allow-scripts"></iframe>
 
@@ -32,8 +37,3 @@ iframe#shark {
 但请放心，无论发生了什么，电子小鲨鱼仍然爱你。
 游戏总共包含11个普通结局和2个最终结局，根据你对小鲨鱼做过的事情，游戏将走向不同的结局。
 来和小鲨鱼成为朋友吧！
-
-{% note warning %}
-## 温馨提示
-本游戏含有**黑暗与不适**的内容，心脏疾病患者与精神创伤者可能不适合游玩。
-{% endnote %}
