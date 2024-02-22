@@ -78,7 +78,7 @@ details[open] summary {
   border-bottom: 1px solid #3bf;
   margin-bottom: 10px;
 }
-:not(.wl-login-nick):not(.wl-user):not(.cc-opacity) > img:not(.wl-emoji):not(.fancybox-image):not(.f-thumbs__slide__img):not(.link-grid-image):not(.site-author-image):not(.avatar):not(.emote):not(.face-icon) {
+:not(.wl-avatar > *):not(.wl-user):not(.cc-license > *):not(div.group-picture-column > *) > img:not(.wl-emoji):not(.fancybox-image):not(.f-thumbs__slide__img):not(.link-grid-image):not(.site-author-image):not(.avatar):not(.emote):not(.face-icon) {
   border-radius: 20px;
   min-width: 50px;
 }
@@ -103,6 +103,18 @@ img.face-icon {
 }
 img.fancybox-image, img.face-icon {
   opacity: 1;
+}
+div.group-picture div.group-picture-row:first-child div.group-picture-column:first-child img {
+  border-top-left-radius: 20px;
+}
+div.group-picture div.group-picture-row:first-child div.group-picture-column:last-child img {
+  border-top-right-radius: 20px;
+}
+div.group-picture div.group-picture-row:last-child div.group-picture-column:first-child img {
+  border-bottom-left-radius: 20px;
+}
+div.group-picture div.group-picture-row:last-child div.group-picture-column:last-child img {
+  border-bottom-right-radius: 20px;
 }
 .link-grid-container, blockquote, .post-copyright ul {
   border-radius: 20px;

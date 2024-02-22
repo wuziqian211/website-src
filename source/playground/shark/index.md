@@ -9,7 +9,7 @@ iframe#shark {
   border: none;
   border-radius: 10px;
   height: 400px;
-  margin: 20px 0;
+  margin: 20px auto;
   max-width: 600px;
   width: 100%;
 }
@@ -36,3 +36,15 @@ iframe#shark {
 但请放心，无论发生了什么，电子小鲨鱼仍然爱你。
 游戏总共包含11个普通结局和2个最终结局，根据你对小鲨鱼做过的事情，游戏将走向不同的结局。
 来和小鲨鱼成为朋友吧！
+
+{% gp 9-7 %}
+![屋内的一只正常的小鲨鱼](/images/playground/shark-1.webp)
+![带着花的小鲨鱼在睡觉](/images/playground/shark-2.webp)
+![屋外的一只离家出走的小鲨鱼和一朵花](/images/playground/shark-3.webp)
+![结局11：一个人也很自在（在“要领养一只电子小鲨鱼吗？”界面中选择“不要”可以触发）](/images/playground/shark-4.webp)
+![看上去失落的小鲨鱼，旁边有一朵花和一个垃圾桶，屋内的大部分东西都清空了](/images/playground/shark-5.webp)
+![关灯的屋内](/images/playground/shark-6.webp)
+![正在努力锻炼的小鲨鱼](/images/playground/shark-7.webp)
+![屋外的一朵花](/images/playground/shark-8.webp)
+![被喂得很饱的小鲨鱼，旁边有很多苹果](/images/playground/shark-9.webp)
+{% endgp %}

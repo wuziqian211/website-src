@@ -10,7 +10,7 @@ categories:
   - 野生技能协会
 ---
 
-2022年10月15日，由于wuziqian211的粉丝数回升到2000，让wuziqian211非常开心，因此wuziqian211发布了一条动态，这条动态包括一张含所有粉丝的头像和昵称的图片。
+2022年10月15日，由于wuziqian211的粉丝数回升到2000，让wuziqian211非常开心，因此wuziqian211发布了[一条动态](https://t.bilibili.com/716979665661591558)，这条动态里有一张含有所有粉丝的头像和昵称的图片。
 那么，我们怎么生成这样子的图片呢？这篇文章就教您如何生成含所有粉丝的列表的图片。
 {% note info %}
 这篇文章比较适合程序员、技术爱好者阅读，如果您没学过代码也可以按照本文的方法尝试。若您遇到任何问题，可以让wuziqian211教您一步步操作。
@@ -26,7 +26,7 @@ categories:
 打开Node.js，您应该会看到一个命令行窗口。在这个窗口里输入代码`const headers = { Cookie: 'SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`, Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' };`，便于在后续操作中使用您账号的登录信息。
 例：假如{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入代码：
 ```js
-const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef', Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' }; // 注意：此 Cookie 仅作为示例，请修改成自己的 Cookie
+const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef', Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' }; // 注意：此 Cookie 仅作为示例展示，请修改成自己的 Cookie
 ```
 {% note danger %}
 **特别注意：请不要把您刚刚复制的“SESSDATA”“bili_jct”中任何一个Cookie的值告诉任何人！它们的值是您的账号的登录信息，与账号、密码的作用相似，别人可能会利用这些值来登录您的账号。**
@@ -40,7 +40,7 @@ const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0
 在这个部分中，有一些内容来自<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/user/relation.md>。
 {% endnote %}
 B站官方给我们提供的获取指定用户的粉丝列表的API是<https://api.bilibili.com/x/relation/followers>，请求方式是GET。
-**这个API需要您提供有效的Cookie**，返回的列表按照关注时间的先后顺序**逆向**排序（越晚关注，就在列表的越前面），**最多只能获取最近关注的1000名粉丝的列表**。
+这个API**需要您提供有效的Cookie**，返回的列表按照关注时间的先后顺序**逆向**排序（越晚关注，就在列表的越前面），最多只能获取到**最近关注的1000名粉丝**的信息。
 主要的URL参数包括：
 
 | 参数名 | 内容 | 必要性 | 备注 |
@@ -49,7 +49,7 @@ B站官方给我们提供的获取指定用户的粉丝列表的API是<https://a
 | ps | 每页项数 | 非必要 | 默认为50，且最多为50 |
 | pn | 页码 | 非必要 | 默认为1 |
 
-如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例，一些项已经省略）：
+如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例展示，一些项已经省略）：
 ```json
 {
   "code": 0, // 返回值，0 表示成功，-400 表示请求错误，22007 表示访问超过 5 页
@@ -98,7 +98,7 @@ B站官方给我们提供的获取指定用户的粉丝列表的API是<https://a
 console.log((await (await fetch('https://api.bilibili.com/x/relation/followers?vmid=425503913&ps=50&pn=1', { headers })).json()).data.list); // 注意：请将 “vmid=” 后面的数字修改成自己的 UID
 ```
 运行上面的代码后，正常情况下控制台会显示一个带有很多元素的数组（array），而且数组的每个元素都是对象（object）。
-我们可以在上面代码的基础上稍作修改，来获取多页粉丝列表。如果您设置的每页项数为50，那么您要获取的页数一般为自己的粉丝数除以50，再向上取整。即：如果您的粉丝数在1\~50之间（含1和50，下同），就取页数为1；粉丝数在51\~100之间，就取页数为2；粉丝数在101\~150之间，就取页数为3；以此类推。由于B站的限制，最多只能获取最后关注您的1000个粉丝的列表，所以如果您的粉丝数超过了1000，建议**只获取前20页粉丝列表**，继续往后获取也是获取不到信息的。
+我们可以在上面代码的基础上稍作修改，来获取多页粉丝列表。如果您设置的每页项数为50，那么您要获取的页数一般为自己的粉丝数除以50，再向上取整（取不小于该数值的最小整数，如2.98→3、3→3、3.02→4）。由于B站的限制，最多只能获取最后关注您的1000个粉丝的列表，所以如果您的粉丝数超过了1000，建议**只获取前20页粉丝列表**，继续往后获取也是获取不到信息的。
 ```js
 const followers = []; // 存储粉丝列表
 for (let i = 1; i <= 20; i++) { // 获取前 20 页粉丝的信息，每页 50 个；这里的页数是根据自己的粉丝数而定的
@@ -118,16 +118,16 @@ for (const f of oldFollowers) {
 但是，合并后的列表里的用户现在不一定仍在关注您，所以要移除没有关注您的用户。
 
 获取用户与自己关系的API是<https://api.bilibili.com/x/space/wbi/acc/relation>，请求方式是GET。
-本API需要使用WBI签名来鉴权，详见<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md>。下面的代码已经实现了WBI鉴权。
+本API需要使用Wbi签名来鉴权，详见<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md>。下面的代码已经实现了Wbi鉴权。
 主要URL参数包括：
 
 | 参数名 | 内容 | 必要性 | 备注 |
 | :----: | :--: | :----: | ---- |
 | mid | 目标用户的UID | 必要 | |
 | wts | 当前时间戳 | 必要 | 见<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md> |
-| w_rid | WBI签名 | 必要 | 见<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md> |
+| w_rid | Wbi签名 | 必要 | 见<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md> |
 
-如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例，一些项已经省略）：
+如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例展示，一些项已经省略）：
 ```json
 {
   "code": 0, // 返回值，0 表示成功，-400 表示请求错误
@@ -161,7 +161,7 @@ const md5 = data => { // 对数据进行 MD5 加密
   md5Hash.update(data, 'utf-8');
   return md5Hash.digest('hex');
 };
-const encodeWbi = async originalQuery => { // 对请求参数进行 wbi 签名，改编自 https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md
+const encodeWbi = async originalQuery => { // 对请求参数进行 Wbi 签名，改编自 https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md
   const ujson = await (await fetch('https://api.bilibili.com/x/web-interface/nav', { headers })).json();
   const imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1'),
     subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1');
@@ -193,7 +193,7 @@ for (const f of followers) { // 获取所有在粉丝列表里的用户与自己
 | :----: | :--: | :----: | ---- |
 | uids | 目标用户的UID列表 | 必要 | 每个成员间用`,`分隔，最多50个成员 |
 
-如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例，一些项已经省略）：
+如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例展示，一些项已经省略）：
 ```json
 {
   "code": 0, // 返回值，0 表示成功，-400 表示请求错误，600007 表示超出批量获取用户信息限制
@@ -250,7 +250,7 @@ for (const f of followers) { // 获取所有在粉丝列表里的用户与自己
 | :----: | :--: | :----: |
 | vmid | 目标用户UID | 必要 |
 
-如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例，一些项已经省略）：
+如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例展示，一些项已经省略）：
 ```json
 {
   "code": 0, // 返回值，0 表示成功
@@ -338,7 +338,7 @@ fs.writeFileSync('followers.html', content); // 注意：请将 “followers.htm
 <summary>点击查看完整代码</summary>
 ```js
 // 初始化
-const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef', Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' }; // 注意：此 Cookie 仅作为示例，请修改成自己的 Cookie
+const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef', Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' }; // 注意：此 Cookie 仅作为示例展示，请修改成自己的 Cookie
 
 const crypto = require('node:crypto');
 const md5 = data => { // 对数据进行 MD5 加密
@@ -346,7 +346,7 @@ const md5 = data => { // 对数据进行 MD5 加密
   md5Hash.update(data, 'utf-8');
   return md5Hash.digest('hex');
 };
-const encodeWbi = async originalQuery => { // 对请求参数进行 wbi 签名，改编自 https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md
+const encodeWbi = async originalQuery => { // 对请求参数进行 Wbi 签名，改编自 https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md
   const ujson = await (await fetch('https://api.bilibili.com/x/web-interface/nav', { headers })).json();
   const imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1'),
     subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1');
