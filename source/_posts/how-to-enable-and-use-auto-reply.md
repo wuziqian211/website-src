@@ -1,7 +1,7 @@
 ---
 title: 如何开启并使用B站的自动回复功能
 date: 2022-01-13 20:47:39
-updated: 2024-02-21 17:03:53
+updated: 2024-02-23 12:12:33
 description: 不管你有没有达到1000粉丝，都可以开启B站的自动回复功能
 tags:
   - 自动回复
@@ -39,7 +39,6 @@ categories:
 - **大多数有图形化界面的GNU/Linux操作系统**：在桌面上按下Ctrl＋Alt＋T，即可打开控制台窗口
 - **仅有控制台界面的GNU/Linux操作系统**：直接在界面输入命令即可
 - **macOS**：按下⌘＋空格键，即可打开控制台窗口
-
 {% endnote %}
 
 例：假如您获取到的{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：

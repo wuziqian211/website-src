@@ -44,6 +44,7 @@ th {
 :not(.highlight) > div.table-container {
   border: 2px solid #ddd;
   border-radius: 10px;
+  margin: 0 0 20px;
 }
 table {
   margin: 0;
@@ -67,16 +68,18 @@ details {
   background: #3bf1;
   border: 1px solid #3bf;
   border-radius: 20px;
+  margin: 20px 0;
   padding: 10px 10px 0;
 }
 details summary {
+  cursor: pointer;
   font-weight: bold;
-  margin: -10px -10px 0;
+  margin: -10px -10px 0 !important;
   padding: 10px;
 }
 details[open] summary {
   border-bottom: 1px solid #3bf;
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 :not(.wl-avatar > *):not(.wl-user):not(.cc-license > *):not(div.group-picture-column > *) > img:not(.wl-emoji):not(.fancybox-image):not(.f-thumbs__slide__img):not(.link-grid-image):not(.site-author-image):not(.avatar):not(.emote):not(.face-icon) {
   border-radius: 20px;
