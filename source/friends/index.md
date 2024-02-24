@@ -28,6 +28,31 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧
 
 如果您也想申请友情链接的话，可以在这个Blog的评论区评论哟awa
 
+### 本站信息
+如果您想将本站添加到贵站的友情链接，您可以使用以下信息：
+<details>
+<summary>点击展开</summary>
+
+| 站点名称 | 站点链接 | 站点图标 | 站点描述 |
+| :------: | :------: | :------: | :------: |
+| wuziqian211's Blog | <https://wuziqian211.top/> | ![站点图标](/images/icon.png)<https://wuziqian211.top/images/icon.png> | Not for the best, just for the better.<br />或<br />不求最好，只求更好。 |
+
+| 站长昵称 | 站长头像 | 站点截图 |
+| :------: | :------: | :------: |
+| wuziqian211 | <img class="avatar" alt="站长头像" src="/images/face.png" /><https://wuziqian211.top/images/face.png> | ![站点截图](/images/screenshot.png)<https://wuziqian211.top/images/screenshot.png> |
+
+```yml
+# 此 YML 文件仅供参考，您可能需要进行适当修改
+  - name: wuziqian211's Blog       # 站点名称
+    link: https://wuziqian211.top/ # 站点链接
+    icon: https://wuziqian211.top/images/icon.png             # 站点图标
+    description: Not for the best, just for the better.       # 站点描述，也可使用 “不求最好，只求更好。”
+    author: wuziqian211            # 站长昵称
+    avatar: https://wuziqian211.top/images/face.png           # 站长头像
+    screenshot: https://wuziqian211.top/images/screenshot.png # 站点截图
+```
+</details>
+
 ## 朋友们
 <div class="link-grid" id="friends">正在加载中……需要大约5秒钟的时间哟QwQ</div>
 <details id="deleted-friends-wrap" style="display: none;">

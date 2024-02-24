@@ -35,6 +35,8 @@ categories:
 打开控制台，输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
 {% note default %}
 ### 如何打开控制台
+下面只是不同操作系统中打开控制台的比较快捷的方法，您也可以使用其他方法打开控制台。
+
 - **Windows**：按下Win＋R，输入`cmd`后回车，即可打开控制台窗口
 - **大多数有图形化界面的GNU/Linux操作系统**：在桌面上按下Ctrl＋Alt＋T，即可打开控制台窗口
 - **仅有控制台界面的GNU/Linux操作系统**：直接在界面输入命令即可
