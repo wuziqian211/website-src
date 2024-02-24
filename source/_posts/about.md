@@ -91,6 +91,7 @@ Vercel | https://vercel.com/ | 提供本Blog的服务器、API。Vercel是一个
 LeanCloud | https://leancloud.app/ | 存储本Blog的评论数据。LeanCloud是一款领先的无服务器云服务，为产品开发提供强有力的后端支持。 | /images/thanks/leancloud.svg
 GitHub | https://github.com/ | 存储本Blog的源码文件。GitHub是一个用于构建、扩展和交付安全软件的完整开发人员平台。 | /images/thanks/github.svg
 Gitee | https://gitee.com/ | 为本Blog提供服务器、存储源码文件。Gitee是一个代码托管与协作的开发平台，汇聚几乎所有本土原创开源项目。 | /images/thanks/gitee.svg
+SM.MS | https://smms.app/ | 为本Blog的评论区提供图片上传服务。SM.MS是一个简单、免费的图片托管平台。 | /images/thanks/smms.png
 {% endlg %}
 
 #### 其他
