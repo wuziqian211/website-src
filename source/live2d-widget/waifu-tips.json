@@ -58,7 +58,7 @@
 		"text": ["这里可以使用 RSS 订阅呢！", "利用 feed 订阅器，就能快速知道博客有没有更新了呢。"]
 	}, {
 		"selector": ".cc-opacity, .post-copyright-author",
-		"text": ["要记得规范转载哦。", "所有文章均采用 CC BY-NC-SA 4.0 许可协议～", "转载前要先注意下文章的版权协议呢。"]
+		"text": ["要记得规范转载哦。", "所有文章均采用 CC BY 4.0 许可协议～", "转载前要先注意下文章的版权协议呢。"]
 	}, {
 		"selector": ".links-of-author",
 		"text": ["这里是主人的常驻地址哦。", "这里有主人的联系方式！"]
@@ -147,38 +147,38 @@
 		"selector": ".extend.prev",
 		"text": ["去上一页看看吧。", "点它可以后退哦！", "要翻到上一页吗？"]
 	}, {
-		"selector": "input.vnick",
+		"selector": "input.wl-nick",
 		"text": ["该怎么称呼你呢？", "留下你的尊姓大名！"]
 	}, {
-		"selector": ".vmail",
+		"selector": ".wl-mail",
 		"text": ["留下你的邮箱，不然就是无头像人士了！", "记得设置好 Gravatar 头像哦！", "为了方便通知你最新消息，一定要留下邮箱！"]
 	}, {
-		"selector": ".vlink",
+		"selector": ".wl-link",
 		"text": ["快快告诉我你的家在哪里，好让我去参观参观！"]
 	}, {
-		"selector": ".veditor",
+		"selector": ".wl-editor",
 		"text": ["想要去评论些什么吗？", "要说点什么吗？", "觉得博客不错？快来留言和主人交流吧！"]
 	}, {
-		"selector": ".vcontrol a",
+		"selector": "a.wl-action[title='Markdown Guide']",
 		"text": ["你会不会熟练使用 Markdown 呀？", "使用 Markdown 让评论更美观吧～"]
 	}, {
-		"selector": ".vemoji-btn",
+		"selector": "button.wl-action[title='表情'], button.wl-action[title='表情包']",
 		"text": ["要插入一个萌萌哒的表情吗？", "要来一发表情吗？"]
 	}, {
-		"selector": ".vpreview-btn",
+		"selector": "button.wl-action[title='预览']",
 		"text": ["要预览一下你的发言吗？", "快看看你的评论有多少负熵！"]
 	}, {
-		"selector": ".vsubmit",
+		"selector": "button.wl-btn[type='submit']",
 		"text": ["评论没有审核，要对自己的发言负责哦～", "要提交了吗，请耐心等待回复哦～"]
 	}, {
-		"selector": ".vcontent",
+		"selector": ".wl-content",
 		"text": ["哇，快看看这个精彩评论！", "如果有疑问，请尽快留言哦～"]
 	}],
 	"click": [{
 		"selector": "#live2d",
 		"text": ["是…是不小心碰到了吧…", "萝莉控是什么呀？", "你看到我的小熊了吗？", "再摸的话我可要报警了！⌇●﹏●⌇", "110 吗，这里有个变态一直在摸我(ó﹏ò｡)", "不要摸我了，我会告诉老婆来打你的！", "干嘛动我呀！小心我咬你！", "别摸我，有什么好摸的！"]
 	}, {
-		"selector": ".veditor",
+		"selector": ".wl-editor",
 		"text": ["要吐槽些什么呢？", "一定要认真填写喵～", "有什么想说的吗？"]
 	}, {
 		"selector": ".vsubmit",

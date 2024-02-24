@@ -1,7 +1,7 @@
 ---
 title: 关于wuziqian211及Blog、程序
 date: 2021-09-16 23:30:17
-updated: 2024-02-23 03:19:24
+updated: 2024-02-23 19:47:41
 description: 这里是一篇关于wuziqian211及TA的Blog、程序的介绍哟~
 tags:
   - 网站
@@ -96,7 +96,6 @@ Gitee | https://gitee.com/ | 为本Blog提供服务器、存储源码文件。Gi
 #### 其他
 {% lg %}
 萌国ICP备案 | https://icp.gov.moe/ | 为本Blog提供“ICP备案”服务。萌ICP备纯属萌友网站联萌，是一种次元中的爱好，文化的展现✧(≖ ◡ ≖✿) | /images/thanks/moe-icon.png
-遇见图床 | https://www.hualigs.cn/ | 为本Blog的评论区提供图片上传服务。 | /images/thanks/hualigs.png
 {% endlg %}
 
 ## 关于wuziqian211的程序

@@ -30,4 +30,6 @@ document.addEventListener('page:loaded', () => {
   });
 
   Fancybox.bind('[data-fancybox]');
+  
+  Fancybox.bind('.comments .wl-content img');
 });

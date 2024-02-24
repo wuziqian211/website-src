@@ -52,7 +52,7 @@ iframe#shark {
 
 ## Warma对于此游戏的常见疑问的回答
 {% note info %}
-本文内容改编自<https://store.steampowered.com/news/app/2758540/view/3954791175767047675>。
+本部分内容改编自<https://store.steampowered.com/news/app/2758540/view/3954791175767047675>。
 {% endnote %}
 
 大家好~非常感谢大家来游玩《我的小鲨鱼》这款免费游戏。在游戏发布后，我收到了很多玩家的热心留言，也看到有玩家对游戏的设计表达出了疑惑，所以我整理了一些常见疑问，在这里尝试着回答，如有不妥的地方还请多包涵呀~

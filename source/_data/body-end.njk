@@ -1,13 +1,28 @@
 <script>
 document.addEventListener('page:loaded', () => {
-  CONFIG.waline.imageUploader = async file => {
-    const { token } = (await (await fetch('https://api.yumeharu.top/api/modules?id=token')).json()).data,
-      formData = new FormData();
-    formData.set('image', file);
-    formData.set('apiType', 'majorhua,ai58');
-    formData.set('token', atob(token));
-    return (await (await fetch('https://www.hualigs.cn/api/upload', { method: 'POST', body: formData })).json()).data.url.majorhua;
-  };
+  CONFIG.waline.imageUploader = file => new Promise(async (resolve, reject) => {
+    try {
+      if (file.size > 4500000) {
+        reject('文件大小不能超过 4.5 MB');
+        return;
+      }
+      const ujson = await (await fetch('https://api.yumeharu.top/api/modules?id=upload', { method: 'POST', headers: { 'Content-Type': 'application/octet-stream' }, body: file })).json();
+      if (ujson.code === 0) {
+        resolve(ujson.data.url);
+        return;
+      }
+      throw new TypeError(ujson.message);
+    } catch (e) {
+      console.error(e);
+      if (file.size > 131072) {
+        reject(e);
+        return;
+      }
+      const reader = new FileReader();
+      reader.addEventListener('load', () => resolve(reader.result));
+      reader.readAsDataURL(file);
+    }
+  });
 });
 </script>
 <script data-pjax>
