@@ -1,7 +1,7 @@
 ---
 title: 关于wuziqian211及Blog、程序
 date: 2021-09-16 23:30:17
-updated: 2024-02-23 19:47:41
+updated: 2024-03-03 18:10:06
 description: 这里是一篇关于wuziqian211及TA的Blog、程序的介绍哟~
 tags:
   - 网站
@@ -51,7 +51,7 @@ wuziqian211在2020年创建了一个用[凡科建站](https://jz.fkw.com/)搭建
 如果那个网站没有这些限制，wuziqian211或许现在还在管理着那个网站，这个Blog可能就不会出现了QAQ
 
 这个Blog的页面是用[Hexo](https://hexo.io/)生成的，用的主题是[NexT](https://theme-next.js.org/)(^・ω・^ )这个主题可以自定义许多功能哟，也不自带任何广告与收费项目(=・ω・=)
-本Blog的源码可以在<https://github.com/wuziqian211/website-src/tree/main/>查看哟(=・ω・=)
+本Blog的源码可以在[GitHub](https://github.com/wuziqian211/website-src/tree/main/)查看哟(=・ω・=)
 
 wuziqian211在2021年9月28日购买了域名“wuziqian211.top”，在2022年6月4日购买了域名“w211.top”，这样wuziqian211就不用担心因临时域名可能会被屏蔽、“wuziqian211”这个昵称不好记而带来的问题了(｡･ω･｡)
 下面的域名都可以访问到这个Blog(｀・ω・´)
