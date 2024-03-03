@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline-meta.css" />
 <script>
 document.addEventListener('page:loaded', () => {
   CONFIG.waline.imageUploader = file => new Promise(async (resolve, reject) => {
@@ -31,7 +32,6 @@ let blockedRegExp;
   if (blocked) blockedRegExp = new RegExp(blocked);
 })();
 </script>
-
 <script data-pjax>
 if (blockedRegExp) {
   document.querySelectorAll('a').forEach(e => blockedRegExp.test(e.hostname) && e.classList.add('inaccessible'));
