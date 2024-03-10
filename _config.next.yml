@@ -1372,3 +1372,12 @@ waline:
   pageSize: 20
 
   dark: auto
+  
+  reaction:
+    - /emote/tv_小电视/tv_点赞.png
+    - /emote/tv_小电视/tv_doge.png
+    - /emote/tv_小电视/tv_疑问.png
+    - /emote/tv_小电视/tv_微笑.png
+    - /emote/tv_小电视/tv_难过.png
+    - /emote/tv_小电视/tv_调侃.png
+    - /emote/tv_小电视/tv_思考.png

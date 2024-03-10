@@ -54,7 +54,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧
 </details>
 
 ## 朋友们
-<div class="link-grid" id="friends">正在加载中……需要大约5秒钟的时间哟QwQ</div>
+<div class="link-grid" id="friends">正在加载中……</div>
 <details id="deleted-friends-wrap" style="display: none;">
 <summary>查看已经注销的朋友</summary>
 
@@ -105,18 +105,22 @@ const renderUserDiv = info => {
 (async () => {
   const friends = document.querySelector('div#friends'), deletedFriends = document.querySelector('div#deleted-friends');
   if (!friends) return;
-  const json = await (await fetch('https://api.yumeharu.top/api/modules?id=friends&version=3')).json();
-  friends.innerText = '';
-  if (json.code === 0) {
-    for (const u of json.data.n.sort(() => 0.5 - Math.random())) {
-      friends.append(renderUserDiv(u));
-    }
-    if (deletedFriends) {
-      document.querySelector('details#deleted-friends-wrap').style.display = '';
-      for (const u of json.data.d.sort(() => 0.5 - Math.random())) {
-        deletedFriends.append(renderUserDiv(u));
+  try {
+    const json = await (await fetch('https://api.yumeharu.top/api/modules?id=friends&version=3')).json();
+    friends.innerText = '';
+    if (json.code === 0) {
+      for (const u of json.data.n.sort(() => 0.5 - Math.random())) {
+        friends.append(renderUserDiv(u));
+      }
+      if (deletedFriends) {
+        document.querySelector('details#deleted-friends-wrap').style.display = '';
+        for (const u of json.data.d.sort(() => 0.5 - Math.random())) {
+          deletedFriends.append(renderUserDiv(u));
+        }
       }
     }
+  } catch {
+    friends.innerText = '';
   }
   friends.append(renderUserDiv({ a: '/images/default-faces%26face-icons/akkarin.png', t: '您', d: '是的，就是您 (=・ω・=) 您一直在支持着 wuziqian211，当然也是 wuziqian211 的朋友哟 awa', l: 'https://space.bilibili.com/' }));
 })();
