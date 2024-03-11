@@ -90,6 +90,11 @@ const renderUserDiv = info => {
     }
     userDiv.appendChild(faceIcon);
   }
+  if (info.n) {
+    const nftFaceIcon = document.createElement('img');
+    nftFaceIcon.className = `face-icon${[0, 1, 2].includes(info.i) ? ' second' : ''} no-fancybox`, nftFaceIcon.alt = '', nftFaceIcon.title = '数字藏品', nftFaceIcon.src = '/images/default-faces%26face-icons/nft-label.gif';
+    userDiv.appendChild(nftFaceIcon);
+  }
   const title = document.createElement('p');
   title.style.color = info.c || '', title.innerText = info.t;
   userDiv.appendChild(title);
