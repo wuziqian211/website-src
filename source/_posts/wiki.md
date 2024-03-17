@@ -1,7 +1,7 @@
 ---
 title: wuziqian211的Wiki
 date: 2021-10-10 14:11:28
-updated: 2024-02-10 02:53:55
+updated: 2024-03-17 15:58:29
 description: 这是一篇比较全面的关于wuziqian211的介绍，可能有点长~
 tags:
   - Wiki
@@ -54,7 +54,7 @@ wuziqian211的脾气非常好，不会说脏话，也不会乱发言的(｀・ω
 {% note info %}
 “多重人格”指一个人身上显示出两个及以上不同“角色”的人格特点(=・ω・=)
 
-- 当wuziqian211幽默时，TA会说像“211是笨蛋！<img class="emote no-fancybox" alt="[tv_doge]" src="/emote/tv_小电视/tv_doge.png" />”这样的话
+- 当wuziqian211幽默时，TA会说像“211是笨蛋！<img class="emote no-fancybox" alt="[tv_doge]" src="/images/emote/tv_小电视/tv_doge.png" />”这样的话
 - 当wuziqian211可爱时，TA会说像“(=・ω・=)感谢您对我的帮助与支持呀awa”这样的话
 
 ~~提示：wuziqian211的真实性别是男，装的“可爱”~~
@@ -263,7 +263,7 @@ wuziqian211开始频繁发布动态，与粉丝频繁互动。
 | 8月23日 | **粉丝数达到了2000** | |
 | 8月24日 | 再次发布介绍自己的动态 | 这条动态置顶了很长时间，有300多个赞 |
 | 8月29日 | 1. 发布了关于“自己以后没时间发动态”的动态；<br />2. 让粉丝说说自己的优缺点，自己也说了自己的缺点。 | |
-| 8月30日 | 发布了那时的第1000条动态，内容只是“<img class="emote no-fancybox" alt="[tv_微笑]" src="/emote/tv_小电视/tv_微笑.png" />” | |
+| 8月30日 | 发布了那时的第1000条动态，内容只是“<img class="emote no-fancybox" alt="[tv_微笑]" src="/images/emote/tv_小电视/tv_微笑.png" />” | |
 | 10月1日 | **互动活跃度变成0** | 21天没发动态了 |
 | 10月6日 | 手动移除大约38个粉丝 | |
 

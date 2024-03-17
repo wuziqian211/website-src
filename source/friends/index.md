@@ -13,6 +13,7 @@ binqlo_ | https://me.onlyra1n.top/ | B站用户“Waxner”的个人网站 | /im
 我汐了_233的小站 | https://woxile.rth1.link/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
 知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
 值关大众放送工作室 | https://zhiguanmedia.jzfkw.net/ | 做有情怀的媒体 | /images/friendship-links/zhiguanmedia-jzfkw-net.png
+社凤迷工作室 | https://shefengmi-10.jzfkw.net/ | 看着社会与法 听着凤凰传奇 | /images/friendship-links/shefengmi-10-jzfkw-net.jpg
 易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpeg
 GoForceX's Blog | https://goforcex.top/ | A simple blog | /images/friendship-links/goforcex-top.jpg
 wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧网站，已不再更新 | /images/friendship-links/wuziqian211-icoc-vc.png
