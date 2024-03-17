@@ -942,7 +942,16 @@ waline:
     link: '网址 / B 站 UID'
     placeholder: '发条评论吧 (=・ω・=)' # Comment box placeholder
     submit: 发布
+    like: 点赞
+    cancelLike: 取消点赞
     admin: 可爱的管理员
+    reaction0: 点赞
+    reaction1: doge
+    reaction2: 疑问
+    reaction3: 微笑
+    reaction4: 难过
+    reaction5: 调侃
+    reaction6: 思考
 
   # Custom emoji
   emoji:
