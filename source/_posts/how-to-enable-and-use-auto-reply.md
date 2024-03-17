@@ -12,7 +12,7 @@ categories:
 ---
 
 本文章使用网页版B站，为您介绍开启与使用B站的自动回复功能的方法。
-![自动回复](/images/auto-reply.png)
+![自动回复](/images/auto-reply.png "自动回复")
 
 ## 开启自动回复功能
 如果您的粉丝数在1000及以上，请您直接选择“通过网页开启”部分。
@@ -30,7 +30,7 @@ categories:
 {% endnote %}
 
 以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来，这样您就获取到了Cookie。
-![获取Cookie](/images/get-cookie.png)
+![获取Cookie](/images/get-cookie.png "获取Cookie")
 
 打开控制台，输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
 {% note default %}
@@ -67,7 +67,7 @@ $ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 {% endnote %}
 
 进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了一个按钮“自动回复”，就说明自动回复功能开启成功，而且您会发现，“关键词回复”功能是开启的。
-![“自动回复”按钮](/images/auto-reply-button.png)
+![“自动回复”按钮](/images/auto-reply-button.png "“自动回复”按钮")
 {% note warning %}
 1000粉丝以下的用户关闭了自动回复的所有功能后，刷新“消息中心”页面，“自动回复”按钮就会**消失**。
 如果您不小心关闭了自动回复的所有功能，导致“自动回复”按钮消失，那么您可以再次执行上面的操作以重新开启自动回复功能。
@@ -78,7 +78,7 @@ $ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 <!-- tab 通过网页开启 -->
 在登录了B站账号的浏览器中进入[消息中心](https://message.bilibili.com/)后，您可以看到，在页面的左侧有“自动回复”按钮。点击“自动回复”按钮，就可以进入[“自动回复”页面](https://message.bilibili.com/#/autoreply)。
 在页面顶部，有“被关注回复”、“关键词回复”、“收到消息回复”选择夹，部分用户可能也有“大航海上船回复”选择夹。点击每个选择夹中功能的开关按钮，就可以开启对应的功能，并显示更多的信息。
-![“自动回复”页面](/images/auto-reply-page.png)
+![“自动回复”页面](/images/auto-reply-page.png "“自动回复”页面")
 <!-- endtab -->
 
 {% endtabs %}
@@ -88,8 +88,8 @@ $ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 {% note warning %}
 ### 发送私信限制的规则不适用于B站自动回复功能
 **通过B站的自动回复/自动推送功能发送的私信不会被B站视作“对方主动回复或关注你前，最多发送1条消息”规则中的“主动回复”与“发送1条消息”，即自动回复/自动推送功能不会被上述规则所限制，但也不能解除手动私信的这一限制**。这意味着，在您未关注且从来没有手动私信对方的情况下，即使对方触发了您的自动回复/您触发了对方的自动回复，对方**仍然会受到“最多发送1条消息”的限制**，但仍可以自动回复您；同样，如果对方并没有手动私信或关注您，即使您给对方自动回复/对方给您自动回复了，您**也会受到“最多发送1条消息”的限制**，但是您可以自动回复对方。
-（注：被关注时自动推送的稿件、特别关注自动推送的稿件、因互相关注而自动发送的私信、成为“老粉”而自动发送的私信等也属于自动回复。但是如果您使用了**不使用B站自动回复功能**的自动回复的脚本，那么您用这个脚本自动回复的私信会被视作**手动发送的消息**，在对方关注或手动私信您之前您就不能再发送私信了，但也可以解除对方只能发送1条消息的限制。）
-![关于发送私信限制的规则的说明](/images/explanation-of-rule-regarding-private-message-restriction.png)
+（注：被关注时自动推送的稿件、特别关注自动推送的稿件、因互相关注而自动发送的私信、成为契约者而自动发送的私信等也属于自动回复。但是如果您使用了**不使用B站自动回复功能**的自动回复的脚本，那么您用这个脚本自动回复的私信会被视作**手动发送的消息**，在对方关注或手动私信您之前您就不能再发送私信了，但也可以解除对方只能发送1条消息的限制。）
+![关于发送私信限制的规则的说明](/images/explanation-of-rule-regarding-private-message-restriction.png "关于发送私信限制的规则的说明")
 {% endnote %}
 对每一个功能的介绍如下表：
 

@@ -184,7 +184,7 @@ wuziqian211的粉丝数在2020年的春、夏季涨得最快，在2020年8月23�
 2022年下半年，wuziqian211发布了6个知识区视频，其中[《一张13.1GB的GIF？？？》](https://www.bilibili.com/video/BV12Y4y1P7e9/)目前已经是wuziqian211播放量最高的视频，因此TA的粉丝数回升到2000(｡･ω･｡)
 2022年10月16日，wuziqian211在动态里说，任何用户只要对TA私信“#注册时间”，就可以查询到该用户的注册时间，于是有很多用户私信wuziqian211，结果TA给每个用户都回复了正确的注册时间，这让TA又涨了约50名粉丝(=・ω・=)
 
-![wuziqian211的粉丝数变化情况](/images/fans-changes.png)
+![wuziqian211的粉丝数变化情况](/images/fans-changes.png "wuziqian211的粉丝数变化情况")
 
 想要看看wuziqian211所做过的一些有影响的事，或者TA的粉丝对wuziqian211有很大影响的事吗？点击下面就可以查看哦awa
 

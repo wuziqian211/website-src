@@ -22,7 +22,7 @@ categories:
 本文中的代码都是JavaScript代码，所以您应该要预先安装[Node.js](https://nodejs.org/)（**建议您下载长期维护版**）。您也可以使用其他编程语言，不过需要对本文中的代码进行一些小改动。
 {% endnote %}
 以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来，这样您就获取到了Cookie。
-![获取Cookie](/images/get-cookie.png)
+![获取Cookie](/images/get-cookie.png "获取Cookie")
 打开Node.js，您应该会看到一个命令行窗口。在这个窗口里输入代码`const headers = { Cookie: 'SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`, Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' };`，便于在后续操作中使用您账号的登录信息。
 例：假如{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入代码：
 ```js
@@ -331,7 +331,7 @@ fs.writeFileSync('followers.html', content); // 注意：请将 “followers.htm
 ```
 如果您打开这段代码生成的文件，那么浏览器显示的就是一行一个粉丝。如果我们想让浏览器显示一个粉丝紧跟着另一个粉丝的效果，只需要将上面代码中第2行代码后面的`'<br />\n'`替换成`''`就可以了。
 我们如何将整个网页转换成图片呢？我们可以在浏览器中打开开发者工具（一般按F12键即可），然后点击右上角的三个点展开菜单，选择“运行命令”（也可直接按下Ctrl＋Shift＋P），输入“屏幕截图”，再选择“截取完整尺寸的屏幕截图”，并选择保存图片的位置，就可以保存一张包括所有粉丝的图片了。
-![生成图片](/images/take-full-size-screenshot.png)
+![生成图片](/images/take-full-size-screenshot.png "生成图片")
 
 ## 总结
 生成自己的所有粉丝列表的图片看似很难，实际上只有三个步骤，每个步骤不需要您进行太多操作。
@@ -445,4 +445,4 @@ fs.writeFileSync('followers.html', content); // 注意：请将 “followers.htm
 </details>
 
 下面的图片就是wuziqian211在2022年10月15日生成的粉丝列表图片。
-![wuziqian211在2022年10月15日生成的所有粉丝列表的图片](/images/fans-list.png)
+![wuziqian211在2022年10月15日生成的所有粉丝列表的图片](/images/fans-list.png "wuziqian211在2022年10月15日生成的所有粉丝列表的图片")

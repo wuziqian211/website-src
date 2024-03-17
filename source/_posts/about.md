@@ -18,7 +18,7 @@ permalink: /about/
 不求最好，只求更好。Not for the best, just for the better.
 {% endcq %}
 wuziqian211很高兴能够在这个Blog与您相遇(^・ω・^ )
-![](/images/full-face.png)
+![头像](/images/full-face.png)
 
 ## 关于wuziqian211
 wuziqian211是一个可爱、活泼的人，来自湖北武汉，比较喜欢创作知识区、科技区的作品，喜欢很多类型的东西(=・ω・=)
