@@ -10,7 +10,7 @@ updated: 2022-10-29 20:11:15
 365云栈 | https://blog.365sites.top/ | 学无止境，勇攀高峰！ | /images/friendship-links/blog-365sites-top.png
 Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | /images/friendship-links/kegongteng-cn.jpg
 binqlo_ | https://me.onlyra1n.top/ | B站用户“Waxner”的个人网站 | /images/friendship-links/me-onlyra1n-top.png
-我汐了_233的小站 | https://woxile.rth1.link/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
+我汐了_233的小站 | https://woxile.rth10.com/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
 知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
 值关大众放送工作室 | https://zhiguanmedia.jzfkw.net/ | 做有情怀的媒体 | /images/friendship-links/zhiguanmedia-jzfkw-net.png
 社凤迷工作室 | https://shefengmi-10.jzfkw.net/ | 看着社会与法 听着凤凰传奇 | /images/friendship-links/shefengmi-10-jzfkw-net.jpg
@@ -29,28 +29,69 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧
 
 如果您也想申请友情链接的话，可以在这个Blog的评论区评论哟awa
 
+### 申请友情链接
+欢迎您申请加入本站的友情链接！请您在申请链接前阅读以下说明：
+<details>
+<summary>点击展开</summary>
+
+#### 申请规则
+1. 网站内容必须符合中华人民共和国相关法律法规，且**不能与代理服务器、VPN、广告等相关**；
+2. 网站必须要有实质性的内容；
+3. 网站可以在中国大陆地区正常访问，且页面显示正常；
+4. 原则上，您申请的网站的类型应该是**个人博客**。
+
+{% note info %}
+wuziqian211不会检查您是否将本站添加到贵站友链。
+{% endnote %}
+
+#### 申请方式
+在本页面的评论区评论即可申请友情链接，参照以下格式评论即可：
+```
+网站链接：
+网站图标：
+网站标题：
+网站简介：
+```
+wuziqian211可能会在将贵站添加在本站友链时修改部分信息；同时，**若您没有特别说明，wuziqian211会将贵站的图标存储到本站的服务器上。**
+
+#### 友链的定期检查与风险说明
+wuziqian211会在力所能及的范围内定期检查您的网站；若贵站出现问题，包括但不限于：
+
+- 页面显示异常、网站无法访问
+- 发布不符合中华人民共和国法律法规的内容
+- 网站被恶意注入内容，网站服务器被恶意攻击、劫持
+- 域名到期
+
+那么，wuziqian211可能会通知您，并且会将贵站移至“无法访问的友链”或直接移除友情链接。
+{% note warning %}
+**由于部分网站没有备案、域名未实名认证、未加强防护等，wuziqian211无法确保友情链接没有任何风险。**
+{% endnote %}
+
+希望我们一起努力，共同进步！(=・ω・=)
+</details>
+
 ### 本站信息
 如果您想将本站添加到贵站的友情链接，您可以使用以下信息：
 <details>
 <summary>点击展开</summary>
 
-| 站点名称 | 站点链接 | 站点图标 | 站点描述 |
+| 网站名称 | 网站链接 | 网站图标 | 网站描述 |
 | :------: | :------: | :------: | :------: |
 | wuziqian211's Blog | <https://wuziqian211.top/> | ![站点图标](/images/icon.png)<https://wuziqian211.top/images/icon.png> | Not for the best, just for the better.<br />或<br />不求最好，只求更好。 |
 
-| 站长昵称 | 站长头像 | 站点截图 |
+| 站长昵称 | 站长头像 | 网站截图 |
 | :------: | :------: | :------: |
 | wuziqian211 | <img class="avatar" alt="站长头像" src="/images/face.png" /><https://wuziqian211.top/images/face.png> | ![站点截图](/images/screenshot.png)<https://wuziqian211.top/images/screenshot.png> |
 
 ```yml
 # 此 YML 文件仅供参考，您可能需要进行适当修改
-  - name: wuziqian211's Blog       # 站点名称
-    link: https://wuziqian211.top/ # 站点链接
-    icon: https://wuziqian211.top/images/icon.png             # 站点图标
-    description: Not for the best, just for the better.       # 站点描述，也可使用 “不求最好，只求更好。”
+  - name: wuziqian211's Blog       # 网站名称
+    link: https://wuziqian211.top/ # 网站链接
+    icon: https://wuziqian211.top/images/icon.png             # 网站图标
+    description: Not for the best, just for the better.       # 网站描述，也可使用 “不求最好，只求更好。”
     author: wuziqian211            # 站长昵称
     avatar: https://wuziqian211.top/images/face.png           # 站长头像
-    screenshot: https://wuziqian211.top/images/screenshot.png # 站点截图
+    screenshot: https://wuziqian211.top/images/screenshot.png # 网站截图
 ```
 </details>
 
@@ -127,7 +168,8 @@ const renderUserDiv = info => {
     }
   } catch {
     friends.innerText = '';
+  } finally {
+    friends.append(renderUserDiv({ a: '/images/default-faces%26face-icons/akkarin.png', t: '您', d: '是的，就是您 (=・ω・=) 您一直在支持着 wuziqian211，当然也是 wuziqian211 的朋友哟 awa', l: 'https://space.bilibili.com/' }));
   }
-  friends.append(renderUserDiv({ a: '/images/default-faces%26face-icons/akkarin.png', t: '您', d: '是的，就是您 (=・ω・=) 您一直在支持着 wuziqian211，当然也是 wuziqian211 的朋友哟 awa', l: 'https://space.bilibili.com/' }));
 })();
 </script>
