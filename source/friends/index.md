@@ -96,6 +96,9 @@ wuziqian211会在力所能及的范围内定期检查您的网站；若贵站出
 </details>
 
 ## 朋友们
+{% note warning %}
+由于B站接口的限制，以下朋友的信息并非实时更新。
+{% endnote %}
 <div class="link-grid" id="friends">正在加载中……</div>
 <details id="deleted-friends-wrap" style="display: none;">
 <summary>查看已经注销的朋友</summary>
