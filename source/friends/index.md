@@ -6,26 +6,30 @@ updated: 2022-10-29 20:11:15
 
 ## 友情链接
 {% lg /images/default-faces%26face-icons/akkarin.png %}
-朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
+水水的小屋 | https://www.happycola.top/ | B站用户“肥宅水水呀”的个人网站 | /images/friendship-links/happycola-top.png
 365云栈 | https://blog.365sites.top/ | 学无止境，勇攀高峰！ | /images/friendship-links/blog-365sites-top.png
 Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | /images/friendship-links/kegongteng-cn.jpg
-binqlo_ | https://me.onlyra1n.top/ | B站用户“Waxner”的个人网站 | /images/friendship-links/me-onlyra1n-top.png
+Pheqorの小破站 | https://me.onlyra1n.top/ | B站用户“Waxner”的个人网站 | https://cravatar.cn/avatar/949b4b017cd9c5b03ec65cfc715c17ec?s=250
+Ra小小特的小站 | https://raxxt.top/ | B站用户“爱玩电脑的特兰克斯”的个人网站 | /images/friendship-links/raxxt-top.png
 我汐了_233的小站 | https://woxile.rth10.com/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
+Microhard Demo | https://microharddemo.github.io/ | Microhard Demo 的个人网站 | /images/friendship-links/microharddemo-github-io.png
+易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpeg
+GoForceX's Blog | https://goforcex.top/ | A simple blog | /images/friendship-links/goforcex-top.jpg
+朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
 知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
 值关大众放送工作室 | https://zhiguanmedia.jzfkw.net/ | 做有情怀的媒体 | /images/friendship-links/zhiguanmedia-jzfkw-net.png
 社凤迷工作室 | https://shefengmi-10.jzfkw.net/ | 看着社会与法 听着凤凰传奇 | /images/friendship-links/shefengmi-10-jzfkw-net.jpg
-易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpeg
-GoForceX's Blog | https://goforcex.top/ | A simple blog | /images/friendship-links/goforcex-top.jpg
 wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | wuziqian211的旧网站，已不再更新 | /images/friendship-links/wuziqian211-icoc-vc.png
 {% endlg %}
 
+<!--
 <details>
 <summary>无法访问的友链</summary>
 以下友情链接暂时无法访问，wuziqian211期待这些友链的恢复qwq
 {% lg /images/default-faces%26face-icons/akkarin.png %}
-开心的肥宅快乐水的个人网站 | https://et19798147-2.icoc.vc/ | B站用户“肥宅水水呀”的个人网站 | /images/friendship-links/et19798147-2-icoc-vc.png
 {% endlg %}
 </details>
+-->
 
 如果您也想申请友情链接的话，可以在这个Blog的评论区评论哟awa
 
@@ -77,21 +81,21 @@ wuziqian211会在力所能及的范围内定期检查您的网站；若贵站出
 
 | 网站名称 | 网站链接 | 网站图标 | 网站描述 |
 | :------: | :------: | :------: | :------: |
-| wuziqian211's Blog | <https://wuziqian211.top/> | ![站点图标](/images/icon.png)<https://wuziqian211.top/images/icon.png> | Not for the best, just for the better.<br />或<br />不求最好，只求更好。 |
+| wuziqian211's Blog | <https://www.yumeharu.top/> | ![站点图标](/images/icon.png)<https://www.yumeharu.top/images/icon.png> | Not for the best, just for the better.<br />或<br />不求最好，只求更好。 |
 
 | 站长昵称 | 站长头像 | 网站截图 |
 | :------: | :------: | :------: |
-| wuziqian211 | <img class="avatar" alt="站长头像" src="/images/face.png" /><https://wuziqian211.top/images/face.png> | ![站点截图](/images/screenshot.png)<https://wuziqian211.top/images/screenshot.png> |
+| 晨叶梦春 | <img class="avatar" alt="站长头像" src="/images/face.png" /><https://www.yumeharu.top/images/face.png> | ![站点截图](/images/screenshot.png)<https://www.yumeharu.top/images/screenshot.png> |
 
 ```yml
-# 此 YML 文件仅供参考，您可能需要进行适当修改
-  - name: wuziqian211's Blog       # 网站名称
-    link: https://wuziqian211.top/ # 网站链接
-    icon: https://wuziqian211.top/images/icon.png             # 网站图标
-    description: Not for the best, just for the better.       # 网站描述，也可使用 “不求最好，只求更好。”
-    author: wuziqian211            # 站长昵称
-    avatar: https://wuziqian211.top/images/face.png           # 站长头像
-    screenshot: https://wuziqian211.top/images/screenshot.png # 网站截图
+# 此 YAML 文件仅供参考，您可能需要进行适当修改
+  - name: wuziqian211's Blog        # 网站名称
+    link: https://www.yumeharu.top/ # 网站链接
+    icon: https://www.yumeharu.top/images/icon.png             # 网站图标
+    description: Not for the best, just for the better.        # 网站描述，也可使用 “不求最好，只求更好。”
+    author: 晨叶梦春                 # 站长昵称
+    avatar: https://www.yumeharu.top/images/face.png           # 站长头像
+    screenshot: https://www.yumeharu.top/images/screenshot.png # 网站截图
 ```
 </details>
 
@@ -156,7 +160,7 @@ const renderUserDiv = info => {
   const friends = document.querySelector('div#friends'), deletedFriends = document.querySelector('div#deleted-friends');
   if (!friends) return;
   try {
-    const json = await (await fetch('https://api.yumeharu.top/api/modules?id=friends&version=3')).json();
+    const json = await (await fetch('https://api.yumeharu.top/api/modules?id=friends&version=3&type=json')).json();
     friends.innerText = '';
     if (json.code === 0) {
       for (const u of json.data.n.sort(() => 0.5 - Math.random())) {

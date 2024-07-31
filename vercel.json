@@ -3,9 +3,20 @@
     {
       "source": "/(.*)",
       "headers": [
+        { "key": "Content-Security-Policy", "value": "default-src 'none'; connect-src 'self' https:; font-src 'self' https:; frame-src 'self' https:; img-src 'self' * data:; media-src 'self' *; object-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; base-uri 'none'; form-action 'self'; frame-ancestors 'self' https:" },
         { "key": "Referrer-Policy", "value": "same-origin" },
-        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" }
+        { "key": "Strict-Transport-Security", "value": "max-age=63072000; includeSubDomains; preload" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" }
+      ]
+    }, 
+    {
+      "source": "/404.html",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex" }
       ]
     }
+  ],
+  "redirects": [
+    { "source": "/wiki/", "destination": "/about/" }
   ]
 }
