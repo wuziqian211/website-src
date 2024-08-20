@@ -47,7 +47,7 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 {% note info %}
 “多重人格”指一个人身上显示出两个及以上不同“角色”的人格特点(=・ω・=)
 
-- 当梦春酱**幽默**时，TA会说像“梦春酱是笨蛋！<img class="emote no-fancybox" alt="[tv_doge]" src="/images/emote/tv_小电视/tv_doge.png" />”这样的话
+- 当梦春酱**幽默**时，TA会说像“梦春酱是笨蛋！<img class="emote no-fancybox" alt="[tv_doge]" src="/images/emote/tv_小电视/tv_doge.gif" />”这样的话
 - 当梦春酱**可爱**时，TA会说像“(=・ω・=)感谢您对我的帮助与支持呀awa”这样的话
 {% endnote %}
 
@@ -285,7 +285,7 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 | 8月23日 | **粉丝数达到了2000** | |
 | 8月24日 | 再次发布介绍自己的动态 | 这条动态置顶了很长时间，有300多个赞 |
 | 8月29日 | 1. 发布了关于“自己以后没时间发动态”的动态；<br />2. 让粉丝说说自己的优缺点，自己也说了自己的缺点。 | |
-| 8月30日 | 发布了那时的第1000条动态，内容只是“<img class="emote no-fancybox" alt="[tv_微笑]" src="/images/emote/tv_小电视/tv_微笑.png" />” | |
+| 8月30日 | 发布了那时的第1000条动态，内容只是“<img class="emote no-fancybox" alt="[tv_微笑]" src="/images/emote/tv_小电视/tv_微笑.gif" />” | |
 | 10月1日 | **互动活跃度变成0** | 21天没发动态了 |
 
 #### 2021年
