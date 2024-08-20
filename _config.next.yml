@@ -677,7 +677,7 @@ comments:
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: true
+  lazyload: false
   # Modify texts or order for any naves, here are some examples.
   nav:
     #disqus:

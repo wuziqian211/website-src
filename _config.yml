@@ -54,7 +54,7 @@ syntax_highlighter: highlight.js
 highlight:
   auto_detect: false
   line_number: true
-  line_threshold: 2
+  line_threshold: 1
   tab_replace: '  '
   exclude_languages:
   wrap: true
@@ -62,7 +62,7 @@ highlight:
 prismjs:
   preprocess: true
   line_number: true
-  line_threshold: 2
+  line_threshold: 1
   tab_replace: '  '
 
 # Category & Tag
