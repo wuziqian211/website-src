@@ -23,6 +23,7 @@ custom_file_path:
   #header: source/_data/header.njk
   #sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
+  #postBodyStart: source/_data/post-body-start.njk
   #postBodyEnd: source/_data/post-body-end.njk
   footer: source/_data/footer.njk
   bodyEnd: source/_data/body-end.njk
@@ -53,7 +54,7 @@ favicon:
   small: /images/favicon-16x16.png
   medium: /images/favicon-32x32.png
   apple_touch_icon: /images/apple-touch-icon.png
-  safari_pinned_tab: /images/icon.png
+  safari_pinned_tab: /images/icon_compressed.png
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
@@ -70,7 +71,7 @@ creative_commons:
   post: true
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
-  language: deed.zh
+  language: deed.zh-hans
 
 # Open graph settings
 # See: https://hexo.io/docs/helpers#open-graph
@@ -117,16 +118,18 @@ menu_settings:
 # ---------------------------------------------------------------
 
 sidebar:
-  # Sidebar Position.
+  # Sidebar position. Available values: left | right
   position: left
-  #position: right
 
-  # Manual define the sidebar width. If commented, will be default for:
-  # Muse | Mist: 320
-  # Pisces | Gemini: 240
-  #width: 300
+  # Sidebar width.
+  # Applicable to Muse | Mist and mobile of Pisces | Gemini.
+  width_expanded: 320
+  # Applicable to desktop of Pisces | Gemini.
+  width_dual_column: 240
 
-  # Sidebar Display (only for Muse | Mist), available values:
+  # Sidebar display.
+  # Applicable to Muse | Mist and mobile of Pisces | Gemini.
+  # Available values:
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
@@ -141,7 +144,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /images/face.png
+  url: /images/face_compressed.png
   # If true, the avatar will be displayed in circle.
   rounded: true
   # If true, the avatar will be rotated with the cursor.
@@ -155,10 +158,10 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  Bilibili: https://space.bilibili.com/425503913 || custom bilibili
+  Bilibili: https://space.bilibili.com/425503913 || fab fa-bilibili
   GitHub: https://github.com/wuziqian211 || fab fa-github
   Gitee: https://gitee.com/wuziqian211 || custom gitee
-  Twitter: https://twitter.com/wuziqian211 || fab fa-twitter
+  Twitter: https://x.com/wuziqian211 || fab fa-twitter
   E-Mail: mailto:wuziqian211@126.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
@@ -188,7 +191,7 @@ toc:
   # Automatically add list number to toc.
   number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: true
+  wrap: false
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
   # Maximum heading depth of generated toc.
@@ -217,12 +220,13 @@ footer:
     color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
+  # Set to `false` to disable the copyright statement.
   copyright:
 
   # Powered by Hexo & NexT
   powered: true
 
-  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
+  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
     enable: false
     icp:
@@ -230,7 +234,7 @@ footer:
     gongan_id:
     # The full num of gongan beian.
     gongan_num:
-    # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
+    # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
     gongan_icon_url:
 
 
@@ -239,7 +243,7 @@ footer:
 # See: https://theme-next.js.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
 
-# Automatically excerpt description in homepage as preamble text.
+# Use `description` in front-matter to specify post excerpt.
 excerpt_description: false
 
 # Read more button
@@ -288,15 +292,15 @@ follow_me:
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
 related_posts:
-  enable: false
+  enable: true
   icon: fa fa-signs-post
 
 # Post edit
 # Easily browse and edit blog source code online.
 post_edit:
-  enable: false
-  url: https://github.com/user-name/repo-name/tree/branch-name/subdirectory-name/ # Link for view source
-  #url: https://github.com/user-name/repo-name/edit/branch-name/subdirectory-name/ # Link for fork & edit
+  enable: true
+  url: https://github.com/wuziqian211/website-src/tree/main/source/ # Link for view source
+  #url: https://github.com/wuziqian211/website-src/edit/main/source/ # Link for fork & edit
 
 # Show previous post and next post in post footer if exists
 # Available values: left | right | false
@@ -350,7 +354,7 @@ mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
-  light: "#222"
+  light: "#f5a7c6"
   dark: "#222"
 
 # Override browsers' default behavior.
@@ -374,6 +378,10 @@ codeblock:
     enable: true
     # Available values: default | flat | mac
     style: mac
+  # Fold code block
+  fold:
+    enable: false
+    height: 500
 
 back2top:
   enable: true
@@ -470,7 +478,7 @@ font:
 index_with_subtitle: true
 
 # Automatically add external URL with Base64 encrypt & decrypt.
-exturl: false
+exturl: true
 # If true, an icon will be attached to each external URL
 exturl_icon: true
 
@@ -534,6 +542,9 @@ mermaid:
     light: default
     dark: dark
 
+# WaveDrom tag
+wavedrom:
+  enable: false
 
 # ---------------------------------------------------------------
 # Third Party Plugins & Services Settings
@@ -596,12 +607,12 @@ pangu: true
 # For more information: https://getquick.link
 # Front-matter variable (nonsupport home archive).
 quicklink:
-  enable: false
+  enable: true
 
   # Home page and archive page can be controlled through home and archive options below.
   # This configuration item is independent of `enable`.
-  home: false
-  archive: false
+  home: true
+  archive: true
 
   # Default (true) will initialize quicklink after the load event fires.
   delay: true
@@ -622,6 +633,7 @@ motion:
   async: true
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
+    menu_item: fadeInDown
     post_block: fadeIn
     post_header: fadeInDown
     post_body: fadeInDown
@@ -639,9 +651,9 @@ pace:
   # All available themes:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: minimal
+  theme: flash
 
-# Canvas ribbon
+# Generate a ribbon in your website with HTML5 canvas.
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
   enable: true
@@ -665,7 +677,7 @@ comments:
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: false
+  lazyload: true
   # Modify texts or order for any naves, here are some examples.
   nav:
     #disqus:
@@ -743,9 +755,15 @@ isso: # <data_isso>
 # See: https://theme-next.js.org/docs/third-party-services/post-widgets
 # ---------------------------------------------------------------
 
-# AddThis Share. See: https://www.addthis.com
-# Go to https://www.addthis.com/dashboard to customize your tools.
-add_this_id:
+# AddToAny Share. See: https://www.addtoany.com
+addtoany:
+  enable: true
+  buttons:
+    - email
+    - copy_link
+    - wechat
+    - qzone
+    - sina_weibo
 
 
 # ---------------------------------------------------------------
@@ -760,6 +778,8 @@ google_analytics:
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
+  # only needed if you are using `only_pageview` mode, https://developers.google.com/analytics/devguides/collection/protocol/ga4
+  measure_protocol_api_secret:
 
 # Baidu Analytics
 # See: https://tongji.baidu.com
@@ -790,6 +810,7 @@ umami:
   enable: false
   script_url: # https://umami.example.com/script.js
   website_id: # <your website id>
+  host_url: # <your umami site url>
 
 # Plausible Analytics
 # See: https://plausible.io/
@@ -868,7 +889,7 @@ local_search:
 # Firstly, you need to enable and configure the chat service.
 chat:
   enable: false
-  icon: fa fa-comment # Icon name in Font Awesome, set false to disable icon.
+  icon: fa fa-comment # Icon name in Font Awesome, set to `false` to disable icon.
 
 # Chatra is a functional, easy to use piece of chat software for websites.
 # For more information: https://chatra.com
@@ -885,12 +906,6 @@ chatra:
 tidio:
   enable: false
   key: # Public Key, get it from dashboard. See: https://www.tidio.com/panel/settings/developer
-
-# Gitter is a chat and networking platform.
-# For more information: https://gitter.im
-gitter:
-  enable: false
-  room:
 
 
 # ---------------------------------------------------------------
@@ -919,6 +934,7 @@ vendors:
 css: css
 js: js
 images: images
+
 
 # Waline Config File
 # For more information:
@@ -960,19 +976,19 @@ waline:
       prefix: ''
       type: png
       icon: index
-      items: ['龙年', '2024', '14周年', '脱单doge', '微笑', '口罩', 'doge', '妙啊', 'OK', '星星眼', '辣眼睛', '吃瓜', '滑稽', '呲牙', '打call', '歪嘴', '调皮', '豹富', '嗑瓜子', '笑哭', '藏狐', '脸红', '给心心', '嘟嘟', '哦呼', '喜欢', '酸了', '嫌弃', '害羞', '大哭', '疑惑', '喜极而泣', '笑', '偷笑', '惊讶', '捂脸', '阴险', '呆', '抠鼻', '大笑', '惊喜', '无语', '点赞', '鼓掌', '尴尬', '灵魂出窍', '委屈', '傲娇', '疼', '冷', '热', '生病', '捂眼', '嘘声', '思考', '再见', '翻白眼', '哈欠', '奋斗', '墨镜', '难过', '撇嘴', '抓狂', '生气', '水稻', '奶茶干杯', '汤圆', '锦鲤', '福到了', '鸡腿', '雪花', '视频卫星', '干杯', '黑洞', '爱心', '胜利', '加油', '抱拳', '响指', '保佑', '福', '支持', '拥抱', '跪了', '怪我咯', '香格里拉边境', '老鼠', '牛年', '兔年', '三星堆', '桃源_给花花', '桃源_缘分', '桃源_傲娇', '桃源_欢呼', '桃源_乖巧', '洛天依', '怪兽8号_开心', '白荆回廊_欢呼', '白荆回廊_期待', '白荆回廊_啊？', '白荆回廊_好好好', '白荆回廊_无语', '白荆回廊_尴尬', '坎公骑冠剑_吃鸡', '坎公骑冠剑_钻石', '坎公骑冠剑_无语', '来古-疑问', '来古-沉思', '来古-呆滞', '来古-震撼', '来古-注意', 'FGO_耶', 'FGO_开心', 'FGO_汗', 'FGO_怒', 'FGO_偷看', '初音未来_大笑', '原神_哇', '原神_哼', '原神_嗯', '原神_欸嘿', '原神_喝茶', '原神_生气', '保卫萝卜_白眼', '保卫萝卜_笔芯', '保卫萝卜_哭哭', '保卫萝卜_哇', '保卫萝卜_问号', '无悔华夏_不愧是你', '无悔华夏_吃瓜', '无悔华夏_达咩', '无悔华夏_点赞', '无悔华夏_好耶', '奥比岛_搬砖', '奥比岛_点赞', '奥比岛_击爪', '奥比岛_委屈', '奥比岛_喜欢', '黎明觉醒_怒了鸦', '黎明觉醒_石化鸦', '黎明觉醒_摊手鸦', '黎明觉醒_比心鸦', '黎明觉醒_哼白眼鸦', '以闪亮之名_哎？！', '以闪亮之名_爱你哦', '以闪亮之名_吃瓜', '以闪亮之名_好耶!', '以闪亮之名_星星眼', '以闪亮之名_针不戳', '元梦_爱你', '元梦_打call', '元梦_大哭', '元梦_点赞', '元梦_哭哭']
+      items: ['15周年', '龙年', '2024', '脱单doge', '微笑', '口罩', 'doge', '妙啊', 'OK', '星星眼', '辣眼睛', '吃瓜', '滑稽', '呲牙', '打call', '歪嘴', '调皮', '豹富', '嗑瓜子', '笑哭', '藏狐', '脸红', '给心心', '嘟嘟', '哦呼', '喜欢', '酸了', '嫌弃', '害羞', '大哭', '疑惑', '喜极而泣', '笑', '偷笑', '惊讶', '捂脸', '阴险', '呆', '抠鼻', '大笑', '惊喜', '无语', '点赞', '鼓掌', '尴尬', '灵魂出窍', '委屈', '傲娇', '疼', '冷', '热', '生病', '捂眼', '嘘声', '思考', '再见', '翻白眼', '哈欠', '奋斗', '墨镜', '难过', '撇嘴', '抓狂', '生气', '水稻', '奶茶干杯', '汤圆', '锦鲤', '福到了', '鸡腿', '雪花', '视频卫星', '干杯', '黑洞', '爱心', '胜利', '加油', '抱拳', '响指', '保佑', '福', '支持', '拥抱', '跪了', '怪我咯', '香格里拉边境', '老鼠', '牛年', '兔年', '三星堆', '桃源_给花花', '桃源_缘分', '桃源_傲娇', '桃源_欢呼', '桃源_乖巧', '洛天依', '鸣潮_嗯', '鸣潮_嗨', '鸣潮_祈愿', '鸣潮_你好', '鸣潮_嘿嘿', '少女乐团派对_派对', '少女乐团派对_等一下', '少女乐团派对_期待', '少女乐团派对_感想', '少女乐团派对_开心', '怪兽8号_开心', '白荆回廊_欢呼', '白荆回廊_期待', '白荆回廊_啊？', '白荆回廊_好好好', '白荆回廊_无语', '白荆回廊_尴尬', '坎公骑冠剑_吃鸡', '坎公骑冠剑_钻石', '坎公骑冠剑_无语', '来古-疑问', '来古-沉思', '来古-呆滞', '来古-震撼', '来古-注意', 'FGO_耶', 'FGO_开心', 'FGO_汗', 'FGO_怒', 'FGO_偷看', '初音未来_大笑', '原神_哇', '原神_哼', '原神_嗯', '原神_欸嘿', '原神_喝茶', '原神_生气', '保卫萝卜_白眼', '保卫萝卜_笔芯', '保卫萝卜_哭哭', '保卫萝卜_哇', '保卫萝卜_问号', '无悔华夏_不愧是你', '无悔华夏_吃瓜', '无悔华夏_达咩', '无悔华夏_点赞', '无悔华夏_好耶', '奥比岛_搬砖', '奥比岛_点赞', '奥比岛_击爪', '奥比岛_委屈', '奥比岛_喜欢', '黎明觉醒_怒了鸦', '黎明觉醒_石化鸦', '黎明觉醒_摊手鸦', '黎明觉醒_比心鸦', '黎明觉醒_哼白眼鸦', '以闪亮之名_哎？！', '以闪亮之名_爱你哦', '以闪亮之名_吃瓜', '以闪亮之名_好耶!', '以闪亮之名_星星眼', '以闪亮之名_针不戳', '元梦_爱你', '元梦_打call', '元梦_大哭', '元梦_点赞', '元梦_哭哭']
     - name: 热词系列一
       folder: /images/emote/热词系列一
       prefix: ''
       type: png
       icon: index
-      items: ['热词系列_上任鹅城', '热词系列_啊?', '热词系列_哇酷哇酷', '热词系列_呵呵', '热词系列_谢谢老师', '热词系列_美貌惊人', '热词系列_六到无语', '热词系列_干杯', '热词表情_世萌双冠', '热词系列_肥肠自信', '热词系列_我故意的', '热词系列_知识增加', '热词系列_三连', '热词系列_妙啊', '热词系列_助力梦想', '热词系列_优雅', '热词表情_哎呦不错哦', '热词系列_好耶', '热词系列_你币有了', '热词系列_吹爆', '念诗之王', '热词系列_对象', '热词系列_不孤鸟', '热词系列_洛水天依', '热词系列_秀', '热词系列_标准结局', '热词系列_B站有房', '热词系列_破防了', '热词系列_多谢款待', '热词系列_燃起来了', '热词系列_YYDS', '热词系列_入站必刷', '热词系列_饮茶先啦', '热词系列_再来亿遍', '热词系列_热乎', '热词系列_好活', '热词系列_热门通知', '热词系列_好家伙', '热词系列_排面', '热词系列_爷青回', '热词系列_芜湖起飞', '热词系列_夺笋呐', '热词系列_两面包夹芝士', '热词系列_梦幻联动', '热词系列_泪目', '热词系列_保护', '热词系列_爱了爱了', '热词系列_可以', '热词系列_希望没事', '热词系列_打卡', '热词系列_DNA', '热词系列_这次一定', '热词系列_AWSL', '热词系列_递话筒', '热词系列_你细品', '热词系列_咕咕', '热词系列_张三', '热词系列_害', '热词系列_我裂开了', '热词系列_有内味了', '热词系列_猛男必看', '热词系列_奥力给', '热词系列_神仙UP', '热词系列_问号', '热词系列_我哭了', '热词系列_不愧是你', '热词系列_高产', '热词系列_真香', '热词系列_我全都要', '热词系列_爷关更', '热词系列_锤', '热词系列_我酸了', '热词系列_有生之年', '热词系列_镇站之宝', '热词系列_我太南了', '热词系列_完结撒花', '热词系列_大师球', '热词系列_知识盲区', '热词系列_“狼火”', '热词系列_你可真星', '热词系列_献上膝盖']
+      items: ['热词系列_毕业快乐', '热词系列_上任鹅城', '热词系列_啊?', '热词系列_哇酷哇酷', '热词系列_呵呵', '热词系列_谢谢老师', '热词系列_美貌惊人', '热词系列_六到无语', '热词系列_干杯', '热词表情_世萌双冠', '热词系列_肥肠自信', '热词系列_我故意的', '热词系列_知识增加', '热词系列_三连', '热词系列_妙啊', '热词系列_助力梦想', '热词系列_优雅', '热词表情_哎呦不错哦', '热词系列_好耶', '热词系列_你币有了', '热词系列_吹爆', '念诗之王', '热词系列_对象', '热词系列_不孤鸟', '热词系列_洛水天依', '热词系列_秀', '热词系列_标准结局', '热词系列_B站有房', '热词系列_破防了', '热词系列_多谢款待', '热词系列_燃起来了', '热词系列_YYDS', '热词系列_入站必刷', '热词系列_饮茶先啦', '热词系列_再来亿遍', '热词系列_热乎', '热词系列_好活', '热词系列_热门通知', '热词系列_好家伙', '热词系列_排面', '热词系列_爷青回', '热词系列_芜湖起飞', '热词系列_夺笋呐', '热词系列_两面包夹芝士', '热词系列_梦幻联动', '热词系列_泪目', '热词系列_保护', '热词系列_爱了爱了', '热词系列_可以', '热词系列_希望没事', '热词系列_打卡', '热词系列_DNA', '热词系列_这次一定', '热词系列_AWSL', '热词系列_递话筒', '热词系列_你细品', '热词系列_咕咕', '热词系列_张三', '热词系列_害', '热词系列_我裂开了', '热词系列_有内味了', '热词系列_猛男必看', '热词系列_奥力给', '热词系列_神仙UP', '热词系列_问号', '热词系列_我哭了', '热词系列_不愧是你', '热词系列_高产', '热词系列_真香', '热词系列_我全都要', '热词系列_爷关更', '热词系列_锤', '热词系列_我酸了', '热词系列_有生之年', '热词系列_镇站之宝', '热词系列_我太南了', '热词系列_完结撒花', '热词系列_大师球', '热词系列_知识盲区', '热词系列_“狼火”', '热词系列_你可真星', '热词系列_献上膝盖']
     - name: tv_小电视
       folder: /images/emote/tv_小电视
       prefix: ''
-      type: png
-      icon: index
-      items: ['tv_白眼', 'tv_doge', 'tv_坏笑', 'tv_难过', 'tv_生气', 'tv_委屈', 'tv_斜眼笑', 'tv_呆', 'tv_发怒', 'tv_惊吓', 'tv_呕吐', 'tv_思考', 'tv_微笑', 'tv_疑问', 'tv_大哭', 'tv_鼓掌', 'tv_抠鼻', 'tv_亲亲', 'tv_调皮', 'tv_笑哭', 'tv_晕', 'tv_点赞', 'tv_害羞', 'tv_睡着', 'tv_色', 'tv_吐血', 'tv_无奈', 'tv_再见', 'tv_流汗', 'tv_偷笑', 'tv_抓狂', 'tv_黑人问号', 'tv_困', 'tv_打脸', 'tv_闭嘴', 'tv_鄙视', 'tv_腼腆', 'tv_馋', 'tv_可爱', 'tv_发财', 'tv_生病', 'tv_流鼻血', 'tv_尴尬', 'tv_大佬', 'tv_流泪', 'tv_冷漠', 'tv_皱眉', 'tv_鬼脸', 'tv_调侃', 'tv_目瞪口呆']
+      type: ''
+      icon: index.png
+      items: ['tv_白眼.gif', 'tv_doge.gif', 'tv_坏笑.gif', 'tv_难过.gif', 'tv_生气.gif', 'tv_委屈.gif', 'tv_斜眼笑.gif', 'tv_呆.gif', 'tv_发怒.gif', 'tv_惊吓.gif', 'tv_呕吐.gif', 'tv_思考.gif', 'tv_微笑.gif', 'tv_疑问.gif', 'tv_大哭.gif', 'tv_鼓掌.gif', 'tv_抠鼻.gif', 'tv_亲亲.gif', 'tv_调皮.gif', 'tv_笑哭.gif', 'tv_晕.gif', 'tv_点赞.gif', 'tv_害羞.gif', 'tv_睡着.gif', 'tv_色.gif', 'tv_吐血.gif', 'tv_无奈.gif', 'tv_再见.gif', 'tv_流汗.gif', 'tv_偷笑.gif', 'tv_抓狂.gif', 'tv_黑人问号.gif', 'tv_困.gif', 'tv_打脸.gif', 'tv_闭嘴.gif', 'tv_鄙视.gif', 'tv_腼腆.gif', 'tv_馋.gif', 'tv_可爱.gif', 'tv_发财.gif', 'tv_生病.gif', 'tv_流鼻血.gif', 'tv_尴尬.gif', 'tv_大佬.gif', 'tv_流泪.png', 'tv_冷漠.png', 'tv_皱眉.png', 'tv_鬼脸.png', 'tv_调侃.png', 'tv_目瞪口呆.png']
     - name: 2024拜年纪
       folder: /images/emote/2024拜年纪
       prefix: ''
@@ -1366,7 +1382,7 @@ waline:
   lang: zh-CN
 
   # Word limit, no limit when setting to 0
-  wordLimit: [1, 65536]
+  wordLimit: [1, 100000]
 
   # Whether enable login, can choose from 'enable', 'disable' and 'force'
   login: enable
@@ -1379,10 +1395,10 @@ waline:
   commentSorting: hottest
 
   reaction:
-    - /images/emote/tv_小电视/tv_点赞.png
-    - /images/emote/tv_小电视/tv_doge.png
-    - /images/emote/tv_小电视/tv_疑问.png
-    - /images/emote/tv_小电视/tv_微笑.png
-    - /images/emote/tv_小电视/tv_难过.png
+    - /images/emote/tv_小电视/tv_点赞.gif
+    - /images/emote/tv_小电视/tv_doge.gif
+    - /images/emote/tv_小电视/tv_疑问.gif
+    - /images/emote/tv_小电视/tv_微笑.gif
+    - /images/emote/tv_小电视/tv_难过.gif
     - /images/emote/tv_小电视/tv_调侃.png
-    - /images/emote/tv_小电视/tv_思考.png
+    - /images/emote/tv_小电视/tv_思考.gif

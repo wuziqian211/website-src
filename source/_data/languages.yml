@@ -12,8 +12,8 @@ zh-CN:
   counter:
     archive_posts:
       zero: "暂无文章(´；ω；`)"
-      one: 目前共计 1 篇文章awa
-      other: "目前共计 %d 篇文章awa"
+      one: "目前共计 1 篇文章(^・ω・^ )"
+      other: "目前共计 %d 篇文章(^・ω・^ )"
   state:
     posts: 文章
-  keep_on: 继续努力(^・ω・^ )
+  keep_on: 继续努力awa

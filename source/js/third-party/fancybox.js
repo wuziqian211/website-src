@@ -7,7 +7,7 @@ document.addEventListener('page:loaded', () => {
     const imageLink = image.dataset.src || image.src;
     const imageWrapLink = document.createElement('a');
     imageWrapLink.classList.add('fancybox');
-    imageWrapLink.href = imageLink;
+    imageWrapLink.href = imageLink.replace(/_compressed/, '');
     imageWrapLink.setAttribute('itemscope', '');
     imageWrapLink.setAttribute('itemtype', 'http://schema.org/ImageObject');
     imageWrapLink.setAttribute('itemprop', 'url');

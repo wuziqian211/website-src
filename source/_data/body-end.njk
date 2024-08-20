@@ -7,7 +7,7 @@ document.addEventListener('page:loaded', () => {
         reject(new TypeError('文件大小不能超过 4.5 MB'));
         return;
       }
-      const ujson = await (await fetch('https://api.yumeharu.top/api/modules?id=upload', { method: 'POST', headers: { 'Content-Type': 'application/octet-stream' }, body: file })).json();
+      const ujson = await (await fetch('https://api.yumeharu.top/api/modules?id=upload&type=json', { method: 'POST', headers: { 'Content-Type': 'application/octet-stream' }, body: file })).json();
       if (ujson.code === 0) {
         resolve(ujson.data.url);
         return;
@@ -28,7 +28,7 @@ document.addEventListener('page:loaded', () => {
 
 let blockedRegExp;
 (async () => {
-  const { blocked } = (await (await fetch('https://api.yumeharu.top/api/modules?id=blocked')).json()).data;
+  const { blocked } = (await (await fetch('https://api.yumeharu.top/api/modules?id=blocked&type=json')).json()).data;
   if (blocked) {
     blockedRegExp = new RegExp(blocked);
     document.querySelectorAll('a').forEach(e => blockedRegExp.test(e.hostname) && e.classList.add('inaccessible'));

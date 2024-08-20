@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: wuziqian211's Blog
-subtitle: 一个简单的Blog
+title: 晨叶梦春的小屋
+subtitle: 温馨和谐的小屋
 description: Not for the best, just for the better.
-keywords: 'wuziqian211, Yumeharu, 梦春, 梦春酱'
-author: wuziqian211
+keywords: '梦春, 梦春酱，晨叶梦春, wuziqian211, YumeHaru, 211娘'
+author: 晨叶梦春
 language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://wuziqian211.top
+url: https://www.yumeharu.top
 root: /
 permalink: /archives/:year/:month/:day/:title/
 permalink_defaults:
@@ -29,7 +29,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render: 
+skip_render:
   - emote/**/*
   - images/**/*
   - robots.txt
@@ -43,9 +43,8 @@ external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
   exclude:
-    - wuziqian211.top
     - www.yumeharu.top
-    - wuziqian211.gitee.io
+    - wuziqian211.top
 filename_case: 1
 render_drafts: false
 post_asset_folder: false
@@ -76,8 +75,8 @@ category_map:
   野生技能协会: skill
 tag_map:
   Blog: blog
-  Wiki: wiki
   wuziqian211: wuziqian211
+  梦春酱: yumeharu
   生草: grass
   网站: website
   翻译: translation
@@ -168,9 +167,8 @@ nofollow:
   enable: true
   field: site
   exclude:
+    - www.yumeharu.top
     - wuziqian211.top
-    - yumeharu.top
-    - wuziqian211.gitee.io
 
 markdown:
   preset: 'commonmark'
@@ -198,7 +196,7 @@ markdown:
     separator: '-'
 
 sitemap:
-  path: 
+  path:
     - sitemap.xml
     - sitemap.txt
   template:
@@ -206,6 +204,27 @@ sitemap:
   rel: false
   tags: true
   categories: true
+
+related_posts:
+  enabled: true
+  enable_env_name:
+  filter_threshold: 0.3
+  related_count: 3
+  weight:
+    title: 0.05
+    description: 0.05
+    keywords: 0.01
+    tags: 0.005
+    categories: 0.005
+    text: 1
+  stemmers:
+    - en
+    - ru
+  reserved:
+    - asp.net
+    - vs.net
+    - ado.net
+    - .net
 
 all_minifier: true
 js_concator:
@@ -221,13 +240,13 @@ html_minifier:
 css_minifier:
   enable: true
   silent: false
-  exclude: 
+  exclude:
     - '*.min.css'
 js_minifier:
   enable: true
   mangle: true
   silent: false
-  exclude: 
+  exclude:
     - '*.min.js'
 image_minifier:
   enable: false

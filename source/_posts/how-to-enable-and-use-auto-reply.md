@@ -1,7 +1,7 @@
 ---
 title: 如何开启并使用B站的自动回复功能
 date: 2022-01-13 20:47:39
-updated: 2024-03-17 19:19:58
+updated: 2024-08-21 04:25:14
 description: 不管你有没有达到1000粉丝，都可以开启B站的自动回复功能
 tags:
   - 自动回复
@@ -12,9 +12,10 @@ categories:
 ---
 
 本文章使用网页版B站，为您介绍开启与使用B站的自动回复功能的方法。
-![自动回复](/images/auto-reply.png "自动回复")
+![自动回复](/images/auto-reply_compressed.png "自动回复")
 
 ## 开启自动回复功能
+
 如果您的粉丝数在1000及以上，请您直接选择“通过网页开启”部分。
 如果您的粉丝数在1000以下，请您先查看“通过API开启”部分，以显示“自动回复”按钮，然后就可以直接在B站网页或APP上设置自动回复了。
 <!-- more -->
@@ -22,9 +23,11 @@ categories:
 {% tabs 开启自动回复功能 %}
 <!-- tab 通过API开启 -->
 由于B站的一些“漏洞”，您可以通过一些技术手段（就比如API，即应用程序编程接口）来开启B站的自动回复，并能正常使用自动回复功能。
+
 {% note warning %}
 强烈建议您使用电脑操作！在手机上操作会非常麻烦。
 {% endnote %}
+
 {% note info %}
 下面的操作**需要在您的操作系统上安装`curl`命令行程序**，一般来说现在的操作系统里都有这个程序。如果没有，可以在<https://curl.se/download/>下载。
 {% endnote %}
@@ -33,8 +36,11 @@ categories:
 ![获取Cookie](/images/get-cookie.png "获取Cookie")
 
 打开控制台，输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
+
 {% note default %}
+
 ### 如何打开控制台
+
 下面只是不同操作系统中打开控制台的比较快捷的方法，您也可以使用其他方法打开控制台。
 
 - **Windows**：按下Win＋R，输入`cmd`后回车，即可打开控制台窗口
@@ -44,30 +50,38 @@ categories:
 {% endnote %}
 
 例：假如您获取到的{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：
-```bash
-$ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" -b "SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef&csrf_token=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set" # 请将代码中的 Cookie 修改成自己的 Cookie
+
+```sh
+curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" -b "SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef&csrf_token=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set" # 请将代码中的 Cookie 修改成自己的 Cookie
 ```
+
 您可能会看到类似于下面的“代码”：
+
 ```json
 {"code":0,"msg":"0","message":"0","ttl":1,"data":{}}
 ```
-只要您看到了`"code":0`，就说明自动回复功能开启成功。如果出现问题，您可以私信wuziqian211来请求帮助。
+
+只要您看到了`"code":0`，就说明自动回复功能开启成功。如果出现问题，您可以私信梦春酱来请求帮助。
+
 {% note danger %}
 **特别注意：请不要把您刚刚复制的“SESSDATA”“bili_jct”中任何一个Cookie的值告诉任何人！它们的值是您的账号的登录信息，与账号、密码的作用相似，别人可能会利用这些值来登录您的账号。**
 {% endnote %}
+
 {% note warning %}
 目前，B站的Cookie是定期更新的，所以建议您获取完Cookie后暂时不要访问B站的网页，防止原来的Cookie因更新而失效。待您开启自动回复功能成功后，就可以访问B站的网页了。
 另外，您刚刚输入的命令里面的链接**不能通过浏览器直接访问**！直接访问是没有任何效果的。
 {% endnote %}
+
 {% note info %}
-上面的操作有一定的技术含量，如果您无法看懂上面的内容，您可以向wuziqian211请求帮助。
+上面的操作有一定的技术含量，如果您无法看懂上面的内容，您可以向梦春酱请求帮助。
 
 如果您非常了解HTTP，上面的操作也可以像这样表述：
 用POST方式提交查询字符串数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}到https://api.vc.bilibili.com/link_setting/v1/link_setting/set，并带上Cookie“SESSDATA”与“bili_jct”，如果服务器返回的JSON中“code”的值为0，就说明自动回复功能开启成功。
 {% endnote %}
 
 进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了一个按钮“自动回复”，就说明自动回复功能开启成功，而且您会发现，“关键词回复”功能是开启的。
-![“自动回复”按钮](/images/auto-reply-button.png "“自动回复”按钮")
+![“自动回复”按钮](/images/auto-reply-button_compressed.png "“自动回复”按钮")
+
 {% note warning %}
 1000粉丝以下的用户关闭了自动回复的所有功能后，刷新“消息中心”页面，“自动回复”按钮就会**消失**。
 如果您不小心关闭了自动回复的所有功能，导致“自动回复”按钮消失，那么您可以再次执行上面的操作以重新开启自动回复功能。
@@ -78,19 +92,24 @@ $ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 <!-- tab 通过网页开启 -->
 在登录了B站账号的浏览器中进入[消息中心](https://message.bilibili.com/)后，您可以看到，在页面的左侧有“自动回复”按钮。点击“自动回复”按钮，就可以进入[“自动回复”页面](https://message.bilibili.com/#/autoreply)。
 在页面顶部，有“被关注回复”、“关键词回复”、“收到消息回复”选择夹，部分用户可能也有“大航海上船回复”选择夹。点击每个选择夹中功能的开关按钮，就可以开启对应的功能，并显示更多的信息。
-![“自动回复”页面](/images/auto-reply-page.png "“自动回复”页面")
+![“自动回复”页面](/images/auto-reply-page_compressed.png "“自动回复”页面")
 <!-- endtab -->
 
 {% endtabs %}
 
 ## 使用自动回复功能
+
 目前B站**只支持对纯文字自动回复，自动回复的内容也只能为纯文字（可以包含表情），回复内容不超过500字；如果对方也是通过B站的自动回复或自动推送功能发送私信的，那么也不会自动回复**。
+
 {% note warning %}
+
 ### 发送私信限制的规则不适用于B站自动回复功能
+
 **通过B站的自动回复/自动推送功能发送的私信不会被B站视作“对方主动回复或关注你前，最多发送1条消息”规则中的“主动回复”与“发送1条消息”，即自动回复/自动推送功能不会被上述规则所限制，但也不能解除手动私信的这一限制**。这意味着，在您未关注且从来没有手动私信对方的情况下，即使对方触发了您的自动回复/您触发了对方的自动回复，对方**仍然会受到“最多发送1条消息”的限制**，但仍可以自动回复您；同样，如果对方并没有手动私信或关注您，即使您给对方自动回复/对方给您自动回复了，您**也会受到“最多发送1条消息”的限制**，但是您可以自动回复对方。
 （注：被关注时自动推送的稿件、特别关注自动推送的稿件、因互相关注而自动发送的私信、成为契约者而自动发送的私信等也属于自动回复。但是如果您使用了**不使用B站自动回复功能**的自动回复的脚本，那么您用这个脚本自动回复的私信会被视作**手动发送的消息**，在对方关注或手动私信您之前您就不能再发送私信了，但也可以解除对方只能发送1条消息的限制。）
-![关于发送私信限制的规则的说明](/images/explanation-of-rule-regarding-private-message-restriction.png "关于发送私信限制的规则的说明")
+![关于发送私信限制的规则的说明](/images/explanation-of-rule-regarding-private-message-restriction_compressed.png "关于发送私信限制的规则的说明")
 {% endnote %}
+
 对每一个功能的介绍如下表：
 
 | 功能 | 说明 |
@@ -101,7 +120,9 @@ $ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 | 大航海上船回复（**仅部分用户有这个功能**） | 当用户**首次**开通大航海时，会自动将您设置的私信内容回复给TA。 |
 
 ### 关键词回复例子
+
 #### 例1
+
 假如您设置了2个规则：
 
 | 规则 | 精确匹配关键词 | 模糊匹配关键词 | 回复内容 |
@@ -112,6 +133,7 @@ $ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 那么当用户给您发“我哭了”时，会自动回复规则2的回复内容“别哭了<img class="emote no-fancybox" alt="[tv_微笑]" src="/images/emote/tv_小电视/tv_微笑.png" />摸摸您(^・ω・^)”；给您发“哭”时，会自动回复规则1的回复内容“我是不会哭的(=・ω・=)”。因为只有当用户的私信内容与精确匹配关键词“哭”**完全相同**时，才会自动回复规则1的回复内容。
 
 #### 例2
+
 假如您设置了规则：
 
 | 规则 | 精确匹配关键词 | 模糊匹配关键词 | 回复内容 |
@@ -121,6 +143,7 @@ $ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko
 那么当用户给您发“谢谢”或“Thank you”时，会触发自动回复；给您发“谢谢您”时，不会触发自动回复；给您发“感谢您”时，会触发自动回复。
 
 #### 例3
+
 假如您设置了2个规则：
 
 | 规则 | 精确匹配关键词 | 模糊匹配关键词 | 回复内容 |
