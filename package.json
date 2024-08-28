@@ -30,5 +30,10 @@
     "hexo-server": "^3.0.0",
     "hexo-theme-next": "^8.20.0",
     "hexo-word-counter": "^0.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.9.1",
+    "eslint": "^9.9.1",
+    "globals": "^15.9.0"
   }
 }

@@ -14,7 +14,7 @@ categories:
 那么，我们怎么生成这样子的图片呢？这篇文章就教您如何生成含所有粉丝的列表的图片。
 
 {% note info %}
-这篇文章比较适合程序员、技术爱好者阅读，如果您没学过代码也可以按照本文的方法尝试。若您遇到任何问题，可以让梦春酱教您一步步操作。
+这篇文章比较适合程序员、技术爱好者阅读，如果您没学过编程也可以按照本文的方法尝试。若您遇到任何问题，可以让梦春酱教您一步步操作。
 {% endnote %}
 <!-- more -->
 
@@ -25,7 +25,7 @@ categories:
 {% endnote %}
 
 以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来，这样您就获取到了Cookie。
-![获取Cookie](/images/get-cookie.png "获取Cookie")
+![获取Cookie](/images/posts/get-cookie.png "获取Cookie")
 
 打开Node.js，您应该会看到一个命令行窗口。在这个窗口里输入代码`const headers = { Cookie: 'SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`, Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' };`，便于在后续操作中使用您账号的登录信息。
 例：假如{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入代码：
@@ -180,10 +180,7 @@ const md5 = data => { // 对数据进行 MD5 加密
   md5Hash.update(data, 'utf-8');
   return md5Hash.digest('hex');
 };
-const encodeWbi = async query => { // 对请求参数进行 Wbi 签名，改编自 https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md
-  const ujson = await (await fetch('https://api.bilibili.com/x/web-interface/nav', { headers })).json(); // 获取 imgKey 与 subKey
-  const imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1'),
-        subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1');
+const encodeWbi = query => { // 对请求参数进行 Wbi 签名，改编自 https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md
   const mixinKey = [46, 47, 18, 2, 53, 8, 23, 32, 15, 50, 10, 31, 58, 3, 45, 35, 27, 43, 5, 49, 33, 9, 42, 19, 29, 28, 14, 39, 12, 38, 41, 13, 37, 48, 7, 16, 24, 55, 40, 61, 26, 17, 0, 1, 60, 51, 30, 4, 22, 25, 54, 21, 56, 59, 6, 63, 57, 62, 11, 36, 20, 34, 44, 52].reduce((accumulator, n) => accumulator + (imgKey + subKey)[n], '').slice(0, 32), // 对 imgKey 和 subKey 进行字符顺序打乱编码
     params = new URLSearchParams(query);
   params.append('wts', Math.floor(Date.now() / 1000).toString()); // 添加 wts 字段
@@ -191,6 +188,11 @@ const encodeWbi = async query => { // 对请求参数进行 Wbi 签名，改编�
   params.append('w_rid', md5(params.toString() + mixinKey)); // 计算 w_rid
   return params;
 };
+
+// 获取 imgKey 与 subKey
+const ujson = await (await fetch('https://api.bilibili.com/x/web-interface/nav', { headers })).json();
+const imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1'),
+      subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1');
 
 const realFollowers = [];
 for (const f of followers) { // 获取所有在粉丝列表里的用户与自己的关系
@@ -399,7 +401,7 @@ fs.writeFileSync('followers.html', content); // 注意：请将 “followers.htm
 
 再将网页转换成图片：
 我们可以在浏览器中打开生成的文件，然后打开开发者工具（一般按F12键即可），点击右上角的三个点展开菜单，选择“运行命令”（也可直接按下Ctrl＋Shift＋P），输入“屏幕截图”，再选择“截取完整尺寸的屏幕截图”，并选择保存图片的位置，就可以保存一张包括所有粉丝的图片了。
-![生成图片](/images/take-full-size-screenshot.png "生成图片")
+![生成图片](/images/posts/take-full-size-screenshot.png "生成图片")
 
 ## 总结
 
@@ -408,6 +410,7 @@ fs.writeFileSync('followers.html', content); // 注意：请将 “followers.htm
 
 <details>
 <summary>点击查看完整代码</summary>
+<div class="details">
 
 ```js
 // 初始化
@@ -420,9 +423,6 @@ const md5 = data => { // 对数据进行 MD5 加密
   return md5Hash.digest('hex');
 };
 const encodeWbi = async query => { // 对请求参数进行 Wbi 签名，改编自 https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md
-  const ujson = await (await fetch('https://api.bilibili.com/x/web-interface/nav', { headers })).json(); // 获取 imgKey 与 subKey
-  const imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1'),
-        subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1');
   const mixinKey = [46, 47, 18, 2, 53, 8, 23, 32, 15, 50, 10, 31, 58, 3, 45, 35, 27, 43, 5, 49, 33, 9, 42, 19, 29, 28, 14, 39, 12, 38, 41, 13, 37, 48, 7, 16, 24, 55, 40, 61, 26, 17, 0, 1, 60, 51, 30, 4, 22, 25, 54, 21, 56, 59, 6, 63, 57, 62, 11, 36, 20, 34, 44, 52].reduce((accumulator, n) => accumulator + (imgKey + subKey)[n], '').slice(0, 32), // 对 imgKey 和 subKey 进行字符顺序打乱编码
     params = new URLSearchParams(query);
   params.append('wts', Math.floor(Date.now() / 1000).toString()); // 添加 wts 字段
@@ -432,10 +432,16 @@ const encodeWbi = async query => { // 对请求参数进行 Wbi 签名，改编�
 };
 const encodeHTML = str => typeof str === 'string' ? str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/ (?= )|(?<= ) |^ | $/gm, '&nbsp;').replace(/\r\n|\r|\n/g, '<br />') : '';
 
+// 获取自己的 UID、imgKey 与 subKey
+const ujson = await (await fetch('https://api.bilibili.com/x/web-interface/nav', { headers })).json();
+const UID = ujson.data.mid,
+      imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1'),
+      subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1');
+
 // 获取可以获取到的粉丝的信息
 let followers = []; // 存储粉丝列表
 for (let i = 1; i <= 20; i++) { // 获取前 20 页粉丝的信息，每页 50 个；这里的页数是根据自己的粉丝数而定的
-  followers.push(...(await (await fetch(`https://api.bilibili.com/x/relation/fans?vmid=425503913&ps=50&pn=${i}`, { headers })).json()).data.list); // 注意：请将 “vmid=” 后面的数字修改成自己的 UID
+  followers.push(...(await (await fetch(`https://api.bilibili.com/x/relation/fans?vmid=${UID}&ps=50&pn=${i}`, { headers })).json()).data.list);
 }
 
 /* 如果您之前保存过自己所有粉丝的列表，可以执行以下代码：
@@ -550,7 +556,8 @@ ${html}`;
 fs.writeFileSync('followers.html', content); // 注意：请将 “followers.html” 修改成生成的 HTML 文件的名称
 ```
 
+</div>
 </details>
 
 下面的图片就是梦春酱在2022年10月15日生成的粉丝列表图片。
-![梦春酱在2022年10月15日生成的所有粉丝列表的图片](/images/fans-list_compressed.png "梦春酱在2022年10月15日生成的所有粉丝列表的图片")
+![梦春酱在2022年10月15日生成的所有粉丝列表的图片](/images/posts/fans-list_compressed.png "梦春酱在2022年10月15日生成的所有粉丝列表的图片")

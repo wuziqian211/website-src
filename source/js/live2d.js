@@ -28,6 +28,8 @@ if (screen.width >= 768) {
     loadExternalResource(live2d_path + 'live2d.min.js', 'js'),
     loadExternalResource(live2d_path + 'waifu-tips.js', 'js')
   ]).then(() => {
+    // @ts-ignore
+    // eslint-disable-next-line no-undef
     initWidget({
       waifuPath: live2d_path + 'waifu-tips.json',
       apiPath: 'https://live2d.fghrsh.net/api/'

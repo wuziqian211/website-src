@@ -14,7 +14,7 @@ Pheqorの小破站 | https://me.onlyra1n.top/ | Ciallo～(∠・ω&lt; )⌒★�
 Ra小小特的小站 | https://raxxt.top/ | B站用户“爱玩电脑的特兰克斯”的个人网站 | /images/friendship-links/raxxt-top.png
 我汐了_233的小站 | https://woxile.rth10.com/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
 Microhard Demo | https://microharddemo.github.io/ | Microhard Demo 的个人网站 | /images/friendship-links/microharddemo-github-io.png
-易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpeg
+易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpg
 GoForceX's Blog | https://goforcex.top/ | A simple blog | /images/friendship-links/goforcex-top.jpg
 朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
 知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
@@ -26,9 +26,13 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 <!--
 <details>
 <summary>无法访问的友链</summary>
+<div class="details">
+
 以下友情链接暂时无法访问，梦春酱期待这些友链的恢复qwq
 {% lg /images/default-faces%26face-icons/akkarin.png %}
 {% endlg %}
+
+</div>
 </details>
 -->
 
@@ -40,6 +44,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 
 <details>
 <summary>点击展开</summary>
+<div class="details">
 
 #### 申请规则
 
@@ -80,6 +85,8 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 {% endnote %}
 
 希望我们一起努力，共同进步！(=・ω・=)
+
+</div>
 </details>
 
 ### 本站信息
@@ -88,6 +95,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 
 <details>
 <summary>点击展开</summary>
+<div class="details">
 
 {% tabs 本站信息 %}
 <!-- tab ⚙️通用格式 -->
@@ -123,6 +131,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 
 {% endtabs %}
 
+</div>
 </details>
 
 ## 朋友们
@@ -135,12 +144,15 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 
 <details id="deleted-friends-wrap" style="display: none;">
 <summary>查看已经注销的朋友</summary>
+<div class="details">
 
 已经注销，但曾经和梦春酱存在一定关系的朋友有这些：
 
 <div class="link-grid" id="deleted-friends"></div>
 
 这些朋友的注销，给梦春酱带来了一定程度的损失，梦春酱非常希望能有缘再见到TA们(´；ω；\`)当然有些朋友已经创建新的账号啦awa
+
+</div>
 </details>
 
 其实不止上面这些用户，还有很多人在背后默默地支持着梦春酱呢(=・ω・=)

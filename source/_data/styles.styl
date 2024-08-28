@@ -1,6 +1,6 @@
 :root {
-  --waline-theme-color: #08e !important;
-  --waline-active-color: #3ae !important;
+  --waline-theme-color: #f687b3 !important;
+  --waline-active-color: #f7c1d7 !important;
 }
 .comments {
   overflow: visible;
@@ -25,9 +25,6 @@
 }
 .sidebar-toggle, .back-to-top {
   border-radius: 10px;
-}
-.hljs-subst {
-  color: var(--highlight-foreground);
 }
 .post-body .tabs ul.nav-tabs, .tabs-comment ul.nav-tabs {
   background: #fff9;
@@ -65,29 +62,34 @@ table tr th:last-child, table tr td:last-child {
   border-right: none;
 }
 details {
-  background: #3bf1;
-  border: 1px solid #3bf;
+  background: #f687b311;
+  border: 1px solid #f687b3;
   border-radius: 20px;
-  margin: 20px 0;
-  padding: 10px 10px 0;
+  margin: 10px 0;
+  overflow: hidden;
 }
-details summary {
+details > summary {
   cursor: pointer;
   font-weight: bold;
-  margin: -10px -10px 0 !important;
   padding: 10px;
 }
-details[open] summary {
-  border-bottom: 1px solid #3bf;
-  margin-bottom: 10px !important;
+details[open] > summary {
+  border-bottom: 1px solid #f687b3;
 }
-:not(.wl-reaction-img):not(.wl-avatar > *):not(.wl-user):not(.cc-license > *):not(div.group-picture-column > *) > img:not(.wl-emoji):not(.fancybox-image):not(.f-thumbs__slide__img):not(.link-grid-image):not(.site-author-image):not(.avatar):not(.emote):not(.face-icon) {
+details > div.details {
+  padding: 0 10px;
+}
+:not(.wl-reaction-img):not(.wl-avatar > *):not(.wl-user):not(.cc-license > *):not(div.group-picture-column > *) > img:not(.wl-emoji):not(.fancybox-image):not(.f-thumbs__slide__img):not(.link-grid-image):not(.site-author-image):not(.avatar):not(.badge):not(.emote):not(.face-icon) {
   border-radius: 20px;
   min-width: 50px;
 }
 img.avatar {
   border-radius: 50%;
   min-width: 50px;
+}
+img.badge {
+  border-radius: 5px;
+  display: inline;
 }
 img.emote {
   display: inline;
@@ -129,6 +131,10 @@ div.group-picture div.group-picture-row:last-child div.group-picture-column:last
 .post-footer {
   overflow-wrap: break-word;
   text-align: justify;
+}
+a.badge {
+  border-bottom: none;
+  margin: 10px 5px;
 }
 a.inaccessible {
   position: relative;

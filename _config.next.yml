@@ -224,7 +224,7 @@ footer:
   copyright:
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false # 替换成 badge
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
@@ -354,7 +354,7 @@ mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
-  light: "#f5a7c6"
+  light: "#f687b3"
   dark: "#222"
 
 # Override browsers' default behavior.

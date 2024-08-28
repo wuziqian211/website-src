@@ -145,9 +145,12 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 
 <details>
 <summary>悄悄告诉您(^・ω・^ )</summary>
+<div class="details">
 
 1000粉丝以下的用户也可以通过特殊方法启用“自动回复”功能(^・ω・^ )
 如果您想启用“自动回复”功能，可以看一下[《如何开启并使用B站的自动回复功能》](/archives/2022/01/13/how-to-enable-and-use-auto-reply/#%E9%80%9A%E8%BF%87api%E5%BC%80%E5%90%AF%E8%87%AA%E5%8A%A8%E5%9B%9E%E5%A4%8D%E5%8A%9F%E8%83%BD)(｀・ω・´)
+
+</div>
 </details>
 {% endnote %}
 
@@ -227,10 +230,11 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 由于B站接口的限制，现在给梦春酱私信“#注册时间”不会有作用。
 {% endnote %}
 
-![梦春酱的粉丝数变化情况](/images/fans-changes.png "梦春酱的粉丝数变化情况")
+![梦春酱的粉丝数变化情况](/images/posts/fans-changes.png "梦春酱的粉丝数变化情况")
 
 <details>
 <summary>展开大事年表！</summary>
+<div class="details">
 
 #### 2019年
 
@@ -354,6 +358,7 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 
 ……未完待续
 
+</div>
 </details>
 
 ## 关于本Blog
@@ -381,46 +386,46 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 | [yumeharu.top](https://yumeharu.top/) | [Vercel](https://vercel.com/) | 通过本域名访问Blog会自动重定向到[www.yumeharu.top](https://www.yumeharu.top/) |
 | [www.yumeharu.top](https://www.yumeharu.top/) | [Vercel](https://vercel.com/) | 本站主域名 |
 
-**这个Blog的所有文章除特别声明外，均遵循[<i class="fab fa-fw fa-creative-commons"></i>BY 4.0（知识共享署名 4.0）](https://creativecommons.org/licenses/by/4.0/deed.zh)许可协议，如果您要转载这个Blog上的文章，需要注明出处哟qwq**
+**这个Blog的所有文章除特别声明外，均遵循[<i class="fab fa-fw fa-creative-commons"></i>BY 4.0（知识共享署名 4.0）](https://creativecommons.org/licenses/by/4.0/deed.zh-hans)许可协议，如果您要转载这个Blog上的文章，需要注明出处哟qwq**
 
 ### 本Blog使用的界面、互动功能、CDN、存储与后端服务等
 
 #### 界面
 
 {% lg %}
-Theme NexT | https://theme-next.js.org/ | 提供本Blog的界面。NexT是一款风格优雅的高质量Hexo主题，自点点滴滴中用爱雕琢而成。 | /images/thanks/theme-next.svg
-Hexo | https://hexo.io/ | 生成本Blog的页面。Hexo是一个快速、简洁且高效的Blog框架。 | /images/thanks/hexo.svg
+Theme NexT | https://theme-next.js.org/ | 提供本Blog的界面。NexT是一款风格优雅的高质量Hexo主题，自点点滴滴中用爱雕琢而成。 | /images/badges%26thanks/theme-next.svg
+Hexo | https://hexo.io/ | 生成本Blog的页面。Hexo是一个快速、简洁且高效的Blog框架。 | /images/badges%26thanks/hexo.svg
 {% endlg %}
 
 #### 互动功能
 
 {% lg %}
-Waline | https://waline.js.org/ | 提供本Blog的评论服务。Waline是一款基于Valine衍生的简洁、安全的评论系统。 | /images/thanks/waline.png
-Live2D | https://github.com/stevenjoezhang/live2d-widget | 提供本Blog可爱又会动的看板娘。看板娘真的好萌呀⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ | /images/thanks/potion-maker_fixed.png
+Waline | https://waline.js.org/ | 提供本Blog的评论服务。Waline是一款基于Valine衍生的简洁、安全的评论系统。 | /images/badges%26thanks/waline.png
+Live2D | https://github.com/stevenjoezhang/live2d-widget | 提供本Blog可爱又会动的看板娘。看板娘真的好萌呀⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ | /images/badges%26thanks/potion-maker_fixed.png
 {% endlg %}
 
 #### CDN（内容分发网络）
 
 {% lg %}
-cdnjs | https://cdnjs.com/ | 加速本Blog的静态资源。cdnjs是一项免费的开源CDN服务。 | /images/thanks/cdnjs.svg
-UNPKG | https://unpkg.com/ | 加速本Blog的静态资源。UNPKG是一个快速的全球内容分发网络。 | /images/thanks/unpkg.png
-jsDelivr | https://www.jsdelivr.com/ | 加速本Blog的静态资源。jsDelivr是一个免费且快速、可靠和自动化的开源CDN。 | /images/thanks/jsdelivr.png
+cdnjs | https://cdnjs.com/ | 加速本Blog的静态资源。cdnjs是一项免费的开源CDN服务。 | /images/badges%26thanks/cdnjs.svg
+UNPKG | https://unpkg.com/ | 加速本Blog的静态资源。UNPKG是一个快速的全球内容分发网络。 | /images/badges%26thanks/unpkg.png
+jsDelivr | https://www.jsdelivr.com/ | 加速本Blog的静态资源。jsDelivr是一个免费且快速、可靠和自动化的开源CDN。 | /images/badges%26thanks/jsdelivr.png
 {% endlg %}
 
 #### 存储＆后端服务
 
 {% lg %}
-Vercel | https://vercel.com/ | 提供本Blog的服务器、API。Vercel是一个用于前端框架和静态站点的平台。 | /images/thanks/vercel.png
-LeanCloud | https://leancloud.app/ | 存储本Blog的评论数据。LeanCloud是一款领先的无服务器云服务，为产品开发提供强有力的后端支持。 | /images/thanks/leancloud.svg
-GitHub | https://github.com/ | 存储本Blog的源码文件。GitHub是一个用于构建、扩展和交付安全软件的完整开发人员平台。 | /images/thanks/github.svg
-Gitee | https://gitee.com/ | 为本Blog提供服务器、存储源码文件。Gitee是一个代码托管与协作的开发平台，汇聚几乎所有本土原创开源项目。 | /images/thanks/gitee.svg
-SM.MS | https://smms.app/ | 为本Blog的评论区提供图片上传服务。SM.MS是一个简单、免费的图片托管平台。 | /images/thanks/smms.png
+Vercel | https://vercel.com/ | 提供本Blog的服务器、API。Vercel是一个用于前端框架和静态站点的平台。 | /images/badges%26thanks/vercel.png
+LeanCloud | https://leancloud.app/ | 存储本Blog的评论数据。LeanCloud是一款领先的无服务器云服务，为产品开发提供强有力的后端支持。 | /images/badges%26thanks/leancloud.svg
+GitHub | https://github.com/ | 存储本Blog的源码文件。GitHub是一个用于构建、扩展和交付安全软件的完整开发人员平台。 | /images/badges%26thanks/github.svg
+Gitee | https://gitee.com/ | 为本Blog提供服务器、存储源码文件。Gitee是一个代码托管与协作的开发平台，汇聚几乎所有本土原创开源项目。 | /images/badges%26thanks/gitee.svg
+SM.MS | https://smms.app/ | 为本Blog的评论区提供图片上传服务。SM.MS是一个简单、免费的图片托管平台。 | /images/badges%26thanks/smms.png
 {% endlg %}
 
 #### 其他
 
 {% lg %}
-萌国ICP备案 | https://icp.gov.moe/ | 为本Blog提供“ICP备案”服务。萌ICP备纯属萌友网站联萌，是一种次元中的爱好，文化的展现✧(≖ ◡ ≖✿) | /images/thanks/moe-icon.png
+萌国ICP备案 | https://icp.gov.moe/ | 为本Blog提供“ICP备案”服务。萌ICP备纯属萌友网站联萌，是一种次元中的爱好，文化的展现✧(≖ ◡ ≖✿) | /images/badges%26thanks/moe-icon.png
 {% endlg %}
 
 ## 关于梦春酱的程序与脚本

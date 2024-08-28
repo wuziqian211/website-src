@@ -12,7 +12,7 @@ categories:
 ---
 
 本文章使用网页版B站，为您介绍开启与使用B站的自动回复功能的方法。
-![自动回复](/images/auto-reply_compressed.png "自动回复")
+![自动回复](/images/posts/auto-reply_compressed.png "自动回复")
 
 ## 开启自动回复功能
 
@@ -33,7 +33,7 @@ categories:
 {% endnote %}
 
 以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来，这样您就获取到了Cookie。
-![获取Cookie](/images/get-cookie.png "获取Cookie")
+![获取Cookie](/images/posts/get-cookie.png "获取Cookie")
 
 打开控制台，输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
 
@@ -80,7 +80,7 @@ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) 
 {% endnote %}
 
 进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了一个按钮“自动回复”，就说明自动回复功能开启成功，而且您会发现，“关键词回复”功能是开启的。
-![“自动回复”按钮](/images/auto-reply-button_compressed.png "“自动回复”按钮")
+![“自动回复”按钮](/images/posts/auto-reply-button_compressed.png "“自动回复”按钮")
 
 {% note warning %}
 1000粉丝以下的用户关闭了自动回复的所有功能后，刷新“消息中心”页面，“自动回复”按钮就会**消失**。
@@ -92,7 +92,7 @@ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) 
 <!-- tab 通过网页开启 -->
 在登录了B站账号的浏览器中进入[消息中心](https://message.bilibili.com/)后，您可以看到，在页面的左侧有“自动回复”按钮。点击“自动回复”按钮，就可以进入[“自动回复”页面](https://message.bilibili.com/#/autoreply)。
 在页面顶部，有“被关注回复”、“关键词回复”、“收到消息回复”选择夹，部分用户可能也有“大航海上船回复”选择夹。点击每个选择夹中功能的开关按钮，就可以开启对应的功能，并显示更多的信息。
-![“自动回复”页面](/images/auto-reply-page_compressed.png "“自动回复”页面")
+![“自动回复”页面](/images/posts/auto-reply-page_compressed.png "“自动回复”页面")
 <!-- endtab -->
 
 {% endtabs %}
@@ -103,7 +103,7 @@ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) 
 
 {% note warning %}
 
-### 发送私信限制的规则不适用于B站自动回复功能
+### 发送私信限制的规则不适用于自动发送的私信
 
 **自动发送的私信不会被B站视作“对方主动回复或关注你前，最多发送1条消息”规则中的“主动回复”与“发送1条消息”中的“消息”，即自动发送的私信不会被上述规则所限制，但也不能解除自己手动私信的这一限制**。这意味着：
 
@@ -112,7 +112,7 @@ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) 
 
 注：自动发送的私信包括：使用B站的自动回复功能发送的私信、特别关注/被关注时稿件的自动推送消息、因成为契约者/互相关注而自动发送的私信、包月充电回馈私信，以及官方发送的特定于您的消息等；某些脚本也可以自动发送私信，但如果**这个脚本没有使用B站的自动回复功能发送私信，那么发送的私信就不属于“自动发送的私信”**。
 
-![关于发送私信限制的规则的说明](/images/explanation-of-rule-regarding-private-message-restriction_compressed.png "关于发送私信限制的规则的说明")
+![关于发送私信限制的规则的说明](/images/posts/explanation-of-rule-regarding-private-message-restriction_compressed.png "关于发送私信限制的规则的说明")
 {% endnote %}
 
 对每一个功能的介绍如下表：
