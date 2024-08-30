@@ -1,3 +1,4 @@
+/* global CONFIG */
 /**
  * @template dataType
  * @typedef {{ code: number; message: string; data: dataType }} InternalAPIResponse<dataType>
@@ -10,7 +11,6 @@ document.addEventListener('page:loaded', () => {
    * @returns {Promise<String>} - 图片 URL
    */
   // @ts-ignore
-  // eslint-disable-next-line no-undef
   CONFIG.waline.imageUploader = file => new Promise((resolve, reject) => {
     if (file.type && file.type.startsWith('image/')) {
       reject(new TypeError('选择的文件似乎不是图片文件，请选择一个图片文件吧 awa'));
