@@ -1,4 +1,5 @@
 /* global CONFIG */
+
 /**
  * @template dataType
  * @typedef {{ code: number; message: string; data: dataType }} InternalAPIResponse<dataType>
@@ -57,10 +58,11 @@ const bindAnchorElement = a => {
  * @param {HTMLImageElement} img
  */
 const bindImageElement = img => {
-  img.style.filter = 'blur(10px)', img.style.transition = 'filter 0.5s';
-  img.addEventListener('load', () => img.style.filter = '');
+  img.style.filter = 'blur(10px)';
+  img.style.transition = 'filter 0.5s';
+  img.addEventListener('load', () => { img.style.filter = ''; });
   if (img.src && img.complete) img.style.filter = '';
-}
+};
 
 /** @type {RegExp} */
 let blockedRegExp;
@@ -82,13 +84,10 @@ document.querySelectorAll('img').forEach(bindImageElement);
 /** @param {Node} node */
 const bindElement = node => {
   if (node instanceof HTMLElement) {
-    switch (node.tagName) {
-      case 'A':
-        bindAnchorElement(node);
-        break;
-      case 'IMG':
-        bindImageElement(node);
-        break;
+    if (node instanceof HTMLAnchorElement) {
+      bindAnchorElement(node);
+    } else if (node instanceof HTMLImageElement) {
+      bindImageElement(node);
     }
     if (node.children.length) Array.from(node.children).forEach(bindElement);
   }

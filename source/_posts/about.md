@@ -55,7 +55,7 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 
 梦春酱以前的昵称是“**wuziqian211**”，其中“wuziqian”是TA的名字的拼音，“211”是随便取的代号，这个昵称是TA在**2017年12月17日**注册《我的世界》中国版账号的时候首次使用的(=・ω・=)
 然而，由于TA觉得这个昵称取得有点太简单了，所以在**2023年1月23日**，梦春酱想出来了“**晨叶梦春**”这个昵称，这个昵称比之前好听很多了呢(^・ω・^ )
-但是，由于突然改名可能会让大多数粉丝不适应，所以直到**2024年7月**，TA才将自己的昵称改成“**晨叶梦春**”(｀・ω・´)
+但是，由于突然改名可能会让大多数粉丝不适应，所以直到**2024-08-28 05:30**，TA才将自己的昵称改成“**晨叶梦春**”(｀・ω・´)
 虽然梦春酱改名了，但是您仍然可以叫TA“梦春酱”“ziqian酱”“211娘” ~~“酱酱”“梦春姐姐”~~ 等等，只要是您喜欢的称呼都可以(｀・ω・´)
 “梦春”的日语“夢春”的罗马音为“Yume haru”，因此梦春酱的英文名是“**Yumeharu**”(^・ω・^ )
 
@@ -71,7 +71,7 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 | <img class="avatar" alt="头像2：哔哩哔哩33娘" src="/images/face2.jpg" /> | 2020-03-27 | 哔哩哔哩33娘 | B站APP中的随机头像，也是<https://www.bilibili.com/blackboard/old-lantern.html>的头图 |
 | <img class="avatar" alt="头像3：こんぱく ようむ（魂魄妖梦）" src="/images/face3.jpg" /> | 2021-07-25 20:50 | 『ご注文はうさぎですか?』（《请问您今天要来点兔子吗？》），原图为かふう ちの（香风智乃），修改后为こんぱく ようむ（魂魄妖梦） | 略有修改 |
 | <img class="avatar" alt="头像4：《夜明けの海》" src="/images/face4_compressed.png" /> | 2022-12-19 12:05 | [WERI在pixiv创作的《夜明けの海》](https://www.pixiv.net/artworks/90624041) | 略有修改 |
-| <img class="avatar" alt="头像5" src="/images/face_compressed.png" /> | 2023-07-09 06:00 | [\[100 Artists Exhibition\] 10th Theme "Wa"](https://yande.re/post/show/718680) | |
+| <img class="avatar" alt="头像5" src="/images/face_compressed.png" /> | 2024-07-09 06:00 | [\[100 Artists Exhibition\] 10th Theme "Wa"](https://yande.re/post/show/718680) | |
 
 梦春酱的真实生日是**不公开**的哟qwq
 目前TA在大多数平台填写的“出生日期”是TA的**入站日期**，比如TA在B站上填写的“生日”5月2日就是TA注册B站的日期——**2019年5月2日**哦awa
@@ -79,11 +79,11 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 ### 社交平台与联系方式
 
 - <span style="color: #f25d8e;"><i class="fab fa-bilibili"></i> **哔哩哔哩**：[晨叶梦春](https://space.bilibili.com/425503913)（UID：425503913；梦春酱最活跃的地方，建议您在这里与梦春酱互动）</span>
-- <span style="color: #9f7be1;"><i class="fab fa-github"></i> **GitHub**：[wuziqian211](https://github.com/wuziqian211)（梦春酱的Blog及API的源代码都在这里）</span>
+- <span style="color: #9f7be1;"><i class="fab fa-github"></i> **GitHub**：[晨叶梦春](https://github.com/wuziqian211)（@wuziqian211；梦春酱的Blog及API的源代码都在这里）</span>
 - <span style="color: #c71d23;"><i class="custom gitee"></i> **Gitee**：[wuziqian211](https://gitee.com/wuziqian211)（梦春酱的一些程序的源代码在这里）</span>
 - <span style="color: #12b7f5;"><i class="fab fa-qq"></i> **QQ**：[2300393122](https://qm.qq.com/q/9aDPrarwC6)（ID：ziqian211）
   **粉丝群**：[527957451](https://qm.qq.com/q/qstfdE1CiQ)（梦春酱与B站用户“肥宅水水呀”共用的群聊，因此群主是两个人中的任何一个，可能会随时变化）</span>
-- <span style="color: #1d9bf0;"><i class="fab fa-twitter"></i> **X（Twitter）**：[wuziqian211](https://x.com/wuziqian211)（很少在线，**在中国除港澳台外的地区无法访问**）</span>
+- <span style="color: #1d9bf0;"><i class="fab fa-twitter"></i> **X（Twitter）**：[晨叶梦春](https://x.com/wuziqian211)（@wuziqian211；很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - <span style="color: #0097fa;"><i class="fab fa-pixiv"></i> **pixiv**：[wuziqian211](https://www.pixiv.net/users/77695887)（ID：77695887；很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - <i class="fa fa-envelope"></i> **邮箱**：[wuziqian211@126.com](mailto:wuziqian211@126.com)
 
@@ -230,6 +230,8 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 由于B站接口的限制，现在给梦春酱私信“#注册时间”不会有作用。
 {% endnote %}
 
+2024年8月28日的05:30，梦春酱将B站上的昵称从“wuziqian211”改为“晨叶梦春”，这样TA就不会因为自己的昵称而尴尬了(｀・ω・´)
+
 ![梦春酱的粉丝数变化情况](/images/posts/fans-changes.png "梦春酱的粉丝数变化情况")
 
 <details>
@@ -318,7 +320,7 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 
 | 时间 | 事件 | 备注 |
 | :--: | ---- | ---- |
-| 1月3日 | 再次发布关于自己的介绍的动态 | 1这条动态的图片内容就改编自本介绍，但没有置顶很长时间，因为太长了 |
+| 1月3日 | 再次发布关于自己的介绍的动态 | 这条动态的图片内容就改编自本介绍，但没有置顶很长时间，因为太长了 |
 | 1月27日 | 购买了装扮“2022拜年纪” | TA是装扮的007981号真爱粉 |
 | 1月28日 | 发布自己2021年的评论＋弹幕＋动态3906次获赞的动态 | ~~还是有点太少了~~ |
 | 1月30日 | 发布了视频[《360加速球：诶，你就是点不着我！》](https://www.bilibili.com/video/BV1CS4y1y7vk/) | 视频长度连20秒都不到，~~看来又水了一条视频~~ |
@@ -354,7 +356,10 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 
 #### 2024年
 
-暂无影响力大的事件
+| 时间 | 事件 | 备注 |
+| :--: | ---- | ---- |
+| 7月9日 | 更换了头像 | |
+| 8月28日 | 改名为“晨叶梦春” | |
 
 ……未完待续
 
@@ -378,13 +383,13 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 
 | 域名 | 服务器提供者 | 备注 |
 | :--: | :----------: | :--: |
+| [www.yumeharu.top](https://www.yumeharu.top/) | [Vercel](https://vercel.com/) | 本站主域名 |
+| [yumeharu.top](https://yumeharu.top/) | [Vercel](https://vercel.com/) | 通过本域名访问Blog会自动重定向到[www.yumeharu.top](https://www.yumeharu.top/) |
 | [wuziqian211.top](https://wuziqian211.top/) | [Vercel](https://vercel.com/) | 本站备用域名 |
 | [www.wuziqian211.top](https://www.wuziqian211.top/) | [Vercel](https://vercel.com/) | 通过本域名访问Blog会自动重定向到[wuziqian211.top](https://wuziqian211.top/) |
 | [blog.wuziqian211.top](https://blog.wuziqian211.top/) | [Vercel](https://vercel.com/) | 通过本域名访问Blog会自动重定向到[www.yumeharu.top](https://www.yumeharu.top/) |
 | [m.wuziqian211.top](https://m.wuziqian211.top/) | [Vercel](https://vercel.com/) | 通过本域名访问Blog会自动重定向到[www.yumeharu.top](https://www.yumeharu.top/) |
 | [w211.top](https://w211.top/) | [Vercel](https://vercel.com/) | 通过本域名访问Blog会自动重定向到[www.yumeharu.top](https://www.yumeharu.top/) |
-| [yumeharu.top](https://yumeharu.top/) | [Vercel](https://vercel.com/) | 通过本域名访问Blog会自动重定向到[www.yumeharu.top](https://www.yumeharu.top/) |
-| [www.yumeharu.top](https://www.yumeharu.top/) | [Vercel](https://vercel.com/) | 本站主域名 |
 
 **这个Blog的所有文章除特别声明外，均遵循[<i class="fab fa-fw fa-creative-commons"></i>BY 4.0（知识共享署名 4.0）](https://creativecommons.org/licenses/by/4.0/deed.zh-hans)许可协议，如果您要转载这个Blog上的文章，需要注明出处哟qwq**
 
