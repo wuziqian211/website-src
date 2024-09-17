@@ -16,7 +16,7 @@ Ra小小特的小站 | https://raxxt.top/ | B站用户“爱玩电脑的特兰�
 Microhard Demo | https://microharddemo.github.io/ | Microhard Demo的个人网站 | /images/friendship-links/microharddemo-github-io.png
 易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpg
 GoForceX's Blog | https://goforcex.top/ | A simple blog | /images/friendship-links/goforcex-top.jpg
-TV768の个人网站 | https://tv768.xyz/ | 精彩的768 让生活添色彩（B站用户“SevenSixEight_”的个人网站） | /images/friendship-links/tv768-xyz.jpg
+TV768の个人网站 | https://www.tv768.xyz/ | 精彩的768 让生活添色彩（B站用户“SevenSixEight_”的个人网站） | /images/friendship-links/tv768-xyz.jpg
 朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
 知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
 值关大众放送工作室 | https://zhiguanmedia.jzfkw.net/ | 做有情怀的媒体 | /images/friendship-links/zhiguanmedia-jzfkw-net.png
