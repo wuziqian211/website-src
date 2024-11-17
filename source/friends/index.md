@@ -20,7 +20,8 @@ TV768の个人网站 | https://www.tv768.xyz/ | 精彩的768 让生活添色彩�
 朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
 知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
 值关大众放送工作室 | https://zhiguanmedia.jzfkw.net/ | 做有情怀的媒体 | /images/friendship-links/zhiguanmedia-jzfkw-net.png
-社凤迷工作室 | https://shefengmi-10.jzfkw.net/ | 看着社会与法 听着凤凰传奇 | /images/friendship-links/shefengmi-10-jzfkw-net.jpg
+社凤迷工作室 | https://shefengmi-10.jzfkw.net/ | | /images/friendship-links/shefengmi-10-jzfkw-net.jpg
+铭琛天宏互娱工作室 | https://mingchen2485.jzfkw.net/ | | /images/friendship-links/mingchen2485-jzfkw-net.png
 wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧网站，已不再更新 | /images/friendship-links/wuziqian211-icoc-vc.png
 {% endlg %}
 

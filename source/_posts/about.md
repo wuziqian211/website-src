@@ -1,7 +1,7 @@
 ---
 title: 关于梦春酱及Blog、程序
 date: 2021-09-16 23:30:17
-updated: 2024-08-22 07:34:13
+updated: 2024-10-30 03:30:08
 description: 这里是一篇关于梦春酱及TA的Blog、程序的介绍哟~
 tags:
   - 网站
@@ -84,7 +84,7 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 - <span style="color: #12b7f5;"><i class="fab fa-qq"></i> **QQ**：[2300393122](https://qm.qq.com/q/9aDPrarwC6)（ID：ziqian211）
   **粉丝群**：[527957451](https://qm.qq.com/q/qstfdE1CiQ)（梦春酱与B站用户“肥宅水水呀”共用的群聊，因此群主是两个人中的任何一个，可能会随时变化）</span>
 - <span style="color: #1d9bf0;"><i class="fab fa-twitter"></i> **X（Twitter）**：[晨叶梦春](https://x.com/wuziqian211)（@wuziqian211；很少在线，**在中国除港澳台外的地区无法访问**）</span>
-- <span style="color: #0097fa;"><i class="fab fa-pixiv"></i> **pixiv**：[wuziqian211](https://www.pixiv.net/users/77695887)（ID：77695887；很少在线，**在中国除港澳台外的地区无法访问**）</span>
+- <span style="color: #0097fa;"><i class="fab fa-pixiv"></i> **pixiv**：[晨叶梦春](https://www.pixiv.net/users/77695887)（ID：77695887；很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - <i class="fa fa-envelope"></i> **邮箱**：[wuziqian211@126.com](mailto:wuziqian211@126.com)
 
 当然不止这些，梦春酱还在其他很多平台有自己的账号(=・ω・=)您在大多数平台上见到的昵称为“**wuziqian211**”、“**梦春酱**”或“**晨叶梦春**”的用户应该就是梦春酱本人，但不一定都是的哦qwq
