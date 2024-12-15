@@ -11,8 +11,9 @@ updated: 2022-10-29 20:11:15
 365云栈 | https://blog.365sites.top/ | 学无止境，勇攀高峰！ | /images/friendship-links/blog-365sites-top.png
 Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | /images/friendship-links/kegongteng-cn.jpg
 Pheqorの小破站 | https://me.onlyra1n.top/ | Ciallo～(∠・ω&lt; )⌒★！ | https://cravatar.cn/avatar/949b4b017cd9c5b03ec65cfc715c17ec?s=250
+SuzuhaYuki’s Blog | https://www.727252.xyz/ | Time goes by, and the years go by. | https://cravatar.cn/avatar/c5448269a1fad005917b6b8fad777191?s=250&d=mm
 Ra小小特的小站 | https://raxxt.top/ | B站用户“爱玩电脑的特兰克斯”的个人网站 | /images/friendship-links/raxxt-top.png
-我汐了_233的小站 | https://woxile.rth10.com/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
+我汐了_233的小站 | https://woxile.rth1.xyz/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
 Microhard Demo | https://microharddemo.github.io/ | Microhard Demo的个人网站 | /images/friendship-links/microharddemo-github-io.png
 易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpg
 GoForceX's Blog | https://goforcex.top/ | A simple blog | /images/friendship-links/goforcex-top.jpg
@@ -53,7 +54,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 1. 网站内容必须符合中华人民共和国相关法律法规，且**不能与代理服务器、VPN、广告等相关**；
 2. 网站必须要有实质性的内容，本站不接受空白的或者全是无意义内容的网站；
 3. 网站可以在中国大陆地区正常访问，且页面显示正常，访问速度在可接受的范围内；
-4. 原则上，您申请的网站的类型应该是**个人博客**，而不是社交平台的个人主页（如果您有B站账号，可以考虑申请添加您到“朋友们”部分）。
+4. 原则上，您申请的网站的类型应该是**个人博客**，而不是社交平台的个人主页（如果您有B站账号，可以考虑申请添加您到“[朋友们](#朋友们)”部分）。
 
 {% note info %}
 梦春酱不会检查您是否将本站添加到贵站友链。
