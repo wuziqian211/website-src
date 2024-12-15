@@ -162,46 +162,46 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 如果您与梦春酱的关系很好，但是上面并没有列出您，请在评论区评论或者在B站私信梦春酱，梦春酱在这里表示十分抱歉！(´；ω；\`)
 
 <script data-pjax>
-const renderUserDiv = info => {
-  const userDiv = document.createElement('div');
-  userDiv.className = 'link-grid-container';
-  const avatar = document.createElement('img');
-  avatar.className = 'link-grid-image no-fancybox', avatar.title = info.t, avatar.src = info.a;
-  userDiv.appendChild(avatar);
-  if ([0, 1, 2].includes(info.i)) {
-    const faceIcon = document.createElement('img');
-    faceIcon.className = 'face-icon no-fancybox', faceIcon.alt = '';
-    switch (info.i) {
-      case 0:
-        faceIcon.title = `UP 主认证：${info.o}`, faceIcon.src = '/images/default-faces%26face-icons/personal.svg';
-        break;
-      case 1:
-        faceIcon.title = `机构认证：${info.o}`, faceIcon.src = '/images/default-faces%26face-icons/business.svg';
-        break;
-      case 2:
-        faceIcon.title = '大会员', faceIcon.src = '/images/default-faces%26face-icons/big-vip.svg';
-        break;
-    }
-    userDiv.appendChild(faceIcon);
-  }
-  if (info.n) {
-    const nftFaceIcon = document.createElement('img');
-    nftFaceIcon.className = `face-icon${[0, 1, 2].includes(info.i) ? ' second' : ''} no-fancybox`, nftFaceIcon.alt = '', nftFaceIcon.title = '数字藏品', nftFaceIcon.src = '/images/default-faces%26face-icons/nft-label.gif';
-    userDiv.appendChild(nftFaceIcon);
-  }
-  const title = document.createElement('p');
-  title.style.color = info.c || '', title.innerText = info.t;
-  userDiv.appendChild(title);
-  const desc = document.createElement('p');
-  desc.innerText = info.d;
-  userDiv.appendChild(desc);
-  const link = document.createElement('a');
-  link.target = '_blank', link.rel = 'noopener external nofollow noreferrer', link.href = info.l;
-  userDiv.appendChild(link);
-  return userDiv;
-};
-
 (async () => {
+  const renderUserDiv = info => {
+    const userDiv = document.createElement('div');
+    userDiv.className = 'link-grid-container';
+    const avatar = document.createElement('img');
+    avatar.className = 'link-grid-image no-fancybox', avatar.title = info.t, avatar.src = info.a;
+    userDiv.appendChild(avatar);
+    if ([0, 1, 2].includes(info.i)) {
+      const faceIcon = document.createElement('img');
+      faceIcon.className = 'face-icon no-fancybox', faceIcon.alt = '';
+      switch (info.i) {
+        case 0:
+          faceIcon.title = `UP 主认证：${info.o}`, faceIcon.src = '/images/default-faces%26face-icons/personal.svg';
+          break;
+        case 1:
+          faceIcon.title = `机构认证：${info.o}`, faceIcon.src = '/images/default-faces%26face-icons/business.svg';
+          break;
+        case 2:
+          faceIcon.title = '大会员', faceIcon.src = '/images/default-faces%26face-icons/big-vip.svg';
+          break;
+      }
+      userDiv.appendChild(faceIcon);
+    }
+    if (info.n) {
+      const nftFaceIcon = document.createElement('img');
+      nftFaceIcon.className = `face-icon${[0, 1, 2].includes(info.i) ? ' second' : ''} no-fancybox`, nftFaceIcon.alt = '', nftFaceIcon.title = '数字藏品', nftFaceIcon.src = '/images/default-faces%26face-icons/nft-label.gif';
+      userDiv.appendChild(nftFaceIcon);
+    }
+    const title = document.createElement('p');
+    title.style.color = info.c || '', title.innerText = info.t;
+    userDiv.appendChild(title);
+    const desc = document.createElement('p');
+    desc.innerText = info.d;
+    userDiv.appendChild(desc);
+    const link = document.createElement('a');
+    link.target = '_blank', link.rel = 'noopener external nofollow noreferrer', link.href = info.l;
+    userDiv.appendChild(link);
+    return userDiv;
+  };
+
   const friends = document.querySelector('div#friends'), deletedFriends = document.querySelector('div#deleted-friends');
   if (!friends) return;
   try {
