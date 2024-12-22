@@ -27,8 +27,8 @@ categories:
 以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来，这样您就获取到了Cookie。
 ![获取Cookie](/images/posts/get-cookie.png "获取Cookie")
 
-打开Node.js，您应该会看到一个命令行窗口。在这个窗口里输入代码`const headers = { Cookie: 'SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`, Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' };`，便于在后续操作中使用您账号的登录信息。
-例：假如{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入代码：
+打开Node.js，您应该会看到一个命令行窗口。在这个窗口里输入代码`const headers = { Cookie: 'SESSDATA=`SESSDATA的值`; bili_jct=`bili_jct的值`, Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' };`，便于在后续操作中使用您账号的登录信息。
+例：假如SESSDATA的值为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，bili_jct的值为`0123456789abcdef0123456789abcdef`，那么就输入代码：
 
 ```js
 const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef', Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' }; // 注意：此 Cookie 仅作为示例展示，请修改成自己的 Cookie
@@ -408,9 +408,7 @@ fs.writeFileSync('followers.html', content); // 注意：请将 “followers.htm
 生成自己的所有粉丝列表的图片看似很难，实际上只有三个步骤，每个步骤不需要您进行太多操作。
 下面被折叠的代码就是实现上述功能的完整代码，您可以复制代码并适当修改一下代码，运行脚本，就可以生成您自己的粉丝列表的图片了。
 
-<details>
-<summary>点击查看完整代码</summary>
-<div class="details">
+{% folding blue::点击查看完整代码 %}
 
 ```js
 // 初始化
@@ -556,8 +554,7 @@ ${html}`;
 fs.writeFileSync('followers.html', content); // 注意：请将 “followers.html” 修改成生成的 HTML 文件的名称
 ```
 
-</div>
-</details>
+{% endfolding %}
 
 下面的图片就是梦春酱在2022年10月15日生成的粉丝列表图片。
 ![梦春酱在2022年10月15日生成的所有粉丝列表的图片](/images/posts/fans-list_compressed.png "梦春酱在2022年10月15日生成的所有粉丝列表的图片")

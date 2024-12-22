@@ -6,7 +6,7 @@ updated: 2022-10-29 20:11:15
 
 ## 友情链接
 
-{% lg /images/default-faces%26face-icons/akkarin.png %}
+<!-- % lg /images/default-faces%26face-icons/akkarin.png % -->
 水水的小屋 | https://www.happycola.top/ | B站用户“肥宅水水呀”的个人网站 | https://www.happycola.top/img/avatar.png
 365云栈 | https://blog.365sites.top/ | 初阅不明言外意，重温方觉字中情 | /images/friendship-links/blog-365sites-top.png
 Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | /images/friendship-links/kegongteng-cn.jpg
@@ -25,19 +25,14 @@ TV768の个人网站 | https://www.tv768.xyz/ | 精彩的768 让生活添色彩�
 社凤迷工作室 | https://shefengmi-10.jzfkw.net/ | 看着社会与法 听着凤凰传奇 | /images/friendship-links/shefengmi-10-jzfkw-net.jpg
 铭琛天宏互娱工作室 | https://mingchen2485.jzfkw.net/ | 我们不做视频，我们只是央视网的搬运工。 | /images/friendship-links/mingchen2485-jzfkw-net.png
 wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧网站，已不再更新 | /images/friendship-links/wuziqian211-icoc-vc.png
-{% endlg %}
+<!-- % endlg % -->
 
 <!--
-<details>
-<summary>无法访问的友链</summary>
-<div class="details">
-
+{% folding blue::无法访问的友链 %}
 以下友情链接暂时无法访问，梦春酱期待这些友链的恢复qwq
-{% lg /images/default-faces%26face-icons/akkarin.png %}
-{% endlg %}
-
-</div>
-</details>
+<!-- % lg /images/default-faces%26face-icons/akkarin.png % -->
+<!-- % endlg % -->
+{% endfolding %}
 -->
 
 如果您也想申请友情链接的话，可以在这个Blog的评论区评论哟awa
@@ -45,10 +40,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 ### 申请友情链接
 
 欢迎您申请加入本站的友情链接！请您在申请友链前阅读以下说明：
-
-<details>
-<summary>点击展开</summary>
-<div class="details">
+{% folding blue::点击展开 %}
 
 #### 申请规则
 
@@ -89,17 +81,13 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 {% endnote %}
 
 希望我们一起努力，共同进步！(=・ω・=)
-
-</div>
-</details>
+{% endfolding %}
 
 ### 本站信息
 
 如果您想将本站添加到贵站的友情链接，您可以使用以下信息：
 
-<details>
-<summary>点击展开</summary>
-<div class="details">
+{% folding blue::点击展开 %}
 
 {% tabs 本站信息 %}
 <!-- tab ⚙️通用格式 -->
@@ -135,8 +123,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 
 {% endtabs %}
 
-</div>
-</details>
+{% endfolding %}
 
 ## 朋友们
 
@@ -144,7 +131,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 由于B站接口的限制，以下朋友的信息并非实时更新。
 {% endnote %}
 
-<div class="link-grid" id="friends">正在加载中……</div>
+<ul class="grid mb-6 gap-4 grid-cols-2" id="friends">正在加载中……</ul>
 
 <details id="deleted-friends-wrap" style="display: none;">
 <summary>查看已经注销的朋友</summary>
@@ -164,12 +151,31 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 
 <script data-pjax>
 (async () => {
-  const renderUserDiv = info => {
-    const userDiv = document.createElement('div');
-    userDiv.className = 'link-grid-container';
+  const renderUserLi = info => {
+    const userLi = document.createElement('li');
+    userLi.className = 'group transform scale-100 transition-transform duration-100 ease-linear active:scale-95';
+    const link = document.createElement('a');
+    link.target = '_blank', link.rel = 'noopener external nofollow noreferrer', link.href = info.l;
+    const innerDiv = document.createElement('div');
+    innerDiv.className = 'flex flex-row items-center gap-1 sm:gap-2 overflow-hidden min-w-0 rounded-lg shadow-redefine-flat';
+    const avatarDiv = document.createElement('div');
+    avatarDiv.className = 'h-16 w-16 rounded-bl-lg bg-third-background-color';
     const avatar = document.createElement('img');
-    avatar.className = 'link-grid-image no-fancybox', avatar.title = info.t, avatar.src = info.a;
-    userDiv.appendChild(avatar);
+    avatar.className = 'rounded-l-lg h-16 w-16 max-w-none', avatar.src = info.a, avatar.onerror = 'this.style.display=&quot;none&quot;';
+    avatarDiv.appendChild(avatar);
+    innerDiv.appendChild(avatarDiv);
+    const nameDiv = document.createElement('div');
+    nameDiv.className = 'flex flex-col min-w-0';
+    const title = document.createElement('div');
+    title.className = 'text-lg text-second-text-color ellipsis group-hover:!text-primary', title.innerText = info.t;
+    nameDiv.appendChild(title);
+    const desc = document.createElement('div');
+    desc.className = 'text-third-text-color ellipsis', desc.innerText = info.d.replace(/\r\n|\r|\n/g, ' ');
+    nameDiv.appendChild(desc);
+    innerDiv.appendChild(nameDiv);
+    link.appendChild(innerDiv);
+    userLi.appendChild(link);
+    /*
     if ([0, 1, 2].includes(info.i)) {
       const faceIcon = document.createElement('img');
       faceIcon.className = 'face-icon no-fancybox', faceIcon.alt = '';
@@ -184,45 +190,37 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
           faceIcon.title = '大会员', faceIcon.src = '/images/default-faces%26face-icons/big-vip.svg';
           break;
       }
-      userDiv.appendChild(faceIcon);
+      userLi.appendChild(faceIcon);
     }
     if (info.n) {
       const nftFaceIcon = document.createElement('img');
       nftFaceIcon.className = `face-icon${[0, 1, 2].includes(info.i) ? ' second' : ''} no-fancybox`, nftFaceIcon.alt = '', nftFaceIcon.title = '数字藏品', nftFaceIcon.src = '/images/default-faces%26face-icons/nft-label.gif';
-      userDiv.appendChild(nftFaceIcon);
+      userLi.appendChild(nftFaceIcon);
     }
-    const title = document.createElement('p');
-    title.style.color = info.c || '', title.innerText = info.t;
-    userDiv.appendChild(title);
-    const desc = document.createElement('p');
-    desc.innerText = info.d;
-    userDiv.appendChild(desc);
-    const link = document.createElement('a');
-    link.target = '_blank', link.rel = 'noopener external nofollow noreferrer', link.href = info.l;
-    userDiv.appendChild(link);
-    return userDiv;
+    */
+    return userLi;
   };
 
-  const friends = document.querySelector('div#friends'), deletedFriends = document.querySelector('div#deleted-friends');
+  const friends = document.querySelector('ul#friends'), deletedFriends = document.querySelector('div#deleted-friends');
   if (!friends) return;
   try {
     const json = await (await fetch('https://api.yumeharu.top/api/modules?id=friends&version=3&type=json')).json();
     friends.innerText = '';
     if (json.code === 0) {
       for (const u of json.data.n.sort(() => 0.5 - Math.random())) {
-        friends.append(renderUserDiv(u));
+        friends.append(renderUserLi(u));
       }
       if (deletedFriends) {
         document.querySelector('details#deleted-friends-wrap').style.display = '';
         for (const u of json.data.d.sort(() => 0.5 - Math.random())) {
-          deletedFriends.append(renderUserDiv(u));
+          deletedFriends.append(renderUserLi(u));
         }
       }
     }
   } catch {
     friends.innerText = '';
   } finally {
-    friends.append(renderUserDiv({ a: '/images/default-faces%26face-icons/akkarin.png', t: '您', d: '是的，就是您 (=・ω・=) 您一直在支持着梦春酱，当然也是梦春酱的朋友哟 awa', l: 'https://space.bilibili.com/' }));
+    friends.append(renderUserLi({ a: '/images/default-faces%26face-icons/akkarin.png', t: '您', d: '是的，就是一直支持着梦春酱的您 (=・ω・=)', l: 'https://space.bilibili.com/' }));
   }
 })();
 </script>

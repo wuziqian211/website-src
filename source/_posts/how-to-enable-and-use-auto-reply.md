@@ -35,7 +35,7 @@ categories:
 以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来，这样您就获取到了Cookie。
 ![获取Cookie](/images/posts/get-cookie.png "获取Cookie")
 
-打开控制台，输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
+打开控制台，输入命令`curl -b "SESSDATA=`SESSDATA的值`; bili_jct=`bili_jct的值`" -d "keys_reply=1&csrf=`bili_jct的值`&csrf_token=`bili_jct的值`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
 
 {% note default %}
 
@@ -49,7 +49,7 @@ categories:
 - **macOS**：按下⌘＋空格键，即可打开控制台窗口
 {% endnote %}
 
-例：假如您获取到的{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：
+例：假如您获取到的SESSDATA的值为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，bili_jct的值为`0123456789abcdef0123456789abcdef`，那么就输入命令：
 
 ```sh
 curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" -b "SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef&csrf_token=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set" # 请将代码中的 Cookie 修改成自己的 Cookie
@@ -76,7 +76,7 @@ curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) 
 上面的操作有一定的技术含量，如果您无法看懂上面的内容，您可以向梦春酱请求帮助。
 
 如果您非常了解HTTP，上面的操作也可以像这样表述：
-用POST方式提交查询字符串数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}到`https://api.vc.bilibili.com/link_setting/v1/link_setting/set`，并带上Cookie“SESSDATA”与“bili_jct”，如果服务器返回的JSON中“code”的值为0，就说明自动回复功能开启成功。
+用POST方式提交查询字符串数据`keys_reply=1&csrf=`bili_jct的值`&csrf_token=`bili_jct的值到`https://api.vc.bilibili.com/link_setting/v1/link_setting/set`，并带上Cookie“SESSDATA”与“bili_jct”，如果服务器返回的JSON中“code”的值为0，就说明自动回复功能开启成功。
 {% endnote %}
 
 进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了一个按钮“自动回复”，就说明自动回复功能开启成功，而且您会发现，“关键词回复”功能是开启的。
