@@ -26,7 +26,8 @@
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-theme-redefine": "^2.8.2",
-    "hexo-wordcount": "^6.0.1"
+    "hexo-wordcount": "^6.0.1",
+    "nodejieba": "^3.4.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
