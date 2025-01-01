@@ -245,15 +245,15 @@ home:
     announcement: # Announcement text
     show_on_mobile: true # Whether to show sidebar navigation on mobile sheet menu
     links:
-      # Archives:
-      #   path: /archives
-      #   icon: fa-regular fa-archive # can be empty
-      # Tags:
-      #   path: /tags
-      #   icon: fa-regular fa-tags # can be empty
-      # Categories:
-      #   path: /categories
-      #   icon: fa-regular fa-folder # can be empty
+      Archives:
+        path: /archives
+        icon: fa-regular fa-archive # can be empty
+      Tags:
+        path: /tags
+        icon: fa-regular fa-tags # can be empty
+      Categories:
+        path: /categories
+        icon: fa-regular fa-folder # can be empty
       # ...... # you can add more
   # Article date format
   article_date_format: auto # auto, relative, YYYY-MM-DD, YYYY-MM-DD HH:mm:ss etc.
@@ -297,7 +297,7 @@ articles:
     min2read: true # Whether to display reading time
   # Author label
   author_label:
-    enable: true # Whether to enable
+    enable: false # Whether to enable
     auto: false # Whether to automatically add author label, e.g. Lv1, Lv2, Lv3...
     list: []
   # Code block settings
@@ -315,7 +315,7 @@ articles:
   toc:
     enable: true # Whether to enable TOC
     max_depth: 3 # TOC depth
-    number: false # Whether to add number to TOC automatically
+    number: true # Whether to add number to TOC automatically
     expand: true # Whether to expand TOC
     init_open: true # Open toc by default
   # Whether to enable copyright notice
@@ -325,7 +325,7 @@ articles:
   # Whether to enable lazyload for images
   lazyload: true
   # Pangu.js (automatically add space between Chinese and English). See https://github.com/vinta/pangu.js
-  pangu_js: false
+  pangu_js: true
   # Article recommendation. Requires nodejieba (npm install nodejieba). Transplanted from hexo-theme-volantis.
   recommendation:
     # Whether to enable article recommendation
@@ -354,7 +354,7 @@ comment:
   config:
     # Waline comment system. See https://waline.js.org/
     waline:
-      serverUrl: https://example.example.com # Waline server URL. e.g. https://example.example.com
+      serverUrl: https://waline.yumeharu.top # Waline server URL. e.g. https://example.example.com
       lang: zh-CN # Waline language. e.g. zh-CN, en-US. See https://waline.js.org/guide/client/i18n.html
       emoji: [] # Waline emojis, see https://waline.js.org/guide/features/emoji.html
       recaptchaV3Key: # Google reCAPTCHA v3 key. See https://waline.js.org/reference/client/props.html#recaptchav3key
@@ -396,7 +396,7 @@ footer:
   # Icon in footer, write fontawesome icon code here
   icon: '<i class="fa-solid fa-heart fa-beat" style="--fa-animation-duration: 0.5s; color: #f54545"></i>'
   # The start time of the website, format: YYYY/MM/DD HH:mm:ss
-  start: 2022/8/17 11:45:14
+  start: 2021-09-16T15:35:04.883Z
   # Site statistics
   statistics: true # show site statistics or not (total articles, total words)
   # Footer message
@@ -413,15 +413,14 @@ footer:
 # Docs: https://redefine-docs.ohevan.com/inject
 inject:
   # Whether to enable inject
-  enable: false
+  enable: true
   # Inject custom head html code
   head:
-    -
-    -
+    - '<link rel="stylesheet" href="/css/styles.css" />'
+    - '<script src="/js/live2d.js"></script>'
   # Inject custom footer html code
   footer:
-    -
-    -
+    - '<script src="/js/main.js"></script>'
 # INJECT <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 

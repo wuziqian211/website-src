@@ -1,0 +1,75 @@
+- links_category: 友情链接
+  has_thumbnail: false
+  list:
+    - name: 水水的小屋
+      link: https://www.happycola.top/
+      description: B站用户“肥宅水水呀”的个人网站
+      avatar: https://www.happycola.top/img/avatar.png
+    - name: 365云栈
+      link: https://blog.365sites.top/
+      description: 初阅不明言外意，重温方觉字中情
+      avatar: /images/friendship-links/blog-365sites-top.png
+    - name: Kegongteng
+      link: https://kegongteng.cn/
+      description: Blogger / Technophile / Student
+      avatar: /images/friendship-links/kegongteng-cn.jpg
+    - name: Hexziiの小破站
+      link: https://me.onlyra1n.top/
+      description: Ciallo～(∠・ω&lt; )⌒★！
+      avatar: https://cravatar.cn/avatar/949b4b017cd9c5b03ec65cfc715c17ec?s=250
+    - name: SuzuhaYuki’s Blog
+      link: https://www.727252.xyz/
+      description: Time goes by, and the years go by.
+      avatar: https://cravatar.cn/avatar/c5448269a1fad005917b6b8fad777191?s=250&d=mm
+    - name: 易姐的博客
+      link: https://shakaianee.top/
+      description: 给岁月以文明，而不是给文明以岁月。
+      avatar: /images/friendship-links/shakaianee-top.jpg
+    - name: GoForceX's Blog
+      link: https://goforcex.top/
+      description: 摆烂的小站
+      avatar: /images/friendship-links/goforcex-top.jpeg
+    - name: Microhard Demo
+      link: https://microharddemo.github.io/
+      description: Microhard Demo的个人网站
+      avatar: /images/friendship-links/microharddemo-github-io.png
+    - name: 朋友圈实验室
+      link: https://aperturelaboratories.icoc.vc/
+      description: 一个古朴的化学实验室
+      avatar: /images/friendship-links/aperturelaboratories-icoc-vc.png
+    - name: Ra小小特的小站
+      link: https://raxxt.top/
+      description: B站用户“爱玩电脑的特兰克斯”的个人网站
+      avatar: /images/friendship-links/raxxt-top.png
+    - name: 我汐了_233的小站
+      link: https://woxile.rth1.xyz/
+      description: B站用户“我汐了_233”的个人网站
+      avatar: https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
+    - name: KittySite
+      link: https://blog.ssxx.site/
+      description: 看世间百态，叹命数难猜
+      avatar: /images/friendship-links/blog-ssxx-site.webp
+    - name: TV768の个人网站
+      link: https://www.tv768.xyz/
+      description: 精彩的768 让生活添色彩（B站用户“SevenSixEight_”的个人网站）
+      avatar: /images/friendship-links/tv768-xyz.jpg
+    - name: 知心她们工作室
+      link: https://shuxincm.jzfkw.net/
+      description: 知心她们，心情美好。
+      avatar: /images/friendship-links/shuxincm-jzfkw-net.png
+    - name: 值关大众放送工作室
+      link: https://zhiguanmedia.jzfkw.net/
+      description: 做有情怀的媒体
+      avatar: /images/friendship-links/zhiguanmedia-jzfkw-net.png
+    - name: 社凤迷工作室
+      link: https://shefengmi-10.jzfkw.net/
+      description: 看着社会与法 听着凤凰传奇
+      avatar: /images/friendship-links/shefengmi-10-jzfkw-net.jpg
+    - name: 铭琛天宏互娱工作室
+      link: https://mingchen2485.jzfkw.net/
+      description: 我们不做视频，我们只是央视网的搬运工。
+      avatar: /images/friendship-links/mingchen2485-jzfkw-net.png
+    - name: wuziqian211的网站（旧）
+      link: https://wuziqian211.icoc.vc/
+      description: 梦春酱的旧网站，已不再更新
+      avatar: /images/friendship-links/wuziqian211-icoc-vc.png

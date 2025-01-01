@@ -2,47 +2,19 @@
 title: 友情链接＆朋友们
 date: 2022-10-29 20:11:15
 updated: 2022-10-29 20:11:15
+template: links
 ---
 
-## 友情链接
-
-<!-- % lg /images/default-faces%26face-icons/akkarin.png % -->
-水水的小屋 | https://www.happycola.top/ | B站用户“肥宅水水呀”的个人网站 | https://www.happycola.top/img/avatar.png
-365云栈 | https://blog.365sites.top/ | 初阅不明言外意，重温方觉字中情 | /images/friendship-links/blog-365sites-top.png
-Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | /images/friendship-links/kegongteng-cn.jpg
-Hexziiの小破站 | https://me.onlyra1n.top/ | Ciallo～(∠・ω&lt; )⌒★！ | https://cravatar.cn/avatar/949b4b017cd9c5b03ec65cfc715c17ec?s=250
-SuzuhaYuki’s Blog | https://www.727252.xyz/ | Time goes by, and the years go by. | https://cravatar.cn/avatar/c5448269a1fad005917b6b8fad777191?s=250&d=mm
-易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpg
-GoForceX's Blog | https://goforcex.top/ | 摆烂的小站 | /images/friendship-links/goforcex-top.jpeg
-Microhard Demo | https://microharddemo.github.io/ | Microhard Demo的个人网站 | /images/friendship-links/microharddemo-github-io.png
-朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
-Ra小小特的小站 | https://raxxt.top/ | B站用户“爱玩电脑的特兰克斯”的个人网站 | /images/friendship-links/raxxt-top.png
-我汐了_233的小站 | https://woxile.rth1.xyz/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
-KittySite | https://blog.ssxx.site/ | 看世间百态，叹命数难猜 | /images/friendship-links/blog-ssxx-site.webp
-TV768の个人网站 | https://www.tv768.xyz/ | 精彩的768 让生活添色彩（B站用户“SevenSixEight_”的个人网站） | /images/friendship-links/tv768-xyz.jpg
-知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
-值关大众放送工作室 | https://zhiguanmedia.jzfkw.net/ | 做有情怀的媒体 | /images/friendship-links/zhiguanmedia-jzfkw-net.png
-社凤迷工作室 | https://shefengmi-10.jzfkw.net/ | 看着社会与法 听着凤凰传奇 | /images/friendship-links/shefengmi-10-jzfkw-net.jpg
-铭琛天宏互娱工作室 | https://mingchen2485.jzfkw.net/ | 我们不做视频，我们只是央视网的搬运工。 | /images/friendship-links/mingchen2485-jzfkw-net.png
-wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧网站，已不再更新 | /images/friendship-links/wuziqian211-icoc-vc.png
-<!-- % endlg % -->
-
-<!--
-{% folding blue::无法访问的友链 %}
-以下友情链接暂时无法访问，梦春酱期待这些友链的恢复qwq
-<!-- % lg /images/default-faces%26face-icons/akkarin.png % -->
-<!-- % endlg % -->
-{% endfolding %}
--->
+<!-- 友链数据在 source/_data/links.yml 中 -->
 
 如果您也想申请友情链接的话，可以在这个Blog的评论区评论哟awa
 
-### 申请友情链接
+##### 申请友情链接
 
 欢迎您申请加入本站的友情链接！请您在申请友链前阅读以下说明：
 {% folding blue::点击展开 %}
 
-#### 申请规则
+###### 申请规则
 
 1. 网站内容必须符合中华人民共和国相关法律法规，且**不能与代理服务器、VPN、广告等相关**；
 2. 网站必须要有实质性的内容，本站不接受空白的或者全是无意义内容的网站；
@@ -53,7 +25,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 梦春酱不会检查您是否将本站添加到贵站友链。
 {% endnote %}
 
-#### 申请方式
+###### 申请方式
 
 在[本页面的评论区](#waline)评论即可申请友情链接，建议您参照以下格式评论：
 
@@ -66,7 +38,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 
 梦春酱可能会在将贵站添加在本站友链时修改部分信息；同时，**若您没有特别说明，梦春酱会将贵站的图标存储到本站的服务器上。**
 
-#### 友链的定期检查、可能存在的风险说明
+###### 友链的定期检查、可能存在的风险说明
 
 梦春酱会在力所能及的范围内定期检查您的网站；若贵站出现问题，包括但不限于：
 
@@ -83,7 +55,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 希望我们一起努力，共同进步！(=・ω・=)
 {% endfolding %}
 
-### 本站信息
+##### 本站信息
 
 如果您想将本站添加到贵站的友情链接，您可以使用以下信息：
 
@@ -125,7 +97,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 
 {% endfolding %}
 
-## 朋友们
+#### 朋友们
 
 {% note warning %}
 由于B站接口的限制，以下朋友的信息并非实时更新。
@@ -149,11 +121,11 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 其实不止上面这些用户，还有很多人在背后默默地支持着梦春酱呢(=・ω・=)
 如果您与梦春酱的关系很好，但是上面并没有列出您，请在评论区评论或者在B站私信梦春酱，梦春酱在这里表示十分抱歉！(´；ω；\`)
 
-<script data-pjax>
+<script data-swup-reload-script>
 (async () => {
   const renderUserLi = info => {
     const userLi = document.createElement('li');
-    userLi.className = 'group transform scale-100 transition-transform duration-100 ease-linear active:scale-95';
+    userLi.className = 'group transform scale-100 transition-transform duration-100 ease-linear active:scale-95', userLi.style.listStyle = 'none', userLi.style.marginLeft = '0';
     const link = document.createElement('a');
     link.target = '_blank', link.rel = 'noopener external nofollow noreferrer', link.href = info.l;
     const innerDiv = document.createElement('div');

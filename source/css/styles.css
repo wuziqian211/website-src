@@ -16,21 +16,6 @@
   height: 1.5em !important;
 }
 
-.header, .site-brand-container {
-  border-radius: 0 0 20px 20px !important;
-}
-.sidebar-toggle, .back-to-top {
-  border-radius: 10px;
-}
-.post-body .tabs ul.nav-tabs, .tabs-comment ul.nav-tabs {
-  background: #fff9;
-  border-radius: 10px;
-}
-@media (prefers-color-scheme: dark) {
-  .post-body .tabs ul.nav-tabs, .tabs-comment ul.nav-tabs {
-    background: #2229;
-  }
-}
 th {
   text-align: center !important;
 }
@@ -151,11 +136,10 @@ a.inaccessible:hover::before {
   font-family: 'iconfont';
   src: url(/css/iconfont.ttf) format('truetype');
 }
-.custom {
+.fa-custom {
   font-family: 'iconfont';
   font-style: normal;
-  margin-right: 2px;
 }
-.gitee:before {
+.fa-custom.gitee {
   content: '\e677';
 }
