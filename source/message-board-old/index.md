@@ -2,6 +2,7 @@
 title: 留言板（旧网站）
 date: 2024-03-03 18:03:49
 updated: 2024-03-03 18:03:49
+comment: true
 ---
 
 {% note info %}

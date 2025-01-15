@@ -3,6 +3,7 @@ title: 友情链接＆朋友们
 date: 2022-10-29 20:11:15
 updated: 2022-10-29 20:11:15
 template: links
+comment: true
 ---
 
 <!-- 友链数据在 source/_data/links.yml 中 -->
