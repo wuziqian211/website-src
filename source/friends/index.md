@@ -7,19 +7,19 @@ updated: 2022-10-29 20:11:15
 ## 友情链接
 
 {% lg /images/default-faces%26face-icons/akkarin.png %}
-水水的小屋 | https://www.happycola.top/ | B站用户“肥宅水水呀”的个人网站 | https://www.happycola.top/img/avatar.png
+水水的小屋 | https://www.happycola.top/ | 学而不思则罔，思而不学则殆。 | https://www.happycola.top/img/avatar.png
 365云栈 | https://blog.365sites.top/ | 初阅不明言外意，重温方觉字中情 | /images/friendship-links/blog-365sites-top.png
 Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | /images/friendship-links/kegongteng-cn.jpg
-Hexziiの小破站 | https://me.onlyra1n.top/ | Ciallo～(∠・ω&lt; )⌒★！ | https://cravatar.cn/avatar/949b4b017cd9c5b03ec65cfc715c17ec?s=250
-SuzuhaYuki’s Blog | https://szh.rainettle.top/ | Time goes by, and the years go by. | https://cravatar.cn/avatar/c5448269a1fad005917b6b8fad777191?s=250&d=mm
+Hexziiの小破站 | https://me.onlyra1n.top/ | 咕咕咕咕咕咕咕咕咕 | https://cravatar.cn/avatar/949b4b017cd9c5b03ec65cfc715c17ec?s=250
+SuzuhaYuki's Blog | https://szh.rainettle.top/ | Time goes by, and the years go by. | https://cravatar.cn/avatar/c5448269a1fad005917b6b8fad777191?s=250&d=mm
 易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpg
 GoForceX's Blog | https://goforcex.top/ | 摆烂的小站 | /images/friendship-links/goforcex-top.jpeg
-Microhard Demo | https://microharddemo.github.io/ | Microhard Demo的个人网站 | /images/friendship-links/microharddemo-github-io.png
+Microhard Demo | https://microharddemo.github.io/ | 逸一时，误一世，逸久逸久罢已龄！ | /images/friendship-links/microharddemo-github-io.svg
 朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
 Ra小小特的小站 | https://raxxt.top/ | B站用户“爱玩电脑的特兰克斯”的个人网站 | /images/friendship-links/raxxt-top.png
 我汐了_233的小站 | https://woxile.rth1.xyz/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
-KittySite | https://blog.ssxx.site/ | 看世间百态，叹命数难猜 | /images/friendship-links/blog-ssxx-site.webp
-TV768の个人网站 | https://www.tv768.xyz/ | 精彩的768 让生活添色彩（B站用户“SevenSixEight_”的个人网站） | /images/friendship-links/tv768-xyz.jpg
+KittySite | https://blog.konpaku.cn/ | 魂恋白楼三尺剑，飞花影里斩春风 | /images/friendship-links/blog-konpaku-cn.jpg
+TV768の个人网站 | https://www.tv768.xyz/ | 精彩的768 让生活添色彩 | /images/friendship-links/tv768-xyz.jpg
 知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
 值关大众放送工作室 | https://zhiguanmedia.jzfkw.net/ | 做有情怀的媒体 | /images/friendship-links/zhiguanmedia-jzfkw-net.png
 社凤迷工作室 | https://shefengmi-10.jzfkw.net/ | 看着社会与法 听着凤凰传奇 | /images/friendship-links/shefengmi-10-jzfkw-net.jpg
@@ -121,7 +121,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
     link: https://www.yumeharu.top/ # 网站链接
     icon: https://www.yumeharu.top/images/icon_compressed.png             # 网站图标
     description: Not for the best, just for the better.                   # 网站描述，也可使用 “不求最好，只求更好。”
-    author: 晨叶梦春                 # 站长昵称
+    author: 晨叶梦春                # 站长昵称
     avatar: https://www.yumeharu.top/images/face_compressed.png           # 站长头像
     screenshot: https://www.yumeharu.top/images/screenshot_compressed.png # 网站截图
 ```
@@ -168,37 +168,49 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
     const userDiv = document.createElement('div');
     userDiv.className = 'link-grid-container';
     const avatar = document.createElement('img');
-    avatar.className = 'link-grid-image no-fancybox', avatar.title = info.t, avatar.src = info.a;
+    avatar.className = 'link-grid-image no-fancybox';
+    avatar.title = info.t;
+    avatar.src = info.a;
     userDiv.appendChild(avatar);
     if ([0, 1, 2].includes(info.i)) {
       const faceIcon = document.createElement('img');
-      faceIcon.className = 'face-icon no-fancybox', faceIcon.alt = '';
+      faceIcon.className = 'face-icon no-fancybox';
+      faceIcon.alt = '';
       switch (info.i) {
         case 0:
-          faceIcon.title = `UP 主认证：${info.o}`, faceIcon.src = '/images/default-faces%26face-icons/personal.svg';
+          faceIcon.title = `UP 主认证：${info.o}`;
+          faceIcon.src = '/images/default-faces%26face-icons/personal.svg';
           break;
         case 1:
-          faceIcon.title = `机构认证：${info.o}`, faceIcon.src = '/images/default-faces%26face-icons/business.svg';
+          faceIcon.title = `机构认证：${info.o}`;
+          faceIcon.src = '/images/default-faces%26face-icons/business.svg';
           break;
         case 2:
-          faceIcon.title = '大会员', faceIcon.src = '/images/default-faces%26face-icons/big-vip.svg';
+          faceIcon.title = '大会员';
+          faceIcon.src = '/images/default-faces%26face-icons/big-vip.svg';
           break;
       }
       userDiv.appendChild(faceIcon);
     }
     if (info.n) {
       const nftFaceIcon = document.createElement('img');
-      nftFaceIcon.className = `face-icon${[0, 1, 2].includes(info.i) ? ' second' : ''} no-fancybox`, nftFaceIcon.alt = '', nftFaceIcon.title = '数字藏品', nftFaceIcon.src = '/images/default-faces%26face-icons/nft-label.gif';
+      nftFaceIcon.className = `face-icon${[0, 1, 2].includes(info.i) ? ' second' : ''} no-fancybox`;
+      nftFaceIcon.alt = '';
+      nftFaceIcon.title = '数字藏品';
+      nftFaceIcon.src = '/images/default-faces%26face-icons/nft-label.gif';
       userDiv.appendChild(nftFaceIcon);
     }
     const title = document.createElement('p');
-    title.style.color = info.c || '', title.innerText = info.t;
+    title.style.color = info.c || '';
+    title.innerText = info.t;
     userDiv.appendChild(title);
     const desc = document.createElement('p');
     desc.innerText = info.d;
     userDiv.appendChild(desc);
     const link = document.createElement('a');
-    link.target = '_blank', link.rel = 'noopener external nofollow noreferrer', link.href = info.l;
+    link.target = '_blank';
+    link.rel = 'noopener external nofollow noreferrer';
+    link.href = info.l;
     userDiv.appendChild(link);
     return userDiv;
   };
@@ -222,7 +234,12 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
   } catch {
     friends.innerText = '';
   } finally {
-    friends.append(renderUserDiv({ a: '/images/default-faces%26face-icons/akkarin.png', t: '您', d: '是的，就是您 (=・ω・=) 您一直在支持着梦春酱，当然也是梦春酱的朋友哟 awa', l: 'https://space.bilibili.com/' }));
+    friends.append(renderUserDiv({
+      a: '/images/default-faces%26face-icons/akkarin.png',
+      t: '您',
+      d: '是的，就是您 (=・ω・=) 您一直在支持着梦春酱，当然也是梦春酱的朋友哟 awa',
+      l: 'https://space.bilibili.com/',
+    }));
   }
 })();
 </script>
