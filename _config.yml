@@ -136,7 +136,7 @@ archive_generator:
   per_page: 0
   yearly: true
   monthly: true
-  daily: true
+  daily: false
   order_by: -date
 
 server:
