@@ -15,7 +15,7 @@ timezone: Asia/Shanghai
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://www.yumeharu.top
 root: /
-permalink: /archives/:year/:month/:day/:title/
+permalink: archives/:year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: false # Set to false to remove trailing 'index.html' from permalinks
@@ -32,6 +32,7 @@ i18n_dir: :lang
 skip_render:
   - emote/**/*
   - images/**/*
+  - img/**/*
   - robots.txt
 
 # Writing
@@ -109,7 +110,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: next
+theme: anzhiyu
 theme_config:
 
 # Deployment
@@ -137,21 +138,6 @@ archive_generator:
   monthly: true
   daily: true
   order_by: -date
-
-symbols_count_time:
-  symbols: true
-  time: true
-  total_symbols: true
-  total_time: true
-  exclude_codeblock: false
-  wpm: 275
-  suffix: 'mins.'
-
-search:
-  path: search.xml
-  field: post
-  content: true
-  format: raw
 
 server:
   port: 2111
@@ -204,27 +190,6 @@ sitemap:
   rel: false
   tags: true
   categories: true
-
-related_posts:
-  enabled: true
-  enable_env_name:
-  filter_threshold: 0.3
-  related_count: 3
-  weight:
-    title: 0.05
-    description: 0.05
-    keywords: 0.01
-    tags: 0.005
-    categories: 0.005
-    text: 1
-  stemmers:
-    - en
-    - ru
-  reserved:
-    - asp.net
-    - vs.net
-    - ado.net
-    - .net
 
 all_minifier: true
 js_concator:

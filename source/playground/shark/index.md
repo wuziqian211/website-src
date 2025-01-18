@@ -47,7 +47,7 @@ iframe#shark {
 游戏总共包含11个普通结局和2个最终结局，根据你对小鲨鱼做过的事情，游戏将走向不同的结局。
 来和小鲨鱼成为**朋友**吧！
 
-{% gp 9-7 %}
+<!--% gp 9-7 %-->
 ![屋内的一只正常的小鲨鱼](/images/playground/shark-1.jpg)
 ![带着花的小鲨鱼在睡觉](/images/playground/shark-2.jpg)
 ![屋外的一只离家出走的小鲨鱼和一朵花](/images/playground/shark-3.jpg)
@@ -57,7 +57,7 @@ iframe#shark {
 ![关灯的屋内](/images/playground/shark-7.jpg)
 ![正在努力锻炼的小鲨鱼](/images/playground/shark-8.jpg)
 ![被喂得很饱的小鲨鱼，旁边有很多苹果](/images/playground/shark-9.jpg)
-{% endgp %}
+<!--% endgp %-->
 
 ## 常见疑问
 

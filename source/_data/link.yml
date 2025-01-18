@@ -1,0 +1,84 @@
+- class_name: 友情链接
+  class_desc: 如果您也想申请友情链接的话，可以在这个Blog的评论区评论哟awa
+  flink_style: telescopic
+  link_list:
+    - name: 水水的小屋
+      link: https://www.happycola.top/
+      avatar: https://www.happycola.top/img/avatar.png
+      descr: 学而不思则罔，思而不学则殆。
+    - name: 365云栈
+      link: https://blog.365sites.top/
+      avatar: /images/friendship-links/blog-365sites-top.png
+      descr: 初阅不明言外意，重温方觉字中情
+    - name: Kegongteng
+      link: https://kegongteng.cn/
+      avatar: /images/friendship-links/kegongteng-cn.jpg
+      descr: Blogger / Technophile / Student
+    - name: Hexziiの小破站
+      link: https://me.onlyra1n.top/
+      avatar: https://cravatar.cn/avatar/949b4b017cd9c5b03ec65cfc715c17ec?s=250
+      descr: 咕咕咕咕咕咕咕咕咕
+    - name: SuzuhaYuki's Blog
+      link: https://szh.rainettle.top/
+      avatar: https://cravatar.cn/avatar/c5448269a1fad005917b6b8fad777191?s=250&d=mm
+      descr: Time goes by, and the years go by.
+    - name: 易姐的博客
+      link: https://shakaianee.top/
+      avatar: /images/friendship-links/shakaianee-top.jpg
+      descr: 给岁月以文明，而不是给文明以岁月。
+    - name: GoForceX's Blog
+      link: https://goforcex.top/
+      avatar: /images/friendship-links/goforcex-top.jpeg
+      descr: 摆烂的小站
+    - name: Microhard Demo
+      link: https://microharddemo.github.io/
+      avatar: /images/friendship-links/microharddemo-github-io.svg
+      descr: 逸一时，误一世，逸久逸久罢已龄！
+    - name: 朋友圈实验室
+      link: https://aperturelaboratories.icoc.vc/
+      avatar: /images/friendship-links/aperturelaboratories-icoc-vc.png
+      descr: 一个古朴的化学实验室
+    - name: Ra小小特的小站
+      link: https://raxxt.top/
+      avatar: /images/friendship-links/raxxt-top.png
+      descr: B站用户“爱玩电脑的特兰克斯”的个人网站
+    - name: 我汐了_233的小站
+      link: https://woxile.rth1.xyz/
+      avatar: https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
+      descr: B站用户“我汐了_233”的个人网站
+    - name: KittySite
+      link: https://blog.konpaku.cn/
+      avatar: /images/friendship-links/blog-konpaku-cn.jpg
+      descr: 魂恋白楼三尺剑，飞花影里斩春风
+    - name: TV768の个人网站
+      link: https://www.tv768.xyz/
+      avatar: /images/friendship-links/tv768-xyz.jpg
+      descr: 精彩的768 让生活添色彩
+    - name: 知心她们工作室
+      link: https://shuxincm.jzfkw.net/
+      avatar: /images/friendship-links/shuxincm-jzfkw-net.png
+      descr: 知心她们，心情美好。
+    - name: 值关大众放送工作室
+      link: https://zhiguanmedia.jzfkw.net/
+      avatar: /images/friendship-links/zhiguanmedia-jzfkw-net.png
+      descr: 做有情怀的媒体
+    - name: 社凤迷工作室
+      link: https://shefengmi-10.jzfkw.net/
+      avatar: /images/friendship-links/shefengmi-10-jzfkw-net.jpg
+      descr: 看着社会与法 听着凤凰传奇
+    - name: 铭琛天宏互娱工作室
+      link: https://mingchen2485.jzfkw.net/
+      avatar: /images/friendship-links/mingchen2485-jzfkw-net.png
+      descr: 我们不做视频，我们只是央视网的搬运工。
+    - name: wuziqian211的网站（旧）
+      link: https://wuziqian211.icoc.vc/
+      avatar: /images/friendship-links/wuziqian211-icoc-vc.png
+      descr: 梦春酱的旧网站，已不再更新
+- class_name: 朋友们
+  flink_style: anzhiyu
+  link_list: []
+- class_name: 已经注销的朋友们
+  class_desc: 这些朋友的注销，给梦春酱带来了一定程度的损失，梦春酱非常希望能有缘再见到TA们(´；ω；\`)当然有些朋友已经创建新的账号啦awa
+  flink_style: anzhiyu
+  lost_contact: true
+  link_list: []

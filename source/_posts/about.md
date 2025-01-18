@@ -15,9 +15,9 @@ sticky: 100
 permalink: /about/
 ---
 
-{% cq %}
+<!--% cq %-->
 不求最好，只求更好。Not for the best, just for the better.
-{% endcq %}
+<!--% endcq %-->
 
 梦春酱很高兴能够在这个Blog与您相遇(^・ω・^ )
 ![头像](/images/full-face_compressed.png)
@@ -398,40 +398,40 @@ TA喜欢[**在B站上发布知识、科技区的作品**](https://space.bilibili
 
 #### 界面＆框架
 
-{% lg %}
+<!--% lg %-->
 Theme NexT | https://theme-next.js.org/ | 提供本Blog的界面。NexT是一款风格优雅的高质量Hexo主题，自点点滴滴中用爱雕琢而成。 | /images/badges%26thanks/theme-next.svg
 Hexo | https://hexo.io/ | 生成本Blog的页面。Hexo是一个快速、简洁且高效的Blog框架。 | /images/badges%26thanks/hexo.svg
-{% endlg %}
+<!--% endlg %-->
 
 #### 互动功能
 
-{% lg %}
+<!--% lg %-->
 Waline | https://waline.js.org/ | 提供本Blog的评论服务。Waline是一款基于Valine衍生的简洁、安全的评论系统。 | /images/badges%26thanks/waline.png
 Live2D | https://github.com/stevenjoezhang/live2d-widget | 提供本Blog可爱又会动的看板娘。看板娘真的好萌呀⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ | /images/badges%26thanks/potion-maker_fixed.png
-{% endlg %}
+<!--% endlg %-->
 
 #### CDN（内容分发网络）
 
-{% lg %}
+<!--% lg %-->
 cdnjs | https://cdnjs.com/ | 加速本Blog的静态资源。cdnjs是一项免费的开源CDN服务。 | /images/badges%26thanks/cdnjs.svg
 UNPKG | https://unpkg.com/ | 加速本Blog的静态资源。UNPKG是一个快速的全球内容分发网络。 | /images/badges%26thanks/unpkg.png
 jsDelivr | https://www.jsdelivr.com/ | 加速本Blog的静态资源。jsDelivr是一个免费且快速、可靠和自动化的开源CDN。 | /images/badges%26thanks/jsdelivr.png
-{% endlg %}
+<!--% endlg %-->
 
 #### 存储＆后端服务
 
-{% lg %}
+<!--% lg %-->
 Vercel | https://vercel.com/ | 提供本Blog的服务器、API。Vercel是一个用于前端框架和静态站点的平台。 | /images/badges%26thanks/vercel.png
 LeanCloud | https://leancloud.app/ | 存储本Blog的评论数据。LeanCloud是一款领先的无服务器云服务，为产品开发提供强有力的后端支持。 | /images/badges%26thanks/leancloud.svg
 GitHub | https://github.com/ | 存储本Blog的源码文件。GitHub是一个用于构建、扩展和交付安全软件的完整开发人员平台。 | /images/badges%26thanks/github.svg
 SM.MS | https://smms.app/ | 为本Blog的评论区提供图片上传服务。SM.MS是一个简单、免费的图片托管平台。 | /images/badges%26thanks/smms.png
-{% endlg %}
+<!--% endlg %-->
 
 #### 其他
 
-{% lg %}
+<!--% lg %-->
 萌国ICP备案 | https://icp.gov.moe/ | 为本Blog提供“ICP备案”服务。萌ICP备纯属萌友网站联萌，是一种次元中的爱好，文化的展现✧(≖ ◡ ≖✿) | /images/badges%26thanks/moe-icon.png
-{% endlg %}
+<!--% endlg %-->
 
 ## 关于梦春酱的程序与脚本
 

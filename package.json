@@ -12,9 +12,9 @@
     "version": "7.3.0"
   },
   "dependencies": {
-    "@waline/hexo-next": "^3.0.1",
     "hexo": "^7.3.0",
     "hexo-all-minifier": "^0.5.7",
+    "hexo-butterfly-clock-anzhiyu": "^1.1.8",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
@@ -22,14 +22,13 @@
     "hexo-generator-searchdb": "^1.4.1",
     "hexo-generator-sitemap": "^3.0.1",
     "hexo-generator-tag": "^2.0.0",
-    "hexo-next-fireworks": "github:next-theme/hexo-next-fireworks",
-    "hexo-related-posts": "^1.5.2",
     "hexo-renderer-ejs": "^2.0.0",
     "hexo-renderer-markdown-it": "^6.1.0",
+    "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
-    "hexo-theme-next": "^8.21.1",
-    "hexo-word-counter": "^0.1.0"
+    "hexo-theme-anzhiyu": "^1.6.14",
+    "hexo-wordcount": "^6.0.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",
