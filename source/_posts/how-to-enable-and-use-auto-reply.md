@@ -2,7 +2,6 @@
 title: 如何开启并使用B站的自动回复功能
 date: 2022-01-13 20:47:39
 updated: 2025-01-14 23:56:02
-description: 不管你有没有达到1000粉丝，都可以开启B站的自动回复功能
 tags:
   - 自动回复
   - 技术
@@ -16,86 +15,12 @@ categories:
 
 ## 开启自动回复功能
 
-如果您的粉丝数在1000及以上，请您直接选择“通过网页开启”部分。
-如果您的粉丝数在1000以下，请您先查看“通过API开启”部分，以显示“自动回复”按钮，然后就可以直接在B站网页或APP上设置自动回复了。
+B站的自动回复功能仅适用于**粉丝数在1000及以上**的用户。
 <!-- more -->
 
-{% tabs 开启自动回复功能 %}
-<!-- tab 通过API开启 -->
-由于B站的一些“漏洞”，您可以通过一些技术手段（就比如API，即应用程序编程接口）来开启B站的自动回复，并能正常使用自动回复功能。
-
-{% note warning %}
-强烈建议您使用电脑操作！在手机上操作会非常麻烦。
-{% endnote %}
-
-{% note info %}
-下面的操作**需要在您的操作系统上安装`curl`命令行程序**，一般来说现在的操作系统里都有这个程序。如果没有，可以在<https://curl.se/download.html>下载。
-{% endnote %}
-
-以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来，这样您就获取到了Cookie。
-![获取Cookie](/images/posts/get-cookie.png "获取Cookie")
-
-打开控制台，输入命令`curl -b "SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`" -d "keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}`" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set"`，然后按回车键。
-
-{% note default %}
-
-### 如何打开控制台
-
-下面只是不同操作系统中打开控制台的比较快捷的方法，您也可以使用其他方法打开控制台。
-
-- **Windows**：按下Win＋R，输入`cmd`后回车，即可打开控制台窗口
-- **大多数有图形化界面的GNU/Linux操作系统**：在桌面上按下Ctrl＋Alt＋T，即可打开控制台窗口
-- **仅有控制台界面的GNU/Linux操作系统**：直接在界面输入命令即可
-- **macOS**：按下⌘＋空格键，即可打开控制台窗口
-{% endnote %}
-
-例：假如您获取到的{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入命令：
-
-```sh
-curl -A "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36" -b "SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef" -d "keys_reply=1&csrf=0123456789abcdef0123456789abcdef&csrf_token=0123456789abcdef0123456789abcdef" "https://api.vc.bilibili.com/link_setting/v1/link_setting/set" # 请将代码中的 Cookie 修改成自己的 Cookie
-```
-
-您可能会看到类似于下面的“代码”：
-
-```json
-{"code":0,"msg":"0","message":"0","ttl":1,"data":{}}
-```
-
-只要您看到了`"code":0`，就说明自动回复功能开启成功。如果出现问题，您可以私信梦春酱来请求帮助。
-
-{% note danger %}
-**特别注意：请不要把您刚刚复制的“SESSDATA”“bili_jct”中任何一个Cookie的值告诉任何人！它们的值是您的账号的登录信息，与账号、密码的作用相似，别人可能会利用这些值来登录您的账号。**
-{% endnote %}
-
-{% note warning %}
-目前，B站的Cookie是定期更新的，所以建议您获取完Cookie后暂时不要访问B站的网页，防止原来的Cookie因更新而失效。待您开启自动回复功能成功后，就可以访问B站的网页了。
-另外，您刚刚输入的命令里面的链接**不能通过浏览器直接访问**！直接访问是没有任何效果的。
-{% endnote %}
-
-{% note info %}
-上面的操作有一定的技术含量，如果您无法看懂上面的内容，您可以向梦春酱请求帮助。
-
-如果您非常了解HTTP，上面的操作也可以像这样表述：
-用POST方式提交查询字符串数据`keys_reply=1&csrf=`{% label primary@bili_jct的值 %}`&csrf_token=`{% label primary@bili_jct的值 %}到`https://api.vc.bilibili.com/link_setting/v1/link_setting/set`，并带上Cookie“SESSDATA”与“bili_jct”，如果服务器返回的JSON中“code”的值为0，就说明自动回复功能开启成功。
-{% endnote %}
-
-进入[消息中心](https://message.bilibili.com/)后，如果您看到页面左侧多了一个按钮“自动回复”，就说明自动回复功能开启成功，而且您会发现，“关键词回复”功能是开启的。
-![“自动回复”按钮](/images/posts/auto-reply-button_compressed.png "“自动回复”按钮")
-
-{% note warning %}
-1000粉丝以下的用户关闭了自动回复的所有功能后，刷新“消息中心”页面，“自动回复”按钮就会**消失**。
-如果您不小心关闭了自动回复的所有功能，导致“自动回复”按钮消失，那么您可以再次执行上面的操作以重新开启自动回复功能。
-{% endnote %}
-
-<!-- endtab -->
-
-<!-- tab 通过网页开启 -->
-在登录了B站账号的浏览器中进入[消息中心](https://message.bilibili.com/)后，您可以看到，在页面的左侧有“自动回复”按钮。点击“自动回复”按钮，就可以进入[“自动回复”页面](https://message.bilibili.com/#/autoreply)。
+如果您的B站账号的粉丝数在1000及以上，那么在进入[消息中心](https://message.bilibili.com/)后就可以看到，在页面的左侧有“自动回复”按钮。点击“自动回复”按钮，就可以进入[“自动回复”页面](https://message.bilibili.com/#/autoreply)。
 在页面顶部，有“被关注回复”、“关键词回复”、“收到消息回复”选择夹，部分用户可能也有“大航海上船回复”选择夹。点击每个选择夹中功能的开关按钮，就可以开启对应的功能，并显示更多的信息。
 ![“自动回复”页面](/images/posts/auto-reply-page_compressed.png "“自动回复”页面")
-<!-- endtab -->
-
-{% endtabs %}
 
 ## 使用自动回复功能
 
