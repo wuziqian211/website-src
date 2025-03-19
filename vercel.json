@@ -16,6 +16,7 @@
       ]
     }
   ],
+  "installCommand": "npm install --only=production",
   "redirects": [
     { "source": "/wiki/", "destination": "/about/" }
   ]

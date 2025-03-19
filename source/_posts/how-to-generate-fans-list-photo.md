@@ -1,7 +1,7 @@
 ---
 title: 如何生成B站粉丝列表图片
 date: 2022-12-10 20:42:22
-updated: 2025-01-14 23:56:02
+updated: 2025-03-17 01:17:56
 tags:
   - 用户列表
   - 技术
@@ -25,7 +25,7 @@ categories:
 {% endnote %}
 
 以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来，这样您就获取到了Cookie。
-![获取Cookie](/images/posts/get-cookie.png "获取Cookie")
+![获取Cookie](/images/posts/get-cookie.png)
 
 打开Node.js，您应该会看到一个命令行窗口。在这个窗口里输入代码`const headers = { Cookie: 'SESSDATA=`{% label info@SESSDATA的值 %}`; bili_jct=`{% label primary@bili_jct的值 %}`, Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' };`，便于在后续操作中使用您账号的登录信息。
 例：假如{% label info@SESSDATA的值 %}为`1a2b3c4d%2C1789012345%2C5e6f7*ef`，{% label primary@bili_jct的值 %}为`0123456789abcdef0123456789abcdef`，那么就输入代码：
@@ -191,8 +191,8 @@ const encodeWbi = query => { // 对请求参数进行 Wbi 签名，改编自 htt
 
 // 获取 imgKey 与 subKey
 const ujson = await (await fetch('https://api.bilibili.com/x/web-interface/nav', { headers })).json();
-const imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1'),
-      subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1');
+const imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^.]+)(?:\..*)?$/, '$1'),
+      subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^.]+)(?:\..*)?$/, '$1');
 
 const realFollowers = [];
 for (const f of followers) { // 获取所有在粉丝列表里的用户与自己的关系
@@ -213,12 +213,12 @@ followers = realFollowers;
 
 目前“followers”变量虽然存储了所有粉丝的信息，但是这个信息不够详细，比如不包括等级、头像框信息等，我们要想办法获取更详细的粉丝信息。
 
-获取多个用户的详细信息的API是<https://api.bilibili.com/x/polymer/pc-electron/v1/user/cards>，请求方式是GET，这个API调用一次可以获取最多200个用户的信息。
+获取多个用户的详细信息的API是<https://api.bilibili.com/x/polymer/pc-electron/v1/user/cards>，请求方式是GET，这个API调用一次可以获取最多50个用户的信息。
 主要URL参数包括：
 
 | 参数名 | 内容 | 必要性 | 备注 |
 | :----: | :--: | :----: | ---- |
-| uids | 目标用户的UID列表 | 必要 | 每个成员间用英文逗号`,`分割，**最多200个成员** |
+| uids | 目标用户的UID列表 | 必要 | 每个成员间用英文逗号`,`分割，**最多50个成员** |
 
 如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例展示，一些项已经省略）：
 
@@ -229,25 +229,14 @@ followers = realFollowers;
   // ...
   "data": {
     "12345678": { // 用户 1 的信息
-      "face": "https://i0.hdslb.com/bfs/face/xxx.jpg", // 用户头像地址
-      "face_nft": 0, // 头像是否为数字藏品头像
-      // ...
       "mid": "12345678", // 用户 UID
+      "face": "https://i0.hdslb.com/bfs/face/xxx.jpg", // 用户头像地址
       "name": "Example", // 用户昵称
-      // ...
       "official": { // 用户认证信息
         "desc": "", // 用户认证备注
         "role": 0, // 用户认证类型
         "title": "", // 用户认证说明文字
         "type": -1 // 用户认证状态，-1 表示未认证，0 表示 UP 主认证，1 表示机构认证
-      },
-      "pendant": { // 用户头像框信息
-        // ...
-        "image": "", // 头像框图片地址
-        "image_enhance": "", // 头像框动态图片地址
-        // ...
-        "name": "", // 头像框名称
-        "pid": 0 // 头像框 ID
       },
       "vip": { // 用户会员信息
         // ...
@@ -255,7 +244,8 @@ followers = realFollowers;
         // ...
         "type": 1, // 用户会员类型
         // ...
-      }
+      },
+      // ...
     },
     "23456789": { // 用户 2 的信息
       // （数据结构同上）
@@ -401,7 +391,7 @@ fs.writeFileSync('followers.html', content); // 注意：请将 “followers.htm
 
 再将网页转换成图片：
 我们可以在浏览器中打开生成的文件，然后打开开发者工具（一般按F12键即可），点击右上角的三个点展开菜单，选择“运行命令”（也可直接按下Ctrl＋Shift＋P），输入“屏幕截图”，再选择“截取完整尺寸的屏幕截图”，并选择保存图片的位置，就可以保存一张包括所有粉丝的图片了。
-![生成图片](/images/posts/take-full-size-screenshot.png "生成图片")
+![生成图片](/images/posts/take-full-size-screenshot.png)
 
 ## 总结
 
@@ -435,8 +425,8 @@ const encodeHTML = str => typeof str === 'string' ? str.replace(/&/g, '&amp;').r
 // 获取自己的 UID、imgKey 与 subKey
 const ujson = await (await fetch('https://api.bilibili.com/x/web-interface/nav', { headers })).json();
 const UID = ujson.data.mid,
-      imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1'),
-      subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^\.]+)(?:\..*)?$/, '$1');
+      imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^.]+)(?:\..*)?$/, '$1'),
+      subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^.]+)(?:\..*)?$/, '$1');
 
 // 获取可以获取到的粉丝的信息
 let followers = []; // 存储粉丝列表
@@ -560,4 +550,4 @@ fs.writeFileSync('followers.html', content); // 注意：请将 “followers.htm
 </details>
 
 下面的图片就是梦春酱在2022年10月15日生成的粉丝列表图片。
-![梦春酱在2022年10月15日生成的所有粉丝列表的图片](/images/posts/fans-list_compressed.png "梦春酱在2022年10月15日生成的所有粉丝列表的图片")
+![梦春酱在2022年10月15日生成的所有粉丝列表的图片](/images/posts/fans-list_compressed.png)
