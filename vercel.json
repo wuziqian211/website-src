@@ -20,6 +20,8 @@
   "redirects": [
     { "source": "/images/face_compressed.png", "destination": "/images/face.png_compressed.webp" },
     { "source": "/images/icon_compressed.png", "destination": "/images/icon.png_compressed.webp" },
+    { "source": "/images/screenshot.png", "destination": "/images/screenshot.webp" },
+    { "source": "/images/screenshot_compressed.png", "destination": "/images/screenshot_compressed.webp" },
     { "source": "/wiki/", "destination": "/about/" }
   ]
 }
