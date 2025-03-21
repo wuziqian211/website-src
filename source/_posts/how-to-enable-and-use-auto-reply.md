@@ -11,7 +11,7 @@ categories:
 ---
 
 本文章使用网页版B站，为您介绍开启与使用B站的自动回复功能的方法。
-![自动回复](/images/posts/auto-reply_compressed.png)
+![自动回复](/images/posts/auto-reply_compressed.webp)
 
 ## 开启自动回复功能
 
@@ -20,7 +20,7 @@ B站的自动回复功能仅适用于**粉丝数在1000及以上**的用户。
 
 如果您的B站账号的粉丝数在1000及以上，那么在进入[消息中心](https://message.bilibili.com/)后就可以看到，在页面的左侧有“自动回复”按钮。点击“自动回复”按钮，就可以进入[“自动回复”页面](https://message.bilibili.com/#/autoreply)。
 在页面顶部，有“被关注回复”、“关键词回复”、“收到消息回复”选择夹，部分用户可能也有“大航海上船回复”选择夹。点击每个选择夹中功能的开关按钮，就可以开启对应的功能，并显示更多的信息。
-![“自动回复”页面](/images/posts/auto-reply-page_compressed.png)
+![“自动回复”页面](/images/posts/auto-reply-page.webp)
 
 ## 使用自动回复功能
 
@@ -37,7 +37,7 @@ B站的自动回复功能仅适用于**粉丝数在1000及以上**的用户。
 
 注：在本文章中，“**自动发送的私信**”包括：使用B站的自动回复功能发送的私信、特别关注/被关注时稿件的自动推送消息、因成为契约者/互相关注而自动发送的私信、包月充电回馈私信，以及官方发送的通知等；某些脚本也可以自动发送私信，但这个脚本发送的私信**不属于“自动发送的私信”**。
 
-![关于发送私信限制的规则的说明](/images/posts/explanation-of-rule-regarding-private-message-restriction_compressed.png)
+![关于发送私信限制的规则的说明](/images/posts/explanation-of-rule-regarding-private-message-restriction_compressed.webp)
 {% endnote %}
 
 对每一个功能的介绍如下表：

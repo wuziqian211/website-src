@@ -20,7 +20,7 @@ permalink: /about/
 {% endcq %}
 
 梦春酱很高兴能够在这个Blog与您相遇(^・ω・^ )
-![头像](/images/full-face_compressed.png)
+![头像](/images/full-face.png_compressed.webp)
 
 {% note info %}
 本介绍会根据实际情况经常更新，部分内容**可能没有完善**qwq
@@ -84,8 +84,8 @@ permalink: /about/
 | <img class="avatar" alt="头像1：《我的世界》里面的人物" src="/images/posts/face1.jpg" /> | 2018-05-12左右 | 网络，《我的世界》角色 | |
 | <img class="avatar" alt="头像2：哔哩哔哩33娘" src="/images/posts/face2.jpg" /> | 2020-03-27 | 哔哩哔哩33娘 | B站APP中的随机头像，也是“[噗尼噗尼元宵节特别企划](https://www.bilibili.com/blackboard/old-lantern.html)”活动的头图 |
 | <img class="avatar" alt="头像3：こんぱく ようむ（魂魄妖梦）" src="/images/posts/face3.jpg" /> | 2021-07-25 20:50 | 『ご注文はうさぎですか?』（《请问您今天要来点兔子吗？》），こんぱく ようむ（魂魄妖梦） | 有修改，原图为かふう ちの（香风智乃） |
-| <img class="avatar" alt="头像4：《夜明けの海》" src="/images/posts/face4_compressed.png" /> | 2022-12-19 12:05 | [WERI在pixiv创作的《夜明けの海》](https://www.pixiv.net/artworks/90624041) | 略有修改，如饱和度增强 |
-| <img class="avatar" alt="头像5" src="/images/face_compressed.png" /> | 2024-07-09 06:00 | [\[100 Artists Exhibition\] 10th Theme "Wa"](https://yande.re/post/show/718680) | |
+| <img class="avatar" alt="头像4：《夜明けの海》" src="/images/posts/face4.png_compressed.webp" /> | 2022-12-19 12:05 | [WERI在pixiv创作的《夜明けの海》](https://www.pixiv.net/artworks/90624041) | 略有修改，如饱和度增强 |
+| <img class="avatar" alt="头像5" src="/images/face.png_compressed.webp" /> | 2024-07-09 06:00 | [\[100 Artists Exhibition\] 10th Theme "Wa"](https://yande.re/post/show/718680) | |
 
 {% note info %}
 从上表可以看出，梦春酱的头像从最开始的像素风格，变成现在的二次元风格，这也说明了梦春酱变得**越来越可爱**了o(=•ェ•=)m
@@ -113,7 +113,7 @@ permalink: /about/
 
 梦春酱特别热爱**电脑技术**，写过[一些程序与脚本](#关于梦春酱的程序与脚本)，并且还得过编程大赛的一些奖项(≧∀≦)ゞ
 
-![编程大赛获奖证书](/images/posts/award-certificates_compressed.jpg)
+![编程大赛获奖证书](/images/posts/award-certificates.jpg_compressed.webp)
 
 TA喜欢[**在B站上发布知识、科技区的作品**](#创作)，并以此获得了一定的粉丝和播放量哟(｡･ω･｡)
 梦春酱当然也喜欢许许多多其他类型的东西(=・ω・=)您可以点击下面的按钮，了解一下梦春酱喜欢哪些东西吧！(≧∇≦)ﾉ
@@ -426,7 +426,7 @@ TA喜欢[**在B站上发布知识、科技区的作品**](#创作)，并以此�
 
 ### 2025年
 
-到现在为止，梦春酱没有在B站发布任何动态与视频。
+到现在为止，梦春酱没有在B站发布任何视频。
 
 ### 未来
 
@@ -478,7 +478,7 @@ Hexo | https://hexo.io/ | 生成本Blog的页面。Hexo是一个快速、简洁�
 
 {% lg %}
 Waline | https://waline.js.org/ | 提供本Blog的评论服务。Waline是一款基于Valine衍生的简洁、安全的评论系统。 | /images/badges%26thanks/waline.png
-Live2D | https://github.com/stevenjoezhang/live2d-widget | 提供本Blog可爱又会动的看板娘。看板娘真的好萌呀⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ | /images/badges%26thanks/potion-maker_fixed.png
+Live2D | https://github.com/stevenjoezhang/live2d-widget | 提供本Blog可爱又会动的看板娘。看板娘真的好萌呀⁄(⁄ ⁄•⁄ω⁄•⁄ ⁄)⁄ | /images/badges%26thanks/potion-maker_fixed.webp
 {% endlg %}
 
 #### CDN（内容分发网络）

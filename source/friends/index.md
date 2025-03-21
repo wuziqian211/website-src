@@ -104,11 +104,11 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 
 | 网站名称 | 网站链接 | 网站图标 | 网站描述 |
 | :------: | :------: | :------: | :------: |
-| 晨叶梦春的小屋 | <https://www.yumeharu.top/> | ![站点图标](/images/icon_compressed.png)<https://www.yumeharu.top/images/icon_compressed.png> | Not for the best, just for the better.<br />或<br />不求最好，只求更好。 |
+| 晨叶梦春的小屋 | <https://www.yumeharu.top/> | ![站点图标](/images/icon.png_compressed.webp)<https://www.yumeharu.top/images/icon.png_compressed.webp> | Not for the best, just for the better.<br />或<br />不求最好，只求更好。 |
 
 | 站长昵称 | 站长头像 | 网站截图 |
 | :------: | :------: | :------: |
-| 晨叶梦春 | <img class="avatar" alt="站长头像" src="/images/face_compressed.png" /><https://www.yumeharu.top/images/face_compressed.png> | ![站点截图](/images/screenshot_compressed.png)<https://www.yumeharu.top/images/screenshot_compressed.png> |
+| 晨叶梦春 | <img class="avatar" alt="站长头像" src="/images/face.png_compressed.webp" /><https://www.yumeharu.top/images/face.png_compressed.webp> | ![站点截图](/images/screenshot.png_compressed.webp)<https://www.yumeharu.top/images/screenshot.png_compressed.webp> |
 
 <!-- endtab -->
 
@@ -117,11 +117,11 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 # 此 YAML 文件仅供参考，您可能需要进行适当修改
   - name: 晨叶梦春的小屋            # 网站名称
     link: https://www.yumeharu.top/ # 网站链接
-    icon: https://www.yumeharu.top/images/icon_compressed.png             # 网站图标
-    description: Not for the best, just for the better.                   # 网站描述，也可使用 “不求最好，只求更好。”
+    icon: https://www.yumeharu.top/images/icon.png_compressed.webp             # 网站图标
+    description: Not for the best, just for the better. # 网站描述，也可使用 “不求最好，只求更好。”
     author: 晨叶梦春                # 站长昵称
-    avatar: https://www.yumeharu.top/images/face_compressed.png           # 站长头像
-    screenshot: https://www.yumeharu.top/images/screenshot_compressed.png # 网站截图
+    avatar: https://www.yumeharu.top/images/face.png_compressed.webp           # 站长头像
+    screenshot: https://www.yumeharu.top/images/screenshot.png_compressed.webp # 网站截图
 ```
 <!-- endtab -->
 
