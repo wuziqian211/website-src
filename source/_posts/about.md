@@ -122,8 +122,8 @@ TA喜欢[**在B站上发布知识、科技区的作品**](#创作)，并以此�
 <summary>点击展开梦春酱的爱好( •̀ ω •́ )✧（可能不完整）</summary>
 <div class="details">
 
-- **🖥️科技数码**
-  - **[软件](#关于梦春酱的程序与脚本)**：Node.js、Python、易语言
+- **[🖥️科技数码](#关于梦春酱的程序与脚本)**
+  - **软件**：Node.js、Python、易语言
   - **操作系统**：Windows、GNU/Linux
   - **Web**
     - **前端**：HTML、CSS、JavaScript、Markdown
