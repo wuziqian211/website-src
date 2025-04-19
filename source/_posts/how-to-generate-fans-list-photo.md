@@ -1,7 +1,7 @@
 ---
 title: 如何生成B站粉丝列表图片
 date: 2022-12-10 20:42:22
-updated: 2025-03-17 01:17:56
+updated: 2025-04-10 03:02:52
 tags:
   - 用户列表
   - 技术
@@ -50,7 +50,7 @@ const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0
 
 B站官方给我们提供的获取指定用户的粉丝列表的API是<https://api.bilibili.com/x/relation/fans>，请求方式是GET。
 这个API**需要您提供有效的Cookie**，返回的列表按照关注时间的先后顺序**逆向**排序（越晚关注，就在列表的越前面），最多只能获取到**最近关注的1000名粉丝**的信息。
-主要URL参数包括：
+主要的URL参数为：
 
 | 参数名 | 内容 | 必要性 | 备注 |
 | :----: | :--: | :----: | ---- |
@@ -58,7 +58,7 @@ B站官方给我们提供的获取指定用户的粉丝列表的API是<https://a
 | ps | 每页项数 | 非必要 | 默认为50，且最多为50 |
 | pn | 页码 | 非必要 | 默认为1 |
 
-如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例展示，一些项已经省略）：
+如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作示例，省略了部分项目）：
 
 ```json
 {
@@ -135,17 +135,14 @@ for (const f of oldFollowers) {
 
 但是，合并后的列表里的用户现在不一定仍在关注您，所以要移除没有关注您的用户。
 
-获取用户与自己关系的API是<https://api.bilibili.com/x/space/wbi/acc/relation>，请求方式是GET。
-这个API**需要您提供有效的Cookie**，也需要使用Wbi签名来鉴权，详见<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md>。下面的代码已经实现了Wbi鉴权。
-主要URL参数包括：
+获取用户与自己关系的API是<https://api.bilibili.com/x/web-interface/relation>，请求方式是GET。这个API**需要您提供有效的Cookie**。
+主要的URL参数为：
 
 | 参数名 | 内容 | 必要性 | 备注 |
 | :----: | :--: | :----: | ---- |
 | mid | 目标用户的UID | 必要 | |
-| wts | 当前时间戳 | 必要 | 详见<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md> |
-| w_rid | Wbi签名 | 必要 | 详见<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md> |
 
-如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例展示，一些项已经省略）：
+如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作示例，省略了部分项目）：
 
 ```json
 {
@@ -174,29 +171,9 @@ for (const f of oldFollowers) {
 下面的代码会分别查询自己与每个用户的关系，**可能会执行很长时间**。
 
 ```js
-const crypto = require('node:crypto');
-const md5 = data => { // 对数据进行 MD5 加密
-  const md5Hash = crypto.createHash('md5');
-  md5Hash.update(data, 'utf-8');
-  return md5Hash.digest('hex');
-};
-const encodeWbi = query => { // 对请求参数进行 Wbi 签名，改编自 https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md
-  const mixinKey = [46, 47, 18, 2, 53, 8, 23, 32, 15, 50, 10, 31, 58, 3, 45, 35, 27, 43, 5, 49, 33, 9, 42, 19, 29, 28, 14, 39, 12, 38, 41, 13, 37, 48, 7, 16, 24, 55, 40, 61, 26, 17, 0, 1, 60, 51, 30, 4, 22, 25, 54, 21, 56, 59, 6, 63, 57, 62, 11, 36, 20, 34, 44, 52].reduce((accumulator, n) => accumulator + (imgKey + subKey)[n], '').slice(0, 32), // 对 imgKey 和 subKey 进行字符顺序打乱编码
-    params = new URLSearchParams(query);
-  params.append('wts', Math.floor(Date.now() / 1000).toString()); // 添加 wts 字段
-  params.sort(); // 按照键名排序参数
-  params.append('w_rid', md5(params.toString() + mixinKey)); // 计算 w_rid
-  return params;
-};
-
-// 获取 imgKey 与 subKey
-const ujson = await (await fetch('https://api.bilibili.com/x/web-interface/nav', { headers })).json();
-const imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^.]+)(?:\..*)?$/, '$1'),
-      subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^.]+)(?:\..*)?$/, '$1');
-
 const realFollowers = [];
 for (const f of followers) { // 获取所有在粉丝列表里的用户与自己的关系
-  const rjson = await (await fetch(`https://api.bilibili.com/x/space/wbi/acc/relation?mid=${await encodeWbi({ mid: f.mid })}`, { headers })).json();
+  const rjson = await (await fetch(`https://api.bilibili.com/x/web-interface/relation?mid=${f.mid}`, { headers })).json();
   if ([1, 2, 6].includes(rjson.data.be_relation.attribute)) realFollowers.push(f); // 如果用户现在正在关注您，可以加入到 “realFollowers” 数组
 }
 
@@ -214,13 +191,13 @@ followers = realFollowers;
 目前“followers”变量虽然存储了所有粉丝的信息，但是这个信息不够详细，比如不包括等级、头像框信息等，我们要想办法获取更详细的粉丝信息。
 
 获取多个用户的详细信息的API是<https://api.bilibili.com/x/polymer/pc-electron/v1/user/cards>，请求方式是GET，这个API调用一次可以获取最多50个用户的信息。
-主要URL参数包括：
+主要的URL参数为：
 
 | 参数名 | 内容 | 必要性 | 备注 |
 | :----: | :--: | :----: | ---- |
 | uids | 目标用户的UID列表 | 必要 | 每个成员间用英文逗号`,`分割，**最多50个成员** |
 
-如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例展示，一些项已经省略）：
+如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作示例，省略了部分项目）：
 
 ```json
 {
@@ -255,14 +232,14 @@ followers = realFollowers;
 }
 ```
 
-获取用户关系状态数的API是<https://api.bilibili.com/x/relation/stat>，请求方式是GET。
-主要URL参数包括：
+获取多个用户的关系状态数的API是<https://api.bilibili.com/x/relation/stats>，请求方式是GET。
+主要的URL参数为：
 
-| 参数名 | 内容 | 必要性 |
-| :----: | :--: | :----: |
-| vmid | 目标用户UID | 必要 |
+| 参数名 | 内容 | 必要性 | 备注 |
+| :----: | :--: | :----: | ---- |
+| mids | 目标用户UID列表 | 必要 | 每个成员间用英文逗号`,`分割，**最多20个成员** |
 
-如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作为示例展示，一些项已经省略）：
+如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作示例，省略了部分项目）：
 
 ```json
 {
@@ -270,10 +247,16 @@ followers = realFollowers;
   "message": "0", // 错误信息
   // ...
   "data": {
-    "mid": 12345678, // 用户 UID
-    "following": 234, // 用户关注数
+    "12345678": { // 用户 1 的状态数
+      "mid": 12345678, // 用户 UID
+      "following": 234, // 用户关注数
+      // ...
+      "follower": 345 // 用户粉丝数
+    },
+    "23456789": { // 用户 2 的状态数
+      // （数据结构同上）
+    },
     // ...
-    "follower": 345 // 用户粉丝数
   }
 }
 ```
@@ -282,14 +265,13 @@ followers = realFollowers;
 
 ```js
 // 获取所有粉丝的详细信息
-const followersWithoutInfo = followers.map(f => f.mid), jsonList = [];
+const followersWithoutInfo = followers.map(f => f.mid), cjsonList = [];
 
 while (followersWithoutInfo.length) {
-  jsonList.push(fetch(`https://api.bilibili.com/x/polymer/pc-electron/v1/user/cards?uids=${followersWithoutInfo.slice(0, 50).join(',')}`, { headers }).then(resp => resp.json()));
-  followersWithoutInfo.splice(0, 50);
+  cjsonList.push(fetch(`https://api.bilibili.com/x/polymer/pc-electron/v1/user/cards?uids=${followersWithoutInfo.splice(0, 50).join(',')}`, { headers }).then(resp => resp.json()));
 }
 
-for await (const cjson of jsonList) {
+for await (const cjson of cjsonList) {
   if (cjson.code === 0) {
     if (cjson.data) {
       for (const [mid, info] of Object.entries(cjson.data)) {
@@ -299,10 +281,21 @@ for await (const cjson of jsonList) {
   }
 }
 
-// 获取所有粉丝的粉丝数（耗时较长）
-for (const f of followers) {
-  const relationStat = await (await fetch(`https://api.bilibili.com/x/relation/stat?vmid=${f.mid}`, { headers })).json();
-  if (relationStat.code === 0) f.follower = relationStat.data.follower;
+// 获取所有粉丝的粉丝数
+const followersWithoutStat = followers.map(f => f.mid), sjsonList = [];
+
+while (followersWithoutStat.length) {
+  sjsonList.push(fetch(`https://api.bilibili.com/x/relation/stats?mids=${followersWithoutStat.splice(0, 20).join(',')}`, { headers }).then(resp => resp.json()));
+}
+
+for await (const sjson of sjsonList) {
+  if (sjson.code === 0) {
+    if (sjson.data) {
+      for (const [mid, stat] of Object.entries(sjson.data)) {
+        Object.assign(followers.find(f => f.mid === +mid), { follower: stat.follower });
+      }
+    }
+  }
 }
 ```
 
@@ -406,27 +399,11 @@ fs.writeFileSync('followers.html', content); // 注意：请将 “followers.htm
 // 初始化
 const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0123456789abcdef0123456789abcdef', Origin: 'https://www.bilibili.com', Referer: 'https://www.bilibili.com/', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36' }; // 注意：此 Cookie 仅作为示例展示，请修改成自己的 Cookie
 
-const crypto = require('node:crypto');
-const md5 = data => { // 对数据进行 MD5 加密
-  const md5Hash = crypto.createHash('md5');
-  md5Hash.update(data, 'utf-8');
-  return md5Hash.digest('hex');
-};
-const encodeWbi = async query => { // 对请求参数进行 Wbi 签名，改编自 https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/misc/sign/wbi.md
-  const mixinKey = [46, 47, 18, 2, 53, 8, 23, 32, 15, 50, 10, 31, 58, 3, 45, 35, 27, 43, 5, 49, 33, 9, 42, 19, 29, 28, 14, 39, 12, 38, 41, 13, 37, 48, 7, 16, 24, 55, 40, 61, 26, 17, 0, 1, 60, 51, 30, 4, 22, 25, 54, 21, 56, 59, 6, 63, 57, 62, 11, 36, 20, 34, 44, 52].reduce((accumulator, n) => accumulator + (imgKey + subKey)[n], '').slice(0, 32), // 对 imgKey 和 subKey 进行字符顺序打乱编码
-    params = new URLSearchParams(query);
-  params.append('wts', Math.floor(Date.now() / 1000).toString()); // 添加 wts 字段
-  params.sort(); // 按照键名排序参数
-  params.append('w_rid', md5(params.toString() + mixinKey)); // 计算 w_rid
-  return params;
-};
 const encodeHTML = str => typeof str === 'string' ? str.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/ (?= )|(?<= ) |^ | $/gm, '&nbsp;').replace(/\r\n|\r|\n/g, '<br />') : '';
 
-// 获取自己的 UID、imgKey 与 subKey
+// 获取自己的 UID
 const ujson = await (await fetch('https://api.bilibili.com/x/web-interface/nav', { headers })).json();
-const UID = ujson.data.mid,
-      imgKey = ujson.data.wbi_img.img_url.replace(/^(?:.*\/)?([^.]+)(?:\..*)?$/, '$1'),
-      subKey = ujson.data.wbi_img.sub_url.replace(/^(?:.*\/)?([^.]+)(?:\..*)?$/, '$1');
+const UID = ujson.data.mid;
 
 // 获取可以获取到的粉丝的信息
 let followers = []; // 存储粉丝列表
@@ -443,7 +420,7 @@ for (const f of oldFollowers) {
 // 移除没有关注自己的用户（耗时较长）
 const realFollowers = [];
 for (const f of followers) { // 获取所有在粉丝列表里的用户与自己的关系
-  const rjson = await (await fetch(`https://api.bilibili.com/x/space/wbi/acc/relation?mid=${await encodeWbi({ mid: f.mid })}`, { headers })).json();
+  const rjson = await (await fetch(`https://api.bilibili.com/x/web-interface/relation?mid=${f.mid}`, { headers })).json();
   if ([1, 2, 6].includes(rjson.data.be_relation.attribute)) realFollowers.push(f); // 如果用户现在正在关注您，可以加入到 “realFollowers” 数组
 }
 
@@ -454,8 +431,7 @@ followers = realFollowers;
 const followersWithoutInfo = followers.map(f => f.mid), jsonList = [];
 
 while (followersWithoutInfo.length) {
-  jsonList.push(fetch(`https://api.bilibili.com/x/polymer/pc-electron/v1/user/cards?uids=${followersWithoutInfo.slice(0, 50).join(',')}`, { headers }).then(resp => resp.json()));
-  followersWithoutInfo.splice(0, 50);
+  jsonList.push(fetch(`https://api.bilibili.com/x/polymer/pc-electron/v1/user/cards?uids=${followersWithoutInfo.splice(0, 50).join(',')}`, { headers }).then(resp => resp.json()));
 }
 
 for await (const cjson of jsonList) {
@@ -468,12 +444,22 @@ for await (const cjson of jsonList) {
   }
 }
 
-/* 获取所有粉丝的粉丝数（耗时较长）
-for (const f of followers) {
-  const relationStat = await (await fetch(`https://api.bilibili.com/x/relation/stat?vmid=${f.mid}`, { headers })).json();
-  if (relationStat.code === 0) f.follower = relationStat.data.follower;
+// 获取所有粉丝的粉丝数
+const followersWithoutStat = followers.map(f => f.mid), sjsonList = [];
+
+while (followersWithoutStat.length) {
+  sjsonList.push(fetch(`https://api.bilibili.com/x/relation/stats?mids=${followersWithoutStat.splice(0, 20).join(',')}`, { headers }).then(resp => resp.json()));
 }
-*/
+
+for await (const sjson of sjsonList) {
+  if (sjson.code === 0) {
+    if (sjson.data) {
+      for (const [mid, stat] of Object.entries(sjson.data)) {
+        Object.assign(followers.find(f => f.mid === +mid), { follower: stat.follower });
+      }
+    }
+  }
+}
 
 // 生成文件，此处提供了 2 种样式，您可以任选一个样式
 // 样式 1：每个粉丝之间换行
