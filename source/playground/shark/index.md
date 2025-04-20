@@ -36,7 +36,7 @@ iframe#shark {
 某些情况下游戏可能会有音画不同步的情况，推荐在手机默认浏览器或者电脑浏览器中游玩。
 {% endnote %}
 
-![小鲨鱼](/images/playground/shark.png "小鲨鱼")
+![小鲨鱼](/images/playground/shark.png)
 
 ## 游戏介绍
 
