@@ -14,7 +14,6 @@
   "dependencies": {
     "@waline/hexo-next": "^3.0.1",
     "hexo": "^7.3.0",
-    "hexo-all-minifier": "^0.5.7",
     "hexo-filter-nofollow": "^2.0.2",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
@@ -29,7 +28,8 @@
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-theme-next": "^8.21.1",
-    "hexo-word-counter": "^0.1.0"
+    "hexo-word-counter": "^0.1.0",
+    "hexo-yam": "^9.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.14.0",

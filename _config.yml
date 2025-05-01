@@ -226,33 +226,37 @@ related_posts:
     - ado.net
     - .net
 
-all_minifier: true
-js_concator:
+minify:
   enable: true
-  bundle_path: '/js/bundle.js'
-  front: false
-  silent: false
-html_minifier:
-  enable: true
-  ignore_error: false
-  silent: false
-  exclude:
-css_minifier:
-  enable: true
-  silent: false
-  exclude:
-    - '*.min.css'
-js_minifier:
-  enable: true
-  mangle: true
-  silent: false
-  exclude:
-    - '*.min.js'
-image_minifier:
-  enable: false
-  interlaced: false
-  multipass: false
-  optimizationLevel: 2
-  pngquant: false
-  progressive: false
-  silent: false
+  previewServer: true
+  html:
+    enable: true
+  css:
+    enable: true
+    exclude:
+      - '*.min.css'
+  js:
+    enable: true
+    exclude:
+      - '*.min.js'
+  svg:
+    enable: true
+    include:
+      - '*.svg'
+      - '!*.min.svg'
+  xml:
+    enable: true
+    include:
+      - '*.xml'
+      - '!*.min.xml'
+  json:
+    enable: true
+    include:
+      - '*.json'
+      - '!*.min.json'
+  gzip:
+    enable: false
+  brotli:
+    enable: false
+  zstd:
+    enable: false
