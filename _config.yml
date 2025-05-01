@@ -244,6 +244,8 @@ minify:
     include:
       - '*.svg'
       - '!*.min.svg'
+    plugins:
+      removeViewBox: false
   xml:
     enable: true
     include:
