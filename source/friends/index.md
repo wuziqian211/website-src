@@ -15,7 +15,7 @@ SuzuhaYuki's Blog | https://szh.rainettle.top/ | Time goes by, and the years go 
 易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpg
 GoForceX's Blog | https://goforcex.top/ | 摆烂的小站 | /images/friendship-links/goforcex-top.jpeg
 Microhard Demo | https://microharddemo.github.io/ | 逸一时，误一世，逸久逸久罢已龄！ | /images/friendship-links/microharddemo-github-io.svg
-SESSのB10GTE5T | https://sess.xhustudio.eu.org/ | 每一个不曾起舞的日子，都是对生命的辜负。 | /images/friendship-links/sess-xhustudio-eu-org.jpg
+SESSのB10GTE5T | https://sess.xhustudio.eu.org/ | Session 的个人博客, 这里有各种类型的有趣的文章内容, 网站使用纯 JavaScript 构建 | /images/friendship-links/sess-xhustudio-eu-org.jpg
 朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
 Ra小小特的小站 | https://raxxt.top/ | B站用户“爱玩电脑的特兰克斯”的个人网站 | /images/friendship-links/raxxt-top.png
 我汐了_233的小站 | https://woxile.rth1.xyz/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
