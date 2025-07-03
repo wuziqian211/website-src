@@ -149,9 +149,9 @@ symbols_count_time:
 
 search:
   path: search.xml
-  field: post
+  field: all
   content: true
-  format: raw
+  format: striptags
 
 server:
   port: 2111
@@ -171,7 +171,7 @@ nofollow:
     - wuziqian211.top
 
 markdown:
-  preset: 'commonmark'
+  preset: 'default'
   render:
     html: true
     xhtmlOut: true
@@ -181,8 +181,6 @@ markdown:
     typographer: true
     quotes: '“”‘’'
   enable_rules:
-    - table
-    - strikethrough
   disable_rules:
   plugins:
   anchors:
@@ -198,20 +196,20 @@ markdown:
 sitemap:
   path:
     - sitemap.xml
-    - sitemap.txt
   template:
   template_txt:
-  rel: false
+  rel: true
   tags: true
   categories: true
 
 related_posts:
   enabled: true
   enable_env_name:
-  filter_threshold: 0.3
-  related_count: 3
+  filter_threshold: 0.2
+  related_count: 5
   weight:
     title: 0.05
+    author: 0
     description: 0.05
     keywords: 0.01
     tags: 0.005

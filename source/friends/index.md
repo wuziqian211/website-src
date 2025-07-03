@@ -20,6 +20,8 @@ SESSのB10GTE5T | https://sess.xhustudio.eu.org/ | Session 的个人博客, 这�
 Ra小小特的小站 | https://raxxt.top/ | B站用户“爱玩电脑的特兰克斯”的个人网站 | /images/friendship-links/raxxt-top.png
 我汐了_233的小站 | https://woxile.rth1.xyz/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
 KittySite | https://blog.konpaku.cn/ | 魂恋白楼三尺剑，飞花影里斩春风 | /images/friendship-links/blog-konpaku-cn.jpg
+是鱼干~ | https://fish1000.top/ | 永远永远喜欢你！! | /images/friendship-links/fish1000-top.png
+家乡印象⛽ | http://nxdaolin.dpdns.org/ | 一个记录家乡故事的小站 | /images/friendship-links/nxdaolin-dpdns-org.gif
 TV768の个人网站 | https://www.tv768.xyz/ | 精彩的768 让生活添色彩 | /images/friendship-links/tv768-xyz.jpg
 知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
 值关大众放送工作室 | https://zhiguanmedia.jzfkw.net/ | 做有情怀的媒体 | /images/friendship-links/zhiguanmedia-jzfkw-net.png
@@ -140,7 +142,9 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 ## 朋友们
 
 {% note warning %}
-由于B站接口的限制，以下朋友的信息并非实时更新。
+由于B站接口的限制，以下朋友的信息并非实时更新<(＿　＿)>
+
+<p id="friends-mtime">(～o￣3￣)～</p>
 {% endnote %}
 
 <div class="link-grid" id="friends">正在加载中……</div>
@@ -163,6 +167,11 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
 
 <script data-pjax>
 (async () => {
+  const getDate = ts => {
+    if (typeof ts !== 'number' || ts === 0) return '未知';
+    const d = new Date(ts + (new Date().getTimezoneOffset() + 480) * 60000);
+    return `${d.getFullYear()}-${(d.getMonth() + 1).toString().padStart(2, '0')}-${d.getDate().toString().padStart(2, '0')} ${d.getHours().toString().padStart(2, '0')}:${d.getMinutes().toString().padStart(2, '0')}:${d.getSeconds().toString().padStart(2, '0')}`;
+  };
   const shuffleArray = array => {
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -230,23 +239,31 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
     return userDiv;
   };
 
-  const friends = document.querySelector('div#friends'), deletedFriends = document.querySelector('div#deleted-friends');
+  const friends = document.querySelector('div#friends'),
+        deletedFriends = document.querySelector('div#deleted-friends'),
+        mtime = document.querySelector('p#friends-mtime');
   if (!friends) return;
   try {
     const json = await (await fetch('https://api.yumeharu.top/api/modules?id=friends&version=3&type=json')).json();
     friends.innerText = '';
     if (json.code === 0) {
+      if (mtime) {
+        mtime.innerText = `最近更新数据时间：${getDate(json.data.m)}`;
+        mtime.style.display = '';
+      }
+
       for (const u of shuffleArray(json.data.n)) {
         friends.append(renderUserDiv(u));
       }
-      if (deletedFriends) {
-        document.querySelector('details#deleted-friends-wrap').style.display = '';
+      if (deletedFriends && json.data.d?.length) {
         for (const u of shuffleArray(json.data.d)) {
           deletedFriends.append(renderUserDiv(u));
         }
+        document.querySelector('details#deleted-friends-wrap').style.display = '';
       }
     }
-  } catch {
+  } catch (e) {
+    console.error(e);
     friends.innerText = '';
   } finally {
     friends.append(renderUserDiv({
