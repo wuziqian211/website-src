@@ -247,10 +247,7 @@ wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧�
     const json = await (await fetch('https://api.yumeharu.top/api/modules?id=friends&version=3&type=json')).json();
     friends.innerText = '';
     if (json.code === 0) {
-      if (mtime) {
-        mtime.innerText = `最近更新数据时间：${getDate(json.data.m)}`;
-        mtime.style.display = '';
-      }
+      if (mtime) mtime.innerText = `最近更新数据时间：${getDate(json.data.m)}`;
 
       for (const u of shuffleArray(json.data.n)) {
         friends.append(renderUserDiv(u));

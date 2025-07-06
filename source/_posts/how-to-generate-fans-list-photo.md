@@ -24,6 +24,7 @@ categories:
 本文中的代码都是JavaScript代码，所以您应该要预先安装[Node.js](https://nodejs.org/zh-cn)（**建议您下载长期维护版，即LTS版**）。您也可以使用其他编程语言，不过需要对本文中的代码进行一些小改动。
 {% endnote %}
 
+首先，我们应该获取B站页面的Cookie。
 以Google Chrome为例：在**登录了B站账号**的浏览器中，打开B站任意页面，打开开发者工具（一般按F12键即可），在工具上方点击“应用”，在左侧点击“存储”部分中“Cookie”左边的箭头，点击下面的B站网址，在右侧表格的“名称”一栏中找到“SESSDATA”与“bili_jct”，分别双击它们右边的“值”，复制下来，这样您就获取到了Cookie。
 ![获取Cookie](/images/posts/get-cookie.webp)
 
@@ -48,7 +49,7 @@ const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0
 在这个部分中，有一些内容来自<https://github.com/SocialSisterYi/bilibili-API-collect/blob/master/docs/user/relation.md>。
 {% endnote %}
 
-B站官方给我们提供的获取指定用户的粉丝列表的API是<https://api.bilibili.com/x/relation/fans>，请求方式是GET。
+B站官方给我们提供的{% label primary@获取指定用户的粉丝列表 %}的API是<https://api.bilibili.com/x/relation/fans>，请求方式是GET。
 这个API**需要您提供有效的Cookie**，返回的列表按照关注时间的先后顺序**逆向**排序（越晚关注，就在列表的越前面），最多只能获取到**最近关注的1000名粉丝**的信息。
 主要的URL参数为：
 
@@ -87,6 +88,7 @@ B站官方给我们提供的获取指定用户的粉丝列表的API是<https://a
         "desc": "" // 用户认证说明文字
       },
       "vip": { // 用户会员信息
+        "vipType": 1, // 用户会员类型
         // ...
         "vipStatus": 1, // 用户会员状态，0 表示没有大会员，1 表示有大会员
         // ...
@@ -111,7 +113,7 @@ console.log((await (await fetch('https://api.bilibili.com/x/relation/fans?vmid=4
 ```
 
 运行上面的代码后，正常情况下控制台会显示一个带有很多元素的数组（array），而且数组的每个元素都是对象（object）。
-我们可以在上面代码的基础上稍作修改，来获取多页粉丝列表。如果您设置的每页项数为50，那么您要获取的页数一般为自己的粉丝数除以50，再向上取整（取不小于该数值的最小整数，如2.98→3、3→3、3.02→4）。由于B站的限制，最多只能获取最后关注您的1000个粉丝的列表，所以如果您的粉丝数超过了1000，建议您**只获取前20页粉丝列表**，继续往后获取也是获取不到信息的。
+我们可以在上面代码的基础上稍作修改，来获取多页粉丝列表。如果您设置的每页项数为50，那么您要获取的页数一般为自己的粉丝数除以50，再**向上取整**（取不小于该数值的最小整数，如2.98→3、3→3、3.02→4）。由于B站的限制，**最多只能获取最后关注您的1000个粉丝的列表**，所以如果您的粉丝数超过了1000，建议您**只获取前20页粉丝列表**，继续往后获取也是获取不到信息的。
 
 ```js
 let followers = []; // 存储粉丝列表
@@ -123,7 +125,7 @@ for (let i = 1; i <= 20; i++) { // 获取前 20 页粉丝的信息，每页 50 �
 这样，“followers”变量就存储了最多1000个粉丝的列表。
 
 {% note info %}
-出于安全目的，B站采取了一些措施，使用户无法通过常规手段获取到超过1000个粉丝的列表。也就是说，如果您的粉丝数超过了1000，就没有办法直接获取到不在刚刚获取到的粉丝列表里的粉丝了。
+出于安全目的，B站采取了一些措施，使**用户无法通过常规手段获取到超过1000个粉丝的列表**。也就是说，如果您的粉丝数超过了1000，就没有办法直接获取到不在刚刚获取到的粉丝列表里的粉丝了。
 当然，如果您在没有超过1000粉丝的时候就保存了自己所有粉丝的列表，那么您可以将之前的列表与现在的列表合并，记得去除重复项。
 
 ```js
@@ -135,12 +137,12 @@ for (const f of oldFollowers) {
 
 但是，合并后的列表里的用户现在不一定仍在关注您，所以要移除没有关注您的用户。
 
-获取用户与自己关系的API是<https://api.bilibili.com/x/web-interface/relation>，请求方式是GET。这个API**需要您提供有效的Cookie**。
+{% label success@获取多个用户与自己的关系 %}的API是<https://api.bilibili.com/x/relation/interrelations>，请求方式是GET。这个API**需要您提供有效的Cookie**。
 主要的URL参数为：
 
 | 参数名 | 内容 | 必要性 | 备注 |
 | :----: | :--: | :----: | ---- |
-| mid | 目标用户的UID | 必要 | |
+| fids | 目标用户的UID列表 | 必要 | 每个成员间用英文逗号`,`分割，**最多20个成员** |
 
 如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作示例，省略了部分项目）：
 
@@ -150,34 +152,41 @@ for (const f of oldFollowers) {
   "message": "0", // 错误信息，默认为 0
   // ...
   "data": {
-    "relation": { // 该用户对于自己的关系
+    "12345678": { // 用户 1 与自己的关系
       "mid": 12345678, // 该用户的 UID
       "attribute": 6, // 该用户对于自己的关系代码，0 表示您未关注 TA，1 表示您悄悄关注了 TA，2 表示您关注了 TA，6 表示您与 TA 互粉，128 表示您拉黑了 TA
-      "mtime": 1678901234, // 最近一次改变用户对于自己的关系的秒级时间戳；若自己没有关注用户，则为 0
+      "is_followed": true, // 该用户是否关注了您
+      "mtime": 1678901234, // 最近一次改变关系的秒级时间戳；若无关系，则为 0
       "tag": [-10], // 用户对于自己的关注分组，其中 -10 为特别关注分组；若没有关注或为默认分组，则为 null
-      "special": 1 // 自己是否特别关注了用户
+      "special": 1, // 自己是否特别关注了用户
+      "is_blacked": false // 该用户是否拉黑了您
     },
-    "be_relation": { // 自己对于该用户的关系
-      "mid": 425503913, // 自己的 UID
-      "attribute": 6, // 自己对于该用户的关系代码
-      "mtime": 1612345678, // 最近一次改变自己对于该用户的关系的秒级时间戳；若用户没有关注自己，则为 0
-      "tag": [123456], // 自己对于该用户的关注分组
-      "special": 0 // 用户是否特别关注了自己
-    }
+    "23456789": { // 用户 2 与自己的关系
+      // （数据结构同上）
+    },
+    // ...
   }
 }
 ```
 
-下面的代码会分别查询自己与每个用户的关系，**可能会执行很长时间**。
+于是我们就可以查询自己与每个用户的关系。
 
 ```js
-const realFollowers = [];
-for (const f of followers) { // 获取所有在粉丝列表里的用户与自己的关系
-  const rjson = await (await fetch(`https://api.bilibili.com/x/web-interface/relation?mid=${f.mid}`, { headers })).json();
-  if ([1, 2, 6].includes(rjson.data.be_relation.attribute)) realFollowers.push(f); // 如果用户现在正在关注您，可以加入到 “realFollowers” 数组
+const followersWithoutRelation = followers.map(f => f.mid), rjsonList = [], realFollowers = [];
+
+while (followersWithoutRelation.length) { // 获取所有在粉丝列表里的用户与自己的关系
+  rjsonList.push(fetch(`https://api.bilibili.com/x/relation/interrelations?fids=${followersWithoutRelation.splice(0, 20).join(',')}`, { headers }).then(resp => resp.json()));
 }
 
-followers = realFollowers;
+for await (const rjson of rjsonList) {
+  if (rjson.code === 0 && rjson.data) {
+    for (const [mid, relation] of Object.entries(rjson.data)) {
+      if (relation.is_followed) realFollowers.push(+mid); // 如果用户现在正在关注您，可以加入到 “realFollowers” 数组
+    }
+  }
+}
+
+followers = followers.filter(f => realFollowers.includes(f.mid));
 ```
 
 {% endnote %}
@@ -190,49 +199,66 @@ followers = realFollowers;
 
 目前“followers”变量虽然存储了所有粉丝的信息，但是这个信息不够详细，比如不包括等级、头像框信息等，我们要想办法获取更详细的粉丝信息。
 
-获取多个用户的详细信息的API是<https://api.bilibili.com/x/polymer/pc-electron/v1/user/cards>，请求方式是GET，这个API调用一次可以获取最多50个用户的信息。
+<span style="display: none;"><!-- 修复渲染问题 --></span>{% label info@获取多个用户的详细信息 %}的API是<https://api.vc.bilibili.com/x/im/user_infos>，请求方式是GET。
 主要的URL参数为：
 
 | 参数名 | 内容 | 必要性 | 备注 |
 | :----: | :--: | :----: | ---- |
-| uids | 目标用户的UID列表 | 必要 | 每个成员间用英文逗号`,`分割，**最多50个成员** |
+| uids | 目标用户的UID列表 | 必要 | 每个成员间用英文逗号`,`分割 |
 
 如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作示例，省略了部分项目）：
 
 ```json
 {
-  "code": 0, // 返回值，0 表示成功，-400 表示请求错误，40143 表示批量大小超过限制
+  "code": 0, // 返回值，0 表示成功，-400 表示请求错误
+  "msg": "0", // 错误信息，默认为 0
   "message": "0", // 错误信息，默认为 0
   // ...
-  "data": {
-    "12345678": { // 用户 1 的信息
-      "mid": "12345678", // 用户 UID
-      "face": "https://i0.hdslb.com/bfs/face/xxx.jpg", // 用户头像地址
-      "name": "Example", // 用户昵称
-      "official": { // 用户认证信息
-        "desc": "", // 用户认证备注
-        "role": 0, // 用户认证类型
-        "title": "", // 用户认证说明文字
-        "type": -1 // 用户认证状态，-1 表示未认证，0 表示 UP 主认证，1 表示机构认证
-      },
-      "vip": { // 用户会员信息
-        // ...
-        "status": 1, // 用户会员状态，0 表示没有大会员，1 表示有大会员
-        // ...
-        "type": 1, // 用户会员类型
-        // ...
-      },
+  "data": [{ // 用户 1 的信息
+    "mid": 12345678, // 用户 UID
+    "name": "Example", // 用户昵称
+    "sex": "保密", // 用户性别
+    "face": "https://i0.hdslb.com/bfs/face/xxx.jpg", // 用户头像地址
+    "sign": "个性签名", // 用户个性签名
+    // ...
+    "level": 3, // 用户等级
+    "silence": 0, // 用户是否被封禁
+    "vip": { // 用户会员信息
+      "type": 1, // 用户会员类型
+      "status": 1, // 用户会员状态，0 表示没有大会员，1 表示有大会员
       // ...
     },
-    "23456789": { // 用户 2 的信息
-      // （数据结构同上）
+    "pendant": { // 用户头像框信息
+      "pid": 0, // 头像框 ID
+      "name": "", // 头像框名称
+      "image": "", // 头像框图片地址
+      // ...
+      "image_enhance": "", // 头像框动态图片地址
+      // ...
     },
     // ...
-  }
+    "official": { // 用户认证信息
+      "role": 0, // 用户认证类型
+      "title": "", // 用户认证说明文字
+      "desc": "", // 用户认证备注
+      "type": -1 // 用户认证状态，-1 表示未认证，0 表示 UP 主认证，1 表示机构认证
+    },
+    // ...
+    "is_deleted": 0, // 用户是否已注销
+    // ...
+    "face_nft": 0, // 头像是否为数字藏品头像
+    // ...
+    "is_senior_member": 0, // 用户是否为硬核会员
+    // ...
+  }, { // 用户 2 的信息
+    // （数据结构同上）
+  },
+  // ...
+  ]
 }
 ```
 
-获取多个用户的关系状态数的API是<https://api.bilibili.com/x/relation/stats>，请求方式是GET。
+<span style="display: none;"><!-- 修复渲染问题 --></span>{% label warning@获取多个用户的关系状态数 %}的API是<https://api.bilibili.com/x/relation/stats>，请求方式是GET。
 主要的URL参数为：
 
 | 参数名 | 内容 | 必要性 | 备注 |
@@ -265,19 +291,10 @@ followers = realFollowers;
 
 ```js
 // 获取所有粉丝的详细信息
-const followersWithoutInfo = followers.map(f => f.mid), cjsonList = [];
-
-while (followersWithoutInfo.length) {
-  cjsonList.push(fetch(`https://api.bilibili.com/x/polymer/pc-electron/v1/user/cards?uids=${followersWithoutInfo.splice(0, 50).join(',')}`, { headers }).then(resp => resp.json()));
-}
-
-for await (const cjson of cjsonList) {
-  if (cjson.code === 0) {
-    if (cjson.data) {
-      for (const [mid, info] of Object.entries(cjson.data)) {
-        Object.assign(followers.find(f => f.mid === +mid), info, { mid: +mid });
-      }
-    }
+const cjson = await (await fetch(`https://api.vc.bilibili.com/x/im/user_infos?uids=${followers.map(f => f.mid)}`, { headers })).json();
+if (cjson.code === 0 && cjson.data?.length) {
+  for (const info of cjson.data) {
+    Object.assign(followers.find(f => f.mid === info.mid), info);
   }
 }
 
@@ -289,11 +306,9 @@ while (followersWithoutStat.length) {
 }
 
 for await (const sjson of sjsonList) {
-  if (sjson.code === 0) {
-    if (sjson.data) {
-      for (const [mid, stat] of Object.entries(sjson.data)) {
-        Object.assign(followers.find(f => f.mid === +mid), { follower: stat.follower });
-      }
+  if (sjson.code === 0 && sjson.data) {
+    for (const [mid, stat] of Object.entries(sjson.data)) {
+      Object.assign(followers.find(f => f.mid === +mid), stat);
     }
   }
 }
@@ -417,30 +432,29 @@ for (const f of oldFollowers) {
   if (!followers.find(t => t.mid === f.mid)) followers.push(f);
 }
 
-// 移除没有关注自己的用户（耗时较长）
-const realFollowers = [];
-for (const f of followers) { // 获取所有在粉丝列表里的用户与自己的关系
-  const rjson = await (await fetch(`https://api.bilibili.com/x/web-interface/relation?mid=${f.mid}`, { headers })).json();
-  if ([1, 2, 6].includes(rjson.data.be_relation.attribute)) realFollowers.push(f); // 如果用户现在正在关注您，可以加入到 “realFollowers” 数组
+// 移除没有关注自己的用户
+const followersWithoutRelation = followers.map(f => f.mid), rjsonList = [], realFollowers = [];
+
+while (followersWithoutRelation.length) { // 获取所有在粉丝列表里的用户与自己的关系
+  rjsonList.push(fetch(`https://api.bilibili.com/x/relation/interrelations?fids=${followersWithoutRelation.splice(0, 20).join(',')}`, { headers }).then(resp => resp.json()));
 }
 
-followers = realFollowers;
+for await (const rjson of rjsonList) {
+  if (rjson.code === 0 && rjson.data) {
+    for (const [mid, relation] of Object.entries(rjson.data)) {
+      if (relation.is_followed) realFollowers.push(+mid); // 如果用户现在正在关注您，可以加入到 “realFollowers” 数组
+    }
+  }
+}
+
+followers = followers.filter(f => realFollowers.includes(f.mid));
 */
 
 // 获取所有粉丝的详细信息
-const followersWithoutInfo = followers.map(f => f.mid), jsonList = [];
-
-while (followersWithoutInfo.length) {
-  jsonList.push(fetch(`https://api.bilibili.com/x/polymer/pc-electron/v1/user/cards?uids=${followersWithoutInfo.splice(0, 50).join(',')}`, { headers }).then(resp => resp.json()));
-}
-
-for await (const cjson of jsonList) {
-  if (cjson.code === 0) {
-    if (cjson.data) {
-      for (const [mid, info] of Object.entries(cjson.data)) {
-        Object.assign(followers.find(f => f.mid === +mid), info, { mid: +mid });
-      }
-    }
+const cjson = await (await fetch(`https://api.vc.bilibili.com/x/im/user_infos?uids=${followers.map(f => f.mid)}`, { headers })).json();
+if (cjson.code === 0 && cjson.data?.length) {
+  for (const info of cjson.data) {
+    Object.assign(followers.find(f => f.mid === info.mid), info);
   }
 }
 
@@ -452,11 +466,9 @@ while (followersWithoutStat.length) {
 }
 
 for await (const sjson of sjsonList) {
-  if (sjson.code === 0) {
-    if (sjson.data) {
-      for (const [mid, stat] of Object.entries(sjson.data)) {
-        Object.assign(followers.find(f => f.mid === +mid), { follower: stat.follower });
-      }
+  if (sjson.code === 0 && sjson.data) {
+    for (const [mid, stat] of Object.entries(sjson.data)) {
+      Object.assign(followers.find(f => f.mid === +mid), stat);
     }
   }
 }
