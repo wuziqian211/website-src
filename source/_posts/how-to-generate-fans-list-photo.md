@@ -131,7 +131,7 @@ for (let i = 1; i <= 20; i++) { // 获取前 20 页粉丝的信息，每页 50 �
 ```js
 // 假设 “oldFollowers” 变量为之前存储的所有粉丝信息的数组
 for (const f of oldFollowers) {
-  if (!followers.find(t => t.mid === f.mid)) followers.push(f);
+  if (!followers.some(t => t.mid === f.mid)) followers.push(f);
 }
 ```
 
@@ -429,7 +429,7 @@ for (let i = 1; i <= 20; i++) { // 获取前 20 页粉丝的信息，每页 50 �
 /* 如果您之前保存过自己所有粉丝的列表，可以执行以下代码：
 // 假设 “oldFollowers” 变量为之前存储的所有粉丝信息的数组
 for (const f of oldFollowers) {
-  if (!followers.find(t => t.mid === f.mid)) followers.push(f);
+  if (!followers.some(t => t.mid === f.mid)) followers.push(f);
 }
 
 // 移除没有关注自己的用户

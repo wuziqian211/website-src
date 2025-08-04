@@ -1,5 +1,7 @@
 /* global CONFIG */
 
+'use strict';
+
 /**
  * @template dataType
  * @typedef {{ code: number; message: string; data: dataType }} InternalAPIResponse<dataType>
@@ -13,9 +15,7 @@ document.addEventListener('page:loaded', () => {
    */
   // @ts-ignore
   CONFIG.waline.imageUploader = file => new Promise((resolve, reject) => {
-    if (file.type && file.type.startsWith('image/')) {
-      reject(new TypeError('选择的文件似乎不是图片文件，请选择一个图片文件吧 awa'));
-    } else if (file.size > 4500000) {
+    if (file.size > 4500000) {
       reject(new TypeError('文件大小不能超过 4.29 MB 哟 qwq'));
     } else if (file.size <= 0) {
       reject(new TypeError('不能选择空文件哟 qwq'));

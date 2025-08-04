@@ -119,7 +119,6 @@ export default [
       radix: 'error',
       'require-atomic-updates': 'warn',
       'require-await': 'error',
-      strict: 'error',
       'symbol-description': 'error',
       'unicode-bom': 'error',
       'vars-on-top': 'error',
