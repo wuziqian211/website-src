@@ -11,7 +11,7 @@ updated: 2022-10-29 20:11:15
 365云栈 | https://blog.365sites.top/ | 初阅不明言外意，重温方觉字中情 | /images/friendship-links/blog-365sites-top.png
 Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | /images/friendship-links/kegongteng-cn.jpg
 Hexziiの小破站 | https://me.onlyra1n.top/ | 咕咕咕咕咕咕咕咕咕 | https://cn.cravatar.com/avatar/949b4b017cd9c5b03ec65cfc715c17ec?s=250
-SuzuhaYuki's Blog | https://szh.rainettle.top/ | Time goes by, and the years go by. | https://cn.cravatar.com/avatar/c5448269a1fad005917b6b8fad777191?s=250&d=mm
+SuzuhaYuki's Blog | https://szh.rainettle.top/ | Time goes by, and the years go by. | /images/friendship-links/szh-rainettle-top.webp
 易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpg
 GoForceX's Blog | https://goforcex.top/ | 摆烂的小站 | /images/friendship-links/goforcex-top.jpeg
 Microhard Demo | https://microharddemo.github.io/ | 逸一时，误一世，逸久逸久罢已龄！ | /images/friendship-links/microharddemo-github-io.svg
