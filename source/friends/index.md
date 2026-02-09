@@ -9,7 +9,7 @@ updated: 2022-10-29 20:11:15
 {% lg /images/default-faces%26face-icons/akkarin.png %}
 水水的小屋🏡~ | https://www.happycola.top/ | 学而不思则罔，思而不学则殆。 | https://www.happycola.top/img/avatar.png
 365云栈 | https://blog.365sites.top/ | 初阅不明言外意，重温方觉字中情 | /images/friendship-links/blog-365sites-top.png
-Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | /images/friendship-links/kegongteng-cn.jpg
+Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | https://weavatar.com/avatar/0b01396273cca253aa6876c020449b655a9cc12e75f921b38ac088569e814b5e
 Hexziiの小破站 | https://me.onlyra1n.top/ | 咕咕咕咕咕咕咕咕咕 | https://cn.cravatar.com/avatar/949b4b017cd9c5b03ec65cfc715c17ec?s=250
 SuzuhaYuki's Blog | https://blog.yuk1.uk/ | Time goes by, and the years go by. | /images/friendship-links/blog-yuk1-uk.webp
 易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpg
