@@ -98,10 +98,10 @@ permalink: /about/
 
 ### 社交平台与联系方式
 
-- <span style="color: #f25d8e;"><i class="fab fa-bilibili"></i> **哔哩哔哩**：[晨叶梦春](https://space.bilibili.com/425503913)（UID：425503913；梦春酱最活跃的地方，建议您在这里与梦春酱互动）</span>
+- <span style="color: #f25d8e;"><i class="fab fa-bilibili"></i> **哔哩哔哩**：[晨叶梦春](https://space.bilibili.com/425503913)（UID：425503913；梦春酱发布视频的主要平台）</span>
 - <span style="color: #9f7be1;"><i class="fab fa-github"></i> **GitHub**：[晨叶梦春](https://github.com/wuziqian211)（@wuziqian211；梦春酱的Blog及API的源代码都在这里）</span>
 - <span style="color: #c71d23;"><i class="custom gitee"></i> **Gitee**：[wuziqian211](https://gitee.com/wuziqian211)（梦春酱的一些程序的源代码在这里）</span>
-- <span style="color: #12b7f5;"><i class="fab fa-qq"></i> **QQ**：[2300393122](https://qm.qq.com/q/9aDPrarwC6)（ID：ziqian211）
+- <span style="color: #12b7f5;"><i class="fab fa-qq"></i> **QQ**：[2300393122](https://qm.qq.com/q/9aDPrarwC6)（QID：YumeHaru；建议您在这里与梦春酱互动）
   **粉丝群**：[527957451](https://qm.qq.com/q/qstfdE1CiQ)（梦春酱与B站用户“肥宅水水呀”共用的群聊，因此群主是两个人中的任何一个，可能会随时变化）</span>
 - <span style="color: #1d9bf0;"><i class="fab fa-twitter"></i> **X（Twitter）**：[晨叶梦春](https://x.com/wuziqian211)（@wuziqian211；很少在线，**在中国除港澳台外的地区无法访问**）</span>
 - <span style="color: #0097fa;"><i class="fab fa-pixiv"></i> **pixiv**：[晨叶梦春](https://www.pixiv.net/users/77695887)（ID：77695887；很少在线，**在中国除港澳台外的地区无法访问**）</span>
