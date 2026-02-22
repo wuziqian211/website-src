@@ -17,32 +17,32 @@ GoForceX's Blog | https://goforcex.top/ | 摆烂的小站 | /images/friendship-l
 Microhard Demo | https://microharddemo.github.io/ | 逸一时，误一世，逸久逸久罢已龄！ | /images/friendship-links/microharddemo-github-io.svg
 SESSのB10GTE5T | https://sess.xhustudio.eu.org/ | Session 的个人博客, 这里有各种类型的有趣的文章内容, 网站使用纯 JavaScript 构建 | /images/friendship-links/sess-xhustudio-eu-org.jpg
 Cuite Piglin’s Blog | https://blog.piglin.eu.org/ | 成分极为复杂的高中生 | https://i1.hdslb.com/bfs/face/91059220b13f2bcfcd90fb8b9d699b126dc77543.jpg
-朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
 Ra小小特的小站 | https://raxxt.top/ | B站用户“爱玩电脑的特兰克斯”的个人网站 | /images/friendship-links/raxxt-top.png
-我汐了_233的小站 | https://woxile.rth1.xyz/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
+我汐了_233的小站 | https://woxile.rth3.xyz/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
 KittySite | https://blog.konpaku.cn/ | 魂恋白楼三尺剑，飞花影里斩春风 | /images/friendship-links/blog-konpaku-cn.jpg
+Xiaoyu的软件下载站 | https://imxiaoyu233.tttttttttt.top/ | 这里是Xiaoyu的软件下载站！ | https://api.yumeharu.top/api/getuser?mid=444309392&type=avatar_redirect
 是鱼干~ | https://fish1000.top/ | 永远永远喜欢你！! | /images/friendship-links/fish1000-top.png
+北浅的小窝 | https://beiqian.rth3.xyz/ | 不积跬步无以至千里，不积小流无以成江海。 | /images/friendship-links/beiqian-rth3-xyz.png
 家乡印象⛽ | http://nxdaolin.dpdns.org/ | 一个记录家乡故事的小站 | /images/friendship-links/nxdaolin-dpdns-org.gif
 TV768の个人网站 | https://www.tv768.xyz/ | 精彩的768 让生活添色彩 | /images/friendship-links/tv768-xyz.jpg
-知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
-值关大众放送工作室 | https://zhiguanmedia.jzfkw.net/ | 做有情怀的媒体 | /images/friendship-links/zhiguanmedia-jzfkw-net.png
-社凤迷工作室 | https://shefengmi-10.jzfkw.net/ | 看着社会与法 听着凤凰传奇 | /images/friendship-links/shefengmi-10-jzfkw-net.jpg
-铭琛天宏互娱工作室 | https://mingchen2485.jzfkw.net/ | 我们不做视频，我们只是央视网的搬运工。 | /images/friendship-links/mingchen2485-jzfkw-net.png
 wuziqian211的网站（旧） | https://wuziqian211.icoc.vc/ | 梦春酱的旧网站，已不再更新 | /images/friendship-links/wuziqian211-icoc-vc.png
 {% endlg %}
 
-<!--
 <details>
 <summary>无法访问的友链</summary>
 <div class="details">
 
 以下友情链接暂时无法访问，梦春酱期待这些友链的恢复qwq
 {% lg /images/default-faces%26face-icons/akkarin.png %}
+朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
+知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
+值关大众放送工作室 | https://zhiguanmedia.jzfkw.net/ | 做有情怀的媒体 | /images/friendship-links/zhiguanmedia-jzfkw-net.png
+社凤迷工作室 | https://shefengmi-10.jzfkw.net/ | 看着社会与法 听着凤凰传奇 | /images/friendship-links/shefengmi-10-jzfkw-net.jpg
+铭琛天宏互娱工作室 | https://mingchen2485.jzfkw.net/ | 我们不做视频，我们只是央视网的搬运工。 | /images/friendship-links/mingchen2485-jzfkw-net.png
 {% endlg %}
 
 </div>
 </details>
--->
 
 ### 加入贵站到本站友情链接——申请友情链接说明
 
