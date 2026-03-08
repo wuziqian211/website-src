@@ -22,7 +22,7 @@ Ra小小特的小站 | https://raxxt.top/ | B站用户“爱玩电脑的特兰�
 KittySite | https://blog.konpaku.cn/ | 魂恋白楼三尺剑，飞花影里斩春风 | /images/friendship-links/blog-konpaku-cn.jpg
 Xiaoyu的软件下载站 | https://imxiaoyu233.tttttttttt.top/ | 这里是Xiaoyu的软件下载站！ | https://api.yumeharu.top/api/getuser?mid=444309392&type=avatar_redirect
 是鱼干~ | https://fish1000.top/ | 永远永远喜欢你！! | /images/friendship-links/fish1000-top.png
-北浅的小窝 | https://beiqian.fun/ | 不积跬步无以至千里，不积小流无以成江海。 | /images/friendship-links/beiqian-fun.png
+北浅的小窝 | http://beiqian.fun/ | 不积跬步无以至千里，不积小流无以成江海。 | /images/friendship-links/beiqian-fun.png
 家乡印象⛽ | http://nxdaolin.dpdns.org/ | 一个记录家乡故事的小站 | /images/friendship-links/nxdaolin-dpdns-org.gif
 TV768の个人网站 | https://www.tv768.xyz/ | 精彩的768 让生活添色彩 | /images/friendship-links/tv768-xyz.jpg
 {% endlg %}
