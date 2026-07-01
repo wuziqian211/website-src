@@ -13,7 +13,6 @@ export default [
     quoteProps: 'as-needed',
     semi: true,
   }),
-  // @ts-ignore
   ...markdown.configs.recommended,
   {
     rules: {

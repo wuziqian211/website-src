@@ -46,7 +46,7 @@ const headers = { Cookie: 'SESSDATA=1a2b3c4d%2C1789012345%2C5e6f7*ef; bili_jct=0
 ## 第一步 获取所有粉丝的列表
 
 B站官方给我们提供的{% label primary@获取指定用户的粉丝列表 %}的API是<https://api.bilibili.com/x/relation/fans>，请求方式是GET。
-这个API**需要您提供有效的Cookie**，返回的列表按照关注时间的先后顺序**逆向**排序（越晚关注，就在列表的越前面），最多只能获取到**最近关注的1000名粉丝**的信息。
+这个API**需要您提供有效的Cookie**，返回的列表按照关注时间的先后顺序**逆向**排序（越晚关注，就在列表的越前面）。
 主要的URL参数为：
 
 | 参数名 | 内容 | 必要性 | 备注 |
@@ -109,7 +109,7 @@ console.log((await (await fetch('https://api.bilibili.com/x/relation/fans?vmid=4
 ```
 
 运行上面的代码后，正常情况下控制台会显示一个带有很多元素的数组（array），而且数组的每个元素都是对象（object）。
-我们可以在上面代码的基础上稍作修改，来获取多页粉丝列表。如果您设置的每页项数为50，那么您要获取的页数一般为自己的粉丝数除以50，再**向上取整**（取不小于该数值的最小整数，如2.98→3、3→3、3.02→4）。由于B站的限制，**最多只能获取最后关注您的1000个粉丝的列表**，所以如果您的粉丝数超过了1000，建议您**只获取前20页粉丝列表**，继续往后获取也是获取不到信息的。
+我们可以在上面代码的基础上稍作修改，来获取多页粉丝列表。如果您设置的每页项数为50，那么您要获取的页数一般为自己的粉丝数除以50，再**向上取整**（取不小于该数值的最小整数，如2.98→3、3→3、3.02→4）。
 
 ```js
 let followers = []; // 存储粉丝列表
@@ -118,74 +118,7 @@ for (let i = 1; i <= 20; i++) { // 获取前 20 页粉丝的信息，每页 50 �
 }
 ```
 
-这样，“followers”变量就存储了最多1000个粉丝的列表。
-
-{% note info %}
-出于安全目的，B站采取了一些措施，使**用户无法通过常规手段获取到超过1000个粉丝的列表**。也就是说，如果您的粉丝数超过了1000，就没有办法直接获取到不在刚刚获取到的粉丝列表里的粉丝了。
-当然，如果您在没有超过1000粉丝的时候就保存了自己所有粉丝的列表，那么您可以将之前的列表与现在的列表合并，记得去除重复项。
-
-```js
-// 假设 “oldFollowers” 变量为之前存储的所有粉丝信息的数组
-for (const f of oldFollowers) {
-  if (!followers.some(t => t.mid === f.mid)) followers.push(f);
-}
-```
-
-但是，合并后的列表里的用户现在不一定仍在关注您，所以要移除没有关注您的用户。
-
-{% label success@获取多个用户与自己的关系 %}的API是<https://api.bilibili.com/x/relation/interrelations>，请求方式是GET。这个API**需要您提供有效的Cookie**。
-主要的URL参数为：
-
-| 参数名 | 内容 | 必要性 | 备注 |
-| :----: | :--: | :----: | ---- |
-| fids | 目标用户的UID列表 | 必要 | 每个成员间用英文逗号`,`分割，**最多20个成员** |
-
-如果这个API被正确调用，那么会得到像下面这样的JSON回复（仅作示例，省略了部分项目）：
-
-```json
-{
-  "code": 0, // 返回值，0 表示成功，-400 表示请求错误
-  "message": "0", // 错误信息，默认为 0
-  // ...
-  "data": {
-    "12345678": { // 用户 1 与自己的关系
-      "mid": 12345678, // 该用户的 UID
-      "attribute": 6, // 该用户对于自己的关系代码，0 表示您未关注 TA，1 表示您悄悄关注了 TA，2 表示您关注了 TA，6 表示您与 TA 互粉，128 表示您拉黑了 TA
-      "is_followed": true, // 该用户是否关注了您
-      "mtime": 1678901234, // 最近一次改变关系的秒级时间戳；若无关系，则为 0
-      "tag": [-10], // 用户对于自己的关注分组，其中 -10 为特别关注分组；若没有关注或为默认分组，则为 null
-      "special": 1, // 自己是否特别关注了用户
-      "is_blacked": false // 该用户是否拉黑了您
-    },
-    "23456789": { // 用户 2 与自己的关系
-      // （数据结构同上）
-    },
-    // ...
-  }
-}
-```
-
-于是我们就可以查询自己与每个用户的关系。
-
-```js
-const followersWithoutRelation = followers.map(f => f.mid), rjsonList = [], realFollowers = [];
-
-while (followersWithoutRelation.length) { // 获取所有在粉丝列表里的用户与自己的关系
-  rjsonList.push(fetch(`https://api.bilibili.com/x/relation/interrelations?fids=${followersWithoutRelation.splice(0, 20).join(',')}`, { headers }).then(resp => resp.json()));
-}
-
-for await (const rjson of rjsonList) {
-  if (rjson.code === 0 && rjson.data) {
-    for (const [mid, relation] of Object.entries(rjson.data)) {
-      if (relation.is_followed) realFollowers.push(+mid); // 如果用户现在正在关注您，可以加入到 “realFollowers” 数组
-    }
-  }
-}
-
-followers = followers.filter(f => realFollowers.includes(f.mid));
-```
-
-{% endnote %}
+这样，“followers”变量就存储了您的粉丝列表。
 
 ## 第二步 获取所有粉丝的详细信息、粉丝数（可选）
 
@@ -417,30 +350,6 @@ let followers = []; // 存储粉丝列表
 for (let i = 1; i <= 20; i++) { // 获取前 20 页粉丝的信息，每页 50 个；这里的页数是根据自己的粉丝数而定的
   followers.push(...(await (await fetch(`https://api.bilibili.com/x/relation/fans?vmid=${UID}&ps=50&pn=${i}`, { headers })).json()).data.list);
 }
-
-/* 如果您之前保存过自己所有粉丝的列表，可以执行以下代码：
-// 假设 “oldFollowers” 变量为之前存储的所有粉丝信息的数组
-for (const f of oldFollowers) {
-  if (!followers.some(t => t.mid === f.mid)) followers.push(f);
-}
-
-// 移除没有关注自己的用户
-const followersWithoutRelation = followers.map(f => f.mid), rjsonList = [], realFollowers = [];
-
-while (followersWithoutRelation.length) { // 获取所有在粉丝列表里的用户与自己的关系
-  rjsonList.push(fetch(`https://api.bilibili.com/x/relation/interrelations?fids=${followersWithoutRelation.splice(0, 20).join(',')}`, { headers }).then(resp => resp.json()));
-}
-
-for await (const rjson of rjsonList) {
-  if (rjson.code === 0 && rjson.data) {
-    for (const [mid, relation] of Object.entries(rjson.data)) {
-      if (relation.is_followed) realFollowers.push(+mid); // 如果用户现在正在关注您，可以加入到 “realFollowers” 数组
-    }
-  }
-}
-
-followers = followers.filter(f => realFollowers.includes(f.mid));
-*/
 
 // 获取所有粉丝的详细信息
 const cjson = await (await fetch(`https://api.vc.bilibili.com/x/im/user_infos?uids=${followers.map(f => f.mid)}`, { headers })).json();

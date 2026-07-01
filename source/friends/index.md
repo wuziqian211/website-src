@@ -8,22 +8,21 @@ updated: 2022-10-29 20:11:15
 
 {% lg /images/default-faces%26face-icons/akkarin.png %}
 水水的小屋🏡~ | https://www.happycola.top/ | 学而不思则罔，思而不学则殆。 | https://www.happycola.top/img/avatar.png
-365云栈 | https://blog.365sites.top/ | 初阅不明言外意，重温方觉字中情 | /images/friendship-links/blog-365sites-top.png
 Kegongteng | https://kegongteng.cn/ | Blogger / Technophile / Student | https://weavatar.com/avatar/0b01396273cca253aa6876c020449b655a9cc12e75f921b38ac088569e814b5e
-Hexziiの小破站 | https://me.onlyra1n.top/ | 咕咕咕咕咕咕咕咕咕 | https://cn.cravatar.com/avatar/949b4b017cd9c5b03ec65cfc715c17ec?s=250
+小盒子 | https://blog.nichijou.moe/ | 盒沐子の日常 | https://gravatar.loli.net/avatar/daca850545a454e39660992d1163e88e
 SuzuhaYuki's Blog | https://blog.yuk1.uk/ | Time goes by, and the years go by. | /images/friendship-links/blog-yuk1-uk.webp
 易姐的博客 | https://shakaianee.top/ | 给岁月以文明，而不是给文明以岁月。 | /images/friendship-links/shakaianee-top.jpg
 GoForceX's Blog | https://goforcex.top/ | 摆烂的小站 | /images/friendship-links/goforcex-top.jpeg
 Microhard Demo | https://microharddemo.github.io/ | 逸一时，误一世，逸久逸久罢已龄！ | /images/friendship-links/microharddemo-github-io.svg
-SESSのB10GTE5T | https://sess.xhustudio.eu.org/ | Session 的个人博客, 这里有各种类型的有趣的文章内容, 网站使用纯 JavaScript 构建 | /images/friendship-links/sess-xhustudio-eu-org.jpg
+SESSのB10GTE5T | https://sess.moe/ | Session 的个人博客, 这里有各种类型的有趣的文章内容, 网站使用纯 JavaScript 构建 | /images/friendship-links/sess-moe.jpg
 Cuite Piglin’s Blog | https://blog.piglin.eu.org/ | 成分极为复杂的高中生 | https://i1.hdslb.com/bfs/face/91059220b13f2bcfcd90fb8b9d699b126dc77543.jpg
 Ra小小特的小站 | https://raxxt.top/ | B站用户“爱玩电脑的特兰克斯”的个人网站 | /images/friendship-links/raxxt-top.png
 我汐了_233的小站 | https://woxile.rth3.xyz/ | B站用户“我汐了_233”的个人网站 | https://api.yumeharu.top/api/getuser?mid=474683920&type=avatar_redirect
-KittySite | https://blog.konpaku.cn/ | 魂恋白楼三尺剑，飞花影里斩春风 | /images/friendship-links/blog-konpaku-cn.jpg
+KittySite | https://blog.konpaku.cn/ | 魂恋白楼三尺剑，飞花影里斩春风 | /images/friendship-links/blog-konpaku-cn.webp
 Xiaoyu的软件下载站 | https://imxiaoyu233.tttttttttt.top/ | 这里是Xiaoyu的软件下载站！ | https://api.yumeharu.top/api/getuser?mid=444309392&type=avatar_redirect
 是鱼干~ | https://fish1000.top/ | 永远永远喜欢你！! | /images/friendship-links/fish1000-top.png
-北浅的小窝 | http://beiqian.fun/ | 不积跬步无以至千里，不积小流无以成江海。 | /images/friendship-links/beiqian-fun.png
-家乡印象⛽ | http://nxdaolin.dpdns.org/ | 一个记录家乡故事的小站 | /images/friendship-links/nxdaolin-dpdns-org.gif
+北浅的小窝 | https://beiqian.fun/ | 不积跬步无以至千里，不积小流无以成江海。 | https://beiqian.fun/images/avatar.png
+家乡印象⛽ | https://nxdaolin.dpdns.org/ | 一个记录家乡故事的小站 | /images/friendship-links/nxdaolin-dpdns-org.gif
 TV768の个人网站 | https://www.tv768.xyz/ | 精彩的768 让生活添色彩 | /images/friendship-links/tv768-xyz.jpg
 {% endlg %}
 
@@ -33,6 +32,7 @@ TV768の个人网站 | https://www.tv768.xyz/ | 精彩的768 让生活添色彩 
 
 以下友情链接暂时无法访问，梦春酱期待这些友链的恢复qwq
 {% lg /images/default-faces%26face-icons/akkarin.png %}
+365云栈 | https://blog.365sites.top/ | 初阅不明言外意，重温方觉字中情 | /images/friendship-links/blog-365sites-top.png
 朋友圈实验室 | https://aperturelaboratories.icoc.vc/ | 一个古朴的化学实验室 | /images/friendship-links/aperturelaboratories-icoc-vc.png
 知心她们工作室 | https://shuxincm.jzfkw.net/ | 知心她们，心情美好。 | /images/friendship-links/shuxincm-jzfkw-net.png
 值关大众放送工作室 | https://zhiguanmedia.jzfkw.net/ | 做有情怀的媒体 | /images/friendship-links/zhiguanmedia-jzfkw-net.png
