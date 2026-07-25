@@ -1400,6 +1400,8 @@ waline:
 
   commentSorting: hottest
 
+  turnstileKey: 0x4AAAAAAD9yf9VKE8ZfsWRs
+
   reaction:
     - /images/emote/tv_小电视/tv_点赞.gif
     - /images/emote/tv_小电视/tv_doge.gif
