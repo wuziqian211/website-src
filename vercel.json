@@ -17,7 +17,7 @@
       ]
     }
   ],
-  "installCommand": "npm install --only=production",
+  "installCommand": "npm install --omit=dev",
   "redirects": [
     { "source": "/api/(.*)", "destination": "https://api.yumeharu.top/api/$1" },
     { "source": "/friend/", "destination": "/friends/" },
@@ -29,6 +29,6 @@
     { "source": "/images/screenshot_compressed.png", "destination": "/images/screenshot_compressed.webp" },
     { "source": "/link/", "destination": "/friends/" },
     { "source": "/links/", "destination": "/friends/" },
-    { "source": "/wiki/", "destination": "/about/" }
+    { "source": "/wiki/", "destination": "/about-me/" }
   ]
 }
