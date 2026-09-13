@@ -37,7 +37,7 @@ permalink: /about-me/
 到了2020年，我开始用[**易语言**](https://www.dywt.com.cn/)做Windows窗口程序，觉得超好玩！
 再到2021年，我学会了[**Python**](https://www.python.org/)、[**HTML**、**CSS**、**JavaScript**](https://developer.mozilla.org/zh-CN/)等等，于是就开始设计网页、写一些实用脚本，而且很多都是[**开源**](https://github.com/wuziqian211)的呢(^・ω・^ )
 
-<a target="_blank" href="https://skillicons.dev/"><img class="no-radius" src="/images/posts/skills.svg" /></a>
+<a target="_blank" href="https://skillicons.dev/"><img alt="技能列表" class="no-radius" src="/images/posts/skills.svg" /></a>
 
 我也超喜欢[**发布知识、科技区的作品**](#创作)，并以此获得了很多人的关注啦(｡･ω･｡)
 
@@ -200,7 +200,7 @@ permalink: /about-me/
 | 5月11日 | 发布了一个取消关注自己的链接 | 这个链接被很多人点击，**使梦春酱掉了许多粉** |
 | 5月27日 | 承诺自己[**2000粉女装**](https://t.bilibili.com/394065216504386703) | 直到现在，梦春酱已经有2300多名粉丝了，还没有女装！ |
 | 6月7日 | 又发布了[关于自己的介绍的动态](https://t.bilibili.com/397966150618253066) | 这条动态有300多个赞，可能是梦春酱点赞数最高的除了视频以外的动态 |
-| 7月31日 | 与[肥宅水水呀](https://space.bilibili.com/324042405)联合投稿了视频[《[整人必备]冻结Windows里面的进程！》](https://www.bilibili.com/video/BV13h411Z7MC/) | 视频里的程序是梦春酱编写的 |
+| 7月31日 | 与[肥宅水水呀](https://space.bilibili.com/324042405)联合投稿了视频[《\[整人必备\]冻结Windows里面的进程！》](https://www.bilibili.com/video/BV13h411Z7MC/) | 视频里的程序是梦春酱编写的 |
 | 8月23日 | **[粉丝数达到了2000](https://t.bilibili.com/426575730931956529)** | |
 | 8月24日 | 再次发布[介绍自己的动态](https://t.bilibili.com/427081609364495836) | 这条动态置顶了很长时间，有300多个赞 |
 | 8月26日 | **注册了QQ账号** | 实际上这个QQ账号并不是TA的第1个账号，而是第4个账号，但是因为梦春酱忘记了之前的3个账号中的2个账号的QQ号（现已找回），所以注册了新的账号 |
