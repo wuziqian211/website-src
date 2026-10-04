@@ -2,22 +2,29 @@
   --waline-theme-color: #f687b3 !important;
   --waline-active-color: #f7c1d7 !important;
 }
+.fancybox__container {
+  --f-button-border-radius: 50% !important;
+}
 .comments {
   overflow: visible;
 }
-.wl-emoji-popup {
-  width: 100%;
+.wl-content {
+  overflow: hidden;
+  overflow-wrap: anywhere;
 }
-.wl-content .wl-emoji {
-  height: 3em !important;
-  vertical-align: sub !important;
+.wl-content :not(.unexistent) {
+  overflow-wrap: anywhere;
 }
-.wl-content .wl-emoji[src^='/images/emote/小黄脸/'], .wl-content .wl-emoji[src^='/images/emote/tv_小电视/'], .wl-content .wl-emoji[src^='/images/emote/喵/'] {
-  height: 1.5em !important;
+.wl-content .wl-emoji:not(.unexistent) {
+  height: 3em;
+  vertical-align: sub;
+}
+.wl-content .wl-emoji[src^='/images/emote/小黄脸/']:not(.unexistent), .wl-content .wl-emoji[src^='/images/emote/tv_小电视/']:not(.unexistent), .wl-content .wl-emoji[src^='/images/emote/喵/']:not(.unexistent) {
+  height: 1.5em;
 }
 
-.header, .site-brand-container {
-  border-radius: 0 0 20px 20px !important;
+header.header, .site-brand-container {
+  border-radius: 0 0 20px 20px;
 }
 .sidebar-toggle, .back-to-top {
   border-radius: 10px;
@@ -75,7 +82,7 @@ details[open] > summary {
 details > div.details {
   padding: 0 10px;
 }
-:not(.wl-reaction-img):not(.wl-avatar > *):not(.wl-user):not(.cc-license > *):not(div.group-picture-column > *) > img:not(.wl-emoji):not(.fancybox-image):not(.f-thumbs__slide__img):not(.link-grid-image):not(.site-author-image):not(.avatar):not(.badge):not(.emote):not(.face-icon):not(.no-radius) {
+:not(.wl-reaction-img):not(.wl-avatar > *):not(.wl-user):not(.cc-license > *):not(div.group-picture-column > *) > img:not(.wl-emoji):not(.f-lazyload):not(.link-grid-image):not(.site-author-image):not(.avatar):not(.badge):not(.emote):not(.face-icon):not(.no-radius) {
   border-radius: 20px;
   min-width: 50px;
 }
@@ -90,7 +97,7 @@ img.badge {
 img.emote {
   display: inline;
   height: 2.5em;
-  margin: 0 !important;
+  margin: 0;
   vertical-align: sub;
 }
 img.emote[src^='/images/emote/小黄脸/'], img.emote[src^='/images/emote/tv_小电视/'], img.emote[src^='/images/emote/喵/'] {
@@ -136,14 +143,16 @@ a.inaccessible {
   position: relative;
 }
 a.inaccessible:hover::before {
-  background: #222;
+  background: #222c;
   border-radius: 5px;
   color: #eee;
   content: '您所在的国家 / 地区可能无法访问该链接。';
   font-size: 16px;
   padding: 5px;
   position: absolute;
+  text-align: center;
   top: 24px;
+  width: 320px;
   z-index: 10;
 }
 
