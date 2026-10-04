@@ -9,7 +9,7 @@ document.addEventListener('page:loaded', () => {
     const imageLink = image.dataset.src || image.src;
     const imageWrapLink = document.createElement('a');
     imageWrapLink.classList.add('fancybox');
-    imageWrapLink.href = imageLink.replace(/\/(.+)\.(.+)_compressed\..+/, '\/$1.$2').replace(/\/(.+)_compressed\.(.+)/, '\/$1.$2');
+    imageWrapLink.href = imageLink.replace(/^\/(.+)\.(.+)_compressed\..+$/, '\/$1.$2').replace(/^\/(.+)_compressed\.(.+)$/, '\/$1.$2');
     imageWrapLink.setAttribute('itemscope', '');
     imageWrapLink.setAttribute('itemtype', 'http://schema.org/ImageObject');
     imageWrapLink.setAttribute('itemprop', 'url');
@@ -31,7 +31,11 @@ document.addEventListener('page:loaded', () => {
     image.wrap(imageWrapLink);
   });
 
-  Fancybox.bind('[data-fancybox]');
-
-  Fancybox.bind('.comments .wl-content img');
+  // Disable hash handling to avoid conflicts with PJAX navigation.
+  Fancybox.bind('[data-fancybox]', {
+    Hash: false
+  });
+  Fancybox.bind('.comments .wl-content img', {
+    Hash: false
+  });
 });

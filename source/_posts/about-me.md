@@ -148,7 +148,7 @@ permalink: /about-me/
 
 2024-08-28 05:30，梦春酱[将B站上的昵称从“**wuziqian211**”改为“**晨叶梦春**”](https://t.bilibili.com/980179685240471570)，这样TA就不会因为自己的昵称而尴尬了(｀・ω・´)
 
-![梦春酱的B站粉丝数变化情况](/images/posts/fans-changes.png)
+![梦春酱的B站粉丝数变化情况](/images/posts/fans-changes_compressed.webp)
 
 <details>
 <summary>展开大事年表！</summary>
