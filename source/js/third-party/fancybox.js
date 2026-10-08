@@ -9,7 +9,7 @@ document.addEventListener('page:loaded', () => {
     const imageLink = image.dataset.src || image.src;
     const imageWrapLink = document.createElement('a');
     imageWrapLink.classList.add('fancybox');
-    imageWrapLink.href = imageLink.replace(/\/(.+)\.(.+)_compressed\..+/, '\/$1.$2').replace(/\/(.+)_compressed\.(.+)/, '\/$1.$2');
+    imageWrapLink.href = imageLink.replace(/\.([^./]+)_compressed\.[^./]+$/, '.$1').replace(/_compressed\.([^./]+)$/, '.$1');
     imageWrapLink.setAttribute('itemscope', '');
     imageWrapLink.setAttribute('itemtype', 'http://schema.org/ImageObject');
     imageWrapLink.setAttribute('itemprop', 'url');
